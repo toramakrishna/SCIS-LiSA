@@ -54,6 +54,10 @@ def get_postgres_db() -> Generator:
         db.close()
 
 
+# Alias for FastAPI dependency injection
+get_db = get_postgres_db
+
+
 def get_mongo_db():
     """
     Get MongoDB database instance (lazy initialization)
