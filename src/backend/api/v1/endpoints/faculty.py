@@ -23,6 +23,7 @@ async def list_faculty(
     page: int = Query(1, ge=1, description="Page number"),
     page_size: int = Query(20, ge=1, le=100, description="Items per page"),
     designation: Optional[str] = Query(None, description="Filter by designation"),
+    sort_by: str = Query("name", description="Sort by: name, publication_count, h_index"),
     db: Session = Depends(get_db)
 ):
     """
@@ -30,24 +31,48 @@ async def list_faculty(
     
     **Filters:**
     - designation: Filter by designation (Professor, Associate Professor, etc.)
+    - sort_by: Sort by name, publication_count, or h_index
     
     **Pagination:**
     - page: Page number (default: 1)
     - page_size: Items per page (default: 20, max: 100)
     """
-    # Query only faculty members
-    query = db.query(Author).filter(Author.is_faculty == True)
+    # Query only faculty members with publication count
+    query = db.query(
+        Author,
+        func.count(publication_authors.c.publication_id).label('pub_count')
+    ).outerjoin(
+        publication_authors,
+        Author.id == publication_authors.c.author_id
+    ).filter(
+        Author.is_faculty == True
+    ).group_by(Author.id)
     
     # Apply filters
     if designation:
         query = query.filter(Author.designation.ilike(f"%{designation}%"))
     
-    # Get total count
+    # Apply sorting
+    if sort_by == "publication_count":
+        query = query.order_by(desc('pub_count'))
+    elif sort_by == "h_index":
+        query = query.order_by(desc(Author.h_index))
+    else:  # default: name
+        query = query.order_by(Author.name)
+    
+    # Get total count (before pagination)
     total = query.count()
     
     # Apply pagination
     offset = (page - 1) * page_size
-    faculty_members = query.offset(offset).limit(page_size).all()
+    results = query.offset(offset).limit(page_size).all()
+    
+    # Extract Author objects and attach publication count
+    faculty_members = []
+    for author, pub_count in results:
+        # Attach publication_count to the author object
+        author.publication_count = pub_count
+        faculty_members.append(author)
     
     return PaginatedResponse(
         items=faculty_members,
@@ -65,13 +90,23 @@ async def get_faculty(
     """
     Get detailed information about a specific faculty member.
     """
-    faculty = db.query(Author).filter(
+    # Get faculty with publication count
+    result = db.query(
+        Author,
+        func.count(publication_authors.c.publication_id).label('pub_count')
+    ).outerjoin(
+        publication_authors,
+        Author.id == publication_authors.c.author_id
+    ).filter(
         Author.id == faculty_id,
         Author.is_faculty == True
-    ).first()
+    ).group_by(Author.id).first()
     
-    if not faculty:
+    if not result:
         raise HTTPException(status_code=404, detail="Faculty member not found")
+    
+    faculty, pub_count = result
+    faculty.publication_count = pub_count
     
     return faculty
 
@@ -86,7 +121,7 @@ async def get_faculty_publications(
     db: Session = Depends(get_db)
 ):
     """
-    Get all publications for a specific faculty member.
+    Get all publications for a specific faculty member with author names and verification status.
     
     **Filters:**
     - year: Filter by publication year
@@ -102,7 +137,10 @@ async def get_faculty_publications(
     
     # Build query for publications by this faculty member
     # Join through the publication_authors association table
-    query = db.query(Publication).join(
+    query = db.query(
+        Publication,
+        publication_authors.c.is_verified
+    ).join(
         publication_authors,
         Publication.id == publication_authors.c.publication_id
     ).filter(
@@ -114,7 +152,7 @@ async def get_faculty_publications(
         query = query.filter(Publication.year == year)
     
     if publication_type:
-        query = query.filter(Publication.type == publication_type)
+        query = query.filter(Publication.publication_type == publication_type)
     
     # Order by year descending
     query = query.order_by(desc(Publication.year))
@@ -124,7 +162,49 @@ async def get_faculty_publications(
     
     # Apply pagination
     offset = (page - 1) * page_size
-    publications = query.offset(offset).limit(page_size).all()
+    results = query.offset(offset).limit(page_size).all()
+    
+    # Get all author names for each publication
+    publications = []
+    for pub, is_verified in results:
+        # Get all authors for this publication
+        authors = db.query(Author).join(
+            publication_authors,
+            Author.id == publication_authors.c.author_id
+        ).filter(
+            publication_authors.c.publication_id == pub.id
+        ).order_by(
+            publication_authors.c.author_position
+        ).all()
+        
+        # Create publication dict with all fields
+        pub_dict = {
+            'id': pub.id,
+            'title': pub.title,
+            'year': pub.year,
+            'publication_type': pub.publication_type,
+            'type': pub.publication_type,
+            'journal': pub.journal,
+            'booktitle': pub.booktitle,
+            'volume': pub.volume,
+            'number': pub.number,
+            'pages': pub.pages,
+            'publisher': pub.publisher,
+            'doi': pub.doi,
+            'url': pub.url,
+            'ee': pub.ee,
+            'dblp_key': pub.dblp_key,
+            'editor': pub.editor,
+            'series': pub.series,
+            'author_count': pub.author_count,
+            'has_faculty_author': pub.has_faculty_author,
+            'source_pids': pub.source_pids or [],
+            'authors': [a.name for a in authors],
+            'is_verified': is_verified,
+            'created_at': pub.created_at,
+            'updated_at': pub.updated_at
+        }
+        publications.append(pub_dict)
     
     return PaginatedResponse(
         items=publications,
@@ -132,6 +212,73 @@ async def get_faculty_publications(
         page=page,
         page_size=page_size
     )
+
+
+@router.post("/{faculty_id}/publications/{publication_id}/verify")
+async def verify_publication_attribution(
+    faculty_id: int,
+    publication_id: int,
+    is_verified: bool = Query(..., description="True to accept, False to reject"),
+    verified_by: Optional[str] = Query(None, description="Email of verifier"),
+    db: Session = Depends(get_db)
+):
+    """
+    Accept or reject a publication attribution for a faculty member.
+    
+    **Parameters:**
+    - is_verified: True to accept the attribution, False to reject it
+    - verified_by: Optional email or identifier of the person verifying
+    """
+    from sqlalchemy import update
+    from datetime import datetime
+    
+    # Verify faculty and publication exist
+    faculty = db.query(Author).filter(
+        Author.id == faculty_id,
+        Author.is_faculty == True
+    ).first()
+    if not faculty:
+        raise HTTPException(status_code=404, detail="Faculty member not found")
+    
+    publication = db.query(Publication).filter(Publication.id == publication_id).first()
+    if not publication:
+        raise HTTPException(status_code=404, detail="Publication not found")
+    
+    # Check if attribution exists
+    attribution = db.execute(
+        publication_authors.select().where(
+            publication_authors.c.publication_id == publication_id,
+            publication_authors.c.author_id == faculty_id
+        )
+    ).first()
+    
+    if not attribution:
+        raise HTTPException(
+            status_code=404,
+            detail="This publication is not attributed to this faculty member"
+        )
+    
+    # Update the attribution
+    stmt = update(publication_authors).where(
+        publication_authors.c.publication_id == publication_id,
+        publication_authors.c.author_id == faculty_id
+    ).values(
+        is_verified=is_verified,
+        verified_at=datetime.utcnow(),
+        verified_by=verified_by
+    )
+    
+    db.execute(stmt)
+    db.commit()
+    
+    action = "accepted" if is_verified else "rejected"
+    return {
+        "success": True,
+        "message": f"Publication attribution {action} successfully",
+        "publication_id": publication_id,
+        "faculty_id": faculty_id,
+        "is_verified": is_verified
+    }
 
 
 @router.get("/{faculty_id}/collaborations")

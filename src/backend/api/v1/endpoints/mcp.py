@@ -36,6 +36,7 @@ class QueryResponse(BaseModel):
     question: str
     sql: Optional[str]
     explanation: str
+    note: Optional[str] = None  # Assumptions or context about the query
     data: List[Dict[str, Any]]
     visualization: Dict[str, Any]
     row_count: int
@@ -231,6 +232,7 @@ async def natural_language_query(
             question=request.question,
             sql=sql,
             explanation=generation_result['explanation'],
+            note=generation_result.get('note'),  # Include the note if present
             data=data,
             visualization=viz_config,
             row_count=len(data),

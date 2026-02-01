@@ -3,6 +3,8 @@ import { MainLayout } from '@/components/layout/MainLayout';
 import { HomePage } from '@/pages/HomePage';
 import { QueryPage } from '@/pages/QueryPage';
 import { AnalyticsPage } from '@/pages/AnalyticsPage';
+import { FacultyPage } from '@/pages/FacultyPage';
+import { FacultyDetailPage } from '@/pages/FacultyDetailPage';
 
 export const router = createBrowserRouter([
   {
@@ -16,6 +18,14 @@ export const router = createBrowserRouter([
       {
         path: 'query',
         element: <QueryPage />,
+      },
+      {
+        path: 'faculty',
+        element: <FacultyPage />,
+      },
+      {
+        path: 'faculty/:id',
+        element: <FacultyDetailPage />,
       },
       {
         path: 'analytics',

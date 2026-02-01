@@ -38,16 +38,18 @@ class OllamaAgent:
         prompt = self._build_prompt(question)
         
         try:
-            async with httpx.AsyncClient(timeout=30.0) as client:
+            async with httpx.AsyncClient(timeout=60.0) as client:  # Increased timeout for complex queries
                 response = await client.post(
                     f"{self.base_url}/api/generate",
                     json={
                         "model": self.model,
                         "prompt": prompt,
                         "stream": False,
+                        "format": "json",  # Request JSON format explicitly
                         "options": {
                             "temperature": 0.1,  # Low temperature for more deterministic SQL
-                            "top_p": 0.9
+                            "top_p": 0.9,
+                            "num_predict": 1000  # Allow longer responses for complex queries
                         }
                     }
                 )
@@ -59,10 +61,11 @@ class OllamaAgent:
                 
         except httpx.HTTPError as e:
             return {
-                "error": f"Ollama API error: {str(e)}",
+                "error": f"Ollama API error: {str(e)}. Make sure Ollama is running and the model '{self.model}' is available.",
                 "sql": None,
                 "visualization": "table",
-                "explanation": "Failed to generate SQL query"
+                "explanation": "Failed to connect to LLM service",
+                "note": "Check if Ollama is running with: ollama list"
             }
     
     def _build_prompt(self, question: str) -> str:
@@ -91,23 +94,102 @@ Convert this natural language question into a SQL query:
 6. The collaborations table already has pre-computed collaboration_count - no GROUP BY needed
 7. Add ORDER BY for sorted results
 8. Limit results to reasonable numbers (10-50 for lists, no limit for time series)
-9. Choose the most appropriate visualization type:
-   - line_chart: for time series trends
-   - bar_chart: for comparisons and rankings
-   - pie_chart: for distribution/proportions
+
+## Understanding User Questions - CRITICAL
+- **"Who" questions** = ALWAYS include author/faculty names in SELECT and GROUP BY
+  * "Who published the most?" → SELECT a.name, COUNT(*) ... GROUP BY a.name
+  * "Who has the highest h-index?" → SELECT a.name, a.h_index ...
+  * "Who collaborated with X?" → SELECT collaborator names
+- **"What" questions about counts** = May or may not need names
+  * "What is the total count?" → Just COUNT(*)
+  * "What are the top venues?" → SELECT venue names
+- **"How many" questions** = Usually just COUNT, no names needed unless asking "how many per person"
+
+## Name Matching Rules - CRITICAL
+9. **Faculty/Author Names - SEARCH IN THE AUTHORS TABLE**:
+   - To find publications by a specific author: JOIN with authors table and filter on authors.name
+   - NEVER search for author names in publications.title or publications.dblp_key
+   - Use ILIKE '%partial_name%' for partial, case-insensitive matching
+   - Example: "Durga Bhavani" may be stored as "Durga Bhavani S." or "S. Durga Bhavani"
+   
+   CORRECT way to find publications by author:
+   ```sql
+   WHERE EXISTS (
+       SELECT 1 FROM publication_authors pa2
+       JOIN authors a2 ON pa2.author_id = a2.id
+       WHERE pa2.publication_id = p.id 
+       AND a2.name ILIKE '%Durga Bhavani%'
+   )
+   ```
+   
+   WRONG (DO NOT DO THIS):
+   ```sql
+   WHERE p.title ILIKE '%Durga Bhavani%'  -- DON'T search in title
+   WHERE p.dblp_key ILIKE '%Durga Bhavani%'  -- DON'T search in dblp_key
+   ```
+
+10. **When using partial matching, ALWAYS add a note**:
+   - Example: "Note: Using partial name matching for 'Durga Bhavani' to catch variations like 'Durga Bhavani S.'"
+   - Mention if multiple matches might be found
+
+11. **SQL Syntax - CRITICAL**:
+   - ALWAYS close ALL string literals with matching quotes
+   - Check: every ILIKE '%text%' must have closing quote
+   - Use parentheses for complex WHERE conditions with AND/OR
+   - Example: WHERE (condition1 OR condition2) AND condition3
+
+## Visualization Selection - CRITICAL
+12. **For Simple/Single-Value Answers - Use "none" visualization**:
+   - When the query returns a SINGLE number, count, or simple fact
+   - Examples requiring NO visualization:
+     * "How many publications does X have?" → single count
+     * "What is the h-index of Y?" → single number
+     * "When was the first publication?" → single year
+     * "What is the total count of...?" → single number
+   - For these, set: "visualization": "none"
+   - Provide a conversational explanation that includes the actual answer
+   - Example: "explanation": "Satish Srirama has published 78 papers in total."
+
+13. **For Data that NEEDS Visualization**:
+   Choose from these types:
+   - line_chart: for time series trends (multiple data points over time)
+   - bar_chart: for comparisons and rankings (multiple items to compare)
+   - pie_chart: for distribution/proportions (multiple categories)
+   - table: for detailed listings with multiple rows
+   - network_graph: for relationships/collaborations
+   - multi_line_chart: for comparing multiple series over time
+
+14. **Decision Rule**:
+   - If query result is 1 row with 1-2 columns → visualization: "none"
+   - If query result is multiple rows or complex data → use appropriate chart
+   - If asking for a list (even if short) → use "table"
    - table: for detailed listings
    - network_graph: for relationships/collaborations
    - multi_line_chart: for comparing multiple series over time
 
 ## Response Format (JSON)
+CRITICAL: You MUST generate actual, complete, executable SQL - NOT placeholders like "SELECT ..." or "..." 
+The SQL must be ready to run in PostgreSQL immediately without any modifications.
+
 {{
-    "sql": "Your SQL query here",
+    "sql": "SELECT actual_column FROM actual_table WHERE actual_condition ORDER BY actual_order LIMIT 10",
     "visualization": "chart_type",
     "explanation": "Brief explanation of what the query returns",
+    "note": "Any assumptions made (e.g., partial name matching used, date range assumed, etc.) - INCLUDE THIS if using ILIKE or making assumptions",
     "x_axis": "column name for x-axis (if applicable)",
     "y_axis": "column name for y-axis (if applicable)",
     "series": "column name for series grouping (if multi-line)"
 }}
+
+IMPORTANT: 
+- The "sql" field must contain a COMPLETE, EXECUTABLE PostgreSQL query
+- Do NOT use placeholders like "...", "SELECT ...", or "actual_column"  
+- Use real table and column names from the schema provided above
+- Always include the "note" field when:
+  * Using ILIKE for partial name matching
+  * Making assumptions about date ranges
+  * Interpreting ambiguous terms
+  * Handling potential variations in data
 
 Generate the JSON response now:"""
         
@@ -116,6 +198,22 @@ Generate the JSON response now:"""
     def _find_similar_example(self, question: str) -> Dict:
         """Find the most relevant example query based on question keywords"""
         question_lower = question.lower()
+        
+        # Check for simple count/number queries - should use "none" visualization
+        simple_query_patterns = [
+            'how many', 'count', 'total number', 'what is the', 'h-index', 
+            'h index', 'when was', 'what year', 'which year'
+        ]
+        if any(pattern in question_lower for pattern in simple_query_patterns):
+            # This is likely a simple count/fact query
+            return self.examples.get('simple_count', {})
+        
+        # Check if asking about a specific person (contains a name-like pattern)
+        # Look for common faculty name patterns or words like "by", "from", "done by"
+        person_indicators = ['by ', 'from ', 'done by', 'published by', 'written by', 'authored by']
+        if any(indicator in question_lower for indicator in person_indicators):
+            # Likely asking about a specific faculty member's publications
+            return self.examples.get('faculty_member_publications', {})
         
         # Keyword matching
         if any(word in question_lower for word in ['trend', 'over time', 'year', 'timeline']):
@@ -130,6 +228,9 @@ Generate the JSON response now:"""
         elif any(word in question_lower for word in ['collaboration', 'co-author', 'work with', 'together']):
             return self.examples.get('collaborations', {})
         elif any(word in question_lower for word in ['recent', 'latest', 'new']):
+            # If mentions a name AND "recent", use faculty_member_publications example
+            if any(indicator in question_lower for indicator in ['by', 'from', 'of']):
+                return self.examples.get('faculty_member_publications', {})
             return self.examples.get('recent_publications', {})
         elif any(word in question_lower for word in ['growth', 'change', 'compare']):
             return self.examples.get('faculty_growth', {})
@@ -150,6 +251,27 @@ Generate the JSON response now:"""
                     sql = result['sql'].strip()
                     if not sql.upper().startswith(('SELECT', 'WITH')):
                         raise ValueError("Invalid SQL: must start with SELECT or WITH")
+                    
+                    # Check for placeholder SQL
+                    if '...' in sql or 'actual_column' in sql.lower() or 'actual_table' in sql.lower():
+                        raise ValueError("Invalid SQL: contains placeholders instead of real SQL")
+                    
+                    # Check if SQL is suspiciously short (likely incomplete)
+                    if len(sql) < 20:
+                        raise ValueError("Invalid SQL: query too short, likely incomplete")
+                    
+                    # Check for unterminated strings
+                    # Count single quotes - must be even
+                    single_quotes = sql.count("'")
+                    if single_quotes % 2 != 0:
+                        raise ValueError("Invalid SQL: unterminated string literal (missing closing quote)")
+                    
+                    # Check for common syntax issues
+                    if 'ILIKE' in sql.upper():
+                        # Make sure ILIKE patterns are properly quoted
+                        if "ILIKE '" in sql and sql.count("ILIKE '") != sql.count("ILIKE '%"):
+                            # This is a heuristic check
+                            pass
                     
                     # Ensure required fields
                     result['visualization'] = result.get('visualization', 'table')
@@ -172,11 +294,12 @@ Generate the JSON response now:"""
             
         except (json.JSONDecodeError, ValueError) as e:
             return {
-                'error': f'Failed to parse LLM response: {str(e)}',
+                'error': f'Failed to generate valid SQL query: {str(e)}. Please try rephrasing your question or make it more specific.',
                 'sql': None,
                 'visualization': 'table',
-                'explanation': 'Could not generate query',
-                'raw_response': response[:500]
+                'explanation': 'Could not generate a valid query. The LLM may need a clearer question.',
+                'note': 'Try asking in a different way, for example: "Show publications by [author name] from the last 5 years" or "List top 10 faculty by publication count"',
+                'raw_response': response[:500] if 'response' in locals() else None
             }
     
     async def execute_query(self, sql: str, db: Session) -> List[Dict]:

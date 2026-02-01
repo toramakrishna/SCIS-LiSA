@@ -10,6 +10,11 @@ interface ChartRendererProps {
 }
 
 export function ChartRenderer({ data, config }: ChartRendererProps) {
+  // Handle "none" visualization - don't show any chart, just let the explanation be shown
+  if (config.type === 'none') {
+    return null;
+  }
+
   if (!data || data.length === 0) {
     return (
       <div className="text-center py-8 text-muted-foreground">

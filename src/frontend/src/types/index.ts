@@ -7,6 +7,7 @@ export interface QueryResponse {
   question: string;
   sql: string;
   explanation: string;
+  note?: string;
   data: any[];
   visualization: VisualizationConfig;
   row_count: number;
@@ -15,7 +16,7 @@ export interface QueryResponse {
 }
 
 export interface VisualizationConfig {
-  type: 'line_chart' | 'bar_chart' | 'pie_chart' | 'table' | 'network_graph' | 'multi_line_chart';
+  type: 'line_chart' | 'bar_chart' | 'pie_chart' | 'table' | 'network_graph' | 'multi_line_chart' | 'none';
   title: string;
   x_axis?: string;
   y_axis?: string;
@@ -40,11 +41,24 @@ export interface Publication {
   id: number;
   title: string;
   year: number;
-  venue: string;
-  type: string;
+  venue?: string;
+  journal?: string;
+  booktitle?: string;
+  publication_type?: string;
+  type?: string;
+  volume?: string;
+  number?: string;
+  pages?: string;
+  publisher?: string;
+  editor?: string;
+  series?: string;
   doi?: string;
   url?: string;
-  citation_count: number;
+  ee?: string;
+  dblp_key?: string;
+  citation_count?: number;
+  authors?: string[];  // Array of author names for DBLP format
+  is_verified?: boolean | null;  // Verification status
 }
 
 export interface Author {
@@ -53,6 +67,12 @@ export interface Author {
   dblp_pid?: string;
   h_index?: number;
   publication_count: number;
+  designation?: string;
+  email?: string;
+  phone?: string;
+  research_interests?: string;
+  homepage?: string;
+  is_faculty?: boolean;
 }
 
 export interface Faculty {
