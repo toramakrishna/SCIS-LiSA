@@ -1,0 +1,1141 @@
+id,author1_name,author1_is_faculty,author2_name,author2_is_faculty,collaboration_count,first_collaboration_year,last_collaboration_year
+702,Satish Narayana Srirama,True,Chii Chang,False,32,2012,2020
+1583,Vineet Padmanabhan,True,Arun K. Pujari,True,32,2000,2022
+2613,Arun K. Pujari,True,Venkateswara Rao Kagita,False,28,2013,2025
+2612,Arun K. Pujari,True,Vikas Kumar,False,26,2015,2025
+408,Satish Narayana Srirama,True,Rajkumar Buyya,False,23,2014,2025
+113,Siba K. Udgata,True,Samrat L. Sabat,False,23,2009,2016
+2637,Vineet Padmanabhan,True,Venkateswara Rao Kagita,False,23,2013,2022
+571,Satish Narayana Srirama,True,Pelle Jakovits,False,20,2011,2022
+2636,Vineet Padmanabhan,True,Vikas Kumar,False,19,2015,2022
+438,Satish Narayana Srirama,True,Chinmaya Kumar Dehury,False,19,2019,2024
+499,Satish Narayana Srirama,True,Mainak Adhikari,False,17,2019,2023
+1,André Rossi,False,Alok Singh,True,17,2009,2025
+2710,Arun K. Pujari,True,Ved Prakash Gulati,False,17,2003,2007
+1382,Arun Kumar Das,True,Sandip Das,False,17,2019,2025
+2892,Vineet Padmanabhan,True,Guido Governatori,False,17,2001,2011
+238,C. Raghavendra Rao,False,Rajeev Wankar,True,16,2009,2019
+258,C. Raghavendra Rao,False,Arun Agarwal,True,15,2009,2016
+1178,Satish Narayana Srirama,True,Matthias Jarke,False,14,2006,2010
+1108,Satish Narayana Srirama,True,Huber Flores,False,14,2011,2015
+28,Alok Singh,True,Shyam Sundar,False,13,2010,2018
+2050,S. Durga Bhavani,True,T. Sobha Rani,True,12,2003,2024
+1616,Vineet Padmanabhan,True,Abdul Sattar,False,11,2000,2024
+263,Rajeev Wankar,True,Arun Agarwal,True,11,2008,2016
+221,Chillarige Raghavendra Rao,True,Arun Agarwal,True,11,2011,2022
+1180,Satish Narayana Srirama,True,Wolfgang Prinz,False,11,2006,2010
+500,Satish Narayana Srirama,True,Tarachand Amgoth,False,11,2019,2023
+1220,Anjeneya Swami Kare,True,Subrahmanyam Kalyanasundaram,False,10,2016,2022
+311,Vadlamani Ravi,False,Nekuri Naveen,True,10,2009,2013
+253,C. Raghavendra Rao,False,P. S. V. S. Sai Prasad,True,9,2009,2017
+218,Rajeev Wankar,True,Chillarige Raghavendra Rao,True,9,2010,2023
+1083,Satish Narayana Srirama,True,Mohan Liyanage,False,9,2014,2018
+17,Alok Singh,True,Marc Sevaux,False,9,2009,2021
+289,Atul Negi,True,Rajeev Wankar,True,9,2009,2013
+2473,Hrushikesha Mohanty,True,R. K. Ghosh,False,9,2002,2009
+2361,V. N. Sastry,False,Atul Negi,True,9,2004,2018
+1148,Satish Narayana Srirama,True,Carlos Paniagua,False,8,2011,2014
+1383,Arun Kumar Das,True,Joydeep Mukherjee,False,8,2019,2025
+2094,Arun K. Pujari,True,Bulusu Lakshmana Deekshatulu,False,8,2004,2007
+2779,Arun Agarwal,True,Khushboo Jain,False,8,2021,2023
+1214,Rahul Kumar Gautam,False,S. Durga Bhavani,True,8,2020,2025
+1213,Anjeneya Swami Kare,True,Rahul Kumar Gautam,False,8,2020,2025
+2085,Chakravarthy Bhagvati,True,Bulusu Lakshmana Deekshatulu,False,8,2004,2011
+439,Satish Narayana Srirama,True,Shivananda R. Poojara,False,8,2021,2024
+106,Siba K. Udgata,True,Shaik Shakeel Ahamad,False,8,2012,2016
+2060,Raju S. Bapi,False,T. Sobha Rani,True,8,2003,2011
+716,Satish Narayana Srirama,True,Jakob Mass,False,8,2014,2020
+1354,P. S. V. S. Sai Prasad,True,Anil Kumar,False,8,2019,2025
+2269,V. Ch. Venkaiah,True,Appala Naidu Tentu,False,8,2013,2021
+1215,Anjeneya Swami Kare,True,S. Durga Bhavani,True,8,2020,2025
+206,Avatharam Ganivada,True,Sankar K. Pal,False,8,2010,2017
+7,Alok Singh,True,Venkatesh Pandiri,False,8,2016,2024
+2173,Y. V. Subba Rao,True,N. Rukma Rekha,True,7,2011,2024
+2663,Arun K. Pujari,True,Sandeep Kumar Sahu,False,7,2015,2018
+2664,Vineet Padmanabhan,True,Sandeep Kumar Sahu,False,7,2015,2018
+2242,S. Durga Bhavani,True,T. Jaya Lakshmi,False,7,2014,2024
+1568,Vineet Padmanabhan,True,Akshay Badola,False,7,2018,2025
+2621,Arun K. Pujari,True,Sowmini Devi Veeramachaneni,False,7,2016,2023
+30,Alok Singh,True,Sachchida Nand Chaurasia,False,7,2014,2017
+2461,Hrushikesha Mohanty,True,Sapna P. G.,False,7,2007,2011
+1219,Anjeneya Swami Kare,True,N. R. Aravind,False,7,2016,2022
+2571,Chakravarthy Bhagvati,True,R. Padmavathy,False,7,2009,2015
+1120,Satish Narayana Srirama,True,Sea Ling,False,7,2012,2015
+123,Siba K. Udgata,True,V. N. Sastry,False,7,2012,2015
+2093,Arun K. Pujari,True,Chakravarthy Bhagvati,True,6,2004,2007
+11,Alok Singh,True,Gaurav Srivastava,False,6,2018,2023
+2405,Chakravarthy Bhagvati,True,P. Pavan Kumar,False,6,2011,2018
+2407,Arun Agarwal,True,P. Pavan Kumar,False,6,2011,2018
+2409,Arun Agarwal,True,Chakravarthy Bhagvati,True,6,2011,2018
+2460,Hrushikesha Mohanty,True,R. K. Shyamasundar,False,6,2003,2012
+1104,Satish Narayana Srirama,True,Eero Vainikko,False,6,2010,2016
+2185,Abdul Basit,False,V. Ch. Venkaiah,True,6,2017,2020
+1212,Sangam Balchandar Reddy,False,Anjeneya Swami Kare,True,6,2023,2026
+1121,Satish Narayana Srirama,True,Vladimir Sor,False,6,2011,2015
+1351,P. S. V. S. Sai Prasad,True,Pandu Sowkuntla,False,6,2019,2025
+47,Alok Singh,True,Ashok Kumar Gupta,False,6,2005,2007
+1636,Bapi Raju Surampudi,True,Manish Gupta,False,6,2022,2025
+1627,Bapi Raju Surampudi,True,Subba Reddy Oota,False,6,2022,2025
+140,Siba K. Udgata,True,Layak Ali,False,6,2009,2012
+136,Siba K. Udgata,True,S. Mini,False,6,2009,2013
+249,Arun Agarwal,True,Rajkumar Buyya,False,6,2013,2017
+2714,Arun K. Pujari,True,A. R. Dani,False,6,2005,2007
+187,Vineet Padmanabhan,True,Rajendra Prasad Lal,True,6,2015,2025
+5,Alok Singh,True,Rammohan Mallipeddi,False,6,2019,2025
+181,Vineet Padmanabhan,True,Prasad Bhavana,False,6,2019,2025
+1561,Rajeev Wankar,True,Jitendra Kumar Rai,False,5,2009,2011
+2566,Chakravarthy Bhagvati,True,Ilaiah Kavati,False,5,2013,2017
+183,Wilson Naik Bhukya,True,Vineet Padmanabhan,True,5,2011,2024
+2001,Bapi Raju Surampudi,True,Vadlamani Ravi,False,5,2009,2014
+435,Satish Narayana Srirama,True,Hina Anwar,False,5,2018,2025
+1151,Satish Narayana Srirama,True,Ilja Kromonov,False,5,2011,2014
+2933,Salman Abdul Moiz,True,N. Md. Jubair Basha,False,5,2012,2014
+203,Avatharam Ganivada,True,Rajarshi Pal,False,5,2021,2023
+2708,Arun K. Pujari,True,Sanjay Rawat,False,5,2004,2007
+588,Satish Narayana Srirama,True,Giuliano Casale,False,5,2017,2022
+2376,Atul Negi,True,Vijaya Kumar Kadappa,False,5,2010,2016
+284,Rajeev Wankar,True,Rafah M. Almuttairi,False,5,2010,2013
+2,Alok Singh,True,Edukondalu Chappidi,False,5,2022,2025
+1560,Atul Negi,True,Jitendra Kumar Rai,False,5,2009,2011
+202,Avatharam Ganivada,True,Shadab Ahmad,False,5,2021,2023
+294,Rajeev Wankar,True,Mustafa Kaiiali,False,5,2010,2017
+1541,Rajeev Wankar,True,B. M. Mehtre,False,5,2021,2024
+2567,Munaga V. N. K. Prasad,False,Chakravarthy Bhagvati,True,5,2013,2017
+442,Satish Narayana Srirama,True,Praveen Kumar Donta,False,5,2022,2024
+2576,Chakravarthy Bhagvati,True,Haritha Dasari,False,5,2005,2007
+436,Satish Narayana Srirama,True,Dietmar Pfahl,False,5,2018,2025
+497,Satish Narayana Srirama,True,Abhishek Hazra,False,5,2020,2023
+2061,S. Durga Bhavani,True,Raju S. Bapi,False,5,2003,2011
+1540,Rajeev Wankar,True,N. D. Patel,False,5,2021,2024
+2938,Salman Abdul Moiz,True,Lakshmi Rajamani,False,5,2007,2010
+2851,Arun Agarwal,True,Amar Gupta,False,5,1994,1999
+207,Avatharam Ganivada,True,Shubhra Sankar Ray,False,5,2011,2017
+2458,Hrushikesha Mohanty,True,Supriya Vaddi,False,4,2008,2014
+2823,Vineet Padmanabhan,True,Upendra Kumar Singh,False,4,2013,2014
+1498,Saifulla Md. Abdul,True,Amarajyothi Aramanda,False,4,2021,2025
+45,Alok Singh,True,Anurag Singh Baghel,False,4,2007,2009
+2455,Hrushikesha Mohanty,True,A. Vani Vathsala,False,4,2012,2015
+2000,Bapi Raju Surampudi,True,M. A. H. Farquad,False,4,2009,2014
+2720,Arun K. Pujari,True,V. Radha,False,4,2003,2005
+1421,Arun Kumar Das,True,Anil Maheshwari,False,4,2020,2023
+23,Alok Singh,True,Wilson Naik Bhukya,True,4,2011,2019
+2344,Atul Negi,True,Nenavath Srinivas Naik,False,4,2014,2019
+225,Arun Agarwal,True,Munaga V. N. K. Prasad,False,4,2012,2020
+2369,Atul Negi,True,Chakravarthy Bhagvati,True,4,2001,2017
+2243,S. Durga Bhavani,True,Monachary Kammari,False,4,2023,2024
+2699,Arun K. Pujari,True,Subrat Kumar Dash,False,4,2005,2011
+213,Sreenivasu Mirampalli,False,Satish Narayana Srirama,True,4,2023,2025
+214,Sreenivasu Mirampalli,False,Rajeev Wankar,True,4,2023,2025
+443,Satish Narayana Srirama,True,Schahram Dustdar,False,4,2022,2024
+2255,S. Durga Bhavani,True,K. Suvarna Vani,False,4,2011,2015
+216,Satish Narayana Srirama,True,Rajeev Wankar,True,4,2023,2025
+246,Arun Agarwal,True,Pramodkumar Konugurthi,False,4,2014,2017
+322,Rajeev Wankar,True,N. A. B. Sankar Chebolu,False,4,2012,2016
+1569,Rajendra Prasad Lal,True,Akshay Badola,False,4,2021,2025
+2182,N. Chaitanya Kumar,False,V. Ch. Venkaiah,True,4,2017,2019
+1192,Satish Narayana Srirama,True,Yiwei Cao,False,4,2006,2009
+2187,Priyadarshi Singh,False,V. Ch. Venkaiah,True,4,2017,2019
+2897,Vineet Padmanabhan,True,Antonino Rotolo,False,4,2006,2009
+402,Satish Narayana Srirama,True,Aditya Kumar,False,4,2021,2025
+425,Satish Narayana Srirama,True,Sukhpal Singh Gill,False,4,2021,2025
+468,Satish Narayana Srirama,True,Blesson Varghese,False,4,2017,2024
+1350,P. S. V. S. Sai Prasad,True,Abhimanyu Bar,False,4,2019,2026
+599,Satish Narayana Srirama,True,Rami Bahsoon,False,4,2017,2022
+223,Arun Agarwal,True,Hemantha Kumar Kalluri,False,4,2012,2020
+1288,Nagender Kumar Suryadevara,True,Subhas Mukhopadhyay,False,4,2015,2023
+2852,Arun Agarwal,True,Patrick Shen-Pei Wang,False,4,1994,1999
+2562,Chakravarthy Bhagvati,True,Niyishaka Patrick,False,4,2018,2022
+243,Arun Agarwal,True,Raghavendra Kune,False,4,2014,2017
+285,Atul Negi,True,Rafah M. Almuttairi,False,4,2010,2013
+34,Alok Singh,True,Anupama Potluri,True,4,2011,2013
+1683,Bapi Raju Surampudi,True,Mounika Marreddy,False,4,2022,2025
+29,Alok Singh,True,Jayalakshmi Banda,False,4,2014,2017
+290,Rajeev Wankar,True,Rajkumar Buyya,False,4,2013,2019
+1756,Bapi Raju Surampudi,True,Kamalaker Dadi,False,4,2022,2024
+24,Alok Singh,True,Abobakr Khalil Alshamiri,False,4,2014,2018
+2582,Arun K. Pujari,True,Challa S. Sastry,False,4,2004,2007
+25,Abobakr Khalil Alshamiri,False,Bapi Raju Surampudi,True,4,2014,2018
+764,Satish Narayana Srirama,True,Rodrigo N. Calheiros,False,4,2015,2019
+2634,Vineet Padmanabhan,True,Sowmini Devi Veeramachaneni,False,4,2019,2022
+26,Alok Singh,True,Bapi Raju Surampudi,True,4,2014,2018
+2671,Arun K. Pujari,True,Abdul Sattar,False,4,1999,2016
+55,Siba K. Udgata,True,Srinivas Sethi,False,4,2010,2024
+296,Arun Agarwal,True,Mustafa Kaiiali,False,4,2010,2013
+2330,Atul Negi,True,R. Aruna Flarence,False,3,2023,2025
+1223,Anjeneya Swami Kare,True,Sriram Bhyravarapu,False,3,2018,2021
+1225,Anjeneya Swami Kare,True,Saurabh Joshi,False,3,2018,2021
+2190,Chakravarthy Bhagvati,True,Y. V. Subba Rao,True,3,2012,2014
+64,Siba K. Udgata,True,Ajit Kumar Sahoo,False,3,2020,2023
+210,Bheekya Dharamsotu,False,Salman Abdul Moiz,True,3,2019,2025
+2124,Atul Negi,True,Bulusu Lakshmana Deekshatulu,False,3,2004,2011
+212,Salman Abdul Moiz,True,C. Raghavendra Rao,False,3,2019,2025
+1257,Anupama Potluri,True,Atul Negi,True,3,2007,2011
+231,Rajeev Wankar,True,Parwat Singh Anjana,False,3,2017,2019
+2229,Nekuri Naveen,True,Sabhapathy Myakal,False,3,2023,2025
+2230,Rajarshi Pal,False,Nekuri Naveen,True,3,2023,2025
+228,Salman Abdul Moiz,True,K. Swarupa Rani,True,3,2019,2026
+2239,S. Durga Bhavani,True,S. Tejaswi,False,3,2023,2026
+2240,V. N. Sastry,False,S. Durga Bhavani,True,3,2023,2026
+193,Vineet Padmanabhan,True,Kollapalli Ramesh Babu,False,3,2011,2018
+2241,S. Durga Bhavani,True,Ramesh Bobby Addanki,False,3,2020,2025
+515,Satish Narayana Srirama,True,Ambigavathi Munusamy,False,3,2022,2023
+1309,Nagender Kumar Suryadevara,True,Subhas C. Mukhopadhyay,False,3,2013,2015
+2252,S. Durga Bhavani,True,Prathuri Jhansi Rani,False,3,2011,2017
+244,Chillarige Raghavendra Rao,True,Raghavendra Kune,False,3,2014,2017
+2265,V. Ch. Venkaiah,True,Umesh Kumar,False,3,2022,2025
+247,Chillarige Raghavendra Rao,True,Pramodkumar Konugurthi,False,3,2014,2017
+250,Chillarige Raghavendra Rao,True,Rajkumar Buyya,False,3,2014,2017
+219,Tilottama Goswami,False,Arun Agarwal,True,3,2014,2022
+240,Rajeev Wankar,True,Vijaya Lakshmi V. Nadimpalli,False,3,2014,2017
+2306,V. Ch. Venkaiah,True,Prabal Paul,False,3,2013,2014
+2321,V. Ch. Venkaiah,True,Kishore Kothapalli,False,3,2008,2011
+462,Satish Narayana Srirama,True,Tek Raj Chhetri,False,3,2020,2024
+2328,Atul Negi,True,Mudavath Ravi,False,3,2024,2025
+2331,Atul Negi,True,Bogolu Rupa,False,3,2023,2025
+2339,Atul Negi,True,G. Madhuri,False,3,2021,2024
+2353,Atul Negi,True,Vijender Busi Reddy,False,3,2018,2019
+2356,Atul Negi,True,S. Venkataraman,False,3,2018,2019
+1395,Arun Kumar Das,True,Tomás Valla,False,3,2024,2025
+1412,Arun Kumar Das,True,Guilherme Dias da Fonseca,False,3,2022,2023
+1413,Arun Kumar Das,True,Yan Gerard,False,3,2022,2023
+1414,Arun Kumar Das,True,Bastien Rivier,False,3,2022,2023
+1422,Arun Kumar Das,True,Swami Sarvattomananda,False,3,2021,2023
+2342,Atul Negi,True,Tapan Kumar Sahoo,False,3,2015,2021
+1379,Arun Kumar Das,True,Sergio Cabello,False,3,2021,2025
+157,Siba K. Udgata,True,Gauri K. Udgata,False,3,2008,2010
+2391,Atul Negi,True,Kavitha Ammayappan,False,3,2011,2014
+48,P. Sruthi,False,Siba K. Udgata,True,3,2023,2024
+576,Satish Narayana Srirama,True,Giorgos Giotis,False,3,2020,2022
+2400,Atul Negi,True,Vijaya Kumar Koppula,False,3,2009,2012
+2415,Atul Negi,True,Kadappagari Vijaya Kumar,False,3,2007,2008
+9,Alok Singh,True,Kasi Viswanath Dasari,False,3,2021,2024
+2411,Atul Negi,True,G. Geethakumari,False,3,2005,2009
+555,Satish Narayana Srirama,True,Md. Redowan Mahmud,False,3,2019,2023
+180,Wilson Naik Bhukya,True,Rajendra Prasad Lal,True,3,2024,2025
+292,Atul Negi,True,Arun Agarwal,True,3,1995,2013
+1473,Saifulla Md. Abdul,True,Ruhul Amin,False,3,2025,2026
+1474,Saifulla Md. Abdul,True,Nemalikanti Anand,False,3,2023,2025
+116,Ayangleima Laishram,False,Vineet Padmanabhan,True,3,2016,2019
+536,Satish Narayana Srirama,True,Deepsubhra Guha Roy,False,3,2019,2023
+20,Alok Singh,True,Pandiri Venkatesh,False,3,2015,2020
+2456,Hrushikesha Mohanty,True,Lakshmi H. N.,False,3,2014,2015
+1500,Saifulla Md. Abdul,True,Radha Vedala,False,3,2021,2025
+2500,Hrushikesha Mohanty,True,Chit Htay Lwin,False,3,2004,2005
+2515,Hrushikesha Mohanty,True,Satyajit Acharya,False,3,2003,2005
+1563,Atul Negi,True,K. D. Nayak,False,3,2009,2010
+1564,Rajeev Wankar,True,K. D. Nayak,False,3,2009,2010
+703,Satish Narayana Srirama,True,Amnir Hadachi,False,3,2018,2020
+2534,K. Swarupa Rani,True,Bhargavi B.,False,3,2018,2022
+2560,Chakravarthy Bhagvati,True,Laiphangbam Melinda,False,3,2017,2023
+2575,Chakravarthy Bhagvati,True,S. M. Renuka Devi,False,3,2011,2011
+1598,Digambar Pawar,True,Pranitha Sanda,False,3,2022,2023
+2599,Narayana Murthy Kavi,True,Renjith P. Ravindran,False,3,2021,2023
+2606,Narayana Murthy Kavi,True,Guntur Bharadwaja Kumar,False,3,2006,2008
+1088,Satish Narayana Srirama,True,Sander Soo,False,3,2016,2017
+1052,Satish Narayana Srirama,True,Bowen Zhou,False,3,2015,2019
+2666,Vineet Padmanabhan,True,Tadiparthi V. R. Himabindu,False,3,2015,2018
+2667,Arun K. Pujari,True,Tadiparthi V. R. Himabindu,False,3,2015,2018
+312,Chillarige Raghavendra Rao,True,Vadlamani Ravi,False,3,2011,2012
+313,Chillarige Raghavendra Rao,True,Nekuri Naveen,True,3,2011,2012
+283,Chillarige Raghavendra Rao,True,P. S. V. S. Sai Prasad,True,3,2011,2014
+2638,Arun K. Pujari,True,Arko Banerjee,False,3,2009,2021
+1084,Satish Narayana Srirama,True,Jaagup Viil,False,3,2014,2018
+2723,Arun K. Pujari,True,Ravi Sankar Veerubhotla,False,3,2004,2005
+2725,Arun K. Pujari,True,Ashutosh Saxena,False,3,2004,2005
+2730,Arun K. Pujari,True,M. Sreenivasa Rao,False,3,1997,2004
+2775,Arun Agarwal,True,Kamlesh Kumar Raghuvanshi,False,3,2022,2023
+2772,Arun Agarwal,True,Yaswanth Gavini,False,3,2019,2023
+2774,Arun Agarwal,True,Babu M. Mehtre,False,3,2019,2023
+2798,Arun Agarwal,True,Saurabh N. Mehta,False,3,2018,2020
+2785,Arun Agarwal,True,Amita Dev,False,3,2018,2022
+1171,Satish Narayana Srirama,True,Oleg Batrashev,False,3,2010,2011
+6,Alok Singh,True,Sebanti Majumder,False,3,2023,2024
+342,C. Raghavendra Rao,False,Nekuri Naveen,True,3,2009,2010
+1196,Satish Narayana Srirama,True,Ralf Klamma,False,3,2006,2009
+1174,Satish Narayana Srirama,True,Mohamed Amine Chatti,False,3,2006,2010
+2848,Arun Agarwal,True,Karim Hussein,False,3,1995,1999
+199,Mohsin Furkh Dar,False,Avatharam Ganivada,True,3,2023,2025
+2083,Chakravarthy Bhagvati,True,Raju S. Bapi,False,3,2006,2007
+2902,Vineet Padmanabhan,True,Subhasis Thakur,False,3,2007,2008
+774,Satish Narayana Srirama,True,Pierangela Samarati,False,2,2017,2019
+1588,Digambar Pawar,True,Raghavendra Gowda,False,2,2023,2025
+775,Satish Narayana Srirama,True,Dejan S. Milojicic,False,2,2017,2019
+2879,Vineet Padmanabhan,True,Abinash Pujahari,False,2,2014,2015
+1602,Digambar Pawar,True,V. Radha,False,2,2022,2022
+776,Satish Narayana Srirama,True,Carlos A. Varela,False,2,2017,2019
+777,Satish Narayana Srirama,True,Marcos Dias de Assunção,False,2,2017,2019
+778,Satish Narayana Srirama,True,Omer F. Rana,False,2,2017,2019
+2598,Vibhuti Kumari,False,Narayana Murthy Kavi,True,2,2023,2024
+2600,Narayana Murthy Kavi,True,Ch. Ram Anirudh,False,2,2021,2023
+2092,Arun K. Pujari,True,Raju S. Bapi,False,2,2006,2007
+779,Satish Narayana Srirama,True,Wanlei Zhou,False,2,2017,2019
+780,Satish Narayana Srirama,True,Hai Jin,False,2,2017,2019
+1607,Battula Srinivasa Rao,True,Sukanya Pechetti,False,2,2023,2023
+781,Satish Narayana Srirama,True,Wolfgang Gentzsch,False,2,2017,2019
+1571,Vineet Padmanabhan,True,Wilson Naik,False,2,2024,2025
+251,Soumen Ghosh,False,P. S. V. S. Sai Prasad,True,2,2016,2017
+782,Satish Narayana Srirama,True,Albert Y. Zomaya,False,2,2017,2019
+783,Satish Narayana Srirama,True,Haiying Shen,False,2,2017,2019
+2617,Arun K. Pujari,True,Shamal Shaikh,False,2,2023,2024
+226,Chillarige Raghavendra Rao,True,Munaga V. N. K. Prasad,False,2,2016,2020
+1545,Rajeev Wankar,True,Raghavendra Kune,False,2,2018,2019
+234,Rajeev Wankar,True,Priyanka Badiwal,False,2,2018,2019
+2620,Arun K. Pujari,True,Adamya Shyam,False,2,2023,2024
+1094,Satish Narayana Srirama,True,Amir Vahid Dastjerdi,False,2,2015,2017
+1090,Satish Narayana Srirama,True,Seng W. Loke,False,2,2015,2017
+2653,Arun K. Pujari,True,Rasmikanta Pati,False,2,2021,2021
+2656,Arun K. Pujari,True,Padmavati Gahan,False,2,2021,2021
+2486,Hrushikesha Mohanty,True,Deepak Chenthati,False,2,2007,2008
+1668,Bapi Raju Surampudi,True,Khushbu Pahwa,False,2,2025,2025
+2643,Arun K. Pujari,True,Chhabi Rani Panigrahi,False,2,2020,2021
+2644,Arun K. Pujari,True,Bibudhendu Pati,False,2,2020,2021
+1542,Rajeev Wankar,True,Shashikant Ilager,False,2,2018,2019
+1677,Bapi Raju Surampudi,True,Maneesh Kumar Singh,False,2,2025,2025
+1081,Satish Narayana Srirama,True,Alireza Ostovar,False,2,2014,2018
+2675,Arun K. Pujari,True,Anubhuti Garg,False,2,2015,2015
+2677,Vineet Padmanabhan,True,Anubhuti Garg,False,2,2015,2015
+2474,Hrushikesha Mohanty,True,Martha VenkataSwamy,False,2,2009,2009
+127,Siba K. Udgata,True,Kiran Kumar Anumandla,False,2,2012,2013
+130,Siba K. Udgata,True,Rangababu Peesapati,False,2,2012,2013
+229,C. Raghavendra Rao,False,K. Swarupa Rani,True,2,2012,2019
+87,Siba K. Udgata,True,Vasavi Junapudi,False,2,2010,2018
+2210,T. Sobha Rani,True,Shailendra Sahu,False,2,2022,2022
+2678,S. Mini,False,Arun K. Pujari,True,2,2015,2015
+432,Satish Narayana Srirama,True,Chengzhong Xu,False,2,2024,2025
+431,Satish Narayana Srirama,True,Kejiang Ye,False,2,2024,2025
+539,Satish Narayana Srirama,True,Debashis De,False,2,2019,2023
+1511,Saifulla Md. Abdul,True,Muhammad Khurram Khan,False,2,2025,2025
+1505,Saifulla Md. Abdul,True,Sanjeev Kumar Dwivedi,False,2,2025,2025
+2668,Vineet Padmanabhan,True,Sowmini Devi V.,False,2,2014,2017
+2669,Arun K. Pujari,True,Sowmini Devi V.,False,2,2014,2017
+428,Satish Narayana Srirama,True,Muhammad Hafizhuddin Hilman,False,2,2024,2025
+2428,Atul Negi,True,Ashutosh Saxena,False,2,2004,2006
+1481,Saifulla Md. Abdul,True,Rizwan Patan,False,2,2025,2025
+2693,Arun K. Pujari,True,Mukesh K. Jadon,False,2,2013,2013
+1479,Saifulla Md. Abdul,True,Raveendra Babu Ponnuru,False,2,2025,2025
+1744,Atul Negi,True,Madhavi Alamuri,False,2,2014,2024
+332,Arun Agarwal,True,Maramreddy Umadevi,False,2,2011,2011
+1241,Anjeneya Swami Kare,True,I. Vinod Reddy,False,2,2019,2020
+2701,Arun K. Pujari,True,Manju Chaudhary,False,2,2009,2011
+144,Siba K. Udgata,True,Sesham Srinu,False,2,2012,2012
+337,P. S. V. S. Sai Prasad,True,K. Hima Bindu,False,2,2010,2011
+709,Satish Narayana Srirama,True,Kotagiri Ramamohanarao,False,2,2019,2020
+57,Siba K. Udgata,True,Gayathri Gorrepati,False,2,2023,2024
+291,Atul Negi,True,C. Raghavendra Rao,False,2,2010,2013
+179,Ali Nadim Alhaj,False,Rajendra Prasad Lal,True,2,2025,2025
+2717,Arun K. Pujari,True,Krishna Sandeep Reddy Dubba,False,2,2006,2006
+178,Wilson Naik Bhukya,True,Ali Nadim Alhaj,False,2,2025,2025
+2906,Vineet Padmanabhan,True,Jenny Eriksson Lundström,False,2,2007,2007
+13,Alok Singh,True,Mallikarjun Rao Nakkala,False,2,2021,2022
+264,Arun Agarwal,True,Morusupalli Raghava,False,2,2013,2016
+2700,Arun K. Pujari,True,Krupa Sagar Reddy,False,2,2005,2011
+2590,Arun K. Pujari,True,Priti Chandra,False,2,2004,2005
+2115,Atul Negi,True,Narri Yadaiah,False,2,2004,2006
+2910,Vineet Padmanabhan,True,Shazia Sadiq,False,2,2006,2006
+1764,Bapi Raju Surampudi,True,Praveen Kumar Vesapogu,False,2,2023,2023
+2381,Atul Negi,True,Kavitha Athota,False,2,2014,2015
+59,Siba K. Udgata,True,Rohit Kumar Bondugula,False,2,2023,2023
+1426,Arun Kumar Das,True,Aritra Banik,False,2,2020,2021
+2729,Arun K. Pujari,True,Challa Dhanunjaya Naidu,False,2,2002,2004
+2731,Arun K. Pujari,True,B. C. Jinaga,False,2,2002,2004
+1387,Arun Kumar Das,True,Bodhayan Roy,False,2,2024,2025
+1386,Arun Kumar Das,True,Ritam M. Mitra,False,2,2024,2025
+1385,Arun Kumar Das,True,Sk Samim Islam,False,2,2024,2025
+1394,Arun Kumar Das,True,Michal Opler,False,2,2025,2025
+2739,Arun K. Pujari,True,A. K. Shiny,False,2,1998,1999
+2121,Atul Negi,True,Raju S. Bapi,False,2,2004,2006
+2362,Atul Negi,True,Devarapalli Koteswara Rao,False,2,2017,2018
+2744,Arun K. Pujari,True,M. B. Sukhaswami,False,2,1995,1996
+1768,Bapi Raju Surampudi,True,Pindi Krishna Chandra Prasad,False,2,2022,2023
+1373,P. S. V. S. Sai Prasad,True,Praveen Kumar Singh,False,2,2016,2017
+82,Siba K. Udgata,True,Lalitha Krishnasamy,False,2,2017,2021
+2746,Arun K. Pujari,True,P. Seetharamulu,False,2,1991,1995
+2343,Atul Negi,True,Haider Banka,False,2,2020,2021
+272,Chillarige Raghavendra Rao,True,Vijaya Lakshmi V. Nadimpalli,False,2,2014,2014
+2326,V. Ch. Venkaiah,True,Syamal Kumar Sen,False,2,1990,1996
+1138,Satish Narayana Srirama,True,Vladislav Ivanistsev,False,2,2013,2015
+1887,Bapi Raju Surampudi,True,Jashn Arora,False,2,2022,2022
+1888,Bapi Raju Surampudi,True,Veeral Agarwal,False,2,2022,2022
+2753,Arun K. Pujari,True,B. Lavakusha,False,2,1989,1990
+2755,Arun K. Pujari,True,P. G. Reddy,False,2,1989,1990
+334,Chillarige Raghavendra Rao,True,Rafah M. Almuttairi,False,2,2010,2011
+335,Atul Negi,True,Chillarige Raghavendra Rao,True,2,2010,2011
+2324,V. Ch. Venkaiah,True,Eric A. Lord,False,2,1990,1996
+577,Satish Narayana Srirama,True,Gaurav Garg,False,2,2021,2022
+2307,V. Ch. Venkaiah,True,K. Ramanjaneyulu,False,2,2008,2014
+2770,Arun Agarwal,True,Shaktimayee Mishra,False,2,2024,2025
+2771,Arun Agarwal,True,Asit Kumar Panda,False,2,2024,2025
+2320,V. Ch. Venkaiah,True,Satish Varagani,False,2,2009,2011
+2778,Arun Agarwal,True,Amit Kumar Singh,False,2,2022,2023
+421,Satish Narayana Srirama,True,Minxian Xu,False,2,2024,2025
+2318,V. Ch. Venkaiah,True,Kishore Yadav,False,2,2009,2011
+1123,Satish Narayana Srirama,True,Nikita Salnikov-Tarnovski,False,2,2011,2015
+2296,V. Ch. Venkaiah,True,Dileep Kumar Pattipati,False,2,2014,2016
+589,Satish Narayana Srirama,True,Nicholas R. Jennings,False,2,2021,2022
+2784,Ajith Abraham,False,Arun Agarwal,True,2,2022,2022
+583,Satish Narayana Srirama,True,Shreshth Tuli,False,2,2021,2022
+2123,Atul Negi,True,V. Seshagiri Rao,False,2,2004,2006
+416,Satish Narayana Srirama,True,Linfeng Wen,False,2,2024,2025
+133,Siba K. Udgata,True,Ajith Abraham,False,2,2010,2013
+2929,Vineet Padmanabhan,True,Hau L. Lee,False,2,2004,2004
+1353,P. S. V. S. Sai Prasad,True,Vadlamudi Aadarsh,False,2,2023,2025
+1349,P. S. V. S. Sai Prasad,True,G. Y. Phani Kumar,False,2,2025,2026
+581,Satish Narayana Srirama,True,Neeraj Kumar,False,2,2021,2022
+2931,Vineet Padmanabhan,True,Seungjin Whang,False,2,2004,2004
+220,Chillarige Raghavendra Rao,True,Tilottama Goswami,False,2,2021,2022
+2263,S. Durga Bhavani,True,N. Ravi Shankar,False,2,2010,2010
+2820,Arun Agarwal,True,Akhter Mohiuddin Rather,False,2,2014,2015
+2822,V. N. Sastry,False,Arun Agarwal,True,2,2014,2015
+2932,Salman Abdul Moiz,True,Thirupathi Guggulothu,False,2,2019,2020
+2262,S. Durga Bhavani,True,V. Umakanta Sastry,False,2,2010,2010
+473,Satish Narayana Srirama,True,Suvam Basak,False,2,2022,2024
+330,Rajeev Wankar,True,Gutha Jaya Krishna,False,2,2011,2011
+532,Satish Narayana Srirama,True,Chandra Sekhara Rao Annavarapu,False,2,2022,2023
+470,Satish Narayana Srirama,True,Anna Fensel,False,2,2022,2024
+2824,Arun Agarwal,True,Upendra Kumar Singh,False,2,2013,2014
+2825,Vineet Padmanabhan,True,Arun Agarwal,True,2,2013,2014
+475,Satish Narayana Srirama,True,Bharadwaj Veeravalli,False,2,2023,2024
+77,Siba K. Udgata,True,Susil Kumar Mohanty,False,2,2020,2021
+1246,Anjeneya Swami Kare,True,Sanjeev Saxena,False,2,2013,2014
+2051,T. Sobha Rani,True,G. Narahari Sastry,False,2,2011,2011
+2053,S. Durga Bhavani,True,G. Narahari Sastry,False,2,2011,2011
+1302,Atul Negi,True,Srinivasa Raju Rudraraju,False,2,2019,2020
+2235,Nekuri Naveen,True,Manideepto-Das,False,2,2012,2012
+1239,Anjeneya Swami Kare,True,Juho Lauri,False,2,2017,2020
+1294,Nagender Kumar Suryadevara,True,Anindya Nag,False,2,2021,2022
+1279,Mohd Irfan,False,Nagender Kumar Suryadevara,True,2,2022,2024
+2862,Arun Agarwal,True,Lik Mui,False,2,1994,1994
+528,Satish Narayana Srirama,True,Varun G. Menon,False,2,2023,2023
+526,Satish Narayana Srirama,True,Mohammad Ayoub Khan,False,2,2023,2023
+2222,S. Durga Bhavani,True,D. Sandhya Rani,False,2,2014,2015
+2221,T. Sobha Rani,True,D. Sandhya Rani,False,2,2014,2015
+2177,Y. V. Subba Rao,True,Rolla Subrahmanyam,False,2,2023,2023
+2533,K. Swarupa Rani,True,Ashwitha Gatadi,False,2,2023,2024
+2529,K. Swarupa Rani,True,Maneesha Gudapati,False,2,2023,2025
+2524,K. Swarupa Rani,True,Harinath Kuruva,False,2,2023,2026
+2525,Salman Abdul Moiz,True,Harinath Kuruva,False,2,2023,2026
+2532,K. Swarupa Rani,True,A. Sandhya Rani,False,2,2023,2024
+2868,Vineet Padmanabhan,True,Gopal N. Rai,False,2,2015,2021
+1575,Vineet Padmanabhan,True,Cherian Roy,False,2,2021,2023
+1576,Rajendra Prasad Lal,True,Cherian Roy,False,2,2021,2023
+1051,Satish Narayana Srirama,True,Mohamed Faten Zhani,False,2,2018,2019
+1049,Satish Narayana Srirama,True,Jorge Bernal Bernabé,False,2,2018,2019
+3,Alok Singh,True,Mohd Danish Rasheed,False,2,2025,2025
+765,Satish Narayana Srirama,True,Yogesh Simmhan,False,2,2017,2019
+766,Satish Narayana Srirama,True,Erol Gelenbe,False,2,2017,2019
+767,Satish Narayana Srirama,True,Bahman Javadi,False,2,2017,2019
+768,Satish Narayana Srirama,True,Luis Miguel Vaquero,False,2,2017,2019
+2561,Chakravarthy Bhagvati,True,V. Padma,False,2,2021,2023
+2471,Hrushikesha Mohanty,True,Sanjay Madria,False,2,2003,2009
+2564,Chakravarthy Bhagvati,True,Rakesh Kummari,False,2,2018,2021
+769,Satish Narayana Srirama,True,Marco A. S. Netto,False,2,2017,2019
+2870,Vineet Padmanabhan,True,G. R. Gangadharan,False,2,2015,2021
+770,Satish Narayana Srirama,True,Adel Nadjaran Toosi,False,2,2017,2019
+771,Satish Narayana Srirama,True,Maria Alejandra Rodriguez,False,2,2017,2019
+2469,Hrushikesha Mohanty,True,T. Suman Kumar Reddy,False,2,2003,2009
+2516,Hrushikesha Mohanty,True,Chris George,False,2,2004,2005
+1047,Satish Narayana Srirama,True,Yehia Elkhatib,False,2,2018,2019
+1592,Digambar Pawar,True,Sonam Sharma,False,2,2025,2025
+2176,N. Rukma Rekha,True,Rolla Subrahmanyam,False,2,2023,2023
+1044,Satish Narayana Srirama,True,Félix Cuadrado,False,2,2018,2019
+1593,Digambar Pawar,True,Dipanjan Roy,False,2,2025,2025
+1040,Satish Narayana Srirama,True,Luis M. Vaquero,False,2,2018,2019
+772,Satish Narayana Srirama,True,Ignacio Martín Llorente,False,2,2017,2019
+773,Satish Narayana Srirama,True,Sabrina De Capitani di Vimercati,False,2,2017,2019
+2213,T. Sobha Rani,True,Swati Katiyar,False,1,2021,2021
+2214,S. Durga Bhavani,True,Swati Katiyar,False,1,2021,2021
+2215,Junaid Alam,False,T. Sobha Rani,True,1,2019,2019
+2216,T. Sobha Rani,True,Y. Divya Brahmani,False,1,2018,2018
+2217,S. Durga Bhavani,True,Y. Divya Brahmani,False,1,2018,2018
+2218,S. Durga Bhavani,True,Rodda Monica,False,1,2017,2017
+2219,T. Sobha Rani,True,Rodda Monica,False,1,2017,2017
+2220,T. Sobha Rani,True,C. V. Krishna Veni,False,1,2017,2017
+2223,T. Sobha Rani,True,P. V. Soujanya,False,1,2013,2013
+2225,T. Sobha Rani,True,P. Manasa,False,1,2012,2012
+2226,T. Sobha Rani,True,M. R. Prasad,False,1,2012,2012
+2227,T. Sobha Rani,True,A. Poorna Chandrasekhar,False,1,2012,2012
+2231,Nekuri Naveen,True,Mamillapalli Chilaka Rao,False,1,2016,2016
+2233,Nekuri Naveen,True,Mayank Pandey,False,1,2013,2013
+2236,Nekuri Naveen,True,Dudyala Anil Kumar,False,1,2009,2009
+2244,S. Durga Bhavani,True,Indu Rodda,False,1,2023,2023
+2245,S. Durga Bhavani,True,M. Dhilber,False,1,2020,2020
+2247,S. Durga Bhavani,True,Anu Beniwal,False,1,2020,2020
+2248,S. Durga Bhavani,True,Gourav Roy,False,1,2020,2020
+2249,S. Durga Bhavani,True,Ankur Sharma,False,1,2019,2019
+2250,S. Durga Bhavani,True,Ritwik Malla,False,1,2019,2019
+2251,S. Durga Bhavani,True,Vivek Singh Baghel,False,1,2018,2018
+2253,S. Durga Bhavani,True,D. Shiva Shankar,False,1,2016,2016
+2254,S. Durga Bhavani,True,Jatharakonda Mallesham,False,1,2016,2016
+2256,S. Durga Bhavani,True,Mohamed Mustafa Faisan,False,1,2014,2014
+2257,S. Durga Bhavani,True,Saifuddin Kaijar,False,1,2012,2012
+2258,S. Durga Bhavani,True,Somdatta Sinha,False,1,2011,2011
+2260,S. Durga Bhavani,True,Venkatesh Bandaru,False,1,2011,2011
+2264,Arun K. Pujari,True,S. Durga Bhavani,True,1,2004,2004
+2268,V. Ch. Venkaiah,True,Ajeet Singh,False,1,2021,2021
+2277,Salman Abdul Moiz,True,Abdul Basit,False,1,2020,2020
+2278,V. Ch. Venkaiah,True,Chanakya Patibandla,False,1,2020,2020
+2279,Salman Abdul Moiz,True,Chanakya Patibandla,False,1,2020,2020
+2280,Salman Abdul Moiz,True,V. Ch. Venkaiah,True,1,2020,2020
+2281,V. Ch. Venkaiah,True,Jyoti Lamba,False,1,2020,2020
+2294,V. Ch. Venkaiah,True,K. Bhavani,False,1,2017,2017
+2299,V. Ch. Venkaiah,True,Allam Appa Rao,False,1,2016,2016
+2300,V. Ch. Venkaiah,True,Lalitha Kiran Nemana,False,1,2016,2016
+2302,V. Ch. Venkaiah,True,Banita Mahapatra,False,1,2015,2015
+2304,V. Kamakshi Prasad,False,V. Ch. Venkaiah,True,1,2015,2015
+2308,V. Ch. Venkaiah,True,Neelima Jampala,False,1,2014,2014
+2309,V. Ch. Venkaiah,True,J. Rajendra Prasad,False,1,2014,2014
+2315,V. Ch. Venkaiah,True,D. M. Vinod Kumar,False,1,2011,2011
+2323,V. Ch. Venkaiah,True,Mukul S. Bansal,False,1,2005,2005
+2327,V. Ch. Venkaiah,True,Arogyaswami Paulraj,False,1,1994,1994
+2332,Atul Negi,True,Madhuri Gadwal,False,1,2024,2024
+2335,Atul Negi,True,Mrudula Sarvabhatla,False,1,2024,2024
+2337,Atul Negi,True,Konduru Upendra Raju,False,1,2024,2024
+2338,Atul Negi,True,Srinivasu Nulaka,False,1,2024,2024
+2340,Atul Negi,True,Nitin Sai Bommi,False,1,2023,2023
+2347,Atul Negi,True,B. R. Tapas Bapu,False,1,2019,2019
+2348,Atul Negi,True,R. Anitha,False,1,2019,2019
+2350,Salman Abdul Moiz,True,Abdulsalam Alammari,False,1,2019,2019
+2351,Atul Negi,True,Abdulsalam Alammari,False,1,2019,2019
+2352,Atul Negi,True,Salman Abdul Moiz,True,1,2019,2019
+2357,Atul Negi,True,V. Raghu Venkataraman,False,1,2019,2019
+2359,Atul Negi,True,Anish M. Rao,False,1,2019,2019
+2363,Atul Negi,True,Rajesh K,False,1,2018,2018
+2365,Chakravarthy Bhagvati,True,Sukumar Burra,False,1,2017,2017
+2366,Atul Negi,True,Sukumar Burra,False,1,2017,2017
+2367,Chakravarthy Bhagvati,True,Amit Patel,False,1,2017,2017
+2368,Atul Negi,True,Amit Patel,False,1,2017,2017
+2372,Atul Negi,True,Chandra Shekhar Verma,False,1,2017,2017
+2374,Atul Negi,True,V. Dinesh Reddy,False,1,2017,2017
+2375,Atul Negi,True,G. R. Gangadharan,False,1,2017,2017
+2377,Atul Negi,True,Devarapalli Koteswara,False,1,2016,2016
+2379,Atul Negi,True,T. Hitendra Sarma,False,1,2016,2016
+2380,Atul Negi,True,P. Viswanath,False,1,2016,2016
+2383,Atul Negi,True,Manoj Kumar Gundawar,False,1,2015,2015
+2384,Atul Negi,True,D. Koteswara Rao,False,1,2015,2015
+2386,Atul Negi,True,Mohsen Hallaj Asghar,False,1,2015,2015
+2388,Atul Negi,True,Nasibeh Mohammadzadeh,False,1,2015,2015
+2390,Atul Negi,True,Taraneh Kazerouni,False,1,2015,2015
+2393,Atul Negi,True,Suresh Kumar Thirupuranthakam,False,1,2014,2014
+2394,Atul Negi,True,Sujoy Sarkar,False,1,2013,2013
+2397,Atul Negi,True,Saumya Jetley,False,1,2012,2012
+2399,Atul Negi,True,Swapnil Belhe,False,1,2012,2012
+2401,Atul Negi,True,Samit Kumar Pradhan,False,1,2012,2012
+2403,Atul Negi,True,Ashok Kumar Das,False,1,2011,2011
+2406,Atul Negi,True,P. Pavan Kumar,False,1,2011,2011
+2410,Arun Agarwal,True,Bulusu Lakshmana Deekshatulu,False,1,2011,2011
+2414,Atul Negi,True,Utpal Garain,False,1,2009,2009
+2416,Atul Negi,True,B. Panigrahi,False,1,2006,2006
+2417,Atul Negi,True,Munaga V. N. K. Prasad,False,1,2006,2006
+2418,Atul Negi,True,Madhabananda Das,False,1,2006,2006
+2422,Atul Negi,True,N. Santosh Arjun,False,1,2006,2006
+2424,Atul Negi,True,Thulasi Goriparthi,False,1,2006,2006
+2426,Atul Negi,True,Manik Lal Das,False,1,2006,2006
+2430,Atul Negi,True,Sameer Verma,False,1,2005,2005
+2431,Atul Negi,True,Leigh Jin,False,1,2005,2005
+2432,Atul Negi,True,Jignesh Dholakia,False,1,2005,2005
+2434,Atul Negi,True,S. Rama Mohan,False,1,2005,2005
+2435,Atul Negi,True,C. V. Raman,False,1,2005,2005
+2437,Atul Negi,True,Sadybakasov Ulanbek,False,1,2004,2004
+2438,Atul Negi,True,Amarnath K. Koundinya,False,1,2004,2004
+2440,Atul Negi,True,K. Nikhil Shanker,False,1,2003,2003
+2441,Atul Negi,True,Chandra Kanth Chereddi,False,1,2003,2003
+2443,Chakravarthy Bhagvati,True,Tanuku Ravi,False,1,2002,2002
+2444,Chakravarthy Bhagvati,True,S. Mahesh Kumar,False,1,2002,2002
+2446,Atul Negi,True,Tanuku Ravi,False,1,2002,2002
+2447,Atul Negi,True,S. Mahesh Kumar,False,1,2002,2002
+2448,Atul Negi,True,B. Krishna,False,1,2001,2001
+2449,Chakravarthy Bhagvati,True,B. Krishna,False,1,2001,2001
+2450,Atul Negi,True,P. Sreedevi,False,1,1997,1997
+2451,Atul Negi,True,P. Debbarma,False,1,1997,1997
+2453,Atul Negi,True,K. S. Swaroop,False,1,1995,1995
+2454,Arun Agarwal,True,K. S. Swaroop,False,1,1995,1995
+2457,A. B. Sagar,False,Hrushikesha Mohanty,True,1,2014,2014
+2462,Hrushikesha Mohanty,True,Rajesh Kurra,False,1,2010,2010
+2466,Hrushikesha Mohanty,True,A. Tripathi,False,1,2009,2009
+2475,Hrushikesha Mohanty,True,Srini Ramaswamy,False,1,2009,2009
+2479,Hrushikesha Mohanty,True,Pillalamarri Thilak,False,1,2009,2009
+2480,Hrushikesha Mohanty,True,Srinivasan Ramaswamy,False,1,2009,2009
+2484,Hrushikesha Mohanty,True,A. Murali M. Rao,False,1,2008,2008
+2485,Hrushikesha Mohanty,True,Sumagna Patnaik,False,1,2008,2008
+2487,Hrushikesha Mohanty,True,R. K. Shyamsundar,False,1,2008,2008
+2491,Hrushikesha Mohanty,True,Jitesh Mulchandani,False,1,2007,2007
+2495,Hrushikesha Mohanty,True,G. Satya Reddy,False,1,2007,2007
+2496,Hrushikesha Mohanty,True,Kakarlamudi Prasad,False,1,2007,2007
+2499,Hrushikesha Mohanty,True,A. K. Prajapati,False,1,2006,2006
+2503,Hrushikesha Mohanty,True,Goutam Chakraborty,False,1,2005,2005
+2510,Hrushikesha Mohanty,True,Saurabh Aggarwala,False,1,2005,2005
+2512,Hrushikesha Mohanty,True,Hemant Mishra,False,1,2005,2005
+2513,Hrushikesha Mohanty,True,Ashish Sharma,False,1,2005,2005
+2517,Hrushikesha Mohanty,True,O. B. V. Ramanaiah,False,1,2004,2004
+2520,Hrushikesha Mohanty,True,Shravan K. Rayanchu,False,1,2003,2003
+2521,Hrushikesha Mohanty,True,Manas Ranjan Patra,False,1,2001,2001
+2522,Hrushikesha Mohanty,True,G. P. Bhattacharjee,False,1,1986,1986
+2526,K. Swarupa Rani,True,Chandana Narthu,False,1,2026,2026
+2527,Salman Abdul Moiz,True,Chandana Narthu,False,1,2026,2026
+2530,K. Swarupa Rani,True,Audrika Borah,False,1,2025,2025
+2536,K. Swarupa Rani,True,Arunjyoti Neog,False,1,2022,2022
+2537,Chakravarthy Bhagvati,True,Madhuri Latha Madaka,False,1,2025,2025
+2538,Chakravarthy Bhagvati,True,Yogesh Surapaneni,False,1,2024,2024
+2543,Chakravarthy Bhagvati,True,Arkaprabha Basu,False,1,2023,2023
+2548,Chakravarthy Bhagvati,True,Sandip Paul,False,1,2023,2023
+2552,Chakravarthy Bhagvati,True,Sreeya Ghosh,False,1,2023,2023
+2555,Chakravarthy Bhagvati,True,Swagatam Das,False,1,2023,2023
+2557,Chakravarthy Bhagvati,True,Bhabatosh Chanda,False,1,2023,2023
+2559,Chakravarthy Bhagvati,True,Václav Snásel,False,1,2023,2023
+2563,Chakravarthy Bhagvati,True,K. H. Salman,False,1,2021,2021
+2568,Chakravarthy Bhagvati,True,Deepthi Kalavala,False,1,2017,2017
+2570,Chakravarthy Bhagvati,True,Raghu Ghanapuram,False,1,2017,2017
+2572,Chakravarthy Bhagvati,True,Dilip Kumar Nayak,False,1,2013,2013
+2573,Chakravarthy Bhagvati,True,J. V. R. Sagar,False,1,2013,2013
+2574,Chakravarthy Bhagvati,True,N. Anil Kumar,False,1,2012,2012
+2578,Chakravarthy Bhagvati,True,R. K. Jain,False,1,2005,2005
+2579,Chakravarthy Bhagvati,True,K. Jalaja,False,1,2005,2005
+2581,Arun K. Pujari,True,K. Jalaja,False,1,2005,2005
+2584,Chakravarthy Bhagvati,True,Challa S. Sastry,False,1,2004,2004
+2586,Chakravarthy Bhagvati,True,J. Nileema,False,1,2004,2004
+2587,Arun K. Pujari,True,J. Nileema,False,1,2004,2004
+2589,Chakravarthy Bhagvati,True,Priti Chandra,False,1,2004,2004
+2592,Chakravarthy Bhagvati,True,K. Kiran Kumar,False,1,2004,2004
+2593,Arun K. Pujari,True,K. Kiran Kumar,False,1,2004,2004
+2595,Chakravarthy Bhagvati,True,Michael M. Skolnick,False,1,1994,1994
+2596,Chakravarthy Bhagvati,True,Dimitri A. Grivas,False,1,1994,1994
+2602,Akshay Badola,False,Narayana Murthy Kavi,True,1,2021,2021
+2603,Narayana Murthy Kavi,True,Srinivasu Badugu,False,1,2013,2013
+2604,Narayana Murthy Kavi,True,Hla Hla Htay,False,1,2008,2008
+2605,Narayana Murthy Kavi,True,P. Srikanth,False,1,2008,2008
+2607,Narayana Murthy Kavi,True,K. Raghuveer,False,1,2007,2007
+2608,Narayana Murthy Kavi,True,Sasi Kanth Ala,False,1,2004,2004
+2609,Arun K. Pujari,True,Aditya Sai Ellendula,False,1,2025,2025
+2627,Arun K. Pujari,True,Anshuman Singh,False,1,2023,2023
+2631,Arun K. Pujari,True,Pavan Kalyan Reddy Neerudu,False,1,2023,2023
+2633,Rohit Kumar Bondugula,False,Arun K. Pujari,True,1,2023,2023
+2645,Arun K. Pujari,True,Suvendu Chandan Nayak,False,1,2021,2021
+2646,Arun K. Pujari,True,Tien-Hsiung Weng,False,1,2021,2021
+2659,Arun K. Pujari,True,Haris Aziz,False,1,2021,2021
+2660,Vineet Padmanabhan,True,Haris Aziz,False,1,2021,2021
+2672,Arun K. Pujari,True,K. H. Salman,False,1,2016,2016
+2679,Vineet Padmanabhan,True,Pranay Goud,False,1,2015,2015
+2680,Vineet Padmanabhan,True,Harshit Sethy,False,1,2015,2015
+2681,Arun K. Pujari,True,Pranay Goud,False,1,2015,2015
+2683,Arun K. Pujari,True,Harshit Sethy,False,1,2015,2015
+2685,Arun K. Pujari,True,Trideba Padhi,False,1,2015,2015
+2686,Arun K. Pujari,True,Prabhanjan Sahoo,False,1,2015,2015
+2692,Arun K. Pujari,True,Krutika Verma,False,1,2013,2013
+2694,Arun K. Pujari,True,Chandana Mitra,False,1,2013,2013
+2696,Arun K. Pujari,True,Anil Goyal,False,1,2013,2013
+2697,Arun K. Pujari,True,Tusar Kanti Mishra,False,1,2012,2012
+2702,Arun K. Pujari,True,P. Rajasekhara,False,1,2010,2010
+2703,Arun K. Pujari,True,Alok Sharma,False,1,2007,2007
+2705,Arun K. Pujari,True,Kuldip K. Paliwal,False,1,2007,2007
+2712,Arun K. Pujari,True,M. Ravindranath,False,1,2007,2007
+2727,Arun K. Pujari,True,Mala Dutta,False,1,2005,2005
+2728,Arun K. Pujari,True,Anjana Kakoti Mahanta,False,1,2005,2005
+2735,Arun K. Pujari,True,T. Adilakshmi,False,1,2004,2004
+2736,Vineet Padmanabhan,True,Chinmoy Goswami,False,1,2000,2000
+2738,Arun K. Pujari,True,Chinmoy Goswami,False,1,2000,2000
+2740,Arun K. Pujari,True,G. Vijaya Kumari,False,1,1999,1999
+2743,Arun K. Pujari,True,Bala Srinivasan,False,1,1997,1997
+2748,Arun K. Pujari,True,V. B. Nitya,False,1,1992,1992
+2749,Arun K. Pujari,True,N. Sridevi,False,1,1992,1992
+2750,Arun K. Pujari,True,Deepak Bhatnagar,False,1,1991,1991
+2752,Arun K. Pujari,True,K. Shanmukh,False,1,1991,1991
+2757,Arun K. Pujari,True,Anita G. Pai,False,1,1990,1990
+2758,Arun K. Pujari,True,H. Usha,False,1,1990,1990
+2759,Arun Agarwal,True,R. Ethindra Kumar,False,1,1990,1990
+2760,Arun K. Pujari,True,R. Ethindra Kumar,False,1,1990,1990
+2761,Arun K. Pujari,True,Arun Agarwal,True,1,1990,1990
+2762,Arun K. Pujari,True,S. L. Mehndiratta,False,1,1985,1985
+2763,Arun K. Pujari,True,Ashok K. Mittal,False,1,1983,1983
+2764,Arun K. Pujari,True,S. K. Gupta,False,1,1983,1983
+2766,Arun Agarwal,True,Upali Aparajita Dash,False,1,2025,2025
+2768,Arun Agarwal,True,Sasmita Pahadsingh,False,1,2025,2025
+2781,Arun Agarwal,True,Rakesh Kumar Yadav,False,1,2023,2023
+2787,Arun Agarwal,True,V. B. Singh,False,1,2022,2022
+2792,Arun Agarwal,True,Pawan Singh Mehra,False,1,2022,2022
+2793,Arun Agarwal,True,Anshu Kumar Dwivedi,False,1,2022,2022
+2795,Arun Agarwal,True,Ashima Jain,False,1,2022,2022
+2800,Arun Agarwal,True,Chariklia Georgopoulou,False,1,2016,2016
+2805,Arun Agarwal,True,Swati Jain,False,1,2016,2016
+2810,Arun Agarwal,True,Edward Rode,False,1,2016,2016
+2811,Arun Agarwal,True,George Dimopoulos,False,1,2016,2016
+2812,Arun Agarwal,True,Narasi Sridhar,False,1,2016,2016
+2813,Arun Agarwal,True,Nikolaos Kakalis,False,1,2016,2016
+2826,Arun Agarwal,True,Kabita Agarwal,False,1,2013,2013
+2827,Arun Agarwal,True,Ted Xenodemetropoulos,False,1,2013,2013
+2828,Arun Agarwal,True,Yumna Abdelrahman,False,1,2013,2013
+2829,Arun Agarwal,True,Michael Dohan,False,1,2013,2013
+2830,Arun Agarwal,True,K. Ann McKibbon,False,1,2013,2013
+2831,Arun Agarwal,True,Joseph Tan,False,1,2013,2013
+2842,Arun Agarwal,True,Pramod Kumar Konugurthi,False,1,2004,2004
+2844,Arun Agarwal,True,R. Krishnan,False,1,2004,2004
+2846,Arun Agarwal,True,A. H. Abdul Hafez,False,1,2004,2004
+2847,Arun Agarwal,True,Ahmed Alrabie,False,1,2004,2004
+2854,Arun Agarwal,True,Homayoun Navabi,False,1,1998,1998
+2855,Arun Agarwal,True,Patrick S. P. Wang,False,1,1996,1996
+2858,Arun Agarwal,True,Len Granowetter,False,1,1995,1995
+2866,Vineet Padmanabhan,True,Brahmani Nutakki,False,1,2022,2022
+2872,Vineet Padmanabhan,True,Rajkumar Buyya,False,1,2021,2021
+2875,Vineet Padmanabhan,True,Thomas Cherian,False,1,2018,2018
+2877,Vineet Padmanabhan,True,Vidyadhar Rao,False,1,2017,2017
+2878,Vineet Padmanabhan,True,Rosni K. Vasu,False,1,2017,2017
+2881,Vineet Padmanabhan,True,Krishna Charan Meka,False,1,2015,2015
+2882,Vineet Padmanabhan,True,Abhishek Anand,False,1,2013,2013
+2883,Vineet Padmanabhan,True,Prabhu Kiran,False,1,2013,2013
+2886,Vineet Padmanabhan,True,Kaifu Zhang,False,1,2012,2012
+2888,Vineet Padmanabhan,True,Theodoros Evgeniou,False,1,2012,2012
+2890,Vineet Padmanabhan,True,Emile Richard,False,1,2012,2012
+2891,Vineet Padmanabhan,True,Pushan Dutt,False,1,2011,2011
+2899,Vineet Padmanabhan,True,Rakesh Niraj,False,1,2008,2008
+2901,Vineet Padmanabhan,True,P. B. Seetharaman,False,1,2008,2008
+2908,Vineet Padmanabhan,True,Ruopeng Lu,False,1,2006,2006
+2912,Vineet Padmanabhan,True,Robert M. Colomb,False,1,2006,2006
+2921,Vineet Padmanabhan,True,Kaile Su,False,1,2005,2005
+2926,Vineet Padmanabhan,True,Kewen Wang,False,1,2005,2005
+2928,Vineet Padmanabhan,True,Xiangyu Luo,False,1,2005,2005
+2935,Salman Abdul Moiz,True,Mohammed Rizwanullah,False,1,2012,2012
+2937,Salman Abdul Moiz,True,A. A. Moiz Qyser,False,1,2012,2012
+2939,Salman Abdul Moiz,True,Supriya N. Pal,False,1,2010,2010
+2941,Salman Abdul Moiz,True,Mohammed Khaja Nizamuddin,False,1,2008,2008
+1566,Rajeev Wankar,True,Pradeep Kumar Nalla,False,1,2008,2008
+8,Alok Singh,True,Pritibahen Sumanbhai Patel,False,1,2024,2024
+32,Alok Singh,True,Vuyyuru Gopinadh,False,1,2015,2015
+33,Alok Singh,True,C. G. Nitash,False,1,2014,2014
+35,Alok Singh,True,V. Venkata Ramana Murthy,False,1,2013,2013
+36,Alok Singh,True,Lakshmi Kanth Munganda,False,1,2013,2013
+37,Alok Singh,True,Jorge M. S. Valente,False,1,2012,2012
+38,Alok Singh,True,Maria do Rosário Alves Moreira,False,1,2012,2012
+40,Alok Singh,True,Manohar Pallantla,False,1,2012,2012
+43,Alok Singh,True,Martin Josef Geiger,False,1,2011,2011
+44,Alok Singh,True,Santhosh Peddi,False,1,2011,2011
+46,Alok Singh,True,Srikanth Pulikanti,False,1,2009,2009
+49,Siba K. Udgata,True,Pravindra Shekhar Shakunt,False,1,2024,2024
+52,Siba K. Udgata,True,Ramesh Kumar Sahoo,False,1,2024,2024
+54,Siba K. Udgata,True,Sateesh Kumar Pradhan,False,1,2024,2024
+58,Siba K. Udgata,True,Sruthi P,False,1,2024,2024
+61,Siba K. Udgata,True,Kaushik Bhargav Sivangi,False,1,2023,2023
+63,Siba K. Udgata,True,Sriyanka Satapathy,False,1,2023,2023
+65,Siba K. Udgata,True,Dipak K. Agrawal,False,1,2023,2023
+67,Siba K. Udgata,True,Wipawee Usaha,False,1,2023,2023
+70,Siba K. Udgata,True,Bhawani Shankar Pattnaik,False,1,2022,2022
+72,Siba K. Udgata,True,Arunima Sambhuta Pattanayak,False,1,2022,2022
+74,Siba K. Udgata,True,Ajit Kumar Panda,False,1,2022,2022
+75,Siba K. Udgata,True,Yogendra Kumar,False,1,2022,2022
+76,Siba K. Udgata,True,Somayya Avadut,False,1,2022,2022
+78,Siba K. Udgata,True,Gowthami Javvaji,False,1,2021,2021
+79,Siba K. Udgata,True,Poongodi Chinnasamy,False,1,2021,2021
+83,Siba K. Udgata,True,Jeevanantham A,False,1,2021,2021
+85,Siba K. Udgata,True,Supriya Das,False,1,2021,2021
+86,Siba K. Udgata,True,Arun Avinash Chauhan,False,1,2020,2020
+89,Siba K. Udgata,True,Pavan Kumar Mishra,False,1,2018,2018
+91,Siba K. Udgata,True,Sudhakar Pandey,False,1,2018,2018
+93,Siba K. Udgata,True,Sanjay Kumar Biswash,False,1,2018,2018
+97,Siba K. Udgata,True,R. Thangarajan,False,1,2017,2017
+100,Siba K. Udgata,True,Chinnasamy Poongodi,False,1,2017,2017
+101,Siba K. Udgata,True,Ambika Prasad Sahu,False,1,2017,2017
+104,Siba K. Udgata,True,Hisham M. Alsaghier,False,1,2016,2016
+108,Siba K. Udgata,True,L. S. S. Reddy,False,1,2016,2016
+111,Siba K. Udgata,True,H. Yerranna,False,1,2016,2016
+114,Siba K. Udgata,True,D. K. Sunil,False,1,2016,2016
+117,Siba K. Udgata,True,Ayangleima Laishram,False,1,2016,2016
+118,Satya Prakash Sahu,False,Vineet Padmanabhan,True,1,2016,2016
+119,Siba K. Udgata,True,Satya Prakash Sahu,False,1,2016,2016
+120,Siba K. Udgata,True,Vineet Padmanabhan,True,1,2016,2016
+122,Siba K. Udgata,True,Anup Kumar Maurya,False,1,2015,2015
+135,Siba K. Udgata,True,Madhusoodhnan Nair,False,1,2013,2013
+138,Siba K. Udgata,True,Nagarjuna Reddy Busireddy,False,1,2013,2013
+145,Siba K. Udgata,True,A. Raveendranadh,False,1,2012,2012
+146,Siba K. Udgata,True,Alefiah Mubeen,False,1,2011,2011
+149,Siba K. Udgata,True,Shravan Kudikala,False,1,2011,2011
+150,Siba K. Udgata,True,Dama Lavanya,False,1,2011,2011
+151,Siba K. Udgata,True,Moumita Patra,False,1,2011,2011
+152,Siba K. Udgata,True,Deepak K. Tosh,False,1,2011,2011
+155,Siba K. Udgata,True,K. P. N. Murthy,False,1,2010,2010
+159,Siba K. Udgata,True,Amit K. Sharma,False,1,2009,2009
+160,Amit K. Sharma,False,Arun K. Pujari,True,1,2009,2009
+161,Siba K. Udgata,True,Nikunj Thakral,False,1,2009,2009
+162,Nikunj Thakral,False,Arun K. Pujari,True,1,2009,2009
+163,Siba K. Udgata,True,Arun K. Pujari,True,1,2009,2009
+165,Siba K. Udgata,True,Shravan Kumar,False,1,2009,2009
+166,Siba K. Udgata,True,Shobhit Srivastava,False,1,2008,2008
+167,Siba K. Udgata,True,Hitesh Mahajan,False,1,2008,2008
+171,Siba K. Udgata,True,U. Anuradha,False,1,2008,2008
+172,Siba K. Udgata,True,G. Pavan Kumar,False,1,2008,2008
+176,Siba K. Udgata,True,Jay S. Bagga,False,1,2003,2003
+177,Siba K. Udgata,True,Dang Van Hung,False,1,2003,2003
+182,Wilson Naik Bhukya,True,Prasad Bhavana,False,1,2024,2024
+184,Vineet Padmanabhan,True,Shivanvitha Ambati,False,1,2024,2024
+185,Wilson Naik Bhukya,True,Shivanvitha Ambati,False,1,2024,2024
+186,Rajendra Prasad Lal,True,Shivanvitha Ambati,False,1,2024,2024
+188,Vineet Padmanabhan,True,Nageswar Rao Kota,False,1,2023,2023
+189,Wilson Naik Bhukya,True,Nageswar Rao Kota,False,1,2023,2023
+190,Wilson Naik Bhukya,True,Hamed Saljooghinejad,False,1,2012,2012
+191,Vineet Padmanabhan,True,Siva Krishna Seemala,False,1,2011,2011
+192,Wilson Naik Bhukya,True,Siva Krishna Seemala,False,1,2011,2011
+194,Wilson Naik Bhukya,True,Kollapalli Ramesh Babu,False,1,2011,2011
+195,Wilson Naik Bhukya,True,Sateesh Kumar Banothu,False,1,2011,2011
+196,Wilson Naik Bhukya,True,Suneel Kumar Kommuru,False,1,2007,2007
+197,Wilson Naik Bhukya,True,Atul Negi,True,1,2007,2007
+198,Suneel Kumar Kommuru,False,Atul Negi,True,1,2007,2007
+200,Avatharam Ganivada,True,Srinivas Yara,False,1,2023,2023
+204,Avatharam Ganivada,True,Sheela Ramanna,False,1,2022,2022
+208,Avatharam Ganivada,True,Soumitra Dutta,False,1,2011,2011
+215,Sreenivasu Mirampalli,False,Chillarige Raghavendra Rao,True,1,2023,2023
+217,Satish Narayana Srirama,True,Chillarige Raghavendra Rao,True,1,2023,2023
+224,Chillarige Raghavendra Rao,True,Hemantha Kumar Kalluri,False,1,2020,2020
+227,Bheekya Dharamsotu,False,K. Swarupa Rani,True,1,2019,2019
+237,Rajeev Wankar,True,Swaroop Kallakuri,False,1,2019,2019
+255,Chillarige Raghavendra Rao,True,Mulagala Sandhya,False,1,2016,2016
+261,Rajeev Wankar,True,Kirti,False,1,2016,2016
+262,Arun Agarwal,True,Kirti,False,1,2016,2016
+275,Arun Agarwal,True,Mousumi Roy,False,1,2014,2014
+276,Rajeev Wankar,True,Mousumi Roy,False,1,2014,2014
+277,Chillarige Raghavendra Rao,True,Mousumi Roy,False,1,2014,2014
+278,Arun Agarwal,True,Apparao Allam,False,1,2014,2014
+279,Rajeev Wankar,True,Apparao Allam,False,1,2014,2014
+280,Chillarige Raghavendra Rao,True,Apparao Allam,False,1,2014,2014
+281,P. S. V. S. Sai Prasad,True,Raveen S.,False,1,2014,2014
+282,Chillarige Raghavendra Rao,True,Raveen S.,False,1,2014,2014
+287,Arun Agarwal,True,Rafah M. Almuttairi,False,1,2013,2013
+293,Atul Negi,True,Rajkumar Buyya,False,1,2013,2013
+298,Arun Agarwal,True,Tarun Dhariwal,False,1,2013,2013
+300,Rajeev Wankar,True,B. Vikranth,False,1,2013,2013
+302,Rajeev Wankar,True,Vinay Kumar Verma,False,1,2013,2013
+304,Arun Agarwal,True,Vinay Kumar Verma,False,1,2013,2013
+309,Paramjeet,False,Nekuri Naveen,True,1,2012,2012
+310,Chillarige Raghavendra Rao,True,Paramjeet,False,1,2012,2012
+314,Rajeev Wankar,True,Sitaramaiah Ramisetti,False,1,2012,2012
+316,Chillarige Raghavendra Rao,True,Mustafa Kaiiali,False,1,2012,2012
+317,Rajeev Wankar,True,Snehal Masne,False,1,2012,2012
+318,Chillarige Raghavendra Rao,True,Snehal Masne,False,1,2012,2012
+319,Arun Agarwal,True,Snehal Masne,False,1,2012,2012
+320,Arun Agarwal,True,Chitti Kokil Kumar,False,1,2012,2012
+321,Chillarige Raghavendra Rao,True,Chitti Kokil Kumar,False,1,2012,2012
+323,Chillarige Raghavendra Rao,True,N. A. B. Sankar Chebolu,False,1,2012,2012
+324,Arun Agarwal,True,Rusydi Umar,False,1,2012,2012
+326,K. Swarupa Rani,True,V. Kamakshi Prasad,False,1,2012,2012
+331,Chillarige Raghavendra Rao,True,Hima Bindu Kommanti,False,1,2011,2011
+333,Chillarige Raghavendra Rao,True,Maramreddy Umadevi,False,1,2011,2011
+336,Chillarige Raghavendra Rao,True,K. Swarupa Rani,True,1,2011,2011
+338,Rajeev Wankar,True,Praveen Ganghishetti,False,1,2011,2011
+343,Nekuri Naveen,True,Nikunj Chauhan,False,1,2010,2010
+356,Arun Agarwal,True,B. Sandhya,False,1,2009,2009
+358,Rajeev Wankar,True,B. Sandhya,False,1,2009,2009
+359,Arun Agarwal,True,M. Uma Devi,False,1,2009,2009
+404,Satish Narayana Srirama,True,Ali Zahir,False,1,2025,2025
+406,Satish Narayana Srirama,True,Ashiq Anjum,False,1,2025,2025
+409,Satish Narayana Srirama,True,Anusri Sanyadanam,False,1,2025,2025
+410,Arun Agarwal,True,Rahul Siyanwal,False,1,2025,2025
+411,Satish Narayana Srirama,True,Rahul Siyanwal,False,1,2025,2025
+412,Satish Narayana Srirama,True,Arun Agarwal,True,1,2025,2025
+447,Satish Narayana Srirama,True,Prabhakar Krishnan,False,1,2024,2024
+451,Satish Narayana Srirama,True,Kurunandan Jain,False,1,2024,2024
+456,Satish Narayana Srirama,True,Tulika Pandey,False,1,2024,2024
+458,Satish Narayana Srirama,True,Sucharitha Isukapalli,False,1,2024,2024
+472,Satish Narayana Srirama,True,Rance J. DeLong,False,1,2024,2024
+476,Satish Narayana Srirama,True,Rajesh Thalla,False,1,2024,2024
+478,Satish Narayana Srirama,True,Maria Rodriguez Read,False,1,2024,2024
+481,Satish Narayana Srirama,True,Deepika Vemuri,False,1,2023,2023
+487,Satish Narayana Srirama,True,Banoth Ravi,False,1,2023,2023
+494,Satish Narayana Srirama,True,Ilir Murturi,False,1,2023,2023
+503,Satish Narayana Srirama,True,Sultan Altarrazi,False,1,2023,2023
+506,Satish Narayana Srirama,True,Tomasz Szydlo,False,1,2023,2023
+509,Satish Narayana Srirama,True,Rajiv Ranjan,False,1,2023,2023
+523,Satish Narayana Srirama,True,Venki Balasubramanian,False,1,2023,2023
+529,Satish Narayana Srirama,True,Danda B. Rawat,False,1,2023,2023
+538,Satish Narayana Srirama,True,Bipasha Mahato,False,1,2023,2023
+548,Satish Narayana Srirama,True,Linss T. Alex,False,1,2023,2023
+549,Satish Narayana Srirama,True,Mohammad Reza Khosravi,False,1,2023,2023
+556,Satish Narayana Srirama,True,Mohammad Goudarzi,False,1,2023,2023
+557,Satish Narayana Srirama,True,Leila Ismail,False,1,2023,2023
+558,Satish Narayana Srirama,True,Vassilis Kostakos,False,1,2023,2023
+567,Satish Narayana Srirama,True,Artjom Lind,False,1,2022,2022
+593,Satish Narayana Srirama,True,Argo Jõeleht,False,1,2022,2022
+600,Satish Narayana Srirama,True,San Murugesan,False,1,2022,2022
+602,Satish Narayana Srirama,True,Freddy Marcelo Surriabre Dick,False,1,2021,2021
+607,Satish Narayana Srirama,True,Anish Jindal,False,1,2021,2021
+608,Satish Narayana Srirama,True,Massimo Villari,False,1,2021,2021
+611,Satish Narayana Srirama,True,Shridhar G. Domanal,False,1,2021,2021
+632,Satish Narayana Srirama,True,Matej Artac,False,1,2020,2020
+643,Satish Narayana Srirama,True,Willem-Jan van den Heuvel,False,1,2020,2020
+653,Satish Narayana Srirama,True,André van Hoorn,False,1,2020,2020
+669,Satish Narayana Srirama,True,Frank Leymann,False,1,2020,2020
+676,Satish Narayana Srirama,True,M. Long,False,1,2020,2020
+682,Satish Narayana Srirama,True,V. Papanikolaou,False,1,2020,2020
+687,Satish Narayana Srirama,True,Domenico Presenza,False,1,2020,2020
+691,Satish Narayana Srirama,True,Alessandra Russo,False,1,2020,2020
+695,Satish Narayana Srirama,True,Damian A. Tamburri,False,1,2020,2020
+696,Satish Narayana Srirama,True,Michael Wurster,False,1,2020,2020
+697,Satish Narayana Srirama,True,Lulai Zhu,False,1,2020,2020
+705,Satish Narayana Srirama,True,Mithun Mukherjee,False,1,2020,2020
+706,Satish Narayana Srirama,True,Souvik Paul,False,1,2020,2020
+711,Satish Narayana Srirama,True,Muhammed Tawfiqul Islam,False,1,2020,2020
+714,Satish Narayana Srirama,True,Shanika Karunasekera,False,1,2020,2020
+720,Satish Narayana Srirama,True,Vasilis Tountopoulos,False,1,2020,2020
+724,Satish Narayana Srirama,True,Fauzia Khan,False,1,2020,2020
+726,Satish Narayana Srirama,True,Joaquin Chung,False,1,2020,2020
+731,Satish Narayana Srirama,True,Eun-Sung Jung,False,1,2020,2020
+732,Satish Narayana Srirama,True,Rajkumar Kettimuthu,False,1,2020,2020
+736,Satish Narayana Srirama,True,Berker Demirer,False,1,2020,2020
+739,Satish Narayana Srirama,True,Nishant Poddar,False,1,2020,2020
+741,Satish Narayana Srirama,True,Sikandar M. Zulqarnain Khan,False,1,2020,2020
+1055,Satish Narayana Srirama,True,Gaurav Somani,False,1,2019,2019
+1057,Satish Narayana Srirama,True,Xinghui Zhao,False,1,2019,2019
+1059,Satish Narayana Srirama,True,Chuan Heng Foh,False,1,2019,2019
+1064,Satish Narayana Srirama,True,Jinsong Wu,False,1,2019,2019
+1065,Satish Narayana Srirama,True,Burak Kantarci,False,1,2019,2019
+1066,Satish Narayana Srirama,True,Periklis Chatzimisios,False,1,2019,2019
+1067,Satish Narayana Srirama,True,Elhadj Benkhelifa,False,1,2019,2019
+1076,Satish Narayana Srirama,True,Anwesha Mukherjee,False,1,2019,2019
+1080,Satish Narayana Srirama,True,Mart Min,False,1,2019,2019
+1085,Satish Narayana Srirama,True,Talha Mahin Mir,False,1,2018,2018
+1097,Satish Narayana Srirama,True,Tverezovskyi Iurii,False,1,2016,2016
+1100,Satish Narayana Srirama,True,Briti Deb,False,1,2016,2016
+1102,Satish Narayana Srirama,True,Indrajit Mukherjee,False,1,2016,2016
+1112,Satish Narayana Srirama,True,Pan Hui,False,1,2015,2015
+1115,Satish Narayana Srirama,True,Sasu Tarkoma,False,1,2015,2015
+1117,Satish Narayana Srirama,True,Yong Li,False,1,2015,2015
+1131,Satish Narayana Srirama,True,Hai Dong,False,1,2015,2015
+1134,Satish Narayana Srirama,True,Flora D. Salim,False,1,2015,2015
+1141,Satish Narayana Srirama,True,Ian Warren,False,1,2014,2014
+1144,Satish Narayana Srirama,True,Andrew Meads,False,1,2014,2014
+1147,Satish Narayana Srirama,True,Thiranjith Weerasinghe,False,1,2014,2014
+1155,Satish Narayana Srirama,True,Rajesh Sharma,False,1,2014,2014
+1156,Satish Narayana Srirama,True,Deepak Subramanian,False,1,2014,2014
+1160,Satish Narayana Srirama,True,Plumbr Ou,False,1,2013,2013
+1161,Satish Narayana Srirama,True,Tarvo Treier,False,1,2013,2013
+1162,Satish Narayana Srirama,True,Chris Willmore,False,1,2013,2013
+1165,Satish Narayana Srirama,True,Huber Raul Flores Macario,False,1,2013,2013
+1168,Satish Narayana Srirama,True,Martti Vasar,False,1,2012,2012
+1170,Satish Narayana Srirama,True,Marlon Dumas,False,1,2012,2012
+1177,Satish Narayana Srirama,True,Iliyana Ivanova,False,1,2010,2010
+1182,Satish Narayana Srirama,True,Mohammad Abdullah Al Faruque,False,1,2010,2010
+1183,Satish Narayana Srirama,True,M. A. S. Munni,False,1,2010,2010
+1185,Satish Narayana Srirama,True,Kiran Pendyala,False,1,2010,2010
+1188,Satish Narayana Srirama,True,Anton Naumenko,False,1,2010,2010
+1197,Satish Narayana Srirama,True,Oscar Mendoza,False,1,2009,2009
+1198,Satish Narayana Srirama,True,Hongyan Zhu,False,1,2008,2008
+1203,Satish Narayana Srirama,True,Kaifei Wang,False,1,2007,2007
+1207,Satish Narayana Srirama,True,David Kensche,False,1,2006,2006
+1209,H. T. Rassem,False,P. N. Girija,True,1,2010,2010
+1210,P. N. Girija,True,P. John Paul,False,1,2006,2006
+1211,P. S. V. S. Sai Prasad,True,P. N. Girija,True,1,2003,2003
+1216,Anjeneya Swami Kare,True,Vivek Kumar Rajak,False,1,2024,2024
+1217,Anjeneya Swami Kare,True,Leela Srija Alla,False,1,2023,2023
+1226,Anjeneya Swami Kare,True,Varun Kumar,False,1,2021,2021
+1229,Anjeneya Swami Kare,True,Akanksha Agrawal,False,1,2020,2020
+1240,Anjeneya Swami Kare,True,Neeldhara Misra,False,1,2020,2020
+1245,Anjeneya Swami Kare,True,Sreshta Valluru,False,1,2020,2020
+1247,Anupama Potluri,True,Guduri Prathyusha,False,1,2017,2017
+1248,Anupama Potluri,True,Antar Shaddad Abdul-Qawy,False,1,2015,2015
+1249,Anupama Potluri,True,Geetha Sowjanya Akula,False,1,2014,2014
+1250,Anupama Potluri,True,Chaitanya Balantrapu,False,1,2014,2014
+1252,Anupama Potluri,True,Nirmoy Das,False,1,2014,2014
+1253,Anupama Potluri,True,Krishna Vutukuri,False,1,2014,2014
+1254,Anupama Potluri,True,Garvit Sharma,False,1,2014,2014
+1256,Anupama Potluri,True,Chakravarthy Bhagvati,True,1,2012,2012
+1258,Anupama Potluri,True,Sravanthi Bhavanam,False,1,2008,2008
+1261,Atul Negi,True,Sravanthi Bhavanam,False,1,2008,2008
+1262,Anupama Potluri,True,Jaya L. Yeruva,False,1,2008,2008
+1263,Anupama Potluri,True,Tholoana Masupha,False,1,2008,2008
+1265,Atul Negi,True,Jaya L. Yeruva,False,1,2008,2008
+1266,Atul Negi,True,Tholoana Masupha,False,1,2008,2008
+1267,Anupama Potluri,True,Nevadita Chatterjee,False,1,2007,2007
+1268,Atul Negi,True,Nevadita Chatterjee,False,1,2007,2007
+1269,Anupama Potluri,True,Tim Finin,False,1,1995,1995
+1273,Anupama Potluri,True,Chelliah Thirunavukkarasu,False,1,1995,1995
+1274,Anupama Potluri,True,Don McKay,False,1,1995,1995
+1275,Anupama Potluri,True,Robin McEntire,False,1,1995,1995
+1281,Nagender Kumar Suryadevara,True,RK Sanayaima Singh,False,1,2024,2024
+1289,Nagender Kumar Suryadevara,True,Anuroop Gaddam,False,1,2023,2023
+1291,Nagender Kumar Suryadevara,True,Dhananjay R. Thiruvady,False,1,2023,2023
+1292,Nagender Kumar Suryadevara,True,Subhas Chandra Mukhopadhyay,False,1,2022,2022
+1295,Nagender Kumar Suryadevara,True,Subham Saha,False,1,2022,2022
+1296,Nagender Kumar Suryadevara,True,Ashish Gupta,False,1,2022,2022
+1299,Nagender Kumar Suryadevara,True,Shantanu Pal,False,1,2021,2021
+1301,Nagender Kumar Suryadevara,True,Srinivasa Raju Rudraraju,False,1,2020,2020
+1303,Atul Negi,True,Nagender Kumar Suryadevara,True,1,2020,2020
+1305,Atul Negi,True,S. R. Sahith,False,1,2019,2019
+1308,Atul Negi,True,N. K. Suryadevara,False,1,2019,2019
+1310,Nagender Kumar Suryadevara,True,L. Barrack,False,1,2015,2015
+1314,Nagender Kumar Suryadevara,True,Hemant Ghayvat,False,1,2015,2015
+1316,Nagender Kumar Suryadevara,True,Xiang Gui,False,1,2015,2015
+1323,Nagender Kumar Suryadevara,True,Munhaw Kam,False,1,2014,2014
+1326,Nagender Kumar Suryadevara,True,S. C. Mukhopadhyay,False,1,2014,2014
+1327,Nagender Kumar Suryadevara,True,Satinder Pal Singh Gill,False,1,2014,2014
+1335,Nagender Kumar Suryadevara,True,R. Wang,False,1,2013,2013
+1336,Nagender Kumar Suryadevara,True,R. K. Rayudu,False,1,2013,2013
+1337,Nagender Kumar Suryadevara,True,Y. M. Huang,False,1,2013,2013
+1342,Nagender Kumar Suryadevara,True,Jyotsna Suryadevara,False,1,2013,2013
+1343,Nagender Kumar Suryadevara,True,Bollam Sunil,False,1,2013,2013
+1357,P. S. V. S. Sai Prasad,True,Yelleti Vivek,False,1,2022,2022
+1359,P. S. V. S. Sai Prasad,True,Sravya Dunna,False,1,2021,2021
+1360,P. S. V. S. Sai Prasad,True,Vivek Yelleti,False,1,2021,2021
+1362,Salman Abdul Moiz,True,Kiran Bandagar,False,1,2019,2019
+1363,P. S. V. S. Sai Prasad,True,Kiran Bandagar,False,1,2019,2019
+1364,Salman Abdul Moiz,True,Pandu Sowkuntla,False,1,2019,2019
+1365,Salman Abdul Moiz,True,P. S. V. S. Sai Prasad,True,1,2019,2019
+1367,K. Swarupa Rani,True,Neeli Lakshmi Pavani,False,1,2019,2019
+1368,P. S. V. S. Sai Prasad,True,Neeli Lakshmi Pavani,False,1,2019,2019
+1369,K. Swarupa Rani,True,Pandu Sowkuntla,False,1,2019,2019
+1370,K. Swarupa Rani,True,P. S. V. S. Sai Prasad,True,1,2019,2019
+1371,P. S. V. S. Sai Prasad,True,U. Venkata Divya,False,1,2018,2018
+1372,P. S. V. S. Sai Prasad,True,H. Bala Subrahmanyam,False,1,2017,2017
+1375,P. S. V. S. Sai Prasad,True,Shashikant Ilager,False,1,2017,2017
+1377,P. S. V. S. Sai Prasad,True,Rama Devi Yellasiri,False,1,2010,2010
+1378,P. S. V. S. Sai Prasad,True,P. Venu Gopal,False,1,2010,2010
+1397,Arun Kumar Das,True,Helena Bergold,False,1,2025,2025
+1402,Arun Kumar Das,True,Robert Lauff,False,1,2025,2025
+1403,Arun Kumar Das,True,Manfred Scheucher,False,1,2025,2025
+1404,Arun Kumar Das,True,Felix Schröder,False,1,2025,2025
+1405,Arun Kumar Das,True,Marie Diana Sieper,False,1,2025,2025
+1430,Arun Kumar Das,True,Barunabha Chakraborty,False,1,2020,2020
+1434,Arun Kumar Das,True,Swami Sarvottamananda,False,1,2020,2020
+1437,Undru Vimal Babu,False,M. Nagamani,True,1,2020,2020
+1440,M. Nagamani,True,Shalam Raju,False,1,2020,2020
+1441,M. Nagamani,True,M. Rama Krishna,False,1,2020,2020
+1443,M. Nagamani,True,Velugumetla Siddhi Chaithanya,False,1,2020,2020
+1447,M. Nagamani,True,Venkateswara Juturi,False,1,2020,2020
+1448,M. Nagamani,True,C. Satyanarayana Prasad,False,1,2020,2020
+1449,M. Nagamani,True,B. Sitaram,False,1,2020,2020
+1453,M. Nagamani,True,A. B. Sagar,False,1,2020,2020
+1458,M. Nagamani,True,Banothu Rambabu,False,1,2020,2020
+1459,Kollapalli Ramesh Babu,False,M. Nagamani,True,1,2020,2020
+1460,M. Nagamani,True,Venkateswara Rao Juturi,False,1,2020,2020
+1461,M. Nagamani,True,Preethi Kothari,False,1,2020,2020
+1469,Junaid Alam,False,Saifulla Md. Abdul,True,1,2026,2026
+1471,Soumyadev Maity,False,Saifulla Md. Abdul,True,1,2026,2026
+1480,Saifulla Md. Abdul,True,Goutham Reddy Alavalapati,False,1,2025,2025
+1482,Saifulla Md. Abdul,True,Amir H. Gandomi,False,1,2025,2025
+1491,Saifulla Md. Abdul,True,Pavan Kumar Aakula,False,1,2025,2025
+1492,Saifulla Md. Abdul,True,Rama Prakasha Reddy Chegireddy,False,1,2025,2025
+1513,Saifulla Md. Abdul,True,Ashok Kumar Das,False,1,2025,2025
+1514,Saifulla Md. Abdul,True,Adesh Pandey,False,1,2025,2025
+1518,Saifulla Md. Abdul,True,Bimal Kumar Meher,False,1,2025,2025
+1522,Saifulla Md. Abdul,True,Mohammad Abdussami,False,1,2025,2025
+1524,Saifulla Md. Abdul,True,K. Sridevi,False,1,2023,2023
+1525,Saifulla Md. Abdul,True,Jagjeet Suryawanshi,False,1,2023,2023
+1526,Rajendra Prasad Lal,True,Jagjeet Suryawanshi,False,1,2023,2023
+1530,Rajendra Prasad Lal,True,Saifulla Md. Abdul,True,1,2023,2023
+1531,Saifulla Md. Abdul,True,Nazrul Hoque,False,1,2023,2023
+1532,Saifulla Md. Abdul,True,Nooraini Yusoff,False,1,2023,2023
+1533,Rajendra Prasad Lal,True,Amarajyothi Aramanda,False,1,2023,2023
+1534,Rajendra Prasad Lal,True,Nazrul Hoque,False,1,2023,2023
+1535,Rajendra Prasad Lal,True,Nooraini Yusoff,False,1,2023,2023
+1548,Rajeev Wankar,True,Sarra Namane,False,1,2017,2017
+1554,Rajeev Wankar,True,Nacira Ghoualmi-Zine,False,1,2017,2017
+1557,Rajeev Wankar,True,C. R. Rao,False,1,2017,2017
+1558,Rajeev Wankar,True,Sakir Sezer,False,1,2017,2017
+1565,Rajeev Wankar,True,Rajendra Akerkar,False,1,2009,2009
+1567,Arun Agarwal,True,Pradeep Kumar Nalla,False,1,2008,2008
+1572,Rajendra Prasad Lal,True,Wilson Naik,False,1,2025,2025
+1573,Rajendra Prasad Lal,True,N. Govind,False,1,2024,2024
+1577,Abhaya Kumar Pradhan,False,Hrushikesha Mohanty,True,1,2019,2019
+1578,Rajendra Prasad Lal,True,Abhaya Kumar Pradhan,False,1,2019,2019
+1579,Rajendra Prasad Lal,True,Hrushikesha Mohanty,True,1,2019,2019
+1580,Vineet Padmanabhan,True,Nishma Laitonjam,False,1,2015,2015
+1581,Arun K. Pujari,True,Nishma Laitonjam,False,1,2015,2015
+1582,Rajendra Prasad Lal,True,Nishma Laitonjam,False,1,2015,2015
+1584,Arun K. Pujari,True,Rajendra Prasad Lal,True,1,2015,2015
+1585,Rajendra Prasad Lal,True,Namita Das,False,1,2007,2007
+1587,Rajendra Prasad Lal,True,Chandra Kishore Mohapatra,False,1,2007,2007
+1589,Digambar Pawar,True,Krishna Chandra,False,1,2025,2025
+1594,Digambar Pawar,True,Neha Kaliya,False,1,2023,2023
+1595,Digambar Pawar,True,Raghavendra Gowada,False,1,2023,2023
+1597,Digambar Pawar,True,Biplab Barman,False,1,2023,2023
+1600,Radha Vedala,False,Digambar Pawar,True,1,2023,2023
+1603,Digambar Pawar,True,Mayank Gajpal,False,1,2021,2021
+1604,Vamsi Krishna Madduri,False,Battula Srinivasa Rao,True,1,2024,2024
+1605,Battula Srinivasa Rao,True,Bairaboina Sai Sambasiva Rao,False,1,2023,2023
+1606,Battula Srinivasa Rao,True,Mudiyala Aparna,False,1,2023,2023
+1608,Battula Srinivasa Rao,True,Mallela Siva Naga Raju,False,1,2023,2023
+1613,Vineet Padmanabhan,True,Yash Kumar Sharma,False,1,2024,2024
+1632,Bapi Raju Surampudi,True,Zijiao Chen,False,1,2025,2025
+1640,Bapi Raju Surampudi,True,Gaël Jobard,False,1,2025,2025
+1641,Bapi Raju Surampudi,True,Frédéric Alexandre,False,1,2025,2025
+1642,Bapi Raju Surampudi,True,Xavier Hinaut,False,1,2025,2025
+1657,Bapi Raju Surampudi,True,Akshett Rai Jindal,False,1,2025,2025
+1663,Bapi Raju Surampudi,True,Ishani Mondal,False,1,2025,2025
+1672,Bapi Raju Surampudi,True,Satya Sai Srinath Namburi GNVV,False,1,2025,2025
+1675,Bapi Raju Surampudi,True,Manish Shrivastava,False,1,2025,2025
+1692,Bapi Raju Surampudi,True,Dolton Fernandes,False,1,2025,2025
+1694,Bapi Raju Surampudi,True,Pramod S. Kaushik,False,1,2025,2025
+1695,Bapi Raju Surampudi,True,Harsh Shukla,False,1,2025,2025
+1745,Atul Negi,True,Surampudi Bapi Raju,False,1,2024,2024
+1753,Bapi Raju Surampudi,True,Mehul Arora,False,1,2024,2024
+1754,Bapi Raju Surampudi,True,Chirag Shantilal Jain,False,1,2024,2024
+1755,Bapi Raju Surampudi,True,Lalith Bharadwaj Baru,False,1,2024,2024
+1770,Bapi Raju Surampudi,True,Upadrasta Naga Sita Sravanthi,False,1,2023,2023
+1775,Bapi Raju Surampudi,True,Kamalakar Dadi,False,1,2023,2023
+1780,Bapi Raju Surampudi,True,P. N. Sylaja,False,1,2023,2023
+1781,Bapi Raju Surampudi,True,C. Kesavadas,False,1,2023,2023
+1782,Bapi Raju Surampudi,True,Srijithesh PR,False,1,2023,2023
+1783,Bapi Raju Surampudi,True,Rinta Paul,False,1,2023,2023
+1803,Bapi Raju Surampudi,True,Shivam Kumar Sharma,False,1,2023,2023
+1806,Bapi Raju Surampudi,True,Suvadeep Maiti,False,1,2023,2023
+1808,Bapi Raju Surampudi,True,S. Mythirayee,False,1,2023,2023
+1809,Bapi Raju Surampudi,True,Srijithesh Rajendran,False,1,2023,2023
+1859,Bapi Raju Surampudi,True,Yash Khare,False,1,2022,2022
+1861,Bapi Raju Surampudi,True,P. K. Vinod,False,1,2022,2022
+1943,Bapi Raju Surampudi,True,Preetam Srikar Dammu,False,1,2019,2019
+1945,Bapi Raju Surampudi,True,Krishn Bera,False,1,2019,2019
+1946,Bapi Raju Surampudi,True,Tejas Savalia,False,1,2019,2019
+1962,Bapi Raju Surampudi,True,Bhargav Teja Nallapu,False,1,2017,2017
+1964,Bapi Raju Surampudi,True,Nicolas P. Rougier,False,1,2017,2017
+1983,Bapi Raju Surampudi,True,Anirudh Nihalani Vattikonda,False,1,2016,2016
+1987,Bapi Raju Surampudi,True,Arpan Banerjee,False,1,2016,2016
+1988,Bapi Raju Surampudi,True,Gustavo Deco,False,1,2016,2016
+1989,Bapi Raju Surampudi,True,Dipanjan Roy,False,1,2016,2016
+1991,Bapi Raju Surampudi,True,Jagadeeswara Rao Annam,False,1,2016,2016
+1993,Bapi Raju Surampudi,True,Pankaj Singh Dholaniya,False,1,2015,2015
+1995,Bapi Raju Surampudi,True,Soumitra Ghosh,False,1,2015,2015
+1997,Bapi Raju Surampudi,True,Anand K. Kondapi,False,1,2015,2015
+1998,Bapi Raju Surampudi,True,Kavita Vemuri,False,1,2015,2015
+2017,Bapi Raju Surampudi,True,Madhavi Alamuri,False,1,2014,2014
+2018,Bapi Raju Surampudi,True,Atul Negi,True,1,2014,2014
+2019,Bapi Raju Surampudi,True,Komala Anamalamudi,False,1,2014,2014
+2021,Bapi Raju Surampudi,True,Madhavilatha Maganti,False,1,2014,2014
+2045,Bapi Raju Surampudi,True,Mohammad Abdul Haque Farquad,False,1,2011,2011
+2046,Mohammed Hussein Shukur,False,T. Sobha Rani,True,1,2011,2011
+2047,S. Durga Bhavani,True,Mohammed Hussein Shukur,False,1,2011,2011
+2052,Surampudi Bapi Raju,False,T. Sobha Rani,True,1,2011,2011
+2054,S. Durga Bhavani,True,Surampudi Bapi Raju,False,1,2011,2011
+2056,T. Sobha Rani,True,B. Ravindra Reddy,False,1,2011,2011
+2057,S. Durga Bhavani,True,B. Ravindra Reddy,False,1,2011,2011
+2081,Chakravarthy Bhagvati,True,Sudhakara P. Reddy,False,1,2007,2007
+2089,Chakravarthy Bhagvati,True,Chaithanya Pichuka,False,1,2007,2007
+2090,Arun K. Pujari,True,Chaithanya Pichuka,False,1,2007,2007
+2108,Chakravarthy Bhagvati,True,J. Naveen Kumar Reddy,False,1,2006,2006
+2110,Arun K. Pujari,True,J. Naveen Kumar Reddy,False,1,2006,2006
+2119,Atul Negi,True,Lakshman Singh,False,1,2006,2006
+2134,Atul Negi,True,S. Kumar Chenna,False,1,2004,2004
+2140,Atul Negi,True,Yogesh Kr. Jain,False,1,2004,2004
+2145,Atul Negi,True,Himanshu Kapoor,False,1,2004,2004
+2149,T. Sobha Rani,True,Anuj Kumar,False,1,2003,2003
+2150,S. Durga Bhavani,True,Anuj Kumar,False,1,2003,2003
+2152,T. Sobha Rani,True,Pramod Kumar Upadhyay,False,1,2003,2003
+2153,S. Durga Bhavani,True,Pramod Kumar Upadhyay,False,1,2003,2003
+2171,Khaleda Afroaz,False,Y. V. Subba Rao,True,1,2024,2024
+2172,Khaleda Afroaz,False,N. Rukma Rekha,True,1,2024,2024
+2174,N. Rukma Rekha,True,Shiva Krishna Nallabothu,False,1,2024,2024
+2175,Y. V. Subba Rao,True,Shiva Krishna Nallabothu,False,1,2024,2024
+2178,Y. V. Subba Rao,True,S. Devidas,False,1,2021,2021
+2179,N. Rukma Rekha,True,S. Devidas,False,1,2021,2021
+2183,Y. V. Subba Rao,True,N. Chaitanya Kumar,False,1,2017,2017
+2186,Y. V. Subba Rao,True,Abdul Basit,False,1,2017,2017
+2188,Y. V. Subba Rao,True,Priyadarshi Singh,False,1,2017,2017
+2189,Y. V. Subba Rao,True,V. Ch. Venkaiah,True,1,2017,2017
+2191,Y. V. Subba Rao,True,S. S. Brahmananda Rao,False,1,2011,2011
+2192,N. Rukma Rekha,True,S. S. Brahmananda Rao,False,1,2011,2011
+2193,N. Rukma Rekha,True,K. V. S. S. R. S. S. Sarma,False,1,2011,2011
+2194,Y. V. Subba Rao,True,K. V. S. S. R. S. S. Sarma,False,1,2011,2011
+2195,Y. V. Subba Rao,True,Subhamoy Maitra,False,1,2009,2009
+2198,Y. V. Subba Rao,True,Pantelimon Stanica,False,1,2009,2009
+2199,Y. V. Subba Rao,True,Sugata Gangopadhyay,False,1,2009,2009
+2201,Y. V. Subba Rao,True,Abhijit Mitra,False,1,2006,2006
+2202,Y. V. Subba Rao,True,S. R. Mahadeva Prasanna,False,1,2006,2006
+2204,T. Sobha Rani,True,Sandhya Rani D,False,1,2024,2024
+2205,S. Durga Bhavani,True,Sandhya Rani D,False,1,2024,2024
+2207,T. Sobha Rani,True,Bala Krishna G,False,1,2024,2024
+2208,S. Durga Bhavani,True,Bala Krishna G,False,1,2024,2024
+2209,T. Sobha Rani,True,Harshitha Bingi,False,1,2024,2024
+2212,Pankaj Singh Dholaniya,False,T. Sobha Rani,True,1,2022,2022

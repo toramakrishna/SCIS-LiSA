@@ -1,0 +1,1319 @@
+id,name,venue_type,abbreviation,publisher,total_publications,faculty_publications,created_at,updated_at
+1,Ann. Oper. Res.,journal,,,1,1,2026-01-31 22:35:55.303259,2026-01-31 22:35:55.321631
+16,"IEEE Congress on Evolutionary Computation, CEC 2019, Wellington,
+New Zealand, June 10-13, 2019",conference,,IEEE,1,1,2026-01-31 22:35:55.635138,2026-01-31 22:35:55.640609
+21,Int. J. Metaheuristics,journal,,,1,1,2026-01-31 22:35:55.753523,2026-01-31 22:35:55.760136
+6,Evol. Intell.,journal,,,5,5,2026-01-31 22:35:55.384380,2026-01-31 22:35:56.261015
+13,"IEEE Congress on Evolutionary Computation, CEC 2021, Kraków,
+Poland, June 28 - July 1, 2021",conference,,IEEE,2,2,2026-01-31 22:35:55.546235,2026-01-31 22:35:56.940280
+7,"Distributed Computing and Intelligent Technology - 20th International
+Conference, ICDCIT 2024, Bhubaneswar, India, January 17-20, 2024,
+Proceedings",conference,,Springer,3,3,2026-01-31 22:35:55.391613,2026-01-31 22:36:06.066887
+9,"Distributed Computing and Intelligent Technology - 19th International
+Conference, ICDCIT 2023, Bhubaneswar, India, January 18-22, 2023,
+Proceedings",conference,,Springer,3,3,2026-01-31 22:35:55.437726,2026-01-31 22:36:06.293611
+17,"Pattern Recognition and Machine Intelligence - 8th International Conference,
+PReMI 2019, Tezpur, India, December 17-20, 2019, Proceedings, Part
+I",conference,,Springer,6,6,2026-01-31 22:35:55.647224,2026-01-31 22:36:06.332492
+15,Neural Comput. Appl.,journal,,,5,5,2026-01-31 22:35:55.607648,2026-01-31 22:36:06.912388
+508,"2011 International Conference on Document Analysis and Recognition,
+ICDAR 2011, Beijing, China, September 18-21, 2011",conference,,IEEE Computer Society,2,2,2026-01-31 22:36:07.224134,2026-01-31 22:36:07.251159
+509,"20th International Conference on Pattern Recognition, ICPR 2010,
+Istanbul, Turkey, 23-26 August 2010",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:07.251365,2026-01-31 22:36:07.255616
+510,"Proceedings of the Second International Conference on Emerging Trends
+in Engineering & Technology, ICETET 2009, Nagpur, Maharashtra,
+India, 16-18 December 2009",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:07.267006,2026-01-31 22:36:07.270959
+512,"Proceedings of the IAPR Conference on Machine Vision Applications
+(IAPR MVA 2007), May 16-18, 2007, Tokyo, Japan",conference,,,1,1,2026-01-31 22:36:07.286354,2026-01-31 22:36:07.291100
+513,"First IEEE International Conference on Digital Information Management
+(ICDIM), December 6-8, 2006, Christ College, Bangalore, India, Proceedings",conference,,IEEE,1,1,2026-01-31 22:36:07.316909,2026-01-31 22:36:07.320622
+514,"A Conference on a Human Scale. 11th Americas Conference on Information
+Systems, AMCIS 2005, Omaha, Nebraska, USA, August 11-14, 2005",conference,,Association for Information Systems,1,1,2026-01-31 22:36:07.340047,2026-01-31 22:36:07.343731
+515,"First International Conference on e-Science and Grid Technologies
+(e-Science 2005), 5-8 December 2005, Melbourne, Australia",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:07.350912,2026-01-31 22:36:07.358526
+518,"7th International Symposium on Parallel Architectures, Algorithms,
+and Networks (I-SPAN 2004), 10-12 May 2004, Hong Kong, SAR, China",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:07.385734,2026-01-31 22:36:07.389201
+3,Comput. Electr. Eng.,journal,,,3,3,2026-01-31 22:35:55.342050,2026-01-31 22:36:07.861423
+507,J. Comput.,journal,,,2,2,2026-01-31 22:36:07.208829,2026-01-31 22:36:08.179856
+516,"Eighth International Conference on Document Analysis and Recognition
+(ICDAR 2005), 29 August - 1 September 2005, Seoul, Korea",conference,,IEEE Computer Society,2,2,2026-01-31 22:36:07.358759,2026-01-31 22:36:08.247326
+511,Pattern Recognit. Lett.,journal,,,12,12,2026-01-31 22:36:07.281731,2026-01-31 22:36:09.537345
+8,Expert Syst. Appl.,journal,,,9,9,2026-01-31 22:35:55.425310,2026-01-31 22:36:09.797636
+517,"Intelligent Information Technology, 7th International Conference on
+Information Technology, CIT 2004, Hyderabad, India, December 20-23,
+2004, Proceedings",conference,,Springer,2,2,2026-01-31 22:36:07.375895,2026-01-31 22:36:09.915375
+504,Pattern Recognit.,journal,,,6,6,2026-01-31 22:36:07.164857,2026-01-31 22:36:10.010114
+19,"Distributed Computing and Internet Technology - 14th International
+Conference, ICDCIT 2018, Bhubaneswar, India, January 11-13, 2018,
+Proceedings",conference,,Springer,4,4,2026-01-31 22:35:55.685335,2026-01-31 22:36:10.075132
+23,"Ninth International Conference on Contemporary Computing, IC3 2016,
+Noida, India, August 11-13, 2016",conference,,IEEE Computer Society,1,1,2026-01-31 22:35:55.775950,2026-01-31 22:35:55.785454
+25,IEEE Syst. J.,journal,,,1,1,2026-01-31 22:35:55.808826,2026-01-31 22:35:55.814141
+26,"Swarm, Evolutionary, and Memetic Computing - 6th International Conference,
+SEMCCO 2015, Hyderabad, India, December 18-19, 2015, Revised Selected
+Papers",conference,,Springer,1,1,2026-01-31 22:35:55.814411,2026-01-31 22:35:55.822886
+28,"Swarm, Evolutionary, and Memetic Computing - 5th International Conference,
+SEMCCO 2014, Bhubaneswar, India, December 18-20, 2014, Revised Selected
+Papers",conference,,Springer,2,2,2026-01-31 22:35:55.835059,2026-01-31 22:35:55.849519
+29,"2014 IEEE Symposium on Swarm Intelligence, SIS 2014, Orlando,
+FL, USA, December 9-12, 2014",conference,,IEEE,1,1,2026-01-31 22:35:55.849775,2026-01-31 22:35:55.854047
+30,Ad Hoc Networks,journal,,,1,1,2026-01-31 22:35:55.857462,2026-01-31 22:35:55.861806
+31,Eur. J. Oper. Res.,journal,,,1,1,2026-01-31 22:35:55.873424,2026-01-31 22:35:55.882425
+32,"International Conference on Advances in Computing, Communications
+and Informatics, ICACCI 2013, Mysore, India, August 22-25, 2013",conference,,IEEE,1,1,2026-01-31 22:35:55.888161,2026-01-31 22:35:55.893604
+34,"Proceedings of the Third International Conference on Soft Computing
+for Problem Solving - SocProS 2013, Volume 1, Greater Noida Extension
+Centre, IIT Roorkee, India, December 26-28, 2013",conference,,Springer,1,1,2026-01-31 22:35:55.901376,2026-01-31 22:35:55.904580
+14,Int. J. Mach. Learn. Cybern.,journal,,,4,4,2026-01-31 22:35:55.566852,2026-01-31 22:35:55.929876
+36,Networks,journal,,,1,1,2026-01-31 22:35:55.938029,2026-01-31 22:35:55.946115
+20,Oper. Res.,journal,,,2,2,2026-01-31 22:35:55.736654,2026-01-31 22:35:55.951405
+12,Swarm Evol. Comput.,journal,,,3,3,2026-01-31 22:35:55.532972,2026-01-31 22:35:55.956619
+39,"Network Optimization - 5th International Conference, INOC 2011,
+Hamburg, Germany, June 13-16, 2011. Proceedings",conference,,Springer,1,1,2026-01-31 22:35:55.986875,2026-01-31 22:35:55.993977
+33,"Swarm, Evolutionary, and Memetic Computing - 4th International Conference,
+SEMCCO 2013, Chennai, India, December 19-21, 2013, Proceedings,
+Part II",conference,,Springer,2,2,2026-01-31 22:35:55.893863,2026-01-31 22:35:56.476543
+24,Int. J. Bio Inspired Comput.,journal,,,3,3,2026-01-31 22:35:55.796389,2026-01-31 22:35:57.707282
+40,"Swarm, Evolutionary, and Memetic Computing - Second International
+Conference, SEMCCO 2011, Visakhapatnam, Andhra Pradesh, India, December
+19-21, 2011, Proceedings, Part II",conference,,Springer,3,3,2026-01-31 22:35:56.004516,2026-01-31 22:36:05.331239
+37,"Contemporary Computing - 5th International Conference, IC3 2012,
+Noida, India, August 6-8, 2012. Proceedings",conference,,Springer,6,6,2026-01-31 22:35:55.956859,2026-01-31 22:36:09.096653
+18,Inf. Sci.,journal,,,13,13,2026-01-31 22:35:55.665091,2026-01-31 22:36:09.144962
+27,"2014 International Conference on Advances in Computing, Communications
+and Informatics, ICACCI 2014, Delhi, India, September 24-27, 2014",conference,,IEEE,3,3,2026-01-31 22:35:55.828891,2026-01-31 22:36:09.831542
+639,Document Image Analysis,conference,,World Scientific,1,1,2026-01-31 22:36:09.993047,2026-01-31 22:36:10.004551
+640,"AI 2022: Advances in Artificial Intelligence - 35th Australasian
+Joint Conference, AI 2022, Perth, WA, Australia, December 5-8, 2022,
+Proceedings",conference,,Springer,1,1,2026-01-31 22:36:10.015564,2026-01-31 22:36:10.019544
+2,Appl. Intell.,journal,,,19,19,2026-01-31 22:35:55.331912,2026-01-31 22:36:10.052256
+641,"Advances in Artificial Intelligence - 32nd Canadian Conference on
+Artificial Intelligence, Canadian AI 2019, Kingston, ON, Canada,
+May 28-31, 2019, Proceedings",conference,,Springer,1,1,2026-01-31 22:36:10.052533,2026-01-31 22:36:10.057255
+642,"PRICAI 2019: Trends in Artificial Intelligence - 16th Pacific Rim
+International Conference on Artificial Intelligence, Cuvu, Yanuca
+Island, Fiji, August 26-30, 2019, Proceedings, Part II",conference,,Springer,1,1,2026-01-31 22:36:10.057479,2026-01-31 22:36:10.062269
+643,"Proceedings of the 1st Workshop on Intelligent Recommender Systems
+by Knowledge Transfer & Learning co-located with ACM Conference
+on Recommender Systems (RecSys 2017), Como, Italy, August 27, 2017",conference,,CEUR-WS.org,1,1,2026-01-31 22:36:10.085527,2026-01-31 22:36:10.089839
+644,"Proceedings of the 6th International Conference on Ambient Systems,
+Networks and Technologies (ANT 2015), the 5th International Conference
+on Sustainable Energy Information Technology (SEIT-2015), London,
+UK, June 2-5, 2015",conference,,Elsevier,1,1,2026-01-31 22:36:10.097449,2026-01-31 22:36:10.105113
+645,"2014 International Conference on Information Technology, ICIT 2014,
+Bhubaneswar, India, December 22-24, 2014",conference,,IEEE,1,1,2026-01-31 22:36:10.122042,2026-01-31 22:36:10.125765
+646,"ICAART 2013 - Proceedings of the 5th International Conference on
+Agents and Artificial Intelligence, Volume 2, Barcelona, Spain, 15-18
+February, 2013",conference,,SciTePress,1,1,2026-01-31 22:36:10.136582,2026-01-31 22:36:10.140632
+35,Comput. Oper. Res.,journal,,,2,2,2026-01-31 22:35:55.907859,2026-01-31 22:35:56.027164
+42,"Contemporary Computing - Third International Conference, IC3 2010,
+Noida, India, August 9-11, 2010. Proceedings, Part I",conference,,Springer,1,1,2026-01-31 22:35:56.033648,2026-01-31 22:35:56.044150
+43,"Neural Information Processing. Theory and Algorithms - 17th International
+Conference, ICONIP 2010, Sydney, Australia, November 22-25, 2010,
+Proceedings, Part I",conference,,Springer,1,1,2026-01-31 22:35:56.044421,2026-01-31 22:35:56.050062
+44,"Contemporary Computing - Second International Conference, IC3 2009,
+Noida, India, August 17-19, 2009. Proceedings",conference,,Springer,1,1,2026-01-31 22:35:56.059486,2026-01-31 22:35:56.067335
+45,"Neural Information Processing, 16th International Conference, ICONIP
+2009, Bangkok, Thailand, December 1-5, 2009, Proceedings, Part II",conference,,Springer,1,1,2026-01-31 22:35:56.067574,2026-01-31 22:35:56.071441
+47,OR Spectr.,journal,,,1,1,2026-01-31 22:35:56.081717,2026-01-31 22:35:56.086044
+22,Soft Comput.,journal,,,5,5,2026-01-31 22:35:55.760402,2026-01-31 22:35:56.093409
+48,"Evolutionary Computation in Combinatorial Optimization, 7th European
+Conference, EvoCOP 2007, Valencia, Spain, April 11-13, 2007, Proceedings",conference,,Springer,1,1,2026-01-31 22:35:56.093676,2026-01-31 22:35:56.098976
+38,Asia Pac. J. Oper. Res.,journal,,,4,4,2026-01-31 22:35:55.967593,2026-01-31 22:35:56.114076
+11,J. Heuristics,journal,,,3,3,2026-01-31 22:35:55.508045,2026-01-31 22:35:56.119283
+54,"28th Asia Pacific Conference on Communications, APCC 2023, Sydney,
+Australia, November 19-22, 2023",conference,,IEEE,1,1,2026-01-31 22:35:56.175661,2026-01-31 22:35:56.180161
+55,"Intelligent Data Engineering and Analytics - Proceedings of the 11th
+International Conference on Frontiers of Intelligent Computing: Theory
+and Applications (FICTA 2023), Cardiff, UK, 11-12 April 2023",conference,,Springer,1,1,2026-01-31 22:35:56.180353,2026-01-31 22:35:56.185177
+57,"Intelligent Human Computer Interaction - 15th International Conference,
+IHCI 2023, Daegu, South Korea, November 8-10, 2023, Revised Selected
+Papers, Part II",conference,,Springer,1,1,2026-01-31 22:35:56.210486,2026-01-31 22:35:56.212811
+58,"IEEE INFOCOM 2022 - IEEE Conference on Computer Communications
+Workshops, INFOCOM 2022 - Workshops, New York, NY, USA, May 2-5,
+2022",conference,,IEEE,1,1,2026-01-31 22:35:56.235608,2026-01-31 22:35:56.238372
+59,"IEEE International Conference on Internet of Things and Intelligence
+Systems, IoTaIS 2022, Bali, Indonesia, November 24-26, 2022",conference,,IEEE,1,1,2026-01-31 22:35:56.241109,2026-01-31 22:35:56.243879
+60,"ICC 2021 - IEEE International Conference on Communications, Montreal,
+QC, Canada, June 14-23, 2021",conference,,IEEE,1,1,2026-01-31 22:35:56.273107,2026-01-31 22:35:56.276229
+61,IEEE Trans. Instrum. Meas.,journal,,,1,1,2026-01-31 22:35:56.282613,2026-01-31 22:35:56.286917
+63,Phys. Commun.,journal,,,1,1,2026-01-31 22:35:56.298639,2026-01-31 22:35:56.303197
+50,"Proceedings of the 2nd Indian International Conference on Artificial
+Intelligence, Pune, India, December 20-22, 2005",conference,,IICAI,2,2,2026-01-31 22:35:56.119530,2026-01-31 22:35:58.017663
+53,"17th International Conference on Sensing Technology, ICST 2024,
+Sydney, Australia, December 9-11, 2024",conference,,IEEE,3,3,2026-01-31 22:35:56.154812,2026-01-31 22:36:02.066855
+51,Int. J. Sens. Networks,journal,,,3,3,2026-01-31 22:35:56.130750,2026-01-31 22:36:03.186165
+56,"International Conference on Machine Learning and Data Engineering,
+ICMLDE 2023, Dehradun, India, 23-24 November 2023",conference,,Elsevier,5,5,2026-01-31 22:35:56.185364,2026-01-31 22:36:04.132056
+49,"Proceedings of the 3rd Indian International Conference on Artificial
+Intelligence, Pune, India, December 17-19, 2007",conference,,IICAI,5,5,2026-01-31 22:35:56.099282,2026-01-31 22:36:09.193778
+52,J. Supercomput.,journal,,,5,5,2026-01-31 22:35:56.137494,2026-01-31 22:36:09.667343
+62,Wirel. Pers. Commun.,journal,,,4,4,2026-01-31 22:35:56.287114,2026-01-31 22:36:09.718243
+4,Appl. Soft Comput.,journal,,,20,20,2026-01-31 22:35:55.370145,2026-01-31 22:36:09.817641
+64,"Proceedings of the 5th International Conference on Frontiers in Intelligent
+Computing: Theory and Applications - FICTA 2016, Bhubaneswar, Odisa,
+India, Volume 1",conference,,Springer,1,1,2026-01-31 22:35:56.341125,2026-01-31 22:35:56.345545
+66,"Neural Information Processing - 23rd International Conference, ICONIP
+2016, Kyoto, Japan, October 16-21, 2016, Proceedings, Part III",conference,,,1,1,2026-01-31 22:35:56.375710,2026-01-31 22:35:56.380225
+67,"Security in Computing and Communications - Third International Symposium,
+SSCC 2015, Kochi, India, August 10-13, 2015. Proceedings",conference,,Springer,1,1,2026-01-31 22:35:56.392639,2026-01-31 22:35:56.396116
+69,Int. J. E Serv. Mob. Appl.,journal,,,1,1,2026-01-31 22:35:56.412966,2026-01-31 22:35:56.419448
+70,IET Comput. Digit. Tech.,journal,,,1,1,2026-01-31 22:35:56.421667,2026-01-31 22:35:56.426142
+71,Int. J. E Bus. Res.,journal,,,1,1,2026-01-31 22:35:56.445070,2026-01-31 22:35:56.451912
+73,"Swarm, Evolutionary, and Memetic Computing - 4th International Conference,
+SEMCCO 2013, Chennai, India, December 19-21, 2013, Proceedings,
+Part I",conference,,Springer,1,1,2026-01-31 22:35:56.462906,2026-01-31 22:35:56.466051
+74,Des. Autom. Embed. Syst.,journal,,,1,1,2026-01-31 22:35:56.479326,2026-01-31 22:35:56.491051
+75,Int. J. Adv. Pervasive Ubiquitous Comput.,journal,,,1,1,2026-01-31 22:35:56.491302,2026-01-31 22:35:56.499815
+76,Int. J. Inf. Secur. Priv.,journal,,,1,1,2026-01-31 22:35:56.510625,2026-01-31 22:35:56.517971
+77,"Fourth International Conference on Communication Systems and Networks,
+COMSNETS 2012, Bangalore, India, January 3-7, 2012",conference,,IEEE,1,1,2026-01-31 22:35:56.518163,2026-01-31 22:35:56.522921
+78,"6th International Conference on Signal Processing and Communication
+Systems, ICSPCS 2012, Gold Coast, Australia, December 12-14, 2012",conference,,IEEE,1,1,2026-01-31 22:35:56.535291,2026-01-31 22:35:56.541895
+79,"First International Conference on Security of Internet of Things,
+SECURIT '12, Kollam, India - August 17 - 19, 2012",conference,,ACM,1,1,2026-01-31 22:35:56.542115,2026-01-31 22:35:56.549947
+81,Ad Hoc Sens. Wirel. Networks,journal,,,1,1,2026-01-31 22:35:56.558450,2026-01-31 22:35:56.565547
+82,"Proceedings of IEEE International Conference on Communications,
+ICC 2011, Kyoto, Japan, 5-9 June, 2011",conference,,IEEE,1,1,2026-01-31 22:35:56.573660,2026-01-31 22:35:56.577924
+84,"International Symposium on Electronic System Design, ISED 2011,
+Kochi, Kerala, India, December 19-21, 2011",conference,,IEEE Computer Society,1,1,2026-01-31 22:35:56.592405,2026-01-31 22:35:56.596184
+41,"Swarm, Evolutionary, and Memetic Computing - Second International
+Conference, SEMCCO 2011, Visakhapatnam, Andhra Pradesh, India, December
+19-21, 2011, Proceedings, Part I",conference,,Springer,2,2,2026-01-31 22:35:56.009692,2026-01-31 22:35:56.625612
+65,"2016 International Conference on Advances in Computing, Communications
+and Informatics, ICACCI 2016, Jaipur, India, September 21-24, 2016",conference,,IEEE,2,2,2026-01-31 22:35:56.358381,2026-01-31 22:36:03.267523
+80,"Swarm, Evolutionary, and Memetic Computing - Third International Conference,
+SEMCCO 2012, Bhubaneswar, India, December 20-22, 2012. Proceedings",conference,,Springer,3,3,2026-01-31 22:35:56.550139,2026-01-31 22:36:06.221727
+83,"Distributed Computing and Internet Technology - 7th International
+Conference, ICDCIT 2011, Bhubaneshwar, India, February 9-12, 2011.
+Proceedings",conference,,Springer,2,2,2026-01-31 22:35:56.584220,2026-01-31 22:36:07.538395
+68,Int. J. Comput. Sci. Eng.,journal,,,2,2,2026-01-31 22:35:56.404839,2026-01-31 22:36:08.691500
+72,"Proceedings of the International Conference on Frontiers of Intelligent
+Computing: Theory and Applications (FICTA) 2013, Bhubaneswar, Odisa,
+India, 14-16 November 2013",conference,,Springer,2,2,2026-01-31 22:35:56.452102,2026-01-31 22:36:09.835287
+86,"Proceedings of the International Conference on Soft Computing for
+Problem Solving (SocProS 2011) December 20-22, 2011 - Volume 1",conference,,Springer,1,1,2026-01-31 22:35:56.625897,2026-01-31 22:35:56.630321
+87,Microelectron. Reliab.,journal,,,1,1,2026-01-31 22:35:56.647184,2026-01-31 22:35:56.652410
+90,"Proceedings of the ICWET '10 International Conference & Workshop
+on Emerging Trends in Technology, Mumbai, Maharashtra, India, February
+26 - 27, 2010",conference,,ACM,1,1,2026-01-31 22:35:56.673226,2026-01-31 22:35:56.677290
+91,"Swarm, Evolutionary, and Memetic Computing - First International Conference
+on Swarm, Evolutionary, and Memetic Computing, SEMCCO 2010, Chennai,
+India, December 16-18, 2010. Proceedings",conference,,Springer,3,3,2026-01-31 22:35:56.677489,2026-01-31 22:35:56.699791
+94,"Proceedings of the International Conference on Wireless Networks,
+ICWN '03, June 23 - 26, 2003, Las Vegas, Nevada, USA",conference,,CSREA Press,1,1,2026-01-31 22:35:56.773175,2026-01-31 22:35:56.775528
+95,"Proceedings of the International Conference on Parallel and Distributed
+Processing Techniques and Applications, PDPTA '03, June 23 - 26,
+2003, Las Vegas, Nevada, USA, Volume 2",conference,,CSREA Press,1,1,2026-01-31 22:35:56.775727,2026-01-31 22:35:56.778759
+96,"Proceedings of the International Conference on Parallel and Distributed
+Processing Techniques and Applications, PDPTA '03, June 23 - 26,
+2003, Las Vegas, Nevada, USA, Volume 3",conference,,CSREA Press,1,1,2026-01-31 22:35:56.781448,2026-01-31 22:35:56.784128
+97,Int. Arab J. Inf. Technol.,journal,,,1,1,2026-01-31 22:35:56.787085,2026-01-31 22:35:56.790807
+98,"Proceedings of the 26th International Conference on Distributed Computing
+and Networking, ICDCN 2025, Hyderabad, India, January 4-7, 2025",conference,,ACM,1,1,2026-01-31 22:35:56.797637,2026-01-31 22:35:56.804773
+100,"Pattern Recognition - 27th International Conference, ICPR 2024,
+Kolkata, India, December 1-5, 2024, Proceedings, Part XXVI",conference,,Springer,1,1,2026-01-31 22:35:56.815808,2026-01-31 22:35:56.819024
+93,"World Congress on Nature & Biologically Inspired Computing, NaBIC
+2009, 9-11 December 2009, Coimbatore, India",conference,,IEEE,4,4,2026-01-31 22:35:56.717731,2026-01-31 22:36:03.350808
+89,"Distributed Computing and Internet Technology, 6th International Conference,
+ICDCIT 2010, Bhubaneswar, India, February 15-17, 2010. Proceedings",conference,,Springer,4,4,2026-01-31 22:35:56.662838,2026-01-31 22:36:07.567003
+46,"2008 International Conference on Information Technology, ICIT '08,
+Bhubaneswar, India, December 17-20, 2008",conference,,IEEE Computer Society,8,8,2026-01-31 22:35:56.078413,2026-01-31 22:36:07.674137
+5,Eng. Appl. Artif. Intell.,journal,,,10,10,2026-01-31 22:35:55.375682,2026-01-31 22:36:07.877504
+99,"Big Data and Artificial Intelligence - 12th International Conference,
+BDA 2024, Hyderabad, India, December 17-20, 2024, Proceedings",conference,,Springer,6,6,2026-01-31 22:35:56.804957,2026-01-31 22:36:07.888630
+88,"Information Processing and Management - International Conference on
+Recent Trends in Business Administration and Information Processing,
+BAIP 2010, Trivandrum, Kerala, India, March 26-27, 2010. Proceedings",conference,,Springer,2,2,2026-01-31 22:35:56.658417,2026-01-31 22:36:08.213045
+92,"Distributed Computing and Networking, 10th International Conference,
+ICDCN 2009, Hyderabad, India, January 3-6, 2009. Proceedings",conference,,Springer,2,2,2026-01-31 22:35:56.699987,2026-01-31 22:36:09.129338
+648,Log. J. IGPL,journal,,,1,1,2026-01-31 22:36:10.197107,2026-01-31 22:36:10.202436
+647,Mark. Sci.,journal,,,3,3,2026-01-31 22:36:10.151048,2026-01-31 22:36:10.216112
+649,"Intelligent Agents and Multi-Agent Systems, 11th Pacific Rim International
+Conference on Multi-Agents, PRIMA 2008, Hanoi, Vietnam, December
+15-16, 2008. Proceedings",conference,,Springer,1,1,2026-01-31 22:36:10.222846,2026-01-31 22:36:10.226824
+650,"AI 2007: Advances in Artificial Intelligence, 20th Australian Joint
+Conference on Artificial Intelligence, Gold Coast, Australia, December
+2-6, 2007, Proceedings",conference,,Springer,1,1,2026-01-31 22:36:10.232129,2026-01-31 22:36:10.237508
+651,"Agent Computing and Multi-Agent Systems, 10th Pacific Rim International
+Conference on Multi-Agents, PRIMA 2007, Bangkok, Thailand, November
+21-23, 2007. Revised Papers",conference,,Springer,1,1,2026-01-31 22:36:10.246163,2026-01-31 22:36:10.258214
+652,"Database Technologies 2006, Proceedings of the 17th Australasian Database
+Conference, ADC 2006, Hobart, Tasmania, Australia, January 16-19
+2006",conference,,Australian Computer Society,1,1,2026-01-31 22:36:10.258469,2026-01-31 22:36:10.263586
+653,"Conceptual Modelling 2006, Third Asia-Pacific Conference on Conceptual
+Modelling (APCCM 2005), Hobart, Tasmania, Australia, January 16-19
+2006",conference,,Australian Computer Society,1,1,2026-01-31 22:36:10.275834,2026-01-31 22:36:10.281507
+654,"5th International Joint Conference on Autonomous Agents and Multiagent
+Systems (AAMAS 2006), Hakodate, Japan, May 8-12, 2006",conference,,ACM,1,1,2026-01-31 22:36:10.296492,2026-01-31 22:36:10.303855
+655,"Declarative Agent Languages and Technologies IV, 4th International
+Workshop, DALT 2006, Hakodate, Japan, May 8, 2006, Selected, Revised
+and Invited Papers",conference,,Springer,1,1,2026-01-31 22:36:10.304067,2026-01-31 22:36:10.309073
+656,"PRICAI 2006: Trends in Artificial Intelligence, 9th Pacific Rim
+International Conference on Artificial Intelligence, Guilin, China,
+August 7-11, 2006, Proceedings",conference,,Springer,2,2,2026-01-31 22:36:10.309313,2026-01-31 22:36:10.321583
+101,"Data and Applications Security and Privacy XXVI - 26th Annual IFIP
+WG 11.3 Conference, DBSec 2012, Paris, France, July 11-13,2012.
+Proceedings",conference,,Springer,1,1,2026-01-31 22:35:56.839977,2026-01-31 22:35:56.842943
+102,"Advances in Computer Science - ASIAN 2007. Computer and Network
+Security, 12th Asian Computing Science Conference, Doha, Qatar, December
+9-11, 2007, Proceedings",conference,,Springer,1,1,2026-01-31 22:35:56.869173,2026-01-31 22:35:56.872567
+103,Medical Biol. Eng. Comput.,journal,,,1,1,2026-01-31 22:35:56.879126,2026-01-31 22:35:56.882882
+105,Neural Process. Lett.,journal,,,1,1,2026-01-31 22:35:56.895723,2026-01-31 22:35:56.899975
+107,Intell. Decis. Technol.,journal,,,1,1,2026-01-31 22:35:56.911857,2026-01-31 22:35:56.914919
+109,"Proceedings of the Thirteenth Indian Conference on Computer Vision,
+Graphics and Image Processing, ICVGIP 2022, Gandhinagar, India,
+December 8-10, 2022",conference,,ACM,1,1,2026-01-31 22:35:56.924875,2026-01-31 22:35:56.932394
+111,"Proceedings of the 11th International Conference on Soft Computing
+and Pattern Recognition (SoCPaR 2019), Hyderabad, India, December
+13-15, 2019",conference,,Springer,1,1,2026-01-31 22:35:56.948790,2026-01-31 22:35:56.951526
+112,IEEE Trans. Neural Networks Learn. Syst.,journal,,,1,1,2026-01-31 22:35:56.963873,2026-01-31 22:35:56.970700
+115,Int. J. Comput. Intell. Syst.,journal,,,1,1,2026-01-31 22:35:56.987618,2026-01-31 22:35:56.992189
+123,"26th IEEE International Conference on High Performance Computing,
+Data, and Analytics, HiPC 2019, Hyderabad, India, December 17-20,
+2019",conference,,IEEE,1,1,2026-01-31 22:35:57.091464,2026-01-31 22:35:57.095202
+124,"13th IEEE International Conference on Service-Oriented System Engineering,
+SOSE 2019, San Francisco, CA, USA, April 4-9, 2019",conference,,IEEE,1,1,2026-01-31 22:35:57.106761,2026-01-31 22:35:57.111731
+126,Int. J. Nat. Comput. Res.,journal,,,1,1,2026-01-31 22:35:57.143073,2026-01-31 22:35:57.147042
+127,"Multi-disciplinary Trends in Artificial Intelligence - 11th International
+Workshop, MIWAI 2017, Gadong, Brunei, November 20-22, 2017, Proceedings",conference,,Springer,1,1,2026-01-31 22:35:57.178035,2026-01-31 22:35:57.184791
+129,IET Biom.,journal,,,1,1,2026-01-31 22:35:57.196540,2026-01-31 22:35:57.199837
+120,Softw. Pract. Exp.,journal,,,13,13,2026-01-31 22:35:57.036752,2026-01-31 22:36:00.771742
+114,Theor. Comput. Sci.,journal,,,5,5,2026-01-31 22:35:56.979494,2026-01-31 22:36:02.734130
+118,"Multi-disciplinary Trends in Artificial Intelligence - 18th International
+Conference, MIWAI 2025, Ho Chi Minh City, Vietnam, December 3-5,
+2025, Proceedings, Part I",conference,,Springer,2,2,2026-01-31 22:35:57.016734,2026-01-31 22:36:03.369385
+106,"Pattern Recognition and Machine Intelligence - 10th International
+Conference, PReMI 2023, Kolkata, India, December 12-15, 2023, Proceedings",conference,,Springer,3,3,2026-01-31 22:35:56.900172,2026-01-31 22:36:04.239259
+119,"Multi-disciplinary Trends in Artificial Intelligence - 17th International
+Conference, MIWAI 2024, Pattaya, Thailand, November 11-15, 2024,
+Proceedings, Part I",conference,,Springer,2,2,2026-01-31 22:35:57.029031,2026-01-31 22:36:06.859361
+110,"Pattern Recognition and Machine Intelligence - 9th International Conference,
+PReMI 2021, Kolkata, India, December 15-18, 2021, Proceedings",conference,,Springer,3,3,2026-01-31 22:35:56.940598,2026-01-31 22:36:08.025846
+108,Multim. Tools Appl.,journal,,,9,9,2026-01-31 22:35:56.917618,2026-01-31 22:36:08.633894
+128,"Pattern Recognition and Machine Intelligence - 7th International Conference,
+PReMI 2017, Kolkata, India, December 5-8, 2017, Proceedings",conference,,Springer,2,2,2026-01-31 22:35:57.184985,2026-01-31 22:36:08.854847
+104,Image Vis. Comput.,journal,,,3,3,2026-01-31 22:35:56.885570,2026-01-31 22:36:09.481914
+121,IEEE Access,journal,,,10,10,2026-01-31 22:35:57.056480,2026-01-31 22:36:09.626281
+122,Int. J. Biom.,journal,,,3,3,2026-01-31 22:35:57.073997,2026-01-31 22:36:09.812624
+113,Neural Networks,journal,,,3,3,2026-01-31 22:35:56.970894,2026-01-31 22:36:09.941275
+131,Int. J. Granul. Comput. Rough Sets Intell. Syst.,journal,,,1,1,2026-01-31 22:35:57.278324,2026-01-31 22:35:57.284004
+134,"1st IEEE/ACM International Symposium on Big Data Computing, BDC
+2014, London, UK, December 8-11, 2014",conference,,IEEE Computer Society,1,1,2026-01-31 22:35:57.306297,2026-01-31 22:35:57.324481
+135,"Applications of Evolutionary Computation - 17th European Conference,
+EvoApplications 2014, Granada, Spain, April 23-25, 2014, Revised Selected
+Papers",conference,,Springer,1,1,2026-01-31 22:35:57.324702,2026-01-31 22:35:57.329801
+136,"Proceedings of the 2014 Indian Conference on Computer Vision, Graphics
+and Image Processing, ICVGIP'14, Bangalore, India, December 14-18,
+2014",conference,,ACM,1,1,2026-01-31 22:35:57.334817,2026-01-31 22:35:57.338140
+139,"FUZZ-IEEE 2013, IEEE International Conference on Fuzzy Systems,
+Hyderabad, India, 7-10 July, 2013, Proceedings",conference,,IEEE,2,2,2026-01-31 22:35:57.439080,2026-01-31 22:35:57.452785
+140,"Proceedings of the International Conference on Computational Science,
+ICCS 2013, Barcelona, Spain, 5-7 June, 2013",conference,,Elsevier,1,1,2026-01-31 22:35:57.453004,2026-01-31 22:35:57.456925
+141,"Multi-disciplinary Trends in Artificial Intelligence - 7th International
+Workshop, MIWAI 2013, Krabi, Thailand, December 9-11, 2013. Proceedings",conference,,Springer,2,2,2026-01-31 22:35:57.464007,2026-01-31 22:35:57.474939
+142,Fundam. Informaticae,journal,,,1,1,2026-01-31 22:35:57.486743,2026-01-31 22:35:57.490415
+143,Int. J. Data Min. Model. Manag.,journal,,,1,1,2026-01-31 22:35:57.498585,2026-01-31 22:35:57.504003
+144,"Algorithms and Architectures for Parallel Processing - 12th International
+Conference, ICA3PP 2012, Fukuoka, Japan, September 4-7, 2012, Proceedings,
+Part II",conference,,Springer,1,1,2026-01-31 22:35:57.516952,2026-01-31 22:35:57.520199
+130,"Multi-disciplinary Trends in Artificial Intelligence - 10th International
+Workshop, MIWAI 2016, Chiang Mai, Thailand, December 7-9, 2016,
+Proceedings",conference,,Springer,4,4,2026-01-31 22:35:57.227909,2026-01-31 22:36:06.192400
+145,"Distributed Computing and Internet Technology - 8th International
+Conference, ICDCIT 2012, Bhubaneswar, India, February 2-4, 2012.
+Proceedings",conference,,Springer,3,3,2026-01-31 22:35:57.526699,2026-01-31 22:36:07.532430
+137,"Multi-disciplinary Trends in Artificial Intelligence - 8th International
+Workshop, MIWAI 2014, Bangalore, India, December 8-10, 2014. Proceedings",conference,,Springer,9,9,2026-01-31 22:35:57.343396,2026-01-31 22:36:08.124452
+133,Trans. Rough Sets,journal,,,2,2,2026-01-31 22:35:57.301765,2026-01-31 22:36:09.264849
+132,Int. J. Pattern Recognit. Artif. Intell.,journal,,,3,3,2026-01-31 22:35:57.284200,2026-01-31 22:36:09.982307
+147,"Networked Digital Technologies - 4th International Conference, NDT
+2012, Dubai, UAE, April 24-26, 2012. Proceedings, Part I",conference,,Springer,1,1,2026-01-31 22:35:57.577369,2026-01-31 22:35:57.580333
+148,"Rough Sets and Knowledge Technology - 7th International Conference,
+RSKT 2012, Chengdu, China, August 17-20, 2012. Proceedings",conference,,Springer,2,2,2026-01-31 22:35:57.587999,2026-01-31 22:35:57.595740
+149,"Proceedings of the Second International Conference on Soft Computing
+for Problem Solving, SocProS 2012, December 28-30, 2012, JK Lakshmipat
+University (JKLU), Jaipur, India",conference,,Springer,1,1,2026-01-31 22:35:57.611384,2026-01-31 22:35:57.615808
+150,"Proceedings of the 2011 International Conference on Communication,
+Computing & Security, ICCCS 2011, Odisha, India, February 12-14,
+2011",conference,,ACM,1,1,2026-01-31 22:35:57.619038,2026-01-31 22:35:57.622062
+116,"Rough Sets and Knowledge Technology - 6th International Conference,
+RSKT 2011, Banff, Canada, October 9-12, 2011. Proceedings",conference,,Springer,4,4,2026-01-31 22:35:57.004514,2026-01-31 22:35:57.697987
+151,Int. J. Medical Eng. Informatics,journal,,,1,1,2026-01-31 22:35:57.718612,2026-01-31 22:35:57.723030
+153,"Proceedings of the 2010 International Conference on Grid Computing
+& Applications, GCA 2010, July 12-15, 2010, Las Vegas, Nevada,
+USA",conference,,CSREA Press,1,1,2026-01-31 22:35:57.744071,2026-01-31 22:35:57.756019
+154,"10th International Conference on Intelligent Systems Design and Applications,
+ISDA 2010, November 29 - December 1, 2010, Cairo, Egypt",conference,,IEEE,2,2,2026-01-31 22:35:57.769832,2026-01-31 22:35:57.795633
+117,"Rough Set and Knowledge Technology - 5th International Conference,
+RSKT 2010, Beijing, China, October 15-17, 2010. Proceedings",conference,,Springer,2,2,2026-01-31 22:35:57.011950,2026-01-31 22:35:57.812679
+156,"Third Asia International Conference on Modelling & Simulation,
+AMS 2009, Bandung, Bali, Indonesia, May 25-29, 2009",conference,,IEEE Computer Society,3,3,2026-01-31 22:35:57.812890,2026-01-31 22:35:57.841395
+157,"IEEE Conference on Automation Science and Engineering, CASE 2009,
+Bangalore, India, 22-25 August, 2011",conference,,IEEE,1,1,2026-01-31 22:35:57.848633,2026-01-31 22:35:57.856036
+155,"Knowledge-Based and Intelligent Information and Engineering Systems
+- 14th International Conference, KES 2010, Cardiff, UK, September
+8-10, 2010, Proceedings, Part I",conference,,Springer,2,2,2026-01-31 22:35:57.795830,2026-01-31 22:36:05.394316
+152,"Proceedings of the 1st Amrita ACM-W Celebration on Women in Computing
+in India, September 16-17, 2010, Tamilnadu, India",conference,,ACM,3,3,2026-01-31 22:35:57.736026,2026-01-31 22:36:07.549459
+146,"Multi-disciplinary Trends in Artificial Intelligence, 6th International
+Workshop, MIWAI 2012, Ho Chi Minh City, Vietnam, December 26-28,
+2012. Proceedings",conference,,Springer,4,4,2026-01-31 22:35:57.553558,2026-01-31 22:36:08.169204
+85,"Multi-disciplinary Trends in Artificial Intelligence - 5th International
+Workshop, MIWAI 2011, Hyderabad, India, December 7-9, 2011. Proceedings",conference,,Springer,15,15,2026-01-31 22:35:56.603125,2026-01-31 22:36:10.196887
+159,"2009 IEEE Workshop on Hybrid Intelligent Models and Applications,
+HIMA 2009, Nashville, TN, USA, March 30, 2009",conference,,IEEE,1,1,2026-01-31 22:35:57.919147,2026-01-31 22:35:57.926272
+161,Eng. Lett.,journal,,,3,3,2026-01-31 22:35:57.931265,2026-01-31 22:35:57.977120
+162,"14th IEEE International Conference on Electronics, Circuits, and
+Systems, ICECS 2007, Marrakech, Morocco, December 11-14, 2007",conference,,IEEE,1,1,2026-01-31 22:35:57.983711,2026-01-31 22:35:57.994584
+163,"Proceedings of the World Congress on Engineering, WCE 2007, London,
+UK, 2-4 July, 2007",conference,,Newswood Limited,1,1,2026-01-31 22:35:58.005040,2026-01-31 22:35:58.012361
+166,Internet Technol. Lett.,journal,,,1,1,2026-01-31 22:35:58.045212,2026-01-31 22:35:58.046872
+168,ACM Trans. Auton. Adapt. Syst.,journal,,,1,1,2026-01-31 22:35:58.066032,2026-01-31 22:35:58.073114
+169,IEEE Consumer Electron. Mag.,journal,,,1,1,2026-01-31 22:35:58.141271,2026-01-31 22:35:58.146112
+171,Comput. Sci. Rev.,journal,,,1,1,2026-01-31 22:35:58.190266,2026-01-31 22:35:58.193606
+172,Int. J. Netw. Manag.,journal,,,1,1,2026-01-31 22:35:58.239904,2026-01-31 22:35:58.242666
+174,"44th IEEE International Conference on Distributed Computing Systems,
+ICDCS 2024 - Workshops, Jersey City, NJ, USA, July 23, 2024",conference,,IEEE,1,1,2026-01-31 22:35:58.274484,2026-01-31 22:35:58.278842
+170,Comput. Commun.,journal,,,2,2,2026-01-31 22:35:58.156928,2026-01-31 22:35:58.336621
+175,Comput.,journal,,,1,1,2026-01-31 22:35:58.339640,2026-01-31 22:35:58.344628
+177,IEEE Internet Comput.,journal,,,1,1,2026-01-31 22:35:58.400370,2026-01-31 22:35:58.405084
+179,J. Ambient Intell. Humaniz. Comput.,journal,,,2,2,2026-01-31 22:35:58.483016,2026-01-31 22:35:58.503175
+181,Big Data Cogn. Comput.,journal,,,1,1,2026-01-31 22:35:58.600592,2026-01-31 22:35:58.605827
+164,Digit. Commun. Networks,journal,,,2,2,2026-01-31 22:35:58.017878,2026-01-31 22:35:58.633471
+183,IEEE Trans. Ind. Informatics,journal,,,1,1,2026-01-31 22:35:58.688076,2026-01-31 22:35:58.693203
+185,IEEE Trans. Parallel Distributed Syst.,journal,,,1,1,2026-01-31 22:35:58.715029,2026-01-31 22:35:58.720744
+186,"IEEE 15th International Conference on Cloud Computing, CLOUD 2022,
+Barcelona, Spain, July 10-16, 2022",conference,,IEEE,1,1,2026-01-31 22:35:58.739856,2026-01-31 22:35:58.743848
+187,"IEEE International Conference on Edge Computing and Communications,
+EDGE 2022, Barcelona, Spain, July 10-16, 2022",conference,,IEEE,1,1,2026-01-31 22:35:58.744037,2026-01-31 22:35:58.756038
+189,Green Mobile Cloud Computing,conference,,Springer,1,1,2026-01-31 22:35:58.771865,2026-01-31 22:35:58.775788
+188,"8th IEEE World Forum on Internet of Things, WF-IoT 2022, Yokohama,
+Japan, October 26 - Nov. 11, 2022",conference,,IEEE,2,2,2026-01-31 22:35:58.756239,2026-01-31 22:36:02.114349
+167,Sustain. Comput. Informatics Syst.,journal,,,2,2,2026-01-31 22:35:58.054805,2026-01-31 22:36:02.137419
+180,IEEE Trans. Intell. Transp. Syst.,journal,,,2,2,2026-01-31 22:35:58.516077,2026-01-31 22:36:03.022193
+160,"Rough Sets, Fuzzy Sets, Data Mining and Granular Computing, 12th International
+Conference, RSFDGrC 2009, Delhi, India, December 15-18, 2009. Proceedings",conference,,Springer,2,2,2026-01-31 22:35:57.926468,2026-01-31 22:36:05.413207
+158,"First International Conference on Computational Intelligence, Communication
+Systems and Networks, CICSYN 2009, Indore, India, 23-25 July, 2009",conference,,IEEE Computer Society,4,4,2026-01-31 22:35:57.856225,2026-01-31 22:36:07.618827
+190,"Big Data Analytics - 9th International Conference, BDA 2021, Virtual
+Event, December 15-18, 2021, Proceedings",conference,,Springer,1,1,2026-01-31 22:35:58.835607,2026-01-31 22:35:58.839305
+191,SICS Softw.-Intensive Cyber Phys. Syst.,journal,,,1,1,2026-01-31 22:35:58.929455,2026-01-31 22:35:58.941860
+178,IEEE Internet Things J.,journal,,,5,5,2026-01-31 22:35:58.425058,2026-01-31 22:35:59.137832
+194,"20th IEEE/ACM International Symposium on Cluster, Cloud and Internet
+Computing, CCGRID 2020, Melbourne, Australia, May 11-14, 2020",conference,,IEEE,1,1,2026-01-31 22:35:59.204940,2026-01-31 22:35:59.210248
+195,"Software Architecture - 14th European Conference, ECSA 2020 Tracks
+and Workshops, L'Aquila, Italy, September 14-18, 2020, Proceedings",conference,,Springer,1,1,2026-01-31 22:35:59.210462,2026-01-31 22:35:59.217524
+196,"46th Euromicro Conference on Software Engineering and Advanced Applications,
+SEAA 2020, Portoroz, Slovenia, August 26-28, 2020",conference,,IEEE,1,1,2026-01-31 22:35:59.233675,2026-01-31 22:35:59.237522
+197,"29th International Conference on Computer Communications and Networks,
+ICCCN 2020, Honolulu, HI, USA, August 3-6, 2020",conference,,IEEE,1,1,2026-01-31 22:35:59.249119,2026-01-31 22:35:59.254626
+198,"MOBILESoft '20: IEEE/ACM 7th International Conference on Mobile
+Software Engineering and Systems, Seoul, Republic of Korea, July 13-15,
+2020",conference,,ACM,1,1,2026-01-31 22:35:59.274821,2026-01-31 22:35:59.278034
+199,"16th International Wireless Communications and Mobile Computing Conference,
+IWCMC 2020, Limassol, Cyprus, June 15-19, 2020",conference,,IEEE,1,1,2026-01-31 22:35:59.289320,2026-01-31 22:35:59.293260
+165,Internet Things,journal,,,2,2,2026-01-31 22:35:58.039906,2026-01-31 22:35:59.934971
+193,J. Netw. Comput. Appl.,journal,,,2,2,2026-01-31 22:35:59.144210,2026-01-31 22:35:59.939466
+173,J. Parallel Distributed Comput.,journal,,,3,3,2026-01-31 22:35:58.245790,2026-01-31 22:35:59.951430
+200,IEEE Trans. Cloud Comput.,journal,,,1,1,2026-01-31 22:35:59.977781,2026-01-31 22:35:59.984820
+201,"45th Euromicro Conference on Software Engineering and Advanced Applications,
+SEAA 2019, Kallithea-Chalkidiki, Greece, August 28-30, 2019",conference,,IEEE,1,1,2026-01-31 22:36:00.031348,2026-01-31 22:36:00.039157
+202,"Proceedings of the 21st International Conference on Information Integration
+and Web-based Applications & Services, iiWAS 2019, Munich, Germany,
+December 2-4, 2019",conference,,ACM,1,1,2026-01-31 22:36:00.039367,2026-01-31 22:36:00.044914
+203,Fog and Edge Computing,conference,,Wiley,1,1,2026-01-31 22:36:00.045177,2026-01-31 22:36:00.049683
+204,Encyclopedia of Big Data Technologies,conference,,Springer,1,1,2026-01-31 22:36:00.056186,2026-01-31 22:36:00.062055
+207,"2018 IEEE International Conference on Cloud Computing Technology
+and Science, CloudCom 2018, Nicosia, Cyprus, December 10-13, 2018",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:00.093425,2026-01-31 22:36:00.096166
+182,J. Syst. Softw.,journal,,,6,6,2026-01-31 22:35:58.651733,2026-01-31 22:36:00.901208
+206,Int. J. Pervasive Comput. Commun.,journal,,,4,4,2026-01-31 22:36:00.077228,2026-01-31 22:36:01.275447
+263,"MDM 2009, Tenth International Conference on Mobile Data Management,
+Taipei, Taiwan, 18-20 May 2009",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:01.459770,2026-01-31 22:36:01.465083
+264,"Third International Conference on Internet and Web Applications and
+Services, ICIW 2008, 8-13 June 2008, Athens, Greece",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:01.487007,2026-01-31 22:36:01.492022
+265,"Proceedings of the 1st International Conference on MOBILe Wireless
+MiddleWARE, Operating Systems, and Applications, MOBILWARE 2008,
+Innsbruck, Austria, February 13 - 15, 2008",conference,,,1,1,2026-01-31 22:36:01.503896,2026-01-31 22:36:01.513402
+266,"Proceedings of the 2nd Workshop on Middleware for Service Oriented
+Computing, MW4SOC 2007, Newport Beach, CA, USA, November 26-30,
+2007",conference,,ACM,1,1,2026-01-31 22:36:01.513686,2026-01-31 22:36:01.524461
+267,"On the Move to Meaningful Internet Systems 2007: OTM 2007 Workshops,
+OTM Confederated International Workshops and Posters, AWeSOMe, CAMS,
+OTM Academy Doctoral Consortium, MONET, OnToContent, ORM, PerSys,
+PPN, RDDS, SSWS, and SWWS 2007, Vilamoura, Portugal, November 25-30,
+2007, Proceedings, Part I",conference,,Springer,1,1,2026-01-31 22:36:01.524732,2026-01-31 22:36:01.532689
+268,"WEBIST 2007 - Proceedings of the Third International Conference
+on Web Information Systems and Technologies, Volume IT, Barcelona,
+Spain, March 3-6, 2007",conference,,INSTICC Press,1,1,2026-01-31 22:36:01.543544,2026-01-31 22:36:01.550905
+269,"Advanced International Conference on Telecommunications and International
+Conference on Internet and Web Applications and Services (AICT/ICIW
+2006), 19-25 February 2006, Guadeloupe, French Caribbean",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:01.551121,2026-01-31 22:36:01.559186
+184,IEEE Trans. Netw. Sci. Eng.,journal,,,3,3,2026-01-31 22:35:58.703443,2026-01-31 22:36:03.057509
+138,Future Gener. Comput. Syst.,journal,,,11,11,2026-01-31 22:35:57.386676,2026-01-31 22:36:06.918102
+205,Int. J. Cloud Comput.,journal,,,2,2,2026-01-31 22:36:00.071794,2026-01-31 22:36:09.633969
+208,"Proceedings of the 12th European Conference on Software Architecture:
+Companion Proceedings, ECSA 2018, Madrid, Spain, September 24-28,
+2018",conference,,ACM,1,1,2026-01-31 22:36:00.099550,2026-01-31 22:36:00.106723
+209,"Software Architecture - 12th European Conference on Software Architecture,
+ECSA 2018, Madrid, Spain, September 24-28, 2018, Proceedings",conference,,Springer,1,1,2026-01-31 22:36:00.106931,2026-01-31 22:36:00.112528
+210,"Proceedings of the 13th International Conference on Software Technologies,
+ICSOFT 2018, Porto, Portugal, July 26-28, 2018",conference,,SciTePress,1,1,2026-01-31 22:36:00.112732,2026-01-31 22:36:00.120789
+211,Computer,journal,,,1,1,2026-01-31 22:36:00.162226,2026-01-31 22:36:00.170150
+176,ACM Comput. Surv.,journal,,,4,4,2026-01-31 22:35:58.382831,2026-01-31 22:36:00.178265
+192,Int. J. Mob. Comput. Multim. Commun.,journal,,,2,2,2026-01-31 22:35:59.116590,2026-01-31 22:36:00.183089
+213,"31st IEEE International Conference on Advanced Information Networking
+and Applications, AINA 2017, Taipei, Taiwan, March 27-29, 2017",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:00.218150,2026-01-31 22:36:00.224390
+214,"9th IEEE International Conference on Cloud Computing, CLOUD 2016,
+San Francisco, CA, USA, June 27 - July 2, 2016",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:00.625938,2026-01-31 22:36:00.635301
+215,"IEEE International Conference on Services Computing, SCC 2016,
+San Francisco, CA, USA, June 27 - July 2, 2016",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:00.642810,2026-01-31 22:36:00.650309
+216,"12th IEEE International Conference on Control and Automation, ICCA
+2016, Kathmandu, Nepal, June 1-3, 2016",conference,,IEEE,1,1,2026-01-31 22:36:00.650514,2026-01-31 22:36:00.656736
+217,"2016 IEEE International Conference on Internet of Things (iThings)
+and IEEE Green Computing and Communications (GreenCom) and IEEE
+Cyber, Physical and Social Computing (CPSCom) and IEEE Smart Data
+(SmartData), Chengdu, China, December 15-18, 2016",conference,,IEEE,3,3,2026-01-31 22:36:00.675488,2026-01-31 22:36:00.705213
+218,"Proceedings of the 13th International Conference on Mobile and Ubiquitous
+Systems: Computing, Networking and Services, MobiQuitous 2016, Hiroshima,
+Japan, November 28 - December 1, 2016",conference,,ACM,1,1,2026-01-31 22:36:00.705434,2026-01-31 22:36:00.714116
+219,"17th International Conference on Parallel and Distributed Computing,
+Applications and Technologies, PDCAT 2016, Guangzhou, China, December
+16-18, 2016",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:00.714339,2026-01-31 22:36:00.722388
+220,IEEE Commun. Mag.,journal,,,1,1,2026-01-31 22:36:00.722600,2026-01-31 22:36:00.729876
+221,"8th IEEE International Conference on Cloud Computing, CLOUD 2015,
+New York City, NY, USA, June 27 - July 2, 2015",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:00.778798,2026-01-31 22:36:00.796066
+222,"2015 IEEE International Conference on Services Computing, SCC
+2015, New York City, NY, USA, June 27 - July 2, 2015",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:00.796305,2026-01-31 22:36:00.804698
+223,"21st IEEE International Conference on Parallel and Distributed Systems,
+ICPADS 2015, Melbourne, Australia, December 14-17, 2015",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:00.804901,2026-01-31 22:36:00.813062
+224,"2015 IEEE International Conference on Web Services, ICWS 2015,
+New York, NY, USA, June 27 - July 2, 2015",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:00.813262,2026-01-31 22:36:00.820436
+225,"2015 IEEE International Conference on Mobile Services, MS 2015,
+New York City, NY, USA, June 27 - July 2, 2015",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:00.857994,2026-01-31 22:36:00.865418
+226,Pervasive Mob. Comput.,journal,,,1,1,2026-01-31 22:36:00.901413,2026-01-31 22:36:00.909466
+227,IEEE Pervasive Comput.,journal,,,1,1,2026-01-31 22:36:00.909673,2026-01-31 22:36:00.916309
+228,"IEEE 6th International Conference on Cloud Computing Technology
+and Science, CloudCom 2014, Singapore, December 15-18, 2014",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:00.936559,2026-01-31 22:36:00.940899
+229,"2014 International Conference on Future Internet of Things and Cloud,
+FiCloud 2014, Barcelona, Spain, August 27-29, 2014",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:00.941255,2026-01-31 22:36:00.946204
+357,Signal Image Video Process.,journal,,,1,1,2026-01-31 22:36:03.513533,2026-01-31 22:36:03.517830
+358,"22nd IEEE International Conference on Trust, Security and Privacy
+in Computing and Communications, TrustCom 2024, Exeter, UK, November
+1-3, 2023",conference,,IEEE,1,1,2026-01-31 22:36:03.518032,2026-01-31 22:36:03.521731
+359,Int. J. Digit. Crime Forensics,journal,,,1,1,2026-01-31 22:36:03.545190,2026-01-31 22:36:03.548950
+361,Comput. Sci.,journal,,,1,1,2026-01-31 22:36:03.568099,2026-01-31 22:36:03.571157
+362,Concurr. Comput. Pract. Exp.,journal,,,1,1,2026-01-31 22:36:03.574239,2026-01-31 22:36:03.577069
+360,PeerJ Comput. Sci.,journal,,,2,2,2026-01-31 22:36:03.551832,2026-01-31 22:36:03.583220
+363,Clust. Comput.,journal,,,1,0,2026-01-31 22:36:03.623325,2026-01-31 22:36:03.628480
+364,Trans. Mach. Learn. Res.,journal,,,1,1,2026-01-31 22:36:03.641306,2026-01-31 22:36:03.649634
+365,"The Thirteenth International Conference on Learning Representations,
+ICLR 2025, Singapore, April 24-28, 2025",conference,,OpenReview.net,2,2,2026-01-31 22:36:03.689616,2026-01-31 22:36:03.769345
+366,"Medical Image Computing and Computer Assisted Intervention - MICCAI
+2025 - 28th International Conference, Daejeon, South Korea, September
+23-27, 2025, Proceedings, Part IV",conference,,Springer,1,1,2026-01-31 22:36:03.792714,2026-01-31 22:36:03.798203
+356,Computing,journal,,,4,4,2026-01-31 22:36:03.491199,2026-01-31 22:36:06.255527
+212,IEEE Trans. Serv. Comput.,journal,,,2,2,2026-01-31 22:36:00.195307,2026-01-31 22:36:10.035220
+230,"2014 IEEE International Conference on High Performance Computing
+and Communications, 6th IEEE International Symposium on Cyberspace
+Safety and Security, 11th IEEE International Conference on Embedded
+Software and Systems, HPCC/CSS/ICESS 2014, Paris, France, August
+20-22, 2014",conference,,IEEE,1,1,2026-01-31 22:36:00.946417,2026-01-31 22:36:00.951827
+231,"International Conference on High Performance Computing & Simulation,
+HPCS 2014, Bologna, Italy, 21-25 July, 2014",conference,,IEEE,2,2,2026-01-31 22:36:00.952025,2026-01-31 22:36:00.960220
+232,"2nd IEEE International Conference on Mobile Cloud Computing, Services,
+and Engineering, MobileCloud 2014, Oxford, United Kingdom, April 8-11,
+2014",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:00.966855,2026-01-31 22:36:00.974068
+233,"Proceedings of the 13th International Conference on Mobile and Ubiquitous
+Multimedia, Melbourne, VIC, Australia, November 25-28, 2014",conference,,ACM,2,2,2026-01-31 22:36:00.974272,2026-01-31 22:36:00.987118
+234,"2014 IEEE International Conference on Pervasive Computing and Communication
+Workshops, PerCom 2014 Workshops, Budapest, Hungary, March 24-28,
+2014",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:00.997105,2026-01-31 22:36:01.004708
+235,Advanced Web Services,conference,,Springer,1,1,2026-01-31 22:36:01.004917,2026-01-31 22:36:01.008289
+236,"13th IEEE/ACM International Symposium on Cluster, Cloud, and Grid
+Computing, CCGrid 2013, Delft, Netherlands, May 13-16, 2013",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:01.050600,2026-01-31 22:36:01.081938
+237,"2013 IEEE International Conference on Software Maintenance, Eindhoven,
+The Netherlands, September 22-28, 2013",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:01.082235,2026-01-31 22:36:01.089029
+238,"International Conference on High Performance Computing & Simulation,
+HPCS 2013, Helsinki, Finland, July 1-5, 2013",conference,,IEEE,2,2,2026-01-31 22:36:01.106766,2026-01-31 22:36:01.135598
+239,"Proceeding of the fourth ACM workshop on Mobile cloud computing
+and services, MCS 2013, Taipei, Taiwan, June 25-28, 2013",conference,,ACM,2,2,2026-01-31 22:36:01.135830,2026-01-31 22:36:01.152369
+240,"The 11th Annual International Conference on Mobile Systems, Applications,
+and Services, MobiSys'13, Taipei, Taiwan, June 25-28, 2013",conference,,ACM,1,1,2026-01-31 22:36:01.152732,2026-01-31 22:36:01.158837
+241,"Second Nordic Symposium on Cloud Computing & Internet Technologies,
+NordiCloud '13, Oslo, Norway, September 1-3, 2013",conference,,ACM,1,1,2026-01-31 22:36:01.162709,2026-01-31 22:36:01.169196
+242,"IEEE/ACM 6th International Conference on Utility and Cloud Computing,
+UCC 2013, Dresden, Germany, December 9-12, 2013",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:01.169487,2026-01-31 22:36:01.179785
+243,Serv. Oriented Comput. Appl.,journal,,,1,1,2026-01-31 22:36:01.204202,2026-01-31 22:36:01.213888
+244,"14th IEEE International Conference on High Performance Computing
+and Communication & 9th IEEE International Conference on Embedded
+Software and Systems, HPCC-ICESS 2012, Liverpool, United Kingdom,
+June 25-27, 2012",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:01.214122,2026-01-31 22:36:01.224192
+245,"Service-Oriented Computing - 10th International Conference, ICSOC
+2012, Shanghai, China, November 12-15, 2012. Proceedings",conference,,Springer,1,1,2026-01-31 22:36:01.224427,2026-01-31 22:36:01.232642
+246,"9th IEEE International Conference on Mobile Ad-Hoc and Sensor Systems,
+MASS 2012, Las Vegas, NV, USA, October 8-11, 2012",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:01.232848,2026-01-31 22:36:01.238073
+247,"Research in Applied Computation Symposium, RACS '12, San Antonio,
+TX, USA, October 23-26, 2012",conference,,ACM,1,1,2026-01-31 22:36:01.238329,2026-01-31 22:36:01.244012
+248,"2012 Joint Working IEEE/IFIP Conference on Software Architecture
+and European Conference on Software Architecture, WICSA/ECSA 2012,
+Helsinki, Finland, August 20-24, 2012 - Companion Volume",conference,,ACM,1,1,2026-01-31 22:36:01.244269,2026-01-31 22:36:01.250515
+249,"Proceedings of the 3rd International Conference on Ambient Systems,
+Networks and Technologies (ANT 2012), the 9th International Conference
+on Mobile Web Information Systems (MobiWIS-2012), Niagara Falls, Ontario,
+Canada, August 27-29, 2012",conference,,Elsevier,1,1,2026-01-31 22:36:01.262168,2026-01-31 22:36:01.271725
+250,Sci. Program.,journal,,,1,1,2026-01-31 22:36:01.275737,2026-01-31 22:36:01.280598
+251,"CLOSER 2011 - Proceedings of the 1st International Conference on
+Cloud Computing and Services Science, Noordwijkerhout, Netherlands,
+7-9 May, 2011",conference,,SciTePress,1,1,2026-01-31 22:36:01.295274,2026-01-31 22:36:01.300881
+252,"2011 International Conference on High Performance Computing & Simulation,
+HPCS 2012, Istanbul, Turkey, July 4-8, 2011",conference,,IEEE,1,1,2026-01-31 22:36:01.301163,2026-01-31 22:36:01.311185
+253,"iiWAS'2011 - The 13th International Conference on Information Integration
+and Web-based Applications and Services, 5-7 December 2011, Ho Chi
+Minh City, Vietnam",conference,,ACM,1,1,2026-01-31 22:36:01.311426,2026-01-31 22:36:01.319399
+254,"MoMM'2011 - The Nineth International Conference on Advances in Mobile
+Computing and Multimedia, 5-7 December 2011, Ho Chi Minh City, Vietnam",conference,,ACM,1,1,2026-01-31 22:36:01.319611,2026-01-31 22:36:01.327914
+255,"5th International Conference on Next Generation Mobile Applications,
+Services and Technologies, NGMAST 2011, Cardiff, United Kingdom,
+September 14-16, 2011",conference,,IEEE,1,1,2026-01-31 22:36:01.328129,2026-01-31 22:36:01.336184
+256,"On the Move to Meaningful Internet Systems: OTM 2011 - Confederated
+International Conferences: CoopIS, DOA-SVI, and ODBASE 2011, Hersonissos,
+Crete, Greece, October 17-21, 2011, Proceedings, Part II",conference,,Springer,1,1,2026-01-31 22:36:01.336386,2026-01-31 22:36:01.344356
+257,"Applications, Tools and Techniques on the Road to Exascale Computing,
+Proceedings of the conference ParCo 2011, 31 August - 3 September
+2011, Ghent, Belgium",conference,,IOS Press,1,1,2026-01-31 22:36:01.344561,2026-01-31 22:36:01.353075
+258,"IEEE 4th International Conference on Utility and Cloud Computing,
+UCC 2011, Melbourne, Australia, December 5-8, 2011",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:01.353292,2026-01-31 22:36:01.361884
+259,"Proceedings of the 2nd International Conference on Ambient Systems,
+Networks and Technologies (ANT 2011), the 8th International Conference
+on Mobile Web Information Systems (MobiWIS-2011), Niagara Falls, Ontario,
+Canada, September 19-21, 2011",conference,,Elsevier,1,1,2026-01-31 22:36:01.362094,2026-01-31 22:36:01.370133
+260,Int. J. Mob. Learn. Organisation,journal,,,1,1,2026-01-31 22:36:01.370346,2026-01-31 22:36:01.375883
+261,"10th IEEE/ACM International Conference on Cluster, Cloud and Grid
+Computing, CCGrid 2010, 17-20 May 2010, Melbourne, Victoria, Australia",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:01.389447,2026-01-31 22:36:01.396187
+262,Int. J. Web Eng. Technol.,journal,,,1,1,2026-01-31 22:36:01.455228,2026-01-31 22:36:01.459570
+270,"Proceedings of the CAiSE*06 Workshop on Ubiquitous Mobile Information
+and Collaboration Systems UMICS '06, Luxemburg, June 5-9, 2006",conference,,CEUR-WS.org,1,1,2026-01-31 22:36:01.559402,2026-01-31 22:36:01.567570
+271,"Tenth IEEE International Enterprise Distributed Object Computing
+Conference (EDOC 2006), 16-20 October 2006, Hong Kong, China, Workshops",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:01.567844,2026-01-31 22:36:01.576001
+272,"Mobile Services and Personalized Environments. Proceedings of the
+First International Workshop on Mobile Services and Personalized Environments,
+November 16-17, 2006 in Aachen",conference,,GI,1,1,2026-01-31 22:36:01.576201,2026-01-31 22:36:01.579274
+273,"On the Move to Meaningful Internet Systems 2006: OTM 2006 Workshops,
+OTM Confederated International Workshops and Posters, AWeSOMe, CAMS,
+COMINF, IS, KSinBIT, MIOS-CIAO, MONET, OnToContent, ORM, PerSys, OTM
+Academy Doctoral Consortium, RDDS, SWWS, and SeBGIS 2006, Montpellier,
+France, October 29 - November 3, 2006. Proceedings, Part I",conference,,Springer,1,1,2026-01-31 22:36:01.579481,2026-01-31 22:36:01.583608
+274,"4th IEEE International Workshop on Wireless and Mobile Technologies
+in Education, WMTE 2006, Athens, Greece, November 16-17, 2006",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:01.594692,2026-01-31 22:36:01.599568
+275,"Sixth International Conference on Signal-Image Technology and Internet-Based
+Systems, SITIS 2010, Kuala Lumpur, Malaysia, December 15-18, 2010",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:01.610514,2026-01-31 22:36:01.613950
+276,"Eigth IEEE International Symposium on Multimedia (ISM 2006), 11-13
+December 2006, San Diego, CA, USA",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:01.616888,2026-01-31 22:36:01.619837
+280,Discret. Math. Algorithms Appl.,journal,,,1,1,2026-01-31 22:36:01.653850,2026-01-31 22:36:01.661451
+282,"12th International Conference on Computing Communication and Networking
+Technologies, ICCCNT 2021, Kharagpur, India, July 6-8, 2021",conference,,IEEE,1,1,2026-01-31 22:36:01.760256,2026-01-31 22:36:01.764055
+283,"11th International Conference on Computing, Communication and Networking
+Technologies, ICCCNT 2020, Kharagpur, India, July 1-3, 2020",conference,,IEEE,1,1,2026-01-31 22:36:01.834095,2026-01-31 22:36:01.837019
+284,"Algorithms and Discrete Applied Mathematics - 5th International Conference,
+CALDAM 2019, Kharagpur, India, February 14-16, 2019, Proceedings",conference,,Springer,1,1,2026-01-31 22:36:01.847779,2026-01-31 22:36:01.856455
+285,"Combinatorial Algorithms - 30th International Workshop, IWOCA 2019,
+Pisa, Italy, July 23-25, 2019, Proceedings",conference,,Springer,1,1,2026-01-31 22:36:01.856711,2026-01-31 22:36:01.862190
+286,"Algorithms and Discrete Applied Mathematics - 4th International Conference,
+CALDAM 2018, Guwahati, India, February 15-17, 2018, Proceedings",conference,,Springer,1,1,2026-01-31 22:36:01.862412,2026-01-31 22:36:01.875748
+287,"Combinatorial Optimization and Applications - 11th International Conference,
+COCOA 2017, Shanghai, China, December 16-18, 2017, Proceedings,
+Part II",conference,,Springer,1,1,2026-01-31 22:36:01.896780,2026-01-31 22:36:01.904617
+289,"Combinatorial Algorithms - 27th International Workshop, IWOCA 2016,
+Helsinki, Finland, August 17-19, 2016, Proceedings",conference,,Springer,1,1,2026-01-31 22:36:01.920483,2026-01-31 22:36:01.928008
+290,"Recent Advances in Information Technology - RAIT-2014 Proceedings
+[Dhanbad, India, 13-15 March, 2014]",conference,,Springer,1,1,2026-01-31 22:36:01.930865,2026-01-31 22:36:01.934187
+292,"9th International Conference on Communication Systems and Networks,
+COMSNETS 2017, Bengaluru, India, January 4-8, 2017",conference,,IEEE,1,1,2026-01-31 22:36:01.941153,2026-01-31 22:36:01.945110
+277,"Proceedings of the 1st Indian International Conference on Artificial
+Intelligence, IICAI 2003, Hyderabad, India, December 18-20, 2003",conference,,IICAI,2,2,2026-01-31 22:36:01.622620,2026-01-31 22:36:05.807303
+288,Electron. Notes Discret. Math.,journal,,,2,2,2026-01-31 22:36:01.917162,2026-01-31 22:36:06.763924
+291,"Sixth International Conference on Contemporary Computing, IC3 2013,
+Noida, India, August 8-10, 2013",conference,,IEEE,5,5,2026-01-31 22:36:01.936974,2026-01-31 22:36:10.136371
+293,"7th International Conference on Communication Systems and Networks,
+COMSNETS 2015, Bangalore, India, January 6-10, 2015",conference,,IEEE,1,1,2026-01-31 22:36:01.947959,2026-01-31 22:36:01.950686
+296,"Combinatorial Image Analysis - 15th International Workshop, IWCIA
+2012, Austin, TX, USA, November 28-30, 2012. Proceedings",conference,,Springer,1,1,2026-01-31 22:36:01.979673,2026-01-31 22:36:01.982511
+298,"Distributed Computing and Internet Technology, 5th International Conference,
+ICDCIT 2008, New Delhi, India, December 10-12, 2008. Proceedings",conference,,Springer,1,1,2026-01-31 22:36:01.990680,2026-01-31 22:36:01.995705
+299,"Distributed Computing and Internet Technology, 4th International Conference,
+ICDCIT 2007, Bangalore, India, December 17-20, Proceedings",conference,,Springer,1,1,2026-01-31 22:36:02.016718,2026-01-31 22:36:02.019827
+300,"CIKM 1995 Intelligent Information Agents Workshop, Omni Inner Harbor
+Hotel, Baltimore, MD, USA, December 1-2, 1995",conference,,,1,1,2026-01-31 22:36:02.026456,2026-01-31 22:36:02.031970
+301,J. Sens. Actuator Networks,journal,,,1,1,2026-01-31 22:36:02.078771,2026-01-31 22:36:02.081443
+302,"16th International Conference on Sensing Technology, ICST 2023,
+Hyderabad, India, December 17-20, 2023",conference,,IEEE,1,1,2026-01-31 22:36:02.084216,2026-01-31 22:36:02.088237
+304,"IEEE International Conference on Smart Internet of Things, SmartIoT
+2022, Suzhou, China, August 19-21, 2022",conference,,IEEE,1,1,2026-01-31 22:36:02.104951,2026-01-31 22:36:02.107817
+305,"Proceedings of the 2020 Federated Conference on Computer Science and
+Information Systems, FedCSIS 2020, Sofia, Bulgaria, September 6-9,
+2020",conference,,,1,1,2026-01-31 22:36:02.137611,2026-01-31 22:36:02.140930
+306,"13th International Conference on Sensing Technology, ICST 2019,
+Sydney, Australia, December 2-4, 2019",conference,,IEEE,1,1,2026-01-31 22:36:02.147681,2026-01-31 22:36:02.151526
+307,J. Medical Syst.,journal,,,1,1,2026-01-31 22:36:02.163238,2026-01-31 22:36:02.166900
+303,Sensors,journal,,,4,4,2026-01-31 22:36:02.095294,2026-01-31 22:36:02.177169
+308,IEEE Intell. Syst.,journal,,,1,1,2026-01-31 22:36:02.188824,2026-01-31 22:36:02.193087
+309,"IEEE International Instrumentation and Measurement Technology Conference,
+I2MTC 2014, Proceedings, Montevideo, Uruguay, May 12-15, 2014",conference,,IEEE,2,2,2026-01-31 22:36:02.193300,2026-01-31 22:36:02.214223
+310,"IEEE International Instrumentation and Measurement Technology Conference,
+I2MTC 2013, Minneapolis, MN, USA, May 6-9, 2013",conference,,IEEE,1,1,2026-01-31 22:36:02.243075,2026-01-31 22:36:02.247716
+311,"Seventh International Conference on Sensing Technology, ICST 2013,
+Wellington, New Zealand, December 3-5, 2013",conference,,IEEE,2,2,2026-01-31 22:36:02.266617,2026-01-31 22:36:02.283976
+312,"2012 Eighth International Conference on Intelligent Environments,
+Guanajuato, Mexico, June 26-29, 2012",conference,,IEEE,1,1,2026-01-31 22:36:02.290295,2026-01-31 22:36:02.293397
+294,"Sixth International Conference on Communication Systems and Networks,
+COMSNETS 2014, Bangalore, India, January 6-10, 2014",conference,,IEEE,3,3,2026-01-31 22:36:01.953576,2026-01-31 22:36:06.387109
+295,"Distributed Computing and Internet Technology - 10th International
+Conference, ICDCIT 2014, Bhubaneswar, India, February 6-9, 2014.
+Proceedings",conference,,Springer,2,2,2026-01-31 22:36:01.969529,2026-01-31 22:36:06.390665
+297,"Contemporary Computing - 4th International Conference, IC3 2011,
+Noida, India, August 8-10, 2011. Proceedings",conference,,Springer,2,2,2026-01-31 22:36:01.985230,2026-01-31 22:36:06.430484
+467,Int. J. Commun. Networks Distributed Syst.,journal,,,1,1,2026-01-31 22:36:06.508374,2026-01-31 22:36:06.512225
+434,Int. J. Secur. Networks,journal,,,4,4,2026-01-31 22:36:05.903023,2026-01-31 22:36:06.573136
+469,"Number-Theoretic Methods in Cryptology - First International Conference,
+NuTMiC 2017, Warsaw, Poland, September 11-13, 2017, Revised Selected
+Papers",conference,,Springer,1,1,2026-01-31 22:36:06.603686,2026-01-31 22:36:06.607075
+470,Int. J. Trust. Manag. Comput. Commun.,journal,,,1,1,2026-01-31 22:36:06.655317,2026-01-31 22:36:06.658761
+471,"Recent Trends in Computer Networks and Distributed Systems Security
+- Second International Conference, SNDS 2014, Trivandrum, India,
+March 13-14, 2014, Proceedings",conference,,Springer,1,1,2026-01-31 22:36:06.665323,2026-01-31 22:36:06.672244
+472,"Security in Computing and Communications - Second International Symposium,
+SSCC 2014, Delhi, India, September 24-27, 2014. Proceedings",conference,,Springer,1,1,2026-01-31 22:36:06.672450,2026-01-31 22:36:06.679792
+473,"Combinatorial Algorithms - 24th International Workshop, IWOCA 2013,
+Rouen, France, July 10-12, 2013, Revised Selected Papers",conference,,Springer,1,1,2026-01-31 22:36:06.698656,2026-01-31 22:36:06.703744
+474,J. Discrete Algorithms,journal,,,1,1,2026-01-31 22:36:06.716467,2026-01-31 22:36:06.721356
+475,Discret. Math.,journal,,,1,1,2026-01-31 22:36:06.730267,2026-01-31 22:36:06.735153
+468,Int. J. Commun. Syst.,journal,,,2,2,2026-01-31 22:36:06.530394,2026-01-31 22:36:07.087272
+465,IACR Cryptol. ePrint Arch.,journal,,,6,6,2026-01-31 22:36:06.471504,2026-01-31 22:36:07.327662
+436,Int. J. Netw. Secur.,journal,,,10,10,2026-01-31 22:36:05.981148,2026-01-31 22:36:08.129088
+313,"Perception and Machine Intelligence - First Indo-Japan Conference,
+PerMIn 2012, Kolkata, India, January 12-13, 2012. Proceedings",conference,,Springer,1,1,2026-01-31 22:36:02.299758,2026-01-31 22:36:02.306429
+315,IEEE Trans. Fuzzy Syst.,journal,,,2,2,2026-01-31 22:36:02.347814,2026-01-31 22:36:02.408292
+317,"Advances in Computing and Data Sciences - Third International Conference,
+ICACDS 2019, Ghaziabad, India, April 12-13, 2019, Revised Selected
+Papers, Part I",conference,,Springer,1,1,2026-01-31 22:36:02.408515,2026-01-31 22:36:02.413444
+318,"TENCON 2019 - 2019 IEEE Region 10 Conference (TENCON), Kochi,
+India, October 17-20, 2019",conference,,IEEE,1,1,2026-01-31 22:36:02.437954,2026-01-31 22:36:02.442491
+319,"Distributed Computing and Internet Technology - 13th International
+Conference, ICDCIT 2017, Bhubaneswar, India, January 13-16, 2017,
+Proceedings",conference,,Springer,1,1,2026-01-31 22:36:02.460284,2026-01-31 22:36:02.463822
+320,"Proceedings of the 18th International Conference on Distributed Computing
+and Networking, Hyderabad, India, January 5-7, 2017",conference,,ACM,1,1,2026-01-31 22:36:02.470806,2026-01-31 22:36:02.473541
+279,"Algorithms and Discrete Applied Mathematics - 11th International Conference,
+CALDAM 2025, Coimbatore, India, February 13-15, 2025, Proceedings",conference,,Springer,3,3,2026-01-31 22:36:01.649421,2026-01-31 22:36:02.523791
+323,"36th International Symposium on Algorithms and Computation, ISAAC
+2025, Tainan, Taiwan, December 7-10, 2025",conference,,Schloss Dagstuhl - Leibniz-Zentrum für Informatik,1,1,2026-01-31 22:36:02.542357,2026-01-31 22:36:02.545920
+324,"Proceedings of the 36th Canadian Conference on Computational Geometry,
+CCCG 2024, Brock University, St. Catharines, Canada, July 17-19,
+2024",conference,,,1,1,2026-01-31 22:36:02.596106,2026-01-31 22:36:02.600825
+322,Comput. Geom.,journal,,,2,2,2026-01-31 22:36:02.497533,2026-01-31 22:36:02.624732
+281,"Algorithms and Discrete Applied Mathematics - 9th International Conference,
+CALDAM 2023, Gandhinagar, India, February 9-11, 2023, Proceedings",conference,,Springer,2,2,2026-01-31 22:36:01.686707,2026-01-31 22:36:02.655930
+325,"Algorithms and Discrete Applied Mathematics - 8th International Conference,
+CALDAM 2022, Puducherry, India, February 10-12, 2022, Proceedings",conference,,Springer,1,1,2026-01-31 22:36:02.667675,2026-01-31 22:36:02.680457
+326,"LATIN 2022: Theoretical Informatics - 15th Latin American Symposium,
+Guanajuato, Mexico, November 7-11, 2022, Proceedings",conference,,Springer,1,1,2026-01-31 22:36:02.680672,2026-01-31 22:36:02.701987
+327,"Algorithms and Discrete Applied Mathematics - 7th International Conference,
+CALDAM 2021, Rupnagar, India, February 11-13, 2021, Proceedings",conference,,Springer,1,1,2026-01-31 22:36:02.751436,2026-01-31 22:36:02.758716
+328,"Algorithms and Data Structures - 17th International Symposium, WADS
+2021, Virtual Event, August 9-11, 2021, Proceedings",conference,,Springer,1,1,2026-01-31 22:36:02.758933,2026-01-31 22:36:02.771322
+321,"Proceedings of the 3rd IKDD Conference on Data Science, CODS 2016,
+Pune, India, March 13-16, 2016",conference,,ACM,2,2,2026-01-31 22:36:02.476488,2026-01-31 22:36:06.363742
+476,Australas. J Comb.,journal,,,2,2,2026-01-31 22:36:06.764154,2026-01-31 22:36:06.779836
+477,Neural Parallel Sci. Comput.,journal,,,1,1,2026-01-31 22:36:06.782773,2026-01-31 22:36:06.786423
+479,Simul.,journal,,,1,1,2026-01-31 22:36:06.799223,2026-01-31 22:36:06.805994
+480,"IEEE International Conference on Big Data, BigData 2024, Washington,
+DC, USA, December 15-18, 2024",conference,,IEEE,1,1,2026-01-31 22:36:06.833634,2026-01-31 22:36:06.837463
+481,"IEEE International Conference on Computer Vision and Machine Intelligence,
+CVMI 2024, Prayagraj, India, October 19-20, 2024",conference,,IEEE,1,1,2026-01-31 22:36:06.837671,2026-01-31 22:36:06.842779
+482,"47th IEEE Annual Computers, Software, and Applications Conference,
+COMPSAC 2023, Torino, Italy, June 26-30, 2023",conference,,IEEE,1,1,2026-01-31 22:36:06.866108,2026-01-31 22:36:06.868936
+483,"IEEE International Geoscience and Remote Sensing Symposium, IGARSS
+2023, Pasadena, CA, USA, July 16-21, 2023",conference,,IEEE,1,1,2026-01-31 22:36:06.872060,2026-01-31 22:36:06.876392
+484,"13th Workshop on Hyperspectral Imaging and Signal Processing: Evolution
+in Remote Sensing, WHISPERS 2023, Athens, Greece, October 31 - November
+2, 2023",conference,,IEEE,1,1,2026-01-31 22:36:06.876643,2026-01-31 22:36:06.884354
+486,"5th IEEE World Forum on Internet of Things, WF-IoT 2019, Limerick,
+Ireland, April 15-18, 2019",conference,,IEEE,1,1,2026-01-31 22:36:06.941198,2026-01-31 22:36:06.945910
+487,Int. J. Big Data Intell.,journal,,,1,1,2026-01-31 22:36:06.974516,2026-01-31 22:36:06.979907
+316,Knowl. Based Syst.,journal,,,5,5,2026-01-31 22:36:02.380637,2026-01-31 22:36:08.550202
+314,Int. J. Approx. Reason.,journal,,,3,3,2026-01-31 22:36:02.334647,2026-01-31 22:36:08.797295
+278,Discret. Appl. Math.,journal,,,7,7,2026-01-31 22:36:01.627812,2026-01-31 22:36:09.546731
+485,"Multi-disciplinary Trends in Artificial Intelligence - 13th International
+Conference, MIWAI 2019, Kuala Lumpur, Malaysia, November 17-19,
+2019, Proceedings",conference,,Springer,2,2,2026-01-31 22:36:06.930650,2026-01-31 22:36:09.735532
+329,"Combinatorial Optimization and Applications - 14th International Conference,
+COCOA 2020, Dallas, TX, USA, December 11-13, 2020, Proceedings",conference,,Springer,2,2,2026-01-31 22:36:02.783798,2026-01-31 22:36:02.806429
+330,"Proceedings of the 31st Canadian Conference on Computational Geometry,
+CCCG 2019, August 8-10, 2019, University of Alberta, Edmonton, Alberta,
+Canada",conference,,,1,1,2026-01-31 22:36:02.822622,2026-01-31 22:36:02.829959
+332,"Intelligent Human Computer Interaction - 12th International Conference,
+IHCI 2020, Daegu, South Korea, November 24-26, 2020, Proceedings,
+Part II",conference,,Springer,1,1,2026-01-31 22:36:02.849190,2026-01-31 22:36:02.855353
+331,"Intelligent Human Computer Interaction - 12th International Conference,
+IHCI 2020, Daegu, South Korea, November 24-26, 2020, Proceedings,
+Part I",conference,,Springer,2,2,2026-01-31 22:36:02.830206,2026-01-31 22:36:02.885011
+334,IET Commun.,journal,,,1,1,2026-01-31 22:36:02.971751,2026-01-31 22:36:02.978036
+335,Knowl. Inf. Syst.,journal,,,1,1,2026-01-31 22:36:03.004332,2026-01-31 22:36:03.008224
+333,Peer Peer Netw. Appl.,journal,,,2,2,2026-01-31 22:36:02.914792,2026-01-31 22:36:03.102178
+336,"iiWAS2021: The 23rd International Conference on Information Integration
+and Web Intelligence, Linz, Austria, 29 November 2021 - 1 December
+2021",conference,,ACM,1,1,2026-01-31 22:36:03.140817,2026-01-31 22:36:03.148869
+337,Int. J. Inf. Sec.,journal,,,1,1,2026-01-31 22:36:03.149077,2026-01-31 22:36:03.154600
+341,"Smart Data: State-of-the-Art Perspectives in Computing and Applications,
+1st Edition",conference,,Chapman and Hall/CRC,1,1,2026-01-31 22:36:03.194644,2026-01-31 22:36:03.199501
+342,"Sixth International Conference on Communications and Networking, ComNet
+2017, Hammamet, Tunisia, March 29 - April 1, 2017",conference,,IEEE,1,1,2026-01-31 22:36:03.223615,2026-01-31 22:36:03.231392
+344,Int. J. Grid High Perform. Comput.,journal,,,1,1,2026-01-31 22:36:03.279386,2026-01-31 22:36:03.282982
+345,"Advances in Computing and Communications - First International Conference,
+ACC 2011, Kochi, India, July 22-24, 2011. Proceedings, Part I",conference,,Springer,1,1,2026-01-31 22:36:03.290185,2026-01-31 22:36:03.294648
+346,Int. J. Adapt. Resilient Auton. Syst.,journal,,,1,1,2026-01-31 22:36:03.303039,2026-01-31 22:36:03.309925
+348,"Distributed Computing and Networking, 9th International Conference,
+ICDCN 2008, Kolkata, India, January 5-8, 2008",conference,,Springer,1,1,2026-01-31 22:36:03.354151,2026-01-31 22:36:03.358377
+352,Int. J. Math. Math. Sci.,journal,,,1,1,2026-01-31 22:36:03.451020,2026-01-31 22:36:03.454649
+353,Int. J. Multim. Inf. Retr.,journal,,,1,1,2026-01-31 22:36:03.461804,2026-01-31 22:36:03.466230
+354,ACM Trans. Design Autom. Electr. Syst.,journal,,,1,1,2026-01-31 22:36:03.473268,2026-01-31 22:36:03.476894
+355,"IEEE Computer Society Annual Symposium on VLSI, ISVLSI 2025, Kalamata,
+Greece, July 6-9, 2025",conference,,IEEE,1,1,2026-01-31 22:36:03.483955,2026-01-31 22:36:03.490969
+339,Int. J. Inf. Comput. Secur.,journal,,,5,5,2026-01-31 22:36:03.169826,2026-01-31 22:36:06.481833
+340,Int. J. Inf. Priv. Secur. Integr.,journal,,,2,2,2026-01-31 22:36:03.186374,2026-01-31 22:36:06.527591
+338,Int. J. Ad Hoc Ubiquitous Comput.,journal,,,3,3,2026-01-31 22:36:03.162104,2026-01-31 22:36:06.974205
+347,Int. J. Comput. Sci. Appl.,journal,,,4,4,2026-01-31 22:36:03.318974,2026-01-31 22:36:07.260044
+350,"Distributed Computing and Internet Technology - 15th International
+Conference, ICDCIT 2019, Bhubaneswar, India, January 10-13, 2019,
+Proceedings",conference,,Springer,3,3,2026-01-31 22:36:03.422539,2026-01-31 22:36:07.461996
+349,SN Comput. Sci.,journal,,,2,2,2026-01-31 22:36:03.381853,2026-01-31 22:36:08.002924
+343,"2015 International Conference on Advances in Computing, Communications
+and Informatics, ICACCI 2015, Kochi, India, August 10-13, 2015",conference,,IEEE,4,4,2026-01-31 22:36:03.267813,2026-01-31 22:36:08.116503
+351,"2015 International Conference on Information Technology, ICIT 2015,
+Bhubaneswar, India, December 21-23, 2015",conference,,IEEE,6,6,2026-01-31 22:36:03.434603,2026-01-31 22:36:10.115559
+368,"IEEE International Conference on Acoustics, Speech and Signal Processing,
+ICASSP 2024, Seoul, Republic of Korea, April 14-19, 2024",conference,,IEEE,1,1,2026-01-31 22:36:04.001122,2026-01-31 22:36:04.005411
+369,"Proceedings of the 2024 13th International Conference on Computing
+and Pattern Recognition, ICCPR 2024, Tianjin, China, October 25-27,
+2024",conference,,ACM,1,1,2026-01-31 22:36:04.012743,2026-01-31 22:36:04.016007
+370,"International Joint Conference on Neural Networks, IJCNN 2024, Yokohama,
+Japan, June 30 - July 5, 2024",conference,,IEEE,1,1,2026-01-31 22:36:04.024999,2026-01-31 22:36:04.029959
+371,"Findings of the Association for Computational Linguistics: ACL 2023,
+Toronto, Canada, July 9-14, 2023",conference,,Association for Computational Linguistics,1,1,2026-01-31 22:36:04.072217,2026-01-31 22:36:04.079616
+372,"Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain
+Injuries - 9th International Workshop, BrainLes 2023, and 3rd International
+Workshop, SWITCH 2023, Held in Conjunction with MICCAI 2023, Vancouver,
+BC, Canada, October 8 and 12, 2023, Revised Selected Papers",conference,,Springer,1,1,2026-01-31 22:36:04.085394,2026-01-31 22:36:04.088879
+373,"Proceedings of the 45th Annual Meeting of the Cognitive Science Society,
+CogSci 2023, Sydney, NSW, Australia, July 26-29, 2023",conference,,cognitivesciencesociety.org,1,1,2026-01-31 22:36:04.100631,2026-01-31 22:36:04.104431
+374,"IEEE International Conference on Acoustics, Speech and Signal Processing
+ICASSP 2023, Rhodes Island, Greece, June 4-10, 2023",conference,,IEEE,1,1,2026-01-31 22:36:04.111965,2026-01-31 22:36:04.128232
+375,"International Joint Conference on Neural Networks, IJCNN 2023, Gold
+Coast, Australia, June 18-23, 2023",conference,,IEEE,4,4,2026-01-31 22:36:04.134758,2026-01-31 22:36:04.202180
+376,"24th Annual Conference of the International Speech Communication Association,
+Interspeech 2023, Dublin, Ireland, August 20-24, 2023",conference,,ISCA,1,1,2026-01-31 22:36:04.204829,2026-01-31 22:36:04.208442
+377,"Machine Learning, Optimization, and Data Science - 9th International
+Conference, LOD 2023, Grasmere, UK, September 22-26, 2023, Revised
+Selected Papers, Part I",conference,,Springer,1,1,2026-01-31 22:36:04.225144,2026-01-31 22:36:04.228756
+378,Frontiers Comput. Neurosci.,journal,,,1,1,2026-01-31 22:36:04.320103,2026-01-31 22:36:04.331107
+379,"Big Data Analytics - 10th International Conference, BDA 2022, Hyderabad,
+India, December 19-22, 2022, Proceedings",conference,,Springer,1,1,2026-01-31 22:36:04.346627,2026-01-31 22:36:04.351520
+380,"Proceedings of the 44th Annual Meeting of the Cognitive Science Society,
+CogSci 2022, Toronto, ON, Canada, July 27-30, 2022",conference,,cognitivesciencesociety.org,2,2,2026-01-31 22:36:04.351767,2026-01-31 22:36:04.382631
+381,"Proceedings of the 29th International Conference on Computational
+Linguistics, COLING 2022, Gyeongju, Republic of Korea, October 12-17,
+2022",conference,,International Committee on Computational Linguistics,2,2,2026-01-31 22:36:04.382898,2026-01-31 22:36:04.400504
+367,"Proceedings of the 8th International Conference on Data Science and
+Management of Data (12th ACM IKDD CODS and 30th COMAD), Jodhpur,
+India, December 18-21, 2024",conference,,ACM,3,3,2026-01-31 22:36:03.995360,2026-01-31 22:36:06.274991
+382,"Neural Information Processing - 29th International Conference, ICONIP
+2022, Virtual Event, November 22-26, 2022, Proceedings, Part II",conference,,Springer,1,1,2026-01-31 22:36:04.416258,2026-01-31 22:36:04.421532
+383,"International Joint Conference on Neural Networks, IJCNN 2022, Padua,
+Italy, July 18-23, 2022",conference,,IEEE,4,4,2026-01-31 22:36:04.443958,2026-01-31 22:36:04.511450
+384,"Distributed, Collaborative, and Federated Learning, and Affordable
+AI and Healthcare for Resource Diverse Global Health - Third MICCAI
+Workshop, DeCaF 2022, and Second MICCAI Workshop, FAIR 2022, Held
+in Conjunction with MICCAI 2022, Singapore, September 18 and 22,
+2022, Proceedings",conference,,Springer,1,1,2026-01-31 22:36:04.530065,2026-01-31 22:36:04.534843
+385,"Medical Image Computing and Computer Assisted Intervention - MICCAI
+2022 - 25th International Conference, Singapore, September 18-22,
+2022, Proceedings, Part III",conference,,Springer,1,1,2026-01-31 22:36:04.547072,2026-01-31 22:36:04.552471
+386,"Proceedings of the 2022 Conference of the North American Chapter of
+the Association for Computational Linguistics: Human Language Technologies,
+NAACL 2022, Seattle, WA, United States, July 10-15, 2022",conference,,Association for Computational Linguistics,1,1,2026-01-31 22:36:04.590585,2026-01-31 22:36:04.601419
+387,"2021 IEEE International Conference on Systems, Man, and Cybernetics,
+SMC 2021, Melbourne, Australia, October 17-20, 2021",conference,,IEEE,1,1,2026-01-31 22:36:04.787253,2026-01-31 22:36:04.803596
+388,IEEE Trans. Affect. Comput.,journal,,,1,1,2026-01-31 22:36:04.803791,2026-01-31 22:36:04.809197
+389,"Proceedings of the 42th Annual Meeting of the Cognitive Science Society
+- Developing a Mind: Learning in Humans, Animals, and Machines, CogSci
+2020, virtual, July 29 - August 1, 2020",conference,,cognitivesciencesociety.org,3,3,2026-01-31 22:36:04.821256,2026-01-31 22:36:04.851673
+391,"International Joint Conference on Neural Networks, IJCNN 2019 Budapest,
+Hungary, July 14-19, 2019",conference,,IEEE,1,1,2026-01-31 22:36:04.888949,2026-01-31 22:36:04.900586
+392,"Pattern Recognition and Machine Intelligence - 8th International Conference,
+PReMI 2019, Tezpur, India, December 17-20, 2019, Proceedings, Part
+II",conference,,Springer,1,1,2026-01-31 22:36:04.908351,2026-01-31 22:36:04.910483
+394,Comput. Biol. Medicine,journal,,,1,1,2026-01-31 22:36:04.956443,2026-01-31 22:36:04.959633
+395,"Neural Information Processing - 25th International Conference, ICONIP
+2018, Siem Reap, Cambodia, December 13-16, 2018, Proceedings, Part
+III",conference,,Springer,1,1,2026-01-31 22:36:04.966090,2026-01-31 22:36:04.972966
+396,"Proceedings of the 39th Annual Meeting of the Cognitive Science Society,
+CogSci 2017, London, UK, 16-29 July 2017",conference,,cognitivesciencesociety.org,2,2,2026-01-31 22:36:04.996162,2026-01-31 22:36:05.007047
+397,"2017 International Joint Conference on Neural Networks, IJCNN 2017,
+Anchorage, AK, USA, May 14-19, 2017",conference,,IEEE,3,3,2026-01-31 22:36:05.014353,2026-01-31 22:36:05.047941
+398,"Proceedings of the 28th Modern Artificial Intelligence and Cognitive
+Science Conference 2017, Fort Wayne, IN, USA, April 28-29, 2017",conference,,CEUR-WS.org,1,1,2026-01-31 22:36:05.068953,2026-01-31 22:36:05.072638
+399,"2016 International Conference on Information Technology, ICIT 2016,
+Bhubaneswar, India, December 22-24, 2016",conference,,IEEE,1,1,2026-01-31 22:36:05.111273,2026-01-31 22:36:05.114058
+400,Biosyst.,journal,,,1,1,2026-01-31 22:36:05.117263,2026-01-31 22:36:05.122252
+393,Brain Connect.,journal,,,2,2,2026-01-31 22:36:04.939146,2026-01-31 22:36:05.137533
+402,Neurocomputing,journal,,,1,1,2026-01-31 22:36:05.168095,2026-01-31 22:36:05.171746
+403,"Neural Information Processing - 21st International Conference, ICONIP
+2014, Kuching, Malaysia, November 3-6, 2014. Proceedings, Part I",conference,,Springer,1,1,2026-01-31 22:36:05.179215,2026-01-31 22:36:05.183926
+404,"2014 International Joint Conference on Neural Networks, IJCNN 2014,
+Beijing, China, July 6-11, 2014",conference,,IEEE,1,1,2026-01-31 22:36:05.197157,2026-01-31 22:36:05.200246
+401,Int. J. Knowl. Eng. Soft Data Paradigms,journal,,,2,2,2026-01-31 22:36:05.150728,2026-01-31 22:36:05.224053
+405,"Proceedings of the 35th Annual Meeting of the Cognitive Science Society,
+CogSci 2013, Berlin, Germany, July 31 - August 3, 2013",conference,,cognitivesciencesociety.org,1,1,2026-01-31 22:36:05.224375,2026-01-31 22:36:05.230812
+406,Biol. Cybern.,journal,,,2,2,2026-01-31 22:36:05.287077,2026-01-31 22:36:05.353656
+409,"KDIR 2010 - Proceedings of the International Conference on Knowledge
+Discovery and Information Retrieval, Valencia, Spain, October 25-28,
+2010",conference,,SciTePress,1,1,2026-01-31 22:36:05.378835,2026-01-31 22:36:05.385980
+410,Silico Biol.,journal,,,1,1,2026-01-31 22:36:05.394531,2026-01-31 22:36:05.399880
+411,"International Joint Conference on Neural Networks, IJCNN 2009, Atlanta,
+Georgia, USA, 14-19 June 2009",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:05.400083,2026-01-31 22:36:05.404871
+412,Comput. Biol. Chem.,journal,,,1,1,2026-01-31 22:36:05.421338,2026-01-31 22:36:05.427391
+413,"International Conference on Bioinformatics & Computational Biology,
+BIOCOMP 2008, July 14-17, 2008, Las Vegas Nevada, USA, 2 Volumes",conference,,CSREA Press,1,1,2026-01-31 22:36:05.446846,2026-01-31 22:36:05.450876
+414,Bioinform.,journal,,,1,1,2026-01-31 22:36:05.456461,2026-01-31 22:36:05.464899
+415,Data Knowl. Eng.,journal,,,1,1,2026-01-31 22:36:05.465110,2026-01-31 22:36:05.471895
+408,Int. J. Data Warehous. Min.,journal,,,2,2,2026-01-31 22:36:05.368103,2026-01-31 22:36:05.487695
+416,"2007 International Conference on Computing: Theory and Applications
+(ICCTA 2007), 5-7 March 2007, Kolkata, India",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:05.487901,2026-01-31 22:36:05.493458
+417,"IJCAI 2007, Proceedings of the 20th International Joint Conference
+on Artificial Intelligence, Hyderabad, India, January 6-12, 2007",conference,,,2,2,2026-01-31 22:36:05.506445,2026-01-31 22:36:05.520765
+418,"Pattern Recognition and Machine Intelligence, Second International
+Conference, PReMI 2007, Kolkata, India, December 18-22, 2007, Proceedings",conference,,Springer,1,1,2026-01-31 22:36:05.539791,2026-01-31 22:36:05.544426
+390,NeuroImage,journal,,,4,4,2026-01-31 22:36:04.851881,2026-01-31 22:36:05.569672
+407,Int. J. Inf. Decis. Sci.,journal,,,2,2,2026-01-31 22:36:05.291552,2026-01-31 22:36:06.227122
+419,"9th International Conference in Information Technology, ICIT 2006,
+Bhubaneswar, Orissa, India, 18-21 December 2006",conference,,IEEE Computer Society,4,4,2026-01-31 22:36:05.580348,2026-01-31 22:36:07.723583
+420,"IEEE International Conference on Fuzzy Systems, FUZZ-IEEE 2006,
+Vancouver, BC, Canada, July 16-21, 2006",conference,,IEEE,1,1,2026-01-31 22:36:05.588642,2026-01-31 22:36:05.593611
+421,"Computer Vision, Graphics and Image Processing, 5th Indian Conference,
+ICVGIP 2006, Madurai, India, December 13-16, 2006, Proceedings",conference,,Springer,1,1,2026-01-31 22:36:05.605402,2026-01-31 22:36:05.609420
+422,"Proceedings of the International Joint Conference on Neural Networks,
+IJCNN 2006, part of the IEEE World Congress on Computational Intelligence,
+WCCI 2006, Vancouver, BC, Canada, 16-21 July 2006",conference,,IEEE,2,2,2026-01-31 22:36:05.627157,2026-01-31 22:36:05.650077
+425,"IEEE International Joint Conference on Neural Networks, IJCNN
+2005, Montreal, QC, Canada, July 31 - August 4, 2005",conference,,IEEE,1,1,2026-01-31 22:36:05.706711,2026-01-31 22:36:05.712083
+426,"Intelligence and Security Informatics, IEEE International Conference
+on Intelligence and Security Informatics, ISI 2005, Atlanta, GA,
+USA, May 19-20, 2005, Proceedings",conference,,Springer,1,1,2026-01-31 22:36:05.712283,2026-01-31 22:36:05.719907
+427,"Neural Information Processing, 11th International Conference, ICONIP
+2004, Calcutta, India, November 22-25, 2004, Proceedings",conference,,Springer,2,2,2026-01-31 22:36:05.735856,2026-01-31 22:36:05.801554
+429,"Sequence Learning - Paradigms, Algorithms, and Applications",conference,,Springer,1,1,2026-01-31 22:36:05.841723,2026-01-31 22:36:05.845914
+430,"Proceedings of the IEEE-INNS-ENNS International Joint Conference
+on Neural Networks, IJCNN 2000, Neural Computing: New Challenges
+and Perspectives for the New Millennium, Como, Italy, July 24-27,
+2000, Volume 1",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:05.846128,2026-01-31 22:36:05.852635
+431,"The Fifth International Conference on Neural Information Processing,
+ICONIP'R98, Kitakyushu, Japan, October 21-23, 1998, Proceedings",conference,,IOA Press,1,1,2026-01-31 22:36:05.873975,2026-01-31 22:36:05.877878
+432,"Connectionist Representations: 4th Neural Computation and Psychology
+Workshop, NCPW 1997, London, UK, April 9-11, 1997",conference,,Springer,1,1,2026-01-31 22:36:05.888415,2026-01-31 22:36:05.891265
+433,"IJCNN 1990, International Joint Conference on Neural Networks, San
+Diego, CA, USA, June 17-21, 1990",conference,,IEEE,1,1,2026-01-31 22:36:05.898164,2026-01-31 22:36:05.902810
+435,Int. J. Appl. Math. Comput. Sci.,journal,,,1,1,2026-01-31 22:36:05.943547,2026-01-31 22:36:05.947399
+438,"Eighth International Conference on Information Technology: New Generations,
+ITNG 2011, Las Vegas, Nevada, USA, 11-13 April 2011",conference,,IEEE Computer Society,2,2,2026-01-31 22:36:05.995231,2026-01-31 22:36:06.009607
+441,Netw. Model. Anal. Health Informatics Bioinform.,journal,,,1,1,2026-01-31 22:36:06.074983,2026-01-31 22:36:06.077756
+442,"Distributed Computing and Internet Technology - 17th International
+Conference, ICDCIT 2021, Bhubaneswar, India, January 7-10, 2021,
+Proceedings",conference,,Springer,1,1,2026-01-31 22:36:06.084280,2026-01-31 22:36:06.088104
+445,"Seventh International Conference on Contemporary Computing, IC3
+2014, Noida, India, August 7-9, 2014",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:06.134131,2026-01-31 22:36:06.141278
+446,Int. J. Hybrid Intell. Syst.,journal,,,1,1,2026-01-31 22:36:06.195137,2026-01-31 22:36:06.199620
+423,"Distributed Computing and Internet Technology, Second International
+Conference, ICDCIT 2005, Bhubaneswar, India, December 22-24, 2005,
+Proceedings",conference,,Springer,2,2,2026-01-31 22:36:05.680633,2026-01-31 22:36:07.372936
+428,"2002 Language Engineering Conference (LEC 2002), 13-15 December
+2002, Hyderabad, India",conference,,IEEE Computer Society,2,2,2026-01-31 22:36:05.826756,2026-01-31 22:36:07.410842
+443,"Ninth International Conference on Advances in Pattern Recognition,
+ICAPR 2017, Bangalore, India, December 27-30, 2017",conference,,IEEE,3,3,2026-01-31 22:36:06.109951,2026-01-31 22:36:08.090578
+439,Computación y Sistemas,journal,,,2,2,2026-01-31 22:36:06.015605,2026-01-31 22:36:08.614570
+444,"Eighth International Conference on Advances in Pattern Recognition,
+ICAPR 2015, Kolkata, India, January 4-7, 2015",conference,,IEEE,2,2,2026-01-31 22:36:06.124729,2026-01-31 22:36:08.989145
+440,"Information Systems Security, Second International Conference, ICISS
+2006, Kolkata, India, December 19-21, 2006, Proceedings",conference,,Springer,2,2,2026-01-31 22:36:06.034260,2026-01-31 22:36:09.210035
+424,"ICEIS 2005, Proceedings of the Seventh International Conference
+on Enterprise Information Systems, Miami, USA, May 25-28, 2005",conference,,,3,3,2026-01-31 22:36:05.695249,2026-01-31 22:36:09.287531
+447,"12th International Conference on Intelligent Systems Design and Applications,
+ISDA 2012, Kochi, India, November 27-29, 2012",conference,,IEEE,1,1,2026-01-31 22:36:06.204850,2026-01-31 22:36:06.209294
+448,"Distributed Computing and Intelligent Technology - 21st International
+Conference, ICDCIT 2025, Bhubaneswar, India, January 8-11, 2025,
+Proceedings",conference,,Springer,1,1,2026-01-31 22:36:06.242348,2026-01-31 22:36:06.245251
+449,Scientometrics,journal,,,1,1,2026-01-31 22:36:06.275198,2026-01-31 22:36:06.280016
+450,"Proceedings of the 6th Joint International Conference on Data Science
+& Management of Data (10th ACM IKDD CODS and 28th COMAD),
+Mumbai, India, January 4-7, 2023",conference,,ACM,1,1,2026-01-31 22:36:06.280225,2026-01-31 22:36:06.283821
+451,"5th International Conference on Recent Advances in Information Technology,
+RAIT 2023, Dhanbad, India, March 3-5, 2023",conference,,IEEE,1,1,2026-01-31 22:36:06.293831,2026-01-31 22:36:06.298438
+453,"IEEE/ACM 2018 International Conference on Advances in Social Networks
+Analysis and Mining, ASONAM 2018, Barcelona, Spain, August 28-31,
+2018",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:06.335305,2026-01-31 22:36:06.339146
+454,"2018 Eleventh International Conference on Contemporary Computing,
+IC3 2018, Noida, India, August 2-4, 2018",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:06.339346,2026-01-31 22:36:06.342782
+455,"Intelligence and Security Informatics - 12th Pacific Asia Workshop,
+PAISI 2017, Jeju Island, South Korea, May 23, 2017, Proceedings",conference,,,1,1,2026-01-31 22:36:06.356023,2026-01-31 22:36:06.360181
+456,"Distributed Computing and Internet Technology - 12th International
+Conference, ICDCIT 2016, Bhubaneswar, India, January 15-18, 2016,
+Proceedings",conference,,Springer,1,1,2026-01-31 22:36:06.366563,2026-01-31 22:36:06.369283
+457,IEEE ACM Trans. Comput. Biol. Bioinform.,journal,,,1,1,2026-01-31 22:36:06.372313,2026-01-31 22:36:06.375521
+458,"Proceedings of the Second ACM IKDD Conference on Data Sciences,
+Bangalore, CoDS 2015, India, March 18-21, 2015",conference,,ACM,1,1,2026-01-31 22:36:06.378519,2026-01-31 22:36:06.382170
+460,"Advances in Computing and Information Technology - Proceedings of
+the Second International Conference on Advances in Computing and Information
+Technology (ACITY) July 13-15, 2012, Chennai, India - Volume 2",conference,,Springer,1,1,2026-01-31 22:36:06.397485,2026-01-31 22:36:06.402425
+461,WIREs Data Mining Knowl. Discov.,journal,,,1,1,2026-01-31 22:36:06.412484,2026-01-31 22:36:06.417507
+462,"Advances in Computing and Communications - First International Conference,
+ACC 2011, Kochi, India, July 22-24, 2011, Proceedings, Part III",conference,,Springer,1,1,2026-01-31 22:36:06.423013,2026-01-31 22:36:06.426915
+463,Constraints An Int. J.,journal,,,1,1,2026-01-31 22:36:06.450844,2026-01-31 22:36:06.454289
+464,Int. J. Cloud Appl. Comput.,journal,,,1,1,2026-01-31 22:36:06.467459,2026-01-31 22:36:06.471307
+466,"Proceedings of the International Semantic Intelligence Conference
+2021 (ISIC 2021), New Delhi, India, February 25-27, 2021",conference,,CEUR-WS.org,1,1,2026-01-31 22:36:06.488932,2026-01-31 22:36:06.494965
+452,"Distributed Computing and Internet Technology - 16th International
+Conference, ICDCIT 2020, Bhubaneswar, India, January 9-12, 2020,
+Proceedings",conference,,Springer,3,3,2026-01-31 22:36:06.303429,2026-01-31 22:36:07.459251
+437,"1st International Conference on Recent Advances in Information Technology,
+RAIT 2012, Dhanbad, India, March 15-17, 2012",conference,,IEEE,4,4,2026-01-31 22:36:05.990227,2026-01-31 22:36:08.173152
+459,"The 2013 International Joint Conference on Neural Networks, IJCNN
+2013, Dallas, TX, USA, August 4-9, 2013",conference,,IEEE,2,2,2026-01-31 22:36:06.393450,2026-01-31 22:36:09.882668
+488,"Document Analysis and Recognition - 4th Workshop, DAR 2018, Held
+in Conjunction with ICVGIP 2018, DAR@ICVGIP 2018, Hyderabad, India,
+December 18, 2018, Revised Selected Papers",conference,,Springer,1,1,2026-01-31 22:36:06.986710,2026-01-31 22:36:06.989893
+489,"2018 IEEE SENSORS, New Delhi, India, October 28-31, 2018",conference,,IEEE,1,1,2026-01-31 22:36:06.993325,2026-01-31 22:36:07.000963
+490,"IEEE Symposium Series on Computational Intelligence, SSCI 2018,
+Bangalore, India, November 18-21, 2018",conference,,IEEE,1,1,2026-01-31 22:36:07.001192,2026-01-31 22:36:07.005024
+491,"2017 International Conference on Advances in Computing, Communications
+and Informatics, ICACCI 2017, Udupi (Near Mangalore), India, September
+13-16, 2017",conference,,IEEE,1,1,2026-01-31 22:36:07.009750,2026-01-31 22:36:07.014202
+492,"First Workshop of Machine Learning, 14th IAPR International Conference
+on Document Analysis and Recognition, WML@ICDAR 2017, Kyoto, Japan,
+November 9-15, 2017",conference,,IEEE,1,1,2026-01-31 22:36:07.014437,2026-01-31 22:36:07.019839
+493,"Intelligent Systems Design and Applications - 17th International Conference
+on Intelligent Systems Design and Applications (ISDA 2017) Held
+in Delhi, India, December 14-16, 2017",conference,,Springer,1,1,2026-01-31 22:36:07.020052,2026-01-31 22:36:07.025700
+494,"13th International Conference on Signal-Image Technology & Internet-Based
+Systems, SITIS 2017, Jaipur, India, December 4-7, 2017",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:07.040188,2026-01-31 22:36:07.045175
+496,"Computer Vision, Graphics, and Image Processing - ICVGIP 2016 Satellite
+Workshops, WCVA, DAR, and MedImage, Guwahati, India, December 19,
+2016, Revised Selected Papers",conference,,Springer,1,1,2026-01-31 22:36:07.066366,2026-01-31 22:36:07.069475
+497,"2016 International Joint Conference on Neural Networks, IJCNN 2016,
+Vancouver, BC, Canada, July 24-29, 2016",conference,,IEEE,1,1,2026-01-31 22:36:07.072249,2026-01-31 22:36:07.076033
+498,"Advances in Signal Processing and Intelligent Recognition Systems
+- Proceedings of Second International Symposium on Signal Processing
+and Intelligent Recognition Systems (SIRS-2015) December 16-19,
+2015, Trivandrum, India",conference,,Springer,1,1,2026-01-31 22:36:07.100727,2026-01-31 22:36:07.103594
+499,"Twelfth International Conference on Wireless and Optical Communications
+Networks, WOCN 2015, Bangalore, India, September 9-11, 2015",conference,,IEEE,1,1,2026-01-31 22:36:07.106676,2026-01-31 22:36:07.112010
+478,Signal Process.,journal,,,2,2,2026-01-31 22:36:06.793764,2026-01-31 22:36:07.139698
+501,"Proceedings of the 3rd International Conference on Frontiers of Intelligent
+Computing: Theory and Applications (FICTA) 2014 - Volume 1, Bhubaneswar,
+Odisa, India, 14-15 November 2014",conference,,Springer,1,1,2026-01-31 22:36:07.139909,2026-01-31 22:36:07.144704
+502,"IEEE International Conference on Vehicular Electronics and Safety,
+ICVES 2014, Hyderabad, India, December 16-17, 2014",conference,,IEEE,1,1,2026-01-31 22:36:07.153490,2026-01-31 22:36:07.157238
+503,"Eleventh International Conference on Wireless and Optical Communications
+Networks, WOCN 2014, Vijayawada, Guntur District, Andhra Pradesh,
+India, September 11-13, 2014",conference,,IEEE,1,1,2026-01-31 22:36:07.160606,2026-01-31 22:36:07.164654
+505,"Proceedings of the 21st International Conference on Pattern Recognition,
+ICPR 2012, Tsukuba, Japan, November 11-15, 2012",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:07.183939,2026-01-31 22:36:07.189319
+495,Pattern Anal. Appl.,journal,,,2,2,2026-01-31 22:36:07.060474,2026-01-31 22:36:08.049408
+506,"Proceeding of the workshop on Document Analysis and Recognition, DAR@ICVGIP
+2012, Mumbai, India, December 16, 2012",conference,,ACM,2,2,2026-01-31 22:36:07.202635,2026-01-31 22:36:08.160850
+500,Int. J. Auton. Adapt. Commun. Syst.,journal,,,2,2,2026-01-31 22:36:07.126128,2026-01-31 22:36:09.569044
+519,"7th International Conference on Document Analysis and Recognition
+(ICDAR 2003), 2-Volume Set, 3-6 August 2003, Edinburgh, Scotland,
+UK",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:07.395850,2026-01-31 22:36:07.399941
+520,"6th International Conference on Document Analysis and Recognition
+(ICDAR 2001), 10-13 September 2001, Seattle, WA, USA",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:07.423454,2026-01-31 22:36:07.427957
+521,"Computer Analysis of Images and Patterns, 7th International Conference,
+CAIP'97, Kiel, Germany, September 10-12, 1997, Proceedings",conference,,Springer,1,1,2026-01-31 22:36:07.433499,2026-01-31 22:36:07.437054
+523,"Distributed Computing and Internet Technology - 11th International
+Conference, ICDCIT 2015, Bhubaneswar, India, February 5-8, 2015.
+Proceedings",conference,,Springer,3,3,2026-01-31 22:36:07.462211,2026-01-31 22:36:07.475115
+524,"Proceedings of the 6th International Workshop on Principles of Engineering
+Service-Oriented and Cloud Systems, PESOS 2014, Hyderabad, India,
+May 31, 2014",conference,,ACM,2,2,2026-01-31 22:36:07.479777,2026-01-31 22:36:07.488607
+525,"Distributed Computing and Internet Technology, 9th International Conference,
+ICDCIT 2013, Bhubaneswar, India, February 5-8, 2013. Proceedings",conference,,Springer,3,3,2026-01-31 22:36:07.506018,2026-01-31 22:36:07.514939
+526,"CUBE International IT Conference & Exhibition, CUBE '12,
+Pune, India - September 03 - 06, 2012",conference,,ACM,2,2,2026-01-31 22:36:07.515163,2026-01-31 22:36:07.524487
+527,"Information Intelligence, Systems, Technology and Management - 5th
+International Conference, ICISTM 2011, Gurgaon, India, March 10-12,
+2011. Proceedings",conference,,Springer,1,1,2026-01-31 22:36:07.538640,2026-01-31 22:36:07.542404
+528,"EMS 2009, Third UKSim European Symposium on Computer Modeling and
+Simulation, 25-27 November 2009, Athens, Greece",conference,,IEEE Computer Society,2,2,2026-01-31 22:36:07.619055,2026-01-31 22:36:07.638819
+529,"Proceedings of the IEEE International Conference on Systems, Man
+and Cybernetics, San Antonio, TX, USA, 11-14 October 2009",conference,,IEEE,1,1,2026-01-31 22:36:07.639012,2026-01-31 22:36:07.644597
+530,"First Asia International Conference on Modelling and Simulation, AMS
+2007, Phuket, Thailand, March 27-30, 2007",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:07.685903,2026-01-31 22:36:07.689354
+531,"10th International Conference on Information Technology, ICIT 2007,
+Roukela, India, 17-20 December 2007",conference,,IEEE Computer Society,2,2,2026-01-31 22:36:07.700847,2026-01-31 22:36:07.707712
+532,"Proceedings of ICEBE 2007, IEEE International Conference on e-Business
+Engineering and the Workshops SOAIC 2007, SOSE 2007, SOKM 2007,
+24-26 October, 2007, Hong Kong, China",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:07.710692,2026-01-31 22:36:07.713548
+534,"Distributed Computing - IWDC 2005, 7th International Workshop, Kharagpur,
+India, December 27-30, 2005, Proceedings",conference,,Springer,1,1,2026-01-31 22:36:07.744711,2026-01-31 22:36:07.749491
+535,"Fifth International Conference on Quality Software (QSIC 2005),
+19-20 September 2005, Melbourne, Australia",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:07.769254,2026-01-31 22:36:07.772790
+536,"Distributed Computing and Internet Technology, First International
+Conference, ICDCIT 2004, Bhubaneswar, India, December 22-24, 2004,
+Proceedings",conference,,Springer,1,1,2026-01-31 22:36:07.779269,2026-01-31 22:36:07.786505
+537,"Intelligence in Communication Systems, IFIP International Conference,
+INTELLCOMM 2004, Bangkok, Thailand, November 23-26, 2004, Proceedings",conference,,Springer,1,1,2026-01-31 22:36:07.786707,2026-01-31 22:36:07.794611
+533,"2005 IEEE International Conference on e-Technology, e-Commerce,
+and e-Services (EEE 2005), 29 March - 1 April 2005, Hong Kong, China",conference,,IEEE Computer Society,2,2,2026-01-31 22:36:07.729745,2026-01-31 22:36:09.272430
+538,"International Conference on Information Technology: Coding and Computing
+(ITCC'04), Volume 2, April 5-7, 2004, Las Vegas, Nevada, USA",conference,,IEEE Computer Society,3,3,2026-01-31 22:36:07.794809,2026-01-31 22:36:09.352210
+522,"Third International Conference on Document Analysis and Recognition,
+ICDAR 1995, August 14 - 15, 1995, Montreal, Canada. Volume II",conference,,IEEE Computer Society,2,2,2026-01-31 22:36:07.444339,2026-01-31 22:36:09.962164
+539,"36th Hawaii International Conference on System Sciences (HICSS-36
+2003), CD-ROM / Abstracts Proceedings, January 6-9, 2003, Big Island,
+HI, USA",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:07.809625,2026-01-31 22:36:07.812928
+540,"Distributed Computing - IWDC 2003, 5th International Workshop, Kolkata,
+India, December 27-30, 2003, Proceedings",conference,,Springer,1,1,2026-01-31 22:36:07.818024,2026-01-31 22:36:07.820927
+541,"2003 IEEE International Conference on Electronic Commerce (CEC
+2003), 24-27 June 2003, Newport Beach, CA, USA",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:07.826763,2026-01-31 22:36:07.837663
+542,"Distributed Computing, Mobile and Wireless Computing 4th International
+Workshop, IWDC 2002, Calcutta, India, December 28-31, 2002, Proceedings",conference,,Springer,1,1,2026-01-31 22:36:07.837948,2026-01-31 22:36:07.842946
+543,"8th Asia-Pacific Software Engineering Conference (APSEC 2001), 4-7
+December 2001, Macau, China",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:07.843143,2026-01-31 22:36:07.846296
+544,"Proceedings of Chalenges, 2000 ADBIS-DASFAA Symposium on Advances
+in Databases and Information Systems, Enlarged Fourth East-European
+Conference on Advances in Databases and Information Systems, Prague,
+Czech Republic, September 5-8, 2000",conference,,"Matfyz Press, Vydavatelstvi, Matematicko-Fyzikalni Fakulty, Unverzity
+Karlovy",1,1,2026-01-31 22:36:07.849033,2026-01-31 22:36:07.850996
+545,"Foundations of Software Technology and Theoretical Computer Science,
+Sixth Conference, New Delhi, India, December 18-20, 1986, Proceedings",conference,,Springer,1,1,2026-01-31 22:36:07.851193,2026-01-31 22:36:07.854346
+546,EAI Endorsed Trans. Scalable Inf. Syst.,journal,,,2,2,2026-01-31 22:36:07.915811,2026-01-31 22:36:07.930445
+547,"Advances in Computing and Data Sciences - Second International Conference,
+ICACDS 2018, Dehradun, India, April 20-21, 2018, Revised Selected
+Papers, Part I",conference,,Springer,1,1,2026-01-31 22:36:07.930637,2026-01-31 22:36:07.934726
+548,"Pattern Recognition - 27th International Conference, ICPR 2024,
+Kolkata, India, December 1-5, 2024, Proceedings, Part XXXII",conference,,Springer,1,1,2026-01-31 22:36:07.941212,2026-01-31 22:36:07.943996
+549,"Evolution in Computational Intelligence - Proceedings of the 9th International
+Conference on Frontiers in Intelligent Computing: Theory and Applications
+(FICTA 2021), Aizawl, India, June 25-26, 2021",conference,,Springer,1,1,2026-01-31 22:36:08.014997,2026-01-31 22:36:08.019066
+550,"Recent Trends in Image Processing and Pattern Recognition - 4th International
+Conference, RTIP2R 2021, Msida, Malta, December 8-10, 2021, Revised
+Selected Papers",conference,,Springer,1,1,2026-01-31 22:36:08.026058,2026-01-31 22:36:08.029870
+551,"2019 International Conference on Document Analysis and Recognition,
+ICDAR 2019, Sydney, Australia, September 20-25, 2019",conference,,IEEE,1,1,2026-01-31 22:36:08.036457,2026-01-31 22:36:08.040790
+552,"Computer Vision and Graphics - International Conference, ICCVG 2018,
+Warsaw, Poland, September 17-19, 2018, Proceedings",conference,,Springer,1,1,2026-01-31 22:36:08.049622,2026-01-31 22:36:08.054594
+553,"Recent Trends in Image Processing and Pattern Recognition, Second
+International Conference, RTIP2R 2018, Solapur, India, December
+21-22, 2018, Revised Selected Papers, Part III",conference,,Springer,1,1,2026-01-31 22:36:08.054811,2026-01-31 22:36:08.059995
+554,"14th IAPR International Conference on Document Analysis and Recognition,
+ICDAR 2017, Kyoto, Japan, November 9-15, 2017",conference,,IEEE,1,1,2026-01-31 22:36:08.093879,2026-01-31 22:36:08.096832
+556,"Security in Computing and Communications - International Symposium,
+SSCC 2013, Mysore, India, August 22-24, 2013. Proceedings",conference,,Springer,1,1,2026-01-31 22:36:08.140509,2026-01-31 22:36:08.147587
+557,Math. Comput. Model.,journal,,,1,1,2026-01-31 22:36:08.147903,2026-01-31 22:36:08.152753
+558,"Proceedings of the 4th Bangalore Annual Compute Conference, Compute
+2011, Bangalore, India, March 25-26, 2011",conference,,ACM,2,2,2026-01-31 22:36:08.180086,2026-01-31 22:36:08.190505
+560,J. Inf. Process. Syst.,journal,,,1,1,2026-01-31 22:36:08.203361,2026-01-31 22:36:08.208007
+561,"ARTCom 2009, International Conference on Advances in Recent Technologies
+in Communication and Computing, Kottayam, Kerala, India, 27-28 October
+2009",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:08.213249,2026-01-31 22:36:08.217948
+562,"9th International Conference on Document Analysis and Recognition
+(ICDAR 2007), 23-26 September, Curitiba, Paraná, Brazil",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:08.218168,2026-01-31 22:36:08.221607
+563,"VISAPP 2007: Proceedings of the Second International Conference
+on Computer Vision Theory and Applications, Barcelona, Spain, March
+8-11, 2007 - Volume 1",conference,,"INSTICC - Institute for Systems and Technologies of Information,
+Control and Communication",1,1,2026-01-31 22:36:08.224417,2026-01-31 22:36:08.228324
+564,"Computer Vision - ACCV 2006, 7th Asian Conference on Computer Vision,
+Hyderabad, India, January 13-16, 2006, Proceedings, Part II",conference,,Springer,1,1,2026-01-31 22:36:08.228531,2026-01-31 22:36:08.233593
+565,"20th International Conference on Computers and Their Applications,
+CATA 2005, March 16-18, 2005, Holiday Inn Downtown-Superdome Hotel,
+New Orleans, Louisiana, USA, Proceedings",conference,,ISCA,1,1,2026-01-31 22:36:08.233795,2026-01-31 22:36:08.238384
+566,"IEEE International Geoscience & Remote Sensing Symposium, IGARSS
+2005, July 25-29, 2005, Seoul, Korea, Proceedings",conference,,IEEE,1,1,2026-01-31 22:36:08.247578,2026-01-31 22:36:08.252092
+567,"ICVGIP 2004, Proceedings of the Fourth Indian Conference on Computer
+Vision, Graphics & Image Processing, Kolkata, India, December 16-18,
+2004",conference,,Allied Publishers Private Limited,2,2,2026-01-31 22:36:08.278704,2026-01-31 22:36:08.304739
+568,"Conference on Computer Vision and Pattern Recognition, CVPR 1994,
+21-23 June, 1994, Seattle, WA, USA",conference,,IEEE,1,1,2026-01-31 22:36:08.316770,2026-01-31 22:36:08.320814
+569,"The First Tiny Papers Track at ICLR 2023, Tiny Papers @ ICLR 2023,
+Kigali, Rwanda, May 5, 2023",conference,,OpenReview.net,1,1,2026-01-31 22:36:08.333205,2026-01-31 22:36:08.335855
+10,"Multi-disciplinary Trends in Artificial Intelligence - 16th International
+Conference, MIWAI 2023, Hyderabad, India, July 21-22, 2023, Proceedings",conference,,Springer,13,12,2026-01-31 22:35:55.452867,2026-01-31 22:36:08.341070
+570,Int. J. Semantic Comput.,journal,,,1,1,2026-01-31 22:36:08.347242,2026-01-31 22:36:08.351865
+555,"Fourth National Conference on Computer Vision, Pattern Recognition,
+Image Processing and Graphics, NCVPRIPG 2013, Jodhpur, India, December
+18-21, 2013",conference,,IEEE,3,3,2026-01-31 22:36:08.129330,2026-01-31 22:36:09.079387
+559,"Proceedings of the 5th Indian International Conference on Artificial
+Intelligence, IICAI 2011, Tumkur, Karnataka State, India, December
+14-16, 2011",conference,,IICAI,2,2,2026-01-31 22:36:08.190813,2026-01-31 22:36:10.179507
+125,CoRR,journal,,,107,106,2026-01-31 22:35:57.131916,2026-01-31 22:36:10.460618
+571,"Intelligent Data Engineering and Analytics - Proceedings of the 9th
+International Conference on Frontiers in Intelligent Computing: Theory
+and Applications (FICTA 2021), Aizawl, India, June 25-26, 2021",conference,,Springer,1,1,2026-01-31 22:36:08.352052,2026-01-31 22:36:08.356533
+572,"Proceedings of the 6th Workshop on Representation Learning for NLP,
+RepL4NLP@ACL-IJCNLP 2021, Online, August 6, 2021",conference,,Association for Computational Linguistics,1,1,2026-01-31 22:36:08.356790,2026-01-31 22:36:08.360309
+573,Res. Comput. Sci.,journal,,,1,1,2026-01-31 22:36:08.367372,2026-01-31 22:36:08.370067
+574,"Proceedings of the 6th Workshop on Asian Language Resources, ALR@IJCNLP
+2008, Hyderabad, India, January 11-12, 2008",conference,,Asian Federation of Natural Language Processing,1,1,2026-01-31 22:36:08.372795,2026-01-31 22:36:08.375443
+575,"Third International Joint Conference on Natural Language Processing,
+IJCNLP 2008, Hyderabad, India, January 7-12, 2008",conference,,The Association for Computer Linguistics,2,2,2026-01-31 22:36:08.378104,2026-01-31 22:36:08.391402
+576,J. Quant. Linguistics,journal,,,1,1,2026-01-31 22:36:08.399732,2026-01-31 22:36:08.403662
+577,"Computational Linguistics and Intelligent Text Processing, 7th International
+Conference, CICLing 2006, Mexico City, Mexico, February 19-25, 2006,
+Proceedings",conference,,Springer,1,1,2026-01-31 22:36:08.403864,2026-01-31 22:36:08.408733
+578,"Advances in Natural Language Processing, 4th International Conference,
+EsTAL 2004, Alicante, Spain, October 20-22, 2004, Proceedings",conference,,Springer,1,1,2026-01-31 22:36:08.408942,2026-01-31 22:36:08.412410
+579,"Proceedings of the 2023 7th International Conference on Computer Science
+and Artificial Intelligence, CSAI 2023, Beijing, China, December
+8-10, 2023",conference,,ACM,1,1,2026-01-31 22:36:08.460602,2026-01-31 22:36:08.463321
+580,Inf. Syst.,journal,,,1,1,2026-01-31 22:36:08.531398,2026-01-31 22:36:08.536174
+581,Connect. Sci.,journal,,,1,1,2026-01-31 22:36:08.571143,2026-01-31 22:36:08.578511
+582,"AAMAS '21: 20th International Conference on Autonomous Agents and
+Multiagent Systems, Virtual Event, United Kingdom, May 3-7, 2021",conference,,ACM,1,1,2026-01-31 22:36:08.634112,2026-01-31 22:36:08.641010
+583,"PRICAI 2016: Trends in Artificial Intelligence - 14th Pacific Rim
+International Conference on Artificial Intelligence, Phuket, Thailand,
+August 22-26, 2016, Proceedings",conference,,Springer,3,3,2026-01-31 22:36:08.862022,2026-01-31 22:36:08.907825
+584,"Algorithms and Discrete Applied Mathematics - First International
+Conference, CALDAM 2015, Kanpur, India, February 8-10, 2015. Proceedings",conference,,Springer,1,1,2026-01-31 22:36:08.931981,2026-01-31 22:36:08.943367
+585,"Proceedings of the 2015 International Conference on Distributed Computing
+and Networking, ICDCN 2015, Goa, India, January 4-7, 2015",conference,,ACM,1,1,2026-01-31 22:36:08.998535,2026-01-31 22:36:09.003621
+586,"2015 Fifth National Conference on Computer Vision, Pattern Recognition,
+Image Processing and Graphics (NCVPRIPG), Patna, India, December 16-19,
+2015",conference,,IEEE,1,1,2026-01-31 22:36:09.017009,2026-01-31 22:36:09.037302
+587,"2014 IEEE International Conference on Systems, Man, and Cybernetics,
+SMC 2014, San Diego, CA, USA, October 5-8, 2014",conference,,IEEE,1,1,2026-01-31 22:36:09.037501,2026-01-31 22:36:09.041235
+588,"Information Retrieval Technology - 9th Asia Information Retrieval
+Societies Conference, AIRS 2013, Singapore, December 9-11, 2013.
+Proceedings",conference,,Springer,1,1,2026-01-31 22:36:09.051497,2026-01-31 22:36:09.055121
+589,"AI 2013: Advances in Artificial Intelligence - 26th Australasian
+Joint Conference, Dunedin, New Zealand, December 1-6, 2013. Proceedings",conference,,Springer,1,1,2026-01-31 22:36:09.062714,2026-01-31 22:36:09.069874
+590,"Mining Intelligence and Knowledge Exploration, First International
+Conference, MIKE 2013, Tamil Nadu, India, December 18-20, 2013",conference,,Springer,1,1,2026-01-31 22:36:09.070122,2026-01-31 22:36:09.073984
+592,Secur. Commun. Networks,journal,,,1,1,2026-01-31 22:36:09.099726,2026-01-31 22:36:09.103373
+593,"Seventh Indian Conference on Computer Vision, Graphics and Image Processing,
+ICVGIP '10, Chennai, India, December 12-15, 2010",conference,,ACM,1,1,2026-01-31 22:36:09.115651,2026-01-31 22:36:09.118277
+594,"Proceedings of The 2009 International Conference on Data Mining, DMIN
+2009, July 13-16, 2009, Las Vegas, USA",conference,,CSREA Press,1,1,2026-01-31 22:36:09.121161,2026-01-31 22:36:09.124815
+595,Comput. Secur.,journal,,,1,1,2026-01-31 22:36:09.131368,2026-01-31 22:36:09.134844
+596,"Proceedings of the 9th International Conference on Electronic Commerce:
+The Wireless World of Electronic Commerce, 2007, University of Minnesota,
+Minneapolis, MN, USA, August 19-22, 2007",conference,,ACM,1,1,2026-01-31 22:36:09.171047,2026-01-31 22:36:09.173952
+597,"Information Systems Security, Third International Conference, ICISS
+2007, Delhi, India, December 16-20, 2007, Proceedings",conference,,Springer,1,1,2026-01-31 22:36:09.179942,2026-01-31 22:36:09.182155
+598,Int. J. Wavelets Multiresolution Inf. Process.,journal,,,1,1,2026-01-31 22:36:09.193986,2026-01-31 22:36:09.201471
+599,J. Comput. Virol.,journal,,,1,1,2026-01-31 22:36:09.201669,2026-01-31 22:36:09.205021
+600,"Eighth IEEE International Conference on E-Commerce Technology (CEC
+2006) / Third IEEE International Conference on Enterprise Computing,
+E-Commerce and E-Services (EEE 2006) and Workshops, 26-29 June 2006,
+Palo Alto, California, USA",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:09.216020,2026-01-31 22:36:09.223017
+601,Int. J. Grid Util. Comput.,journal,,,1,1,2026-01-31 22:36:09.223205,2026-01-31 22:36:09.226614
+602,J. Univers. Comput. Sci.,journal,,,1,1,2026-01-31 22:36:09.232773,2026-01-31 22:36:09.236311
+603,"Information Systems Security, First International Conference, ICISS
+2005, Kolkata, India, December 19-21, 2005, Proceedings",conference,,Springer,1,1,2026-01-31 22:36:09.287721,2026-01-31 22:36:09.295115
+604,"17th IEEE International Conference on Tools with Artificial Intelligence
+(ICTAI 2005), 14-16 November 2005, Hong Kong, China",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:09.295313,2026-01-31 22:36:09.300230
+605,Inf. Manag. Comput. Secur.,journal,,,1,1,2026-01-31 22:36:09.311934,2026-01-31 22:36:09.319996
+606,"18th International Conference on Advanced Information Networking and
+Applications (AINA 2004), 29-31 March 2004, Fukuoka, Japan",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:09.337885,2026-01-31 22:36:09.344439
+607,"International Conference on Information Technology: Coding and Computing
+(ITCC'04), Volume 1, April 5-7, 2004, Las Vegas, Nevada, USA",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:09.352421,2026-01-31 22:36:09.364523
+608,"PRICAI 2004: Trends in Artificial Intelligence, 8th Pacific Rim
+International Conference on Artificial Intelligence, Auckland, New
+Zealand, August 9-13, 2004, Proceedings",conference,,Springer,1,1,2026-01-31 22:36:09.364736,2026-01-31 22:36:09.368310
+609,"Proceedings of the First International Workshop on Views on Designing
+Complex Architectures, VODCA@FOSAD 2004, Bertinoro, Italy, September
+11-12, 2004",conference,,Elsevier,1,1,2026-01-31 22:36:09.371001,2026-01-31 22:36:09.377734
+610,"Grid and Cooperative Computing, Second International Workshop, GCC
+2003, Shanghai, China, December 7-10, 2003, Revised Papers, Part II",conference,,Springer,1,1,2026-01-31 22:36:09.377928,2026-01-31 22:36:09.385555
+611,"ICVGIP 2002, Proceedings of the Third Indian Conference on Computer
+Vision, Graphics & Image Processing, Ahmadabad, India, December
+16-18, 2002",conference,,Allied Publishers Private Limited,1,1,2026-01-31 22:36:09.385757,2026-01-31 22:36:09.393388
+591,"Pattern Recognition and Machine Intelligence - 5th International Conference,
+PReMI 2013, Kolkata, India, December 10-14, 2013. Proceedings",conference,,Springer,2,2,2026-01-31 22:36:09.085883,2026-01-31 22:36:10.150826
+612,"Seventh International Workshop on Temporal Representation and Reasoning,
+TIME 2000, Nova Scotia, Canada, July 7-9, 2000",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:09.393590,2026-01-31 22:36:09.399934
+614,J. Autom. Reason.,journal,,,1,1,2026-01-31 22:36:09.413094,2026-01-31 22:36:09.416550
+615,"Advanced Topics in Artificial Intelligence, 12th Australian Joint
+Conference on Artificial Intelligence, AI '99, Sydney, Australia,
+December 6-10, 1999, Proceedings",conference,,Springer,1,1,2026-01-31 22:36:09.419348,2026-01-31 22:36:09.422211
+616,"Proceedings of the Sixteenth International Joint Conference on Artificial
+Intelligence, IJCAI 99, Stockholm, Sweden, July 31 - August 6, 1999.
+2 Volumes, 1450 pages",conference,,Morgan Kaufmann,1,1,2026-01-31 22:36:09.428513,2026-01-31 22:36:09.432443
+617,J. Log. Comput.,journal,,,1,1,2026-01-31 22:36:09.432646,2026-01-31 22:36:09.437072
+618,"Eighth International Workshop on Database and Expert Systems Applications,
+DEXA '97, Toulouse, France, September 1-2, 1997, Proceedings",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:09.437284,2026-01-31 22:36:09.441944
+613,Int. J. Neural Syst.,journal,,,2,2,2026-01-31 22:36:09.408853,2026-01-31 22:36:09.455954
+619,"Foundations of Software Technology and Theoretical Computer Science,
+13th Conference, Bombay, India, December 15-17, 1993, Proceedings",conference,,Springer,1,1,2026-01-31 22:36:09.462715,2026-01-31 22:36:09.464679
+620,"Proceedings of IAPR Workshop on Machine Vision Applications, MVA
+1990, November 28-30, 1990, Kokubunji, Tokyo, Japan",conference,,,1,1,2026-01-31 22:36:09.516730,2026-01-31 22:36:09.520053
+621,Comput. Vis. Graph. Image Process.,journal,,,1,1,2026-01-31 22:36:09.527778,2026-01-31 22:36:09.534550
+622,"Computer-Assisted Information Retrieval (Recherche d'Information et
+ses Applications) - RIAO 1985, 1st International Conference, University
+of Grenoble, France, March 18-20, 1985. Proceedings",conference,,CID,1,1,2026-01-31 22:36:09.537569,2026-01-31 22:36:09.540732
+623,EURASIP J. Wirel. Commun. Netw.,journal,,,1,1,2026-01-31 22:36:09.554137,2026-01-31 22:36:09.558162
+624,Int. J. Wirel. Mob. Comput.,journal,,,1,1,2026-01-31 22:36:09.576152,2026-01-31 22:36:09.582701
+626,Int. J. Softw. Innov.,journal,,,1,1,2026-01-31 22:36:09.636760,2026-01-31 22:36:09.647434
+625,Int. J. Syst. Assur. Eng. Manag.,journal,,,3,3,2026-01-31 22:36:09.595280,2026-01-31 22:36:09.654183
+627,"Intelligent Systems Design and Applications - 22nd International Conference
+on Intelligent Systems Design and Applications (ISDA 2022) Held
+December 12-14, 2022 - Volume 1",conference,,Springer,1,1,2026-01-31 22:36:09.680122,2026-01-31 22:36:09.685155
+628,Int. J. Ambient Comput. Intell.,journal,,,1,1,2026-01-31 22:36:09.696358,2026-01-31 22:36:09.701736
+629,J. King Saud Univ. Comput. Inf. Sci.,journal,,,1,1,2026-01-31 22:36:09.706305,2026-01-31 22:36:09.709948
+630,"5th IEEE International Conference on Identity, Security, and Behavior
+Analysis, ISBA 2019, Hyderabad, India, January 22-24, 2019",conference,,IEEE,1,1,2026-01-31 22:36:09.718472,2026-01-31 22:36:09.727049
+631,Photonic Netw. Commun.,journal,,,1,1,2026-01-31 22:36:09.735737,2026-01-31 22:36:09.740494
+632,"Advances in Computing and Data Science - Second International Conference,
+ICACDS 2018, Dehradun, India, April 20-21, 2018, Revised Selected
+Papers, Part II",conference,,Springer,1,1,2026-01-31 22:36:09.740698,2026-01-31 22:36:09.745426
+633,Comput. Chem. Eng.,journal,,,1,1,2026-01-31 22:36:09.745624,2026-01-31 22:36:09.753702
+634,"46th Hawaii International Conference on System Sciences, HICSS 2013,
+Wailea, HI, USA, January 7-10, 2013",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:09.838054,2026-01-31 22:36:09.844379
+635,"2012 International Conference on Advances in Computing, Communications
+and Informatics, ICACCI '12, Chennai, India, August 3-5, 2012",conference,,ACM,1,1,2026-01-31 22:36:09.882968,2026-01-31 22:36:09.891360
+636,"Advances in Swarm Intelligence - Third International Conference, ICSI
+2012, Shenzhen, China, June 17-20, 2012 Proceedings, Part II",conference,,Springer,1,1,2026-01-31 22:36:09.891561,2026-01-31 22:36:09.899798
+637,"4th IEEE/ACM International Symposium on Cluster Computing and the
+Grid (CCGrid 2004), April 19-22, 2004, Chicago, Illinois, USA",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:09.900008,2026-01-31 22:36:09.904350
+638,J. Electronic Imaging,journal,,,1,1,2026-01-31 22:36:09.944269,2026-01-31 22:36:09.949786
+657,"Proceedings, The Twentieth National Conference on Artificial Intelligence
+and the Seventeenth Innovative Applications of Artificial Intelligence
+Conference, July 9-13, 2005, Pittsburgh, Pennsylvania, USA",conference,,AAAI Press / The MIT Press,1,1,2026-01-31 22:36:10.321800,2026-01-31 22:36:10.327433
+658,Manag. Sci.,journal,,,2,2,2026-01-31 22:36:10.354737,2026-01-31 22:36:10.372086
+659,"AI 2003: Advances in Artificial Intelligence, 16th Australian Conference
+on Artificial Intelligence, Perth, Australia, December 3-5, 2003,
+Proceedings",conference,,Springer,1,1,2026-01-31 22:36:10.372294,2026-01-31 22:36:10.377128
+660,"AI 2002: Advances in Artificial Intelligence, 15th Australian Joint
+Conference on Artificial Intelligence, Canberra, Australia, December
+2-6, 2002, Proceedings",conference,,Springer,1,1,2026-01-31 22:36:10.377331,2026-01-31 22:36:10.384848
+661,"Logics in Artificial Intelligence, European Conference, JELIA 2002,
+Cosenza, Italy, September, 23-26, Proceedings",conference,,Springer,1,1,2026-01-31 22:36:10.385041,2026-01-31 22:36:10.393107
+662,"AI 2001: Advances in Artificial Intelligence, 14th Australian Joint
+Conference on Artificial Intelligence, Adelaide, Australia, December
+10-14, 2001, Proceedings",conference,,Springer,1,1,2026-01-31 22:36:10.393328,2026-01-31 22:36:10.401296
+663,"IEEE Frontiers in Education Conference, FIE 2024, Washington,
+DC, USA, October 13-16, 2024",conference,,IEEE,1,1,2026-01-31 22:36:10.401550,2026-01-31 22:36:10.404823
+664,Softw. Qual. J.,journal,,,1,1,2026-01-31 22:36:10.405020,2026-01-31 22:36:10.408381
+665,Int. J. Rough Sets Data Anal.,journal,,,1,1,2026-01-31 22:36:10.411224,2026-01-31 22:36:10.414866
+666,"Recent Trends in Network Security and Applications - Third International
+Conference, CNSA 2010, Chennai, India, July 23-25, 2010. Proceedings",conference,,Springer,1,1,2026-01-31 22:36:10.445862,2026-01-31 22:36:10.449987
+667,"Management Enabling the Future Internet for Changing Business and
+New Computing Services, 12th Asia-Pacific Network Operations and Management
+Symposium, APNOMS 2009, Jeju, South Korea, September 23-25, 2009,
+Proceedings",conference,,Springer,1,1,2026-01-31 22:36:10.460829,2026-01-31 22:36:10.465489
+668,"Proceedings of the 12th IEEE International Conference on Computational
+Science and Engineering, CSE 2009, Vancouver, BC, Canada, August
+29-31, 2009",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:10.465723,2026-01-31 22:36:10.469686
+669,"First International Conference on Emerging Trends in Engineering and
+Technology, ICETET '08, Nagpur, Maharashtra, India, July 16-18,
+2008",conference,,IEEE Computer Society,1,1,2026-01-31 22:36:10.474875,2026-01-31 22:36:10.478265
+670,"High Performance Computing - HiPC 2007, 14th International Conference,
+Goa, India, December 18-21, 2007, Proceedings",conference,,Springer,1,1,2026-01-31 22:36:10.481385,2026-01-31 22:36:10.485597

@@ -1,0 +1,35 @@
+id,name,dblp_pid,is_faculty,designation,email,department,created_at
+2,Alok Singh,01/1744-1,True,Professor,alok@uohyd.ac.in,SCIS,2026-01-31 22:35:55.315303
+378,Anjeneya Swami Kare,138/0168,True,Assistant Professor,askcs@uohyd.ac.in,SCIS,2026-01-31 22:36:01.630074
+22,Anupama Potluri,16/5380,True,Assistant Professor,apcs@uohyd.ac.in,SCIS,2026-01-31 22:35:55.863804
+131,Arun Agarwal,97/3869,True,Senior Professor,arunagarwal@uohyd.ac.in,SCIS,2026-01-31 22:35:57.058698
+95,Arun K. Pujari,95/6184,True,Professor,akpcs@uohyd.ernet.in,SCIS,2026-01-31 22:35:56.703861
+456,Arun Kumar Das,263/4582-1,True,Assistant Professor,arunkumardas@uohyd.ac.in,SCIS,2026-01-31 22:36:02.495648
+113,Atul Negi,73/4368,True,Professor,atul.negi@uohyd.ac.in,SCIS,2026-01-31 22:35:56.871181
+115,Avatharam Ganivada,06/10134,True,Assistant Professor,avatharg@uohyd.ac.in,SCIS,2026-01-31 22:35:56.881407
+16,Bapi Raju Surampudi,50/1424,True,Professor,bapics@uohyd.ernet.in,SCIS,2026-01-31 22:35:55.675091
+544,Battula Srinivasa Rao,338/9977,True,Professor,srinivas.battula@uohyd.ac.in,SCIS,2026-01-31 22:36:03.553912
+401,Chakravarthy Bhagvati,91/1525,True,Professor,chakravarthybhagvati@uohyd.ac.in,SCIS,2026-01-31 22:36:01.981016
+129,Chillarige Raghavendra Rao,07/5281-1,True,Senior Professor,crrao@uohyd.ac.in,SCIS,2026-01-31 22:35:57.042025
+532,Digambar Pawar,327/2466,True,Professor,dpr@uohyd.ac.in,SCIS,2026-01-31 22:36:03.462941
+528,Hrushikesha Mohanty,74/5678,True,Professor,hmcs@uohyd.ernet.in,SCIS,2026-01-31 22:36:03.426020
+134,K. Swarupa Rani,77/10593,True,Professor,swarupacs@uohyd.ac.in,SCIS,2026-01-31 22:35:57.093124
+479,M. Nagamani,284/7780,True,Associate Professor,nagamanics@uohyd.ac.in,SCIS,2026-01-31 22:36:02.833118
+411,Nagender Kumar Suryadevara,21/10736,True,Professor,nks@uohyd.ac.in,SCIS,2026-01-31 22:36:02.053195
+943,Narayana Murthy Kavi,94/4013,True,Professor,knmcs@uohyd.ac.in,SCIS,2026-01-31 22:36:08.329012
+161,Nekuri Naveen,55/8654,True,Assistant Professor,naveencis@uohyd.ac.in,SCIS,2026-01-31 22:35:57.501910
+718,N. Rukma Rekha,83/9943,True,Professor,rukmarekha@uohyd.ac.in,SCIS,2026-01-31 22:36:05.906502
+375,P. N. Girija,10/2362,True,Professor,pngcs@uohyd.ernet.in,SCIS,2026-01-31 22:36:01.612566
+143,P. S. V. S. Sai Prasad,23/2953,True,Professor,saics@uohyd.ac.in,SCIS,2026-01-31 22:35:57.188147
+128,Rajeev Wankar,31/566,True,Professor,wankarcs@uohyd.ac.in,SCIS,2026-01-31 22:35:57.041122
+104,Rajendra Prasad Lal,31/9532,True,Assistant Professor,rajendraprasd@uohyd.ac.in,SCIS,2026-01-31 22:35:56.789441
+492,Saifulla Md. Abdul,309/7711,True,Assistant Professor,saifullah@uohyd.ac.in,SCIS,2026-01-31 22:36:02.917748
+124,Salman Abdul Moiz,98/6017,True,Professor,salman@uohyd.ac.in,SCIS,2026-01-31 22:35:57.019248
+127,Satish Narayana Srirama,09/1571,True,Professor,satish.srirama@uohyd.ac.in,SCIS,2026-01-31 22:35:57.040148
+380,S. Durga Bhavani,63/2890,True,Professor,sdbcs@uohyd.ac.in,SCIS,2026-01-31 22:36:01.640327
+34,Siba K. Udgata,04/3517,True,Professor,deanscis@uohyd.ac.in,SCIS,2026-01-31 22:35:56.126748
+683,T. Sobha Rani,51/1349,True,Associate Professor,sobharani@uohyd.ac.in,SCIS,2026-01-31 22:36:05.303204
+725,V. Ch. Venkaiah,66/8044,True,Professor,vvcs@uohyd.ac.in,SCIS,2026-01-31 22:36:05.957959
+74,Vineet Padmanabhan,98/255,True,Professor,vineetnair@uohyd.ac.in,SCIS,2026-01-31 22:35:56.378478
+14,Wilson Naik Bhukya,05/2858,True,Associate Professor,rathore@uohyd.ac.in,SCIS,2026-01-31 22:35:55.649162
+717,Y. V. Subba Rao,50/971,True,Associate Professor,yvsrcs@uohyd.ac.in,SCIS,2026-01-31 22:36:05.905611

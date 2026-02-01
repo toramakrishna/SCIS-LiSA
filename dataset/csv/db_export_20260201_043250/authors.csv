@@ -1,0 +1,1091 @@
+id,name,normalized_name,dblp_pid,dblp_urlpt,is_faculty,email,department,designation,phone,total_publications,total_collaborations,h_index,created_at,updated_at
+4,Mohd Danish Rasheed,mohd danish rasheed,,,False,,SCIS,,,2,2,,2026-01-31 22:35:55.343598,2026-01-31 22:35:55.362172
+8,Pritibahen Sumanbhai Patel,pritibahen sumanbhai patel,,,False,,SCIS,,,1,1,,2026-01-31 22:35:55.385672,2026-01-31 22:35:55.391079
+6,Sebanti Majumder,sebanti majumder,,,False,,SCIS,,,3,1,,2026-01-31 22:35:55.363921,2026-01-31 22:35:55.458939
+3,Edukondalu Chappidi,edukondalu chappidi,,,False,,SCIS,,,5,2,,2026-01-31 22:35:55.334011,2026-01-31 22:35:55.465211
+11,Mallikarjun Rao Nakkala,mallikarjun rao nakkala,,,False,,SCIS,,,2,2,,2026-01-31 22:35:55.467129,2026-01-31 22:35:55.489665
+9,Kasi Viswanath Dasari,kasi viswanath dasari,,,False,,SCIS,,,3,3,,2026-01-31 22:35:55.392906,2026-01-31 22:35:55.544812
+5,Rammohan Mallipeddi,rammohan mallipeddi,,,False,,SCIS,,,6,6,,2026-01-31 22:35:55.345358,2026-01-31 22:35:55.646337
+10,Gaurav Srivastava,gaurav srivastava,,,False,,SCIS,,,6,3,,2026-01-31 22:35:55.411937,2026-01-31 22:35:55.665453
+7,Venkatesh Pandiri,venkatesh pandiri,,,False,,SCIS,,,8,3,,2026-01-31 22:35:55.377972,2026-01-31 22:35:55.753909
+13,Pandiri Venkatesh,pandiri venkatesh,,,False,,SCIS,,,3,3,,2026-01-31 22:35:55.577042,2026-01-31 22:35:55.796688
+20,Vuyyuru Gopinadh,vuyyuru gopinadh,,,False,,SCIS,,,1,1,,2026-01-31 22:35:55.798471,2026-01-31 22:35:55.803008
+19,Sachchida Nand Chaurasia,sachchida nand chaurasia,,,False,,SCIS,,,7,2,,2026-01-31 22:35:55.712947,2026-01-31 22:35:55.829208
+18,Jayalakshmi Banda,jayalakshmi banda,,,False,,SCIS,,,4,1,,2026-01-31 22:35:55.704695,2026-01-31 22:35:55.840474
+15,Abobakr Khalil Alshamiri,abobakr khalil alshamiri,,,False,,SCIS,,,4,2,,2026-01-31 22:35:55.673349,2026-01-31 22:35:55.850109
+21,C. G. Nitash,c g nitash,,,False,,SCIS,,,1,1,,2026-01-31 22:35:55.852095,2026-01-31 22:35:55.856911
+16,Bapi Raju Surampudi,bapi raju surampudi,50/1424,,True,bapics@uohyd.ernet.in,SCIS,Professor,,33,59,,2026-01-31 22:35:55.675091,2026-01-31 22:36:05.413459
+23,V. Venkata Ramana Murthy,v venkata ramana murthy,,,False,,SCIS,,,1,1,,2026-01-31 22:35:55.895894,2026-01-31 22:35:55.900901
+24,Lakshmi Kanth Munganda,lakshmi kanth munganda,,,False,,SCIS,,,1,1,,2026-01-31 22:35:55.902611,2026-01-31 22:35:55.907374
+25,Jorge M. S. Valente,jorge m s valente,,,False,,SCIS,,,1,2,,2026-01-31 22:35:55.927052,2026-01-31 22:35:55.937565
+26,Maria do Rosário Alves Moreira,maria do rosário alves moreira,,,False,,SCIS,,,1,2,,2026-01-31 22:35:55.928090,2026-01-31 22:35:55.937565
+27,Manohar Pallantla,manohar pallantla,,,False,,SCIS,,,1,1,,2026-01-31 22:35:55.958945,2026-01-31 22:35:55.963135
+14,Wilson Naik Bhukya,wilson naik bhukya,05/2858,,True,rathore@uohyd.ac.in,SCIS,Associate Professor,,14,13,,2026-01-31 22:35:55.649162,2026-01-31 22:35:56.878592
+28,Martin Josef Geiger,martin josef geiger,,,False,,SCIS,,,1,3,,2026-01-31 22:35:55.989731,2026-01-31 22:35:56.004260
+29,Santhosh Peddi,santhosh peddi,,,False,,SCIS,,,1,1,,2026-01-31 22:35:56.011685,2026-01-31 22:35:56.016177
+17,Shyam Sundar,shyam sundar,,,False,,SCIS,,,13,3,,2026-01-31 22:35:55.687346,2026-01-31 22:35:56.050350
+1,André Rossi,andré rossi,,,False,,SCIS,,,17,6,,2026-01-31 22:35:55.310287,2026-01-31 22:35:56.067859
+22,Anupama Potluri,anupama potluri,16/5380,,True,apcs@uohyd.ac.in,SCIS,Assistant Professor,,14,18,,2026-01-31 22:35:55.863804,2026-01-31 22:36:02.050581
+12,Marc Sevaux,marc sevaux,,,False,,SCIS,,,9,3,,2026-01-31 22:35:55.512586,2026-01-31 22:35:56.067860
+31,Srikanth Pulikanti,srikanth pulikanti,,,False,,SCIS,,,1,1,,2026-01-31 22:35:56.069647,2026-01-31 22:35:56.073775
+30,Anurag Singh Baghel,anurag singh baghel,,,False,,SCIS,,,4,1,,2026-01-31 22:35:56.054619,2026-01-31 22:35:56.104642
+2,Alok Singh,alok singh,01/1744-1,,True,alok@uohyd.ac.in,SCIS,Professor,,97,31,,2026-01-31 22:35:55.315303,2026-01-31 22:35:56.124548
+32,Ashok Kumar Gupta,ashok kumar gupta,,,False,,SCIS,,,6,1,,2026-01-31 22:35:56.084009,2026-01-31 22:35:56.124549
+41,Rohit Kumar Bondugula,rohit kumar bondugula,,,False,,SCIS,,,3,7,,2026-01-31 22:35:56.165855,2026-01-31 22:36:08.513551
+35,Pravindra Shekhar Shakunt,pravindra shekhar shakunt,,,False,,SCIS,,,1,1,,2026-01-31 22:35:56.131984,2026-01-31 22:35:56.135324
+36,Ramesh Kumar Sahoo,ramesh kumar sahoo,,,False,,SCIS,,,1,3,,2026-01-31 22:35:56.138424,2026-01-31 22:35:56.154236
+37,Sateesh Kumar Pradhan,sateesh kumar pradhan,,,False,,SCIS,,,1,3,,2026-01-31 22:35:56.139201,2026-01-31 22:35:56.154236
+40,Sruthi P,sruthi p,,,False,,SCIS,,,1,2,,2026-01-31 22:35:56.156759,2026-01-31 22:35:56.164984
+42,Kaushik Bhargav Sivangi,kaushik bhargav sivangi,,,False,,SCIS,,,1,2,,2026-01-31 22:35:56.166898,2026-01-31 22:35:56.175457
+33,P. Sruthi,p sruthi,,,False,,SCIS,,,3,2,,2026-01-31 22:35:56.125879,2026-01-31 22:35:56.194122
+43,Sriyanka Satapathy,sriyanka satapathy,,,False,,SCIS,,,1,2,,2026-01-31 22:35:56.187268,2026-01-31 22:35:56.194334
+45,Dipak K. Agrawal,dipak k agrawal,,,False,,SCIS,,,1,2,,2026-01-31 22:35:56.200590,2026-01-31 22:35:56.210049
+46,Wipawee Usaha,wipawee usaha,,,False,,SCIS,,,1,2,,2026-01-31 22:35:56.201676,2026-01-31 22:35:56.210240
+39,Gayathri Gorrepati,gayathri gorrepati,,,False,,SCIS,,,2,3,,2026-01-31 22:35:56.155812,2026-01-31 22:35:56.218023
+47,Bhawani Shankar Pattnaik,bhawani shankar pattnaik,,,False,,SCIS,,,1,3,,2026-01-31 22:35:56.219077,2026-01-31 22:35:56.235048
+48,Arunima Sambhuta Pattanayak,arunima sambhuta pattanayak,,,False,,SCIS,,,1,3,,2026-01-31 22:35:56.219936,2026-01-31 22:35:56.235048
+49,Ajit Kumar Panda,ajit kumar panda,,,False,,SCIS,,,1,3,,2026-01-31 22:35:56.221004,2026-01-31 22:35:56.235378
+50,Yogendra Kumar,yogendra kumar,,,False,,SCIS,,,1,1,,2026-01-31 22:35:56.236598,2026-01-31 22:35:56.240746
+51,Somayya Avadut,somayya avadut,,,False,,SCIS,,,1,1,,2026-01-31 22:35:56.242333,2026-01-31 22:35:56.246052
+53,Gowthami Javvaji,gowthami javvaji,,,False,,SCIS,,,1,1,,2026-01-31 22:35:56.252674,2026-01-31 22:35:56.256255
+54,Poongodi Chinnasamy,poongodi chinnasamy,,,False,,SCIS,,,1,3,,2026-01-31 22:35:56.257529,2026-01-31 22:35:56.272236
+56,Jeevanantham A,jeevanantham a,,,False,,SCIS,,,1,3,,2026-01-31 22:35:56.259641,2026-01-31 22:35:56.272582
+57,Supriya Das,supriya das,,,False,,SCIS,,,1,1,,2026-01-31 22:35:56.274429,2026-01-31 22:35:56.278501
+52,Susil Kumar Mohanty,susil kumar mohanty,,,False,,SCIS,,,2,1,,2026-01-31 22:35:56.247431,2026-01-31 22:35:56.282860
+44,Ajit Kumar Sahoo,ajit kumar sahoo,,,False,,SCIS,,,3,2,,2026-01-31 22:35:56.195650,2026-01-31 22:35:56.287372
+58,Arun Avinash Chauhan,arun avinash chauhan,,,False,,SCIS,,,1,1,,2026-01-31 22:35:56.288727,2026-01-31 22:35:56.292845
+60,Pavan Kumar Mishra,pavan kumar mishra,,,False,,SCIS,,,1,3,,2026-01-31 22:35:56.300009,2026-01-31 22:35:56.314898
+61,Sudhakar Pandey,sudhakar pandey,,,False,,SCIS,,,1,3,,2026-01-31 22:35:56.300847,2026-01-31 22:35:56.314898
+62,Sanjay Kumar Biswash,sanjay kumar biswash,,,False,,SCIS,,,1,3,,2026-01-31 22:35:56.301902,2026-01-31 22:35:56.315276
+55,Lalitha Krishnasamy,lalitha krishnasamy,,,False,,SCIS,,,2,6,,2026-01-31 22:35:56.258762,2026-01-31 22:35:56.337729
+63,R. Thangarajan,r thangarajan,,,False,,SCIS,,,1,4,,2026-01-31 22:35:56.316506,2026-01-31 22:35:56.337729
+64,Chinnasamy Poongodi,chinnasamy poongodi,,,False,,SCIS,,,1,4,,2026-01-31 22:35:56.317570,2026-01-31 22:35:56.338233
+65,Ambika Prasad Sahu,ambika prasad sahu,,,False,,SCIS,,,1,4,,2026-01-31 22:35:56.318656,2026-01-31 22:35:56.338234
+66,Hisham M. Alsaghier,hisham m alsaghier,,,False,,SCIS,,,1,3,,2026-01-31 22:35:56.342262,2026-01-31 22:35:56.357621
+68,L. S. S. Reddy,l s s reddy,,,False,,SCIS,,,1,3,,2026-01-31 22:35:56.344215,2026-01-31 22:35:56.358118
+69,H. Yerranna,h yerranna,,,False,,SCIS,,,1,3,,2026-01-31 22:35:56.359691,2026-01-31 22:35:56.375158
+71,D. K. Sunil,d k sunil,,,False,,SCIS,,,1,3,,2026-01-31 22:35:56.361435,2026-01-31 22:35:56.375494
+72,Ayangleima Laishram,ayangleima laishram,,,False,,SCIS,,,3,3,,2026-01-31 22:35:56.376801,2026-01-31 22:36:10.057743
+73,Satya Prakash Sahu,satya prakash sahu,,,False,,SCIS,,,1,3,,2026-01-31 22:35:56.377645,2026-01-31 22:35:56.392001
+75,Anup Kumar Maurya,anup kumar maurya,,,False,,SCIS,,,1,2,,2026-01-31 22:35:56.393750,2026-01-31 22:35:56.402390
+80,Madhusoodhnan Nair,madhusoodhnan nair,,,False,,SCIS,,,1,2,,2026-01-31 22:35:56.454372,2026-01-31 22:35:56.462701
+82,Nagarjuna Reddy Busireddy,nagarjuna reddy busireddy,,,False,,SCIS,,,1,1,,2026-01-31 22:35:56.474515,2026-01-31 22:35:56.478915
+77,Kiran Kumar Anumandla,kiran kumar anumandla,,,False,,SCIS,,,2,4,,2026-01-31 22:35:56.422657,2026-01-31 22:35:56.491585
+78,Rangababu Peesapati,rangababu peesapati,,,False,,SCIS,,,2,4,,2026-01-31 22:35:56.423526,2026-01-31 22:35:56.491585
+76,V. N. Sastry,v n sastry,,,False,,SCIS,,,21,13,,2026-01-31 22:35:56.394594,2026-01-31 22:36:09.831775
+85,A. Raveendranadh,a raveendranadh,,,False,,SCIS,,,1,3,,2026-01-31 22:35:56.521176,2026-01-31 22:35:56.535082
+84,Sesham Srinu,sesham srinu,,,False,,SCIS,,,2,3,,2026-01-31 22:35:56.520314,2026-01-31 22:35:56.542552
+67,Shaik Shakeel Ahamad,shaik shakeel ahamad,,,False,,SCIS,,,8,5,,2026-01-31 22:35:56.343147,2026-01-31 22:35:56.550421
+86,Alefiah Mubeen,alefiah mubeen,,,False,,SCIS,,,1,2,,2026-01-31 22:35:56.576261,2026-01-31 22:35:56.583836
+87,Shravan Kudikala,shravan kudikala,,,False,,SCIS,,,1,2,,2026-01-31 22:35:56.594356,2026-01-31 22:35:56.602574
+88,Dama Lavanya,dama lavanya,,,False,,SCIS,,,1,1,,2026-01-31 22:35:56.608631,2026-01-31 22:35:56.612433
+89,Moumita Patra,moumita patra,,,False,,SCIS,,,1,1,,2026-01-31 22:35:56.613486,2026-01-31 22:35:56.618090
+90,Deepak K. Tosh,deepak k tosh,,,False,,SCIS,,,1,2,,2026-01-31 22:35:56.628276,2026-01-31 22:35:56.637567
+79,Ajith Abraham,ajith abraham,,,False,,SCIS,,,4,7,,2026-01-31 22:35:56.424837,2026-01-31 22:36:09.695512
+91,K. P. N. Murthy,k p n murthy,,,False,,SCIS,,,1,2,,2026-01-31 22:35:56.649802,2026-01-31 22:35:56.658180
+59,Vasavi Junapudi,vasavi junapudi,,,False,,SCIS,,,2,2,,2026-01-31 22:35:56.293867,2026-01-31 22:35:56.672819
+38,Srinivas Sethi,srinivas sethi,,,False,,SCIS,,,4,3,,2026-01-31 22:35:56.139935,2026-01-31 22:35:56.677736
+93,Amit K. Sharma,amit k sharma,,,False,,SCIS,,,1,3,,2026-01-31 22:35:56.701891,2026-01-31 22:35:56.717184
+94,Nikunj Thakral,nikunj thakral,,,False,,SCIS,,,1,3,,2026-01-31 22:35:56.702753,2026-01-31 22:35:56.717185
+96,Shravan Kumar,shravan kumar,,,False,,SCIS,,,1,2,,2026-01-31 22:35:56.719021,2026-01-31 22:35:56.726552
+83,Layak Ali,layak ali,,,False,,SCIS,,,6,2,,2026-01-31 22:35:56.501691,2026-01-31 22:35:56.733644
+70,Samrat L. Sabat,samrat l sabat,,,False,,SCIS,,,23,15,,2026-01-31 22:35:56.360597,2026-01-31 22:35:56.740650
+97,Shobhit Srivastava,shobhit srivastava,,,False,,SCIS,,,1,3,,2026-01-31 22:35:56.742360,2026-01-31 22:35:56.756729
+98,Hitesh Mahajan,hitesh mahajan,,,False,,SCIS,,,1,3,,2026-01-31 22:35:56.743180,2026-01-31 22:35:56.756899
+92,Gauri K. Udgata,gauri k udgata,,,False,,SCIS,,,3,6,,2026-01-31 22:35:56.664957,2026-01-31 22:35:56.772572
+99,U. Anuradha,u anuradha,,,False,,SCIS,,,1,3,,2026-01-31 22:35:56.758412,2026-01-31 22:35:56.772764
+100,G. Pavan Kumar,g pavan kumar,,,False,,SCIS,,,1,3,,2026-01-31 22:35:56.759429,2026-01-31 22:35:56.772964
+101,Jay S. Bagga,jay s bagga,,,False,,SCIS,,,1,1,,2026-01-31 22:35:56.777460,2026-01-31 22:35:56.781088
+34,Siba K. Udgata,siba k udgata,04/3517,,True,deanscis@uohyd.ac.in,SCIS,Professor,,70,69,,2026-01-31 22:35:56.126748,2026-01-31 22:35:56.786727
+102,Dang Van Hung,dang van hung,,,False,,SCIS,,,1,1,,2026-01-31 22:35:56.782712,2026-01-31 22:35:56.786727
+103,Ali Nadim Alhaj,ali nadim alhaj,,,False,,SCIS,,,2,2,,2026-01-31 22:35:56.788039,2026-01-31 22:35:56.805200
+105,Prasad Bhavana,prasad bhavana,,,False,,SCIS,,,6,3,,2026-01-31 22:35:56.806940,2026-01-31 22:36:10.070779
+106,Shivanvitha Ambati,shivanvitha ambati,,,False,,SCIS,,,1,3,,2026-01-31 22:35:56.816785,2026-01-31 22:35:56.829854
+107,Nageswar Rao Kota,nageswar rao kota,,,False,,SCIS,,,1,2,,2026-01-31 22:35:56.830829,2026-01-31 22:35:56.839505
+108,Hamed Saljooghinejad,hamed saljooghinejad,,,False,,SCIS,,,1,1,,2026-01-31 22:35:56.841265,2026-01-31 22:35:56.845204
+109,Siva Krishna Seemala,siva krishna seemala,,,False,,SCIS,,,1,2,,2026-01-31 22:35:56.846478,2026-01-31 22:35:56.854431
+111,Sateesh Kumar Banothu,sateesh kumar banothu,,,False,,SCIS,,,1,1,,2026-01-31 22:35:56.864719,2026-01-31 22:35:56.868799
+104,Rajendra Prasad Lal,rajendra prasad lal,31/9532,,True,rajendraprasd@uohyd.ac.in,SCIS,Assistant Professor,,12,19,,2026-01-31 22:35:56.789441,2026-01-31 22:36:03.461073
+110,Kollapalli Ramesh Babu,kollapalli ramesh babu,,,False,,SCIS,,,4,9,,2026-01-31 22:35:56.855347,2026-01-31 22:36:10.189317
+112,Suneel Kumar Kommuru,suneel kumar kommuru,,,False,,SCIS,,,1,2,,2026-01-31 22:35:56.870361,2026-01-31 22:35:56.878782
+118,Rajarshi Pal,rajarshi pal,,,False,,SCIS,,,8,4,,2026-01-31 22:35:56.902599,2026-01-31 22:36:06.188624
+122,Soumitra Dutta,soumitra dutta,,,False,,SCIS,,,1,2,,2026-01-31 22:35:56.996438,2026-01-31 22:35:57.004201
+116,Srinivas Yara,srinivas yara,,,False,,SCIS,,,1,1,,2026-01-31 22:35:56.891376,2026-01-31 22:35:56.895358
+114,Mohsin Furkh Dar,mohsin furkh dar,,,False,,SCIS,,,3,1,,2026-01-31 22:35:56.880311,2026-01-31 22:35:56.900416
+121,Shubhra Sankar Ray,shubhra sankar ray,,,False,,SCIS,,,5,2,,2026-01-31 22:35:56.954188,2026-01-31 22:35:57.012220
+115,Avatharam Ganivada,avatharam ganivada,06/10134,,True,avatharg@uohyd.ac.in,SCIS,Assistant Professor,,19,8,,2026-01-31 22:35:56.881407,2026-01-31 22:35:57.016982
+120,Sankar K. Pal,sankar k pal,,,False,,SCIS,,,8,3,,2026-01-31 22:35:56.953141,2026-01-31 22:35:57.016983
+119,Sheela Ramanna,sheela ramanna,,,False,,SCIS,,,1,1,,2026-01-31 22:35:56.913540,2026-01-31 22:35:56.917243
+117,Shadab Ahmad,shadab ahmad,,,False,,SCIS,,,5,2,,2026-01-31 22:35:56.901780,2026-01-31 22:35:56.949030
+123,Bheekya Dharamsotu,bheekya dharamsotu,,,False,,SCIS,,,3,3,,2026-01-31 22:35:57.018393,2026-01-31 22:35:57.105667
+132,Hemantha Kumar Kalluri,hemantha kumar kalluri,,,False,,SCIS,,,4,3,,2026-01-31 22:35:57.076005,2026-01-31 22:36:09.900269
+124,Salman Abdul Moiz,salman abdul moiz,98/6017,,True,salman@uohyd.ac.in,SCIS,Professor,,22,20,,2026-01-31 22:35:57.019248,2026-01-31 22:36:10.485914
+137,Swaroop Kallakuri,swaroop kallakuri,,,False,,SCIS,,,1,4,,2026-01-31 22:35:57.110105,2026-01-31 22:35:57.131699
+136,Priyanka Badiwal,priyanka badiwal,,,False,,SCIS,,,2,4,,2026-01-31 22:35:57.108945,2026-01-31 22:35:57.143320
+135,Parwat Singh Anjana,parwat singh anjana,,,False,,SCIS,,,3,4,,2026-01-31 22:35:57.107904,2026-01-31 22:35:57.185248
+230,Sultan Altarrazi,sultan altarrazi,,,False,,SCIS,,,1,4,,2026-01-31 22:35:58.401383,2026-01-31 22:35:58.424352
+231,Tomasz Szydlo,tomasz szydlo,,,False,,SCIS,,,1,4,,2026-01-31 22:35:58.402365,2026-01-31 22:35:58.424352
+232,Rajiv Ranjan,rajiv ranjan,,,False,,SCIS,,,1,4,,2026-01-31 22:35:58.403737,2026-01-31 22:35:58.424846
+144,Mulagala Sandhya,mulagala sandhya,,,False,,SCIS,,,1,2,,2026-01-31 22:35:57.197577,2026-01-31 22:35:57.206197
+142,Soumen Ghosh,soumen ghosh,,,False,,SCIS,,,2,2,,2026-01-31 22:35:57.187195,2026-01-31 22:35:57.235378
+145,Kirti,kirti,,,False,,SCIS,,,1,3,,2026-01-31 22:35:57.236931,2026-01-31 22:35:57.251497
+234,Venki Balasubramanian,venki balasubramanian,,,False,,SCIS,,,1,6,,2026-01-31 22:35:58.427283,2026-01-31 22:35:58.469189
+139,Raghavendra Kune,raghavendra kune,,,False,,SCIS,,,6,7,,2026-01-31 22:35:57.154166,2026-01-31 22:36:03.223885
+147,P. Swathi,p swathi,,,False,,SCIS,,,1,3,,2026-01-31 22:35:57.286184,2026-01-31 22:35:57.301185
+148,B. L. Deekshatulu,b l deekshatulu,,,False,,SCIS,,,1,3,,2026-01-31 22:35:57.287375,2026-01-31 22:35:57.301536
+140,Pramodkumar Konugurthi,pramodkumar konugurthi,,,False,,SCIS,,,4,5,,2026-01-31 22:35:57.155012,2026-01-31 22:35:57.325120
+133,Munaga V. N. K. Prasad,munaga v n k prasad,,,False,,SCIS,,,12,12,,2026-01-31 22:35:57.076878,2026-01-31 22:36:09.900269
+130,Tilottama Goswami,tilottama goswami,,,False,,SCIS,,,3,3,,2026-01-31 22:35:57.057611,2026-01-31 22:35:57.342584
+138,Vijaya Lakshmi V. Nadimpalli,vijaya lakshmi v nadimpalli,,,False,,SCIS,,,3,3,,2026-01-31 22:35:57.145093,2026-01-31 22:35:57.350385
+149,Mousumi Roy,mousumi roy,,,False,,SCIS,,,1,4,,2026-01-31 22:35:57.352025,2026-01-31 22:35:57.374460
+150,Apparao Allam,apparao allam,,,False,,SCIS,,,1,4,,2026-01-31 22:35:57.352916,2026-01-31 22:35:57.374818
+151,Raveen S.,raveen s,,,False,,SCIS,,,1,2,,2026-01-31 22:35:57.375949,2026-01-31 22:35:57.384936
+154,Tarun Dhariwal,tarun dhariwal,,,False,,SCIS,,,1,2,,2026-01-31 22:35:57.440210,2026-01-31 22:35:57.448489
+155,B. Vikranth,b vikranth,,,False,,SCIS,,,1,2,,2026-01-31 22:35:57.455020,2026-01-31 22:35:57.463553
+146,Morusupalli Raghava,morusupalli raghava,,,False,,SCIS,,,2,2,,2026-01-31 22:35:57.252567,2026-01-31 22:35:57.470968
+156,Vinay Kumar Verma,vinay kumar verma,,,False,,SCIS,,,1,3,,2026-01-31 22:35:57.472491,2026-01-31 22:35:57.485760
+165,N. A. B. Sankar Chebolu,n a b sankar chebolu,,,False,,SCIS,,,4,2,,2026-01-31 22:35:57.568895,2026-01-31 22:36:03.277495
+159,Paramjeet,paramjeet,,,False,,SCIS,,,1,3,,2026-01-31 22:35:57.499947,2026-01-31 22:35:57.516298
+162,Sitaramaiah Ramisetti,sitaramaiah ramisetti,,,False,,SCIS,,,1,2,,2026-01-31 22:35:57.518112,2026-01-31 22:35:57.526245
+163,Snehal Masne,snehal masne,,,False,,SCIS,,,1,3,,2026-01-31 22:35:57.539766,2026-01-31 22:35:57.552481
+164,Chitti Kokil Kumar,chitti kokil kumar,,,False,,SCIS,,,1,2,,2026-01-31 22:35:57.554748,2026-01-31 22:35:57.562908
+166,Rusydi Umar,rusydi umar,,,False,,SCIS,,,1,2,,2026-01-31 22:35:57.578401,2026-01-31 22:35:57.587512
+170,Hima Bindu Kommanti,hima bindu kommanti,,,False,,SCIS,,,1,1,,2026-01-31 22:35:57.629226,2026-01-31 22:35:57.633425
+169,Gutha Jaya Krishna,gutha jaya krishna,,,False,,SCIS,,,2,2,,2026-01-31 22:35:57.620119,2026-01-31 22:36:03.294891
+167,V. Kamakshi Prasad,v kamakshi prasad,,,False,,SCIS,,,3,6,,2026-01-31 22:35:57.594084,2026-01-31 22:36:06.654535
+245,Mohammad Goudarzi,mohammad goudarzi,,,False,,SCIS,,,1,5,,2026-01-31 22:35:58.558135,2026-01-31 22:35:58.589073
+246,Leila Ismail,leila ismail,,,False,,SCIS,,,1,5,,2026-01-31 22:35:58.559161,2026-01-31 22:35:58.589619
+172,Praveen Ganghishetti,praveen ganghishetti,,,False,,SCIS,,,1,3,,2026-01-31 22:35:57.681568,2026-01-31 22:35:57.694744
+247,Vassilis Kostakos,vassilis kostakos,,,False,,SCIS,,,1,5,,2026-01-31 22:35:58.559998,2026-01-31 22:35:58.589620
+171,Maramreddy Umadevi,maramreddy umadevi,,,False,,SCIS,,,2,3,,2026-01-31 22:35:57.634655,2026-01-31 22:35:57.702840
+221,Bharadwaj Veeravalli,bharadwaj veeravalli,,,False,,SCIS,,,2,2,,2026-01-31 22:35:58.247150,2026-01-31 22:35:58.597210
+134,K. Swarupa Rani,k swarupa rani,77/10593,,True,swarupacs@uohyd.ac.in,SCIS,Professor,,14,16,,2026-01-31 22:35:57.093124,2026-01-31 22:36:07.934963
+173,Nikunj Chauhan,nikunj chauhan,,,False,,SCIS,,,1,3,,2026-01-31 22:35:57.704565,2026-01-31 22:35:57.718389
+218,Anna Fensel,anna fensel,,,False,,SCIS,,,2,6,,2026-01-31 22:35:58.208467,2026-01-31 22:35:58.621883
+248,Artjom Lind,artjom lind,,,False,,SCIS,,,1,4,,2026-01-31 22:35:58.602814,2026-01-31 22:35:58.621884
+238,Chandra Sekhara Rao Annavarapu,chandra sekhara rao annavarapu,,,False,,SCIS,,,2,3,,2026-01-31 22:35:58.486190,2026-01-31 22:35:58.633727
+168,K. Hima Bindu,k hima bindu,,,False,,SCIS,,,3,2,,2026-01-31 22:35:57.613756,2026-01-31 22:35:57.744343
+129,Chillarige Raghavendra Rao,chillarige raghavendra rao,07/5281-1,,True,crrao@uohyd.ac.in,SCIS,Senior Professor,,26,28,,2026-01-31 22:35:57.042025,2026-01-31 22:35:57.796078
+152,Rafah M. Almuttairi,rafah m almuttairi,,,False,,SCIS,,,5,7,,2026-01-31 22:35:57.387801,2026-01-31 22:35:57.796078
+157,Manish R. Joshi,manish r joshi,,,False,,SCIS,,,2,2,,2026-01-31 22:35:57.487798,2026-01-31 22:35:57.813155
+158,Pawan Lingras,pawan lingras,,,False,,SCIS,,,2,2,,2026-01-31 22:35:57.488695,2026-01-31 22:35:57.813155
+233,Ambigavathi Munusamy,ambigavathi munusamy,,,False,,SCIS,,,3,9,,2026-01-31 22:35:58.426133,2026-01-31 22:35:58.702898
+179,B. Sandhya,b sandhya,,,False,,SCIS,,,1,3,,2026-01-31 22:35:57.825088,2026-01-31 22:35:57.838167
+180,M. Uma Devi,m uma devi,,,False,,SCIS,,,1,2,,2026-01-31 22:35:57.839138,2026-01-31 22:35:57.847621
+160,Vadlamani Ravi,vadlamani ravi,,,False,,SCIS,,,15,11,,2026-01-31 22:35:57.500891,2026-01-31 22:36:06.231586
+220,Suvam Basak,suvam basak,,,False,,SCIS,,,2,1,,2026-01-31 22:35:58.241045,2026-01-31 22:35:58.744278
+161,Nekuri Naveen,nekuri naveen,55/8654,,True,naveencis@uohyd.ac.in,SCIS,Assistant Professor,,14,11,,2026-01-31 22:35:57.501910,2026-01-31 22:36:06.231785
+178,Lakshmi Rajamani,lakshmi rajamani,,,False,,SCIS,,,8,7,,2026-01-31 22:35:57.816275,2026-01-31 22:36:10.485915
+143,P. S. V. S. Sai Prasad,p s v s sai prasad,23/2953,,True,saics@uohyd.ac.in,SCIS,Professor,,37,24,,2026-01-31 22:35:57.188147,2026-01-31 22:36:02.494260
+153,Mustafa Kaiiali,mustafa kaiiali,,,False,,SCIS,,,6,13,,2026-01-31 22:35:57.420115,2026-01-31 22:36:03.261363
+181,Wael Abdulal,wael abdulal,,,False,,SCIS,,,2,7,,2026-01-31 22:35:57.858567,2026-01-31 22:35:57.918307
+182,Ahmad Jabas,ahmad jabas,,,False,,SCIS,,,2,7,,2026-01-31 22:35:57.859884,2026-01-31 22:35:57.918308
+184,Essa Zaiton,essa zaiton,,,False,,SCIS,,,1,5,,2026-01-31 22:35:57.891576,2026-01-31 22:35:57.918937
+177,Omar Al Jadaan,omar al jadaan,,,False,,SCIS,,,4,7,,2026-01-31 22:35:57.814930,2026-01-31 22:35:57.926713
+185,J. Umakant,j umakant,,,False,,SCIS,,,1,3,,2026-01-31 22:35:57.933055,2026-01-31 22:35:57.948154
+186,K. Sudhakar,k sudhakar,,,False,,SCIS,,,1,3,,2026-01-31 22:35:57.933928,2026-01-31 22:35:57.948155
+187,P. M. Mujumdar,p m mujumdar,,,False,,SCIS,,,1,3,,2026-01-31 22:35:57.934758,2026-01-31 22:35:57.948505
+195,Aditya Kumar,aditya kumar,,,False,,SCIS,,,4,1,,2026-01-31 22:35:58.019681,2026-01-31 22:35:58.839637
+188,Bhadra Mani,bhadra mani,,,False,,SCIS,,,1,4,,2026-01-31 22:35:57.949443,2026-01-31 22:35:57.972761
+189,P. Anantha Lakshmi,p anantha lakshmi,,,False,,SCIS,,,1,4,,2026-01-31 22:35:57.950555,2026-01-31 22:35:57.972761
+190,Asima Pradhan,asima pradhan,,,False,,SCIS,,,1,4,,2026-01-31 22:35:57.951382,2026-01-31 22:35:57.973475
+191,Prasanta K. Panigrahi,prasanta k panigrahi,,,False,,SCIS,,,1,4,,2026-01-31 22:35:57.952229,2026-01-31 22:35:57.973475
+193,D. Latha,d latha,,,False,,SCIS,,,1,2,,2026-01-31 22:35:57.975574,2026-01-31 22:35:57.983503
+174,Yarlagadda Padmasai,yarlagadda padmasai,,,False,,SCIS,,,2,3,,2026-01-31 22:35:57.719635,2026-01-31 22:35:57.994847
+175,Kakarla Subba Rao,kakarla subba rao,,,False,,SCIS,,,2,3,,2026-01-31 22:35:57.720519,2026-01-31 22:35:57.994847
+176,S. Sita Jayalakshmi,s sita jayalakshmi,,,False,,SCIS,,,2,3,,2026-01-31 22:35:57.721644,2026-01-31 22:35:57.994848
+183,Ramachandram Sirandas,ramachandram sirandas,,,False,,SCIS,,,3,6,,2026-01-31 22:35:57.860704,2026-01-31 22:35:58.012599
+194,A. Nagaraju,a nagaraju,,,False,,SCIS,,,2,2,,2026-01-31 22:35:57.996476,2026-01-31 22:35:58.012599
+125,C. Raghavendra Rao,c raghavendra rao,,,False,,SCIS,,,56,59,,2026-01-31 22:35:57.020098,2026-01-31 22:35:58.018123
+192,G. Ganesan,g ganesan,,,False,,SCIS,,,2,2,,2026-01-31 22:35:57.974627,2026-01-31 22:35:58.018124
+196,Ali Zahir,ali zahir,,,False,,SCIS,,,1,3,,2026-01-31 22:35:58.024982,2026-01-31 22:35:58.039507
+197,Ashiq Anjum,ashiq anjum,,,False,,SCIS,,,1,3,,2026-01-31 22:35:58.025860,2026-01-31 22:35:58.039508
+198,Anusri Sanyadanam,anusri sanyadanam,,,False,,SCIS,,,1,1,,2026-01-31 22:35:58.041007,2026-01-31 22:35:58.044845
+200,Linfeng Wen,linfeng wen,,,False,,SCIS,,,2,6,,2026-01-31 22:35:58.066999,2026-01-31 22:35:58.332474
+201,Minxian Xu,minxian xu,,,False,,SCIS,,,2,6,,2026-01-31 22:35:58.067839,2026-01-31 22:35:58.332474
+199,Rahul Siyanwal,rahul siyanwal,,,False,,SCIS,,,1,2,,2026-01-31 22:35:58.056782,2026-01-31 22:35:58.065814
+203,Muhammad Hafizhuddin Hilman,muhammad hafizhuddin hilman,,,False,,SCIS,,,2,6,,2026-01-31 22:35:58.069498,2026-01-31 22:35:58.332474
+204,Kejiang Ye,kejiang ye,,,False,,SCIS,,,2,6,,2026-01-31 22:35:58.070887,2026-01-31 22:35:58.332475
+205,Chengzhong Xu,chengzhong xu,,,False,,SCIS,,,2,6,,2026-01-31 22:35:58.071801,2026-01-31 22:35:58.332475
+202,Sukhpal Singh Gill,sukhpal singh gill,,,False,,SCIS,,,4,9,,2026-01-31 22:35:58.068688,2026-01-31 22:35:58.853891
+206,Hina Anwar,hina anwar,,,False,,SCIS,,,5,4,,2026-01-31 22:35:58.119943,2026-01-31 22:36:00.121051
+207,Dietmar Pfahl,dietmar pfahl,,,False,,SCIS,,,5,4,,2026-01-31 22:35:58.120982,2026-01-31 22:36:00.121051
+128,Rajeev Wankar,rajeev wankar,31/566,,True,wankarcs@uohyd.ac.in,SCIS,Professor,,49,36,,2026-01-31 22:35:57.041122,2026-01-31 22:36:03.364105
+219,Rance J. DeLong,rance j delong,,,False,,SCIS,,,1,5,,2026-01-31 22:35:58.210108,2026-01-31 22:35:58.239689
+212,Prabhakar Krishnan,prabhakar krishnan,,,False,,SCIS,,,1,5,,2026-01-31 22:35:58.158008,2026-01-31 22:35:58.189553
+213,Kurunandan Jain,kurunandan jain,,,False,,SCIS,,,1,5,,2026-01-31 22:35:58.159220,2026-01-31 22:35:58.189554
+214,Tulika Pandey,tulika pandey,,,False,,SCIS,,,1,5,,2026-01-31 22:35:58.160580,2026-01-31 22:35:58.190055
+215,Sucharitha Isukapalli,sucharitha isukapalli,,,False,,SCIS,,,1,1,,2026-01-31 22:35:58.191719,2026-01-31 22:35:58.195674
+222,Rajesh Thalla,rajesh thalla,,,False,,SCIS,,,1,1,,2026-01-31 22:35:58.262901,2026-01-31 22:35:58.266639
+126,Sreenivasu Mirampalli,sreenivasu mirampalli,,,False,,SCIS,,,4,3,,2026-01-31 22:35:57.039060,2026-01-31 22:35:58.274731
+223,Maria Rodriguez Read,maria rodriguez read,,,False,,SCIS,,,1,3,,2026-01-31 22:35:58.284687,2026-01-31 22:35:58.298875
+224,Deepika Vemuri,deepika vemuri,,,False,,SCIS,,,1,1,,2026-01-31 22:35:58.334965,2026-01-31 22:35:58.339287
+225,Banoth Ravi,banoth ravi,,,False,,SCIS,,,1,6,,2026-01-31 22:35:58.340677,2026-01-31 22:35:58.380487
+226,Ilir Murturi,ilir murturi,,,False,,SCIS,,,1,6,,2026-01-31 22:35:58.341751,2026-01-31 22:35:58.381429
+237,Danda B. Rawat,danda b rawat,,,False,,SCIS,,,1,6,,2026-01-31 22:35:58.429877,2026-01-31 22:35:58.470181
+240,Bipasha Mahato,bipasha mahato,,,False,,SCIS,,,1,3,,2026-01-31 22:35:58.500709,2026-01-31 22:35:58.515514
+235,Mohammad Ayoub Khan,mohammad ayoub khan,,,False,,SCIS,,,2,8,,2026-01-31 22:35:58.428093,2026-01-31 22:35:58.554594
+236,Varun G. Menon,varun g menon,,,False,,SCIS,,,2,8,,2026-01-31 22:35:58.429038,2026-01-31 22:35:58.554594
+242,Linss T. Alex,linss t alex,,,False,,SCIS,,,1,6,,2026-01-31 22:35:58.518639,2026-01-31 22:35:58.555385
+243,Mohammad Reza Khosravi,mohammad reza khosravi,,,False,,SCIS,,,1,6,,2026-01-31 22:35:58.519739,2026-01-31 22:35:58.555385
+210,Praveen Kumar Donta,praveen kumar donta,,,False,,SCIS,,,5,8,,2026-01-31 22:35:58.142876,2026-01-31 22:35:58.756483
+211,Schahram Dustdar,schahram dustdar,,,False,,SCIS,,,4,9,,2026-01-31 22:35:58.143729,2026-01-31 22:35:58.756483
+256,Argo Jõeleht,argo jõeleht,,,False,,SCIS,,,1,3,,2026-01-31 22:35:58.758880,2026-01-31 22:35:58.771446
+258,San Murugesan,san murugesan,,,False,,SCIS,,,1,4,,2026-01-31 22:35:58.774485,2026-01-31 22:35:58.794359
+259,Freddy Marcelo Surriabre Dick,freddy marcelo surriabre dick,,,False,,SCIS,,,1,2,,2026-01-31 22:35:58.795800,2026-01-31 22:35:58.803038
+252,Neeraj Kumar,neeraj kumar,,,False,,SCIS,,,2,5,,2026-01-31 22:35:58.690553,2026-01-31 22:35:58.835065
+260,Anish Jindal,anish jindal,,,False,,SCIS,,,1,3,,2026-01-31 22:35:58.820735,2026-01-31 22:35:58.835066
+261,Massimo Villari,massimo villari,,,False,,SCIS,,,1,3,,2026-01-31 22:35:58.821572,2026-01-31 22:35:58.835398
+253,Shreshth Tuli,shreshth tuli,,,False,,SCIS,,,2,4,,2026-01-31 22:35:58.717215,2026-01-31 22:35:58.870744
+255,Nicholas R. Jennings,nicholas r jennings,,,False,,SCIS,,,2,4,,2026-01-31 22:35:58.719387,2026-01-31 22:35:58.870745
+262,Shridhar G. Domanal,shridhar g domanal,,,False,,SCIS,,,1,3,,2026-01-31 22:35:58.873226,2026-01-31 22:35:58.886008
+251,Gaurav Garg,gaurav garg,,,False,,SCIS,,,2,4,,2026-01-31 22:35:58.654680,2026-01-31 22:35:58.902106
+209,Shivananda R. Poojara,shivananda r poojara,,,False,,SCIS,,,8,12,,2026-01-31 22:35:58.131950,2026-01-31 22:35:58.913829
+216,Tek Raj Chhetri,tek raj chhetri,,,False,,SCIS,,,3,6,,2026-01-31 22:35:58.206003,2026-01-31 22:35:58.929695
+263,Matej Artac,matej artac,,,False,,SCIS,,,1,13,,2026-01-31 22:35:58.931631,2026-01-31 22:35:59.113891
+264,Willem-Jan van den Heuvel,willem-jan van den heuvel,,,False,,SCIS,,,1,13,,2026-01-31 22:35:58.932465,2026-01-31 22:35:59.113891
+265,André van Hoorn,andré van hoorn,,,False,,SCIS,,,1,13,,2026-01-31 22:35:58.933346,2026-01-31 22:35:59.113891
+266,Frank Leymann,frank leymann,,,False,,SCIS,,,1,13,,2026-01-31 22:35:58.934405,2026-01-31 22:35:59.113891
+267,M. Long,m long,,,False,,SCIS,,,1,13,,2026-01-31 22:35:58.935239,2026-01-31 22:35:59.113891
+268,V. Papanikolaou,v papanikolaou,,,False,,SCIS,,,1,13,,2026-01-31 22:35:58.936046,2026-01-31 22:35:59.113892
+269,Domenico Presenza,domenico presenza,,,False,,SCIS,,,1,13,,2026-01-31 22:35:58.936958,2026-01-31 22:35:59.113892
+270,Alessandra Russo,alessandra russo,,,False,,SCIS,,,1,13,,2026-01-31 22:35:58.937752,2026-01-31 22:35:59.113892
+271,Damian A. Tamburri,damian a tamburri,,,False,,SCIS,,,1,13,,2026-01-31 22:35:58.938838,2026-01-31 22:35:59.113892
+272,Michael Wurster,michael wurster,,,False,,SCIS,,,1,13,,2026-01-31 22:35:58.939705,2026-01-31 22:35:59.116192
+273,Lulai Zhu,lulai zhu,,,False,,SCIS,,,1,13,,2026-01-31 22:35:58.940512,2026-01-31 22:35:59.116195
+276,Mithun Mukherjee,mithun mukherjee,,,False,,SCIS,,,1,2,,2026-01-31 22:35:59.136192,2026-01-31 22:35:59.143989
+277,Souvik Paul,souvik paul,,,False,,SCIS,,,1,2,,2026-01-31 22:35:59.145785,2026-01-31 22:35:59.153334
+279,Muhammed Tawfiqul Islam,muhammed tawfiqul islam,,,False,,SCIS,,,1,3,,2026-01-31 22:35:59.169096,2026-01-31 22:35:59.183537
+280,Shanika Karunasekera,shanika karunasekera,,,False,,SCIS,,,1,3,,2026-01-31 22:35:59.170275,2026-01-31 22:35:59.183725
+227,Abhishek Hazra,abhishek hazra,,,False,,SCIS,,,5,3,,2026-01-31 22:35:58.383971,2026-01-31 22:35:59.205201
+250,Giorgos Giotis,giorgos giotis,,,False,,SCIS,,,3,5,,2026-01-31 22:35:58.653785,2026-01-31 22:35:59.233274
+282,Vasilis Tountopoulos,vasilis tountopoulos,,,False,,SCIS,,,1,4,,2026-01-31 22:35:59.213392,2026-01-31 22:35:59.233275
+283,Fauzia Khan,fauzia khan,,,False,,SCIS,,,1,3,,2026-01-31 22:35:59.234774,2026-01-31 22:35:59.248202
+249,Pelle Jakovits,pelle jakovits,,,False,,SCIS,,,20,24,,2026-01-31 22:35:58.636225,2026-01-31 22:36:01.362349
+284,Joaquin Chung,joaquin chung,,,False,,SCIS,,,1,4,,2026-01-31 22:35:59.250414,2026-01-31 22:35:59.273886
+285,Eun-Sung Jung,eun-sung jung,,,False,,SCIS,,,1,4,,2026-01-31 22:35:59.252262,2026-01-31 22:35:59.274439
+286,Rajkumar Kettimuthu,rajkumar kettimuthu,,,False,,SCIS,,,1,4,,2026-01-31 22:35:59.253240,2026-01-31 22:35:59.274440
+287,Berker Demirer,berker demirer,,,False,,SCIS,,,1,3,,2026-01-31 22:35:59.276195,2026-01-31 22:35:59.288887
+288,Nishant Poddar,nishant poddar,,,False,,SCIS,,,1,3,,2026-01-31 22:35:59.290388,2026-01-31 22:35:59.304931
+289,Sikandar M. Zulqarnain Khan,sikandar m zulqarnain khan,,,False,,SCIS,,,1,3,,2026-01-31 22:35:59.291311,2026-01-31 22:35:59.305323
+229,Tarachand Amgoth,tarachand amgoth,,,False,,SCIS,,,11,5,,2026-01-31 22:35:58.385621,2026-01-31 22:35:59.890474
+228,Mainak Adhikari,mainak adhikari,,,False,,SCIS,,,17,17,,2026-01-31 22:35:58.384797,2026-01-31 22:35:59.939719
+244,Md. Redowan Mahmud,md redowan mahmud,,,False,,SCIS,,,3,6,,2026-01-31 22:35:58.557037,2026-01-31 22:35:59.951679
+278,Kotagiri Ramamohanarao,kotagiri ramamohanarao,,,False,,SCIS,,,2,3,,2026-01-31 22:35:59.154946,2026-01-31 22:35:59.951679
+316,Gaurav Somani,gaurav somani,,,False,,SCIS,,,1,3,,2026-01-31 22:35:59.962482,2026-01-31 22:35:59.977112
+317,Xinghui Zhao,xinghui zhao,,,False,,SCIS,,,1,3,,2026-01-31 22:35:59.963394,2026-01-31 22:35:59.977317
+318,Chuan Heng Foh,chuan heng foh,,,False,,SCIS,,,1,5,,2026-01-31 22:35:59.978959,2026-01-31 22:36:00.013807
+319,Jinsong Wu,jinsong wu,,,False,,SCIS,,,1,5,,2026-01-31 22:35:59.980120,2026-01-31 22:36:00.013807
+320,Burak Kantarci,burak kantarci,,,False,,SCIS,,,1,5,,2026-01-31 22:35:59.981240,2026-01-31 22:36:00.013808
+321,Periklis Chatzimisios,periklis chatzimisios,,,False,,SCIS,,,1,5,,2026-01-31 22:35:59.982456,2026-01-31 22:36:00.014565
+322,Elhadj Benkhelifa,elhadj benkhelifa,,,False,,SCIS,,,1,5,,2026-01-31 22:35:59.983421,2026-01-31 22:36:00.014565
+239,Deepsubhra Guha Roy,deepsubhra guha roy,,,False,,SCIS,,,3,4,,2026-01-31 22:35:58.499828,2026-01-31 22:36:00.030404
+241,Debashis De,debashis de,,,False,,SCIS,,,2,4,,2026-01-31 22:35:58.501576,2026-01-31 22:36:00.030404
+323,Anwesha Mukherjee,anwesha mukherjee,,,False,,SCIS,,,1,3,,2026-01-31 22:36:00.016082,2026-01-31 22:36:00.030828
+325,Alireza Ostovar,alireza ostovar,,,False,,SCIS,,,2,1,,2026-01-31 22:36:00.073107,2026-01-31 22:36:00.941626
+208,Chinmaya Kumar Dehury,chinmaya kumar dehury,,,False,,SCIS,,,19,19,,2026-01-31 22:35:58.130795,2026-01-31 22:36:00.045466
+324,Mart Min,mart min,,,False,,SCIS,,,1,3,,2026-01-31 22:36:00.058185,2026-01-31 22:36:00.071571
+328,Talha Mahin Mir,talha mahin mir,,,False,,SCIS,,,1,1,,2026-01-31 22:36:00.094521,2026-01-31 22:36:00.099068
+310,Luis M. Vaquero,luis m vaquero,,,False,,SCIS,,,2,5,,2026-01-31 22:35:59.892084,2026-01-31 22:36:00.145905
+311,Félix Cuadrado,félix cuadrado,,,False,,SCIS,,,2,5,,2026-01-31 22:35:59.893020,2026-01-31 22:36:00.145906
+312,Yehia Elkhatib,yehia elkhatib,,,False,,SCIS,,,2,5,,2026-01-31 22:35:59.893900,2026-01-31 22:36:00.145906
+313,Jorge Bernal Bernabé,jorge bernal bernabé,,,False,,SCIS,,,2,5,,2026-01-31 22:35:59.894816,2026-01-31 22:36:00.145906
+314,Mohamed Faten Zhani,mohamed faten zhani,,,False,,SCIS,,,2,5,,2026-01-31 22:35:59.895941,2026-01-31 22:36:00.145906
+275,Amnir Hadachi,amnir hadachi,,,False,,SCIS,,,3,3,,2026-01-31 22:35:59.118730,2026-01-31 22:36:00.154120
+329,Sander Soo,sander soo,,,False,,SCIS,,,3,4,,2026-01-31 22:36:00.180074,2026-01-31 22:36:00.705770
+290,Rodrigo N. Calheiros,rodrigo n calheiros,,,False,,SCIS,,,4,26,,2026-01-31 22:35:59.307087,2026-01-31 22:36:00.796602
+315,Bowen Zhou,bowen zhou,,,False,,SCIS,,,3,4,,2026-01-31 22:35:59.953419,2026-01-31 22:36:00.796602
+331,Amir Vahid Dastjerdi,amir vahid dastjerdi,,,False,,SCIS,,,2,4,,2026-01-31 22:36:00.196617,2026-01-31 22:36:00.796602
+217,Blesson Varghese,blesson varghese,,,False,,SCIS,,,4,32,,2026-01-31 22:35:58.207453,2026-01-31 22:36:00.626405
+254,Giuliano Casale,giuliano casale,,,False,,SCIS,,,5,39,,2026-01-31 22:35:58.718555,2026-01-31 22:36:00.626405
+257,Rami Bahsoon,rami bahsoon,,,False,,SCIS,,,4,26,,2026-01-31 22:35:58.773602,2026-01-31 22:36:00.626406
+291,Yogesh Simmhan,yogesh simmhan,,,False,,SCIS,,,2,24,,2026-01-31 22:35:59.308026,2026-01-31 22:36:00.626406
+292,Erol Gelenbe,erol gelenbe,,,False,,SCIS,,,2,24,,2026-01-31 22:35:59.309206,2026-01-31 22:36:00.626406
+293,Bahman Javadi,bahman javadi,,,False,,SCIS,,,2,24,,2026-01-31 22:35:59.310048,2026-01-31 22:36:00.626406
+294,Luis Miguel Vaquero,luis miguel vaquero,,,False,,SCIS,,,2,24,,2026-01-31 22:35:59.310931,2026-01-31 22:36:00.626407
+295,Marco A. S. Netto,marco a s netto,,,False,,SCIS,,,2,24,,2026-01-31 22:35:59.311852,2026-01-31 22:36:00.626407
+296,Adel Nadjaran Toosi,adel nadjaran toosi,,,False,,SCIS,,,2,24,,2026-01-31 22:35:59.312707,2026-01-31 22:36:00.626407
+297,Maria Alejandra Rodriguez,maria alejandra rodriguez,,,False,,SCIS,,,2,24,,2026-01-31 22:35:59.313587,2026-01-31 22:36:00.626407
+298,Ignacio Martín Llorente,ignacio martín llorente,,,False,,SCIS,,,2,24,,2026-01-31 22:35:59.314562,2026-01-31 22:36:00.626407
+299,Sabrina De Capitani di Vimercati,sabrina de capitani di vimercati,,,False,,SCIS,,,2,24,,2026-01-31 22:35:59.315454,2026-01-31 22:36:00.626407
+300,Pierangela Samarati,pierangela samarati,,,False,,SCIS,,,2,24,,2026-01-31 22:35:59.316328,2026-01-31 22:36:00.626408
+301,Dejan S. Milojicic,dejan s milojicic,,,False,,SCIS,,,2,24,,2026-01-31 22:35:59.317172,2026-01-31 22:36:00.626408
+302,Carlos A. Varela,carlos a varela,,,False,,SCIS,,,2,24,,2026-01-31 22:35:59.318003,2026-01-31 22:36:00.626408
+303,Marcos Dias de Assunção,marcos dias de assunção,,,False,,SCIS,,,2,24,,2026-01-31 22:35:59.319373,2026-01-31 22:36:00.626408
+304,Omer F. Rana,omer f rana,,,False,,SCIS,,,2,24,,2026-01-31 22:35:59.320244,2026-01-31 22:36:00.626408
+305,Wanlei Zhou,wanlei zhou,,,False,,SCIS,,,2,24,,2026-01-31 22:35:59.321111,2026-01-31 22:36:00.626408
+306,Hai Jin,hai jin,,,False,,SCIS,,,2,24,,2026-01-31 22:35:59.321962,2026-01-31 22:36:00.626409
+307,Wolfgang Gentzsch,wolfgang gentzsch,,,False,,SCIS,,,2,24,,2026-01-31 22:35:59.322823,2026-01-31 22:36:00.626409
+308,Albert Y. Zomaya,albert y zomaya,,,False,,SCIS,,,2,24,,2026-01-31 22:35:59.323754,2026-01-31 22:36:00.626409
+309,Haiying Shen,haiying shen,,,False,,SCIS,,,2,24,,2026-01-31 22:35:59.324686,2026-01-31 22:36:00.626409
+332,Tverezovskyi Iurii,tverezovskyi iurii,,,False,,SCIS,,,1,2,,2026-01-31 22:36:00.633520,2026-01-31 22:36:00.642409
+330,Seng W. Loke,seng w loke,,,False,,SCIS,,,2,7,,2026-01-31 22:36:00.181292,2026-01-31 22:36:00.856947
+327,Jaagup Viil,jaagup viil,,,False,,SCIS,,,3,2,,2026-01-31 22:36:00.088166,2026-01-31 22:36:00.952281
+281,Jakob Mass,jakob mass,,,False,,SCIS,,,8,5,,2026-01-31 22:35:59.184992,2026-01-31 22:36:00.996691
+335,Eero Vainikko,eero vainikko,,,False,,SCIS,,,6,5,,2026-01-31 22:36:00.655185,2026-01-31 22:36:01.396426
+333,Briti Deb,briti deb,,,False,,SCIS,,,1,3,,2026-01-31 22:36:00.652484,2026-01-31 22:36:00.674831
+334,Indrajit Mukherjee,indrajit mukherjee,,,False,,SCIS,,,1,3,,2026-01-31 22:36:00.653433,2026-01-31 22:36:00.674832
+141,Rajkumar Buyya,rajkumar buyya,,,False,,SCIS,,,32,63,,2026-01-31 22:35:57.156323,2026-01-31 22:36:10.047013
+337,Pan Hui,pan hui,,,False,,SCIS,,,1,5,,2026-01-31 22:36:00.725533,2026-01-31 22:36:00.757787
+338,Sasu Tarkoma,sasu tarkoma,,,False,,SCIS,,,1,5,,2026-01-31 22:36:00.726528,2026-01-31 22:36:00.757787
+339,Yong Li,yong li,,,False,,SCIS,,,1,5,,2026-01-31 22:36:00.727629,2026-01-31 22:36:00.758367
+343,Hai Dong,hai dong,,,False,,SCIS,,,1,6,,2026-01-31 22:36:00.816181,2026-01-31 22:36:00.857467
+344,Flora D. Salim,flora d salim,,,False,,SCIS,,,1,6,,2026-01-31 22:36:00.817255,2026-01-31 22:36:00.857468
+346,Ian Warren,ian warren,,,False,,SCIS,,,1,4,,2026-01-31 22:36:00.911664,2026-01-31 22:36:00.935613
+347,Andrew Meads,andrew meads,,,False,,SCIS,,,1,4,,2026-01-31 22:36:00.912553,2026-01-31 22:36:00.935614
+348,Thiranjith Weerasinghe,thiranjith weerasinghe,,,False,,SCIS,,,1,4,,2026-01-31 22:36:00.913653,2026-01-31 22:36:00.936138
+326,Mohan Liyanage,mohan liyanage,,,False,,SCIS,,,9,7,,2026-01-31 22:36:00.078229,2026-01-31 22:36:00.946684
+351,Rajesh Sharma,rajesh sharma,,,False,,SCIS,,,1,2,,2026-01-31 22:36:01.010056,2026-01-31 22:36:01.019571
+352,Deepak Subramanian,deepak subramanian,,,False,,SCIS,,,1,2,,2026-01-31 22:36:01.011067,2026-01-31 22:36:01.044009
+353,Plumbr Ou,plumbr ou,,,False,,SCIS,,,1,3,,2026-01-31 22:36:01.085275,2026-01-31 22:36:01.105983
+354,Tarvo Treier,tarvo treier,,,False,,SCIS,,,1,3,,2026-01-31 22:36:01.086763,2026-01-31 22:36:01.106431
+345,Vladislav Ivanistsev,vladislav ivanistsev,,,False,,SCIS,,,2,3,,2026-01-31 22:36:00.876016,2026-01-31 22:36:01.126154
+355,Chris Willmore,chris willmore,,,False,,SCIS,,,1,3,,2026-01-31 22:36:01.109318,2026-01-31 22:36:01.126364
+356,Huber Raul Flores Macario,huber raul flores macario,,,False,,SCIS,,,1,1,,2026-01-31 22:36:01.156268,2026-01-31 22:36:01.162126
+274,Chii Chang,chii chang,,,False,,SCIS,,,32,12,,2026-01-31 22:35:59.117801,2026-01-31 22:36:01.233109
+340,Sea Ling,sea ling,,,False,,SCIS,,,7,6,,2026-01-31 22:36:00.760059,2026-01-31 22:36:01.233109
+357,Martti Vasar,martti vasar,,,False,,SCIS,,,1,2,,2026-01-31 22:36:01.246919,2026-01-31 22:36:01.261587
+358,Marlon Dumas,marlon dumas,,,False,,SCIS,,,1,2,,2026-01-31 22:36:01.248512,2026-01-31 22:36:01.261879
+341,Vladimir Sor,vladimir sor,,,False,,SCIS,,,6,4,,2026-01-31 22:36:00.768802,2026-01-31 22:36:01.344829
+342,Nikita Salnikov-Tarnovski,nikita salnikov-tarnovski,,,False,,SCIS,,,2,2,,2026-01-31 22:36:00.770041,2026-01-31 22:36:01.344829
+350,Ilja Kromonov,ilja kromonov,,,False,,SCIS,,,5,2,,2026-01-31 22:36:00.958231,2026-01-31 22:36:01.362349
+336,Huber Flores,huber flores,,,False,,SCIS,,,14,8,,2026-01-31 22:36:00.724631,2026-01-31 22:36:01.370610
+349,Carlos Paniagua,carlos paniagua,,,False,,SCIS,,,8,5,,2026-01-31 22:36:00.914692,2026-01-31 22:36:01.370610
+361,Iliyana Ivanova,iliyana ivanova,,,False,,SCIS,,,1,3,,2026-01-31 22:36:01.373524,2026-01-31 22:36:01.389031
+359,Oleg Batrashev,oleg batrashev,,,False,,SCIS,,,3,3,,2026-01-31 22:36:01.278128,2026-01-31 22:36:01.396427
+364,Mohammad Abdullah Al Faruque,mohammad abdullah al faruque,,,False,,SCIS,,,1,2,,2026-01-31 22:36:01.417767,2026-01-31 22:36:01.426347
+365,M. A. S. Munni,m a s munni,,,False,,SCIS,,,1,2,,2026-01-31 22:36:01.418674,2026-01-31 22:36:01.426347
+366,Kiran Pendyala,kiran pendyala,,,False,,SCIS,,,1,3,,2026-01-31 22:36:01.428252,2026-01-31 22:36:01.441315
+367,Anton Naumenko,anton naumenko,,,False,,SCIS,,,1,1,,2026-01-31 22:36:01.450960,2026-01-31 22:36:01.454839
+370,Oscar Mendoza,oscar mendoza,,,False,,SCIS,,,1,4,,2026-01-31 22:36:01.463484,2026-01-31 22:36:01.484856
+371,Hongyan Zhu,hongyan zhu,,,False,,SCIS,,,1,3,,2026-01-31 22:36:01.489204,2026-01-31 22:36:01.503410
+372,Kaifei Wang,kaifei wang,,,False,,SCIS,,,1,3,,2026-01-31 22:36:01.528362,2026-01-31 22:36:01.543303
+362,Matthias Jarke,matthias jarke,,,False,,SCIS,,,14,9,,2026-01-31 22:36:01.374465,2026-01-31 22:36:01.576459
+363,Wolfgang Prinz,wolfgang prinz,,,False,,SCIS,,,11,4,,2026-01-31 22:36:01.401173,2026-01-31 22:36:01.576459
+369,Ralf Klamma,ralf klamma,,,False,,SCIS,,,3,6,,2026-01-31 22:36:01.462626,2026-01-31 22:36:01.594434
+127,Satish Narayana Srirama,satish narayana srirama,09/1571,,True,satish.srirama@uohyd.ac.in,SCIS,Professor,,194,184,,2026-01-31 22:35:57.040148,2026-01-31 22:36:01.609674
+360,Mohamed Amine Chatti,mohamed amine chatti,,,False,,SCIS,,,3,6,,2026-01-31 22:36:01.372224,2026-01-31 22:36:01.609675
+368,Yiwei Cao,yiwei cao,,,False,,SCIS,,,4,7,,2026-01-31 22:36:01.461503,2026-01-31 22:36:01.610083
+373,David Kensche,david kensche,,,False,,SCIS,,,1,3,,2026-01-31 22:36:01.596462,2026-01-31 22:36:01.610084
+374,H. T. Rassem,h t rassem,,,False,,SCIS,,,1,1,,2026-01-31 22:36:01.611622,2026-01-31 22:36:01.616490
+376,P. John Paul,p john paul,,,False,,SCIS,,,1,1,,2026-01-31 22:36:01.617957,2026-01-31 22:36:01.622223
+375,P. N. Girija,p n girija,10/2362,,True,pngcs@uohyd.ernet.in,SCIS,Professor,,3,3,,2026-01-31 22:36:01.612566,2026-01-31 22:36:01.627420
+387,Varun Kumar,varun kumar,,,False,,SCIS,,,1,1,,2026-01-31 22:36:01.762158,2026-01-31 22:36:01.767069
+381,Vivek Kumar Rajak,vivek kumar rajak,,,False,,SCIS,,,1,1,,2026-01-31 22:36:01.663258,2026-01-31 22:36:01.667555
+382,Leela Srija Alla,leela srija alla,,,False,,SCIS,,,1,1,,2026-01-31 22:36:01.692972,2026-01-31 22:36:01.697081
+377,Sangam Balchandar Reddy,sangam balchandar reddy,,,False,,SCIS,,,6,1,,2026-01-31 22:36:01.629012,2026-01-31 22:36:01.717512
+388,Akanksha Agrawal,akanksha agrawal,,,False,,SCIS,,,1,6,,2026-01-31 22:36:01.768592,2026-01-31 22:36:01.832559
+390,Neeldhara Misra,neeldhara misra,,,False,,SCIS,,,1,6,,2026-01-31 22:36:01.773356,2026-01-31 22:36:01.833686
+392,Sreshta Valluru,sreshta valluru,,,False,,SCIS,,,1,1,,2026-01-31 22:36:01.835635,2026-01-31 22:36:01.839103
+379,Rahul Kumar Gautam,rahul kumar gautam,,,False,,SCIS,,,8,2,,2026-01-31 22:36:01.639104,2026-01-31 22:36:01.848080
+391,I. Vinod Reddy,i vinod reddy,,,False,,SCIS,,,2,6,,2026-01-31 22:36:01.774875,2026-01-31 22:36:01.862696
+385,Sriram Bhyravarapu,sriram bhyravarapu,,,False,,SCIS,,,3,3,,2026-01-31 22:36:01.739178,2026-01-31 22:36:01.888791
+386,Saurabh Joshi,saurabh joshi,,,False,,SCIS,,,3,3,,2026-01-31 22:36:01.740065,2026-01-31 22:36:01.888791
+389,Juho Lauri,juho lauri,,,False,,SCIS,,,2,6,,2026-01-31 22:36:01.770791,2026-01-31 22:36:01.917452
+383,N. R. Aravind,n r aravind,,,False,,SCIS,,,7,6,,2026-01-31 22:36:01.728933,2026-01-31 22:36:01.928264
+384,Subrahmanyam Kalyanasundaram,subrahmanyam kalyanasundaram,,,False,,SCIS,,,10,8,,2026-01-31 22:36:01.729713,2026-01-31 22:36:01.928264
+378,Anjeneya Swami Kare,anjeneya swami kare,138/0168,,True,askcs@uohyd.ac.in,SCIS,Assistant Professor,,33,16,,2026-01-31 22:36:01.630074,2026-01-31 22:36:01.941409
+393,Sanjeev Saxena,sanjeev saxena,,,False,,SCIS,,,2,1,,2026-01-31 22:36:01.932848,2026-01-31 22:36:01.941410
+394,Guduri Prathyusha,guduri prathyusha,,,False,,SCIS,,,1,1,,2026-01-31 22:36:01.943685,2026-01-31 22:36:01.947492
+395,Antar Shaddad Abdul-Qawy,antar shaddad abdul-qawy,,,False,,SCIS,,,1,1,,2026-01-31 22:36:01.949042,2026-01-31 22:36:01.953109
+396,Geetha Sowjanya Akula,geetha sowjanya akula,,,False,,SCIS,,,1,1,,2026-01-31 22:36:01.954590,2026-01-31 22:36:01.958557
+397,Chaitanya Balantrapu,chaitanya balantrapu,,,False,,SCIS,,,1,2,,2026-01-31 22:36:01.959697,2026-01-31 22:36:01.969133
+398,Nirmoy Das,nirmoy das,,,False,,SCIS,,,1,2,,2026-01-31 22:36:01.960810,2026-01-31 22:36:01.969320
+399,Krishna Vutukuri,krishna vutukuri,,,False,,SCIS,,,1,2,,2026-01-31 22:36:01.970899,2026-01-31 22:36:01.979308
+400,Garvit Sharma,garvit sharma,,,False,,SCIS,,,1,2,,2026-01-31 22:36:01.971740,2026-01-31 22:36:01.979308
+402,Sravanthi Bhavanam,sravanthi bhavanam,,,False,,SCIS,,,1,4,,2026-01-31 22:36:01.991871,2026-01-31 22:36:02.016107
+403,Jaya L. Yeruva,jaya l yeruva,,,False,,SCIS,,,1,4,,2026-01-31 22:36:01.993159,2026-01-31 22:36:02.016108
+404,Tholoana Masupha,tholoana masupha,,,False,,SCIS,,,1,4,,2026-01-31 22:36:01.994059,2026-01-31 22:36:02.016483
+405,Nevadita Chatterjee,nevadita chatterjee,,,False,,SCIS,,,1,2,,2026-01-31 22:36:02.017894,2026-01-31 22:36:02.025847
+406,Tim Finin,tim finin,,,False,,SCIS,,,1,4,,2026-01-31 22:36:02.027492,2026-01-31 22:36:02.050584
+407,Chelliah Thirunavukkarasu,chelliah thirunavukkarasu,,,False,,SCIS,,,1,4,,2026-01-31 22:36:02.028700,2026-01-31 22:36:02.050585
+408,Don McKay,don mckay,,,False,,SCIS,,,1,4,,2026-01-31 22:36:02.029623,2026-01-31 22:36:02.051117
+409,Robin McEntire,robin mcentire,,,False,,SCIS,,,1,4,,2026-01-31 22:36:02.030543,2026-01-31 22:36:02.051117
+412,RK Sanayaima Singh,rk sanayaima singh,,,False,,SCIS,,,2,5,,2026-01-31 22:36:02.054075,2026-01-31 22:36:02.078055
+413,Manisha Kumari,manisha kumari,,,False,,SCIS,,,1,3,,2026-01-31 22:36:02.063444,2026-01-31 22:36:02.078056
+417,Anuroop Gaddam,anuroop gaddam,,,False,,SCIS,,,1,2,,2026-01-31 22:36:02.085570,2026-01-31 22:36:02.094909
+418,Dhananjay R. Thiruvady,dhananjay r thiruvady,,,False,,SCIS,,,1,2,,2026-01-31 22:36:02.086839,2026-01-31 22:36:02.095093
+415,Subhas Chandra Mukhopadhyay,subhas chandra mukhopadhyay,,,False,,SCIS,,,2,5,,2026-01-31 22:36:02.065490,2026-01-31 22:36:02.104580
+420,Subham Saha,subham saha,,,False,,SCIS,,,1,1,,2026-01-31 22:36:02.106238,2026-01-31 22:36:02.110057
+410,Mohd Irfan,mohd irfan,,,False,,SCIS,,,2,3,,2026-01-31 22:36:02.052220,2026-01-31 22:36:02.118782
+421,Ashish Gupta,ashish gupta,,,False,,SCIS,,,1,2,,2026-01-31 22:36:02.111624,2026-01-31 22:36:02.119163
+422,Shantanu Pal,shantanu pal,,,False,,SCIS,,,1,2,,2026-01-31 22:36:02.120032,2026-01-31 22:36:02.127988
+419,Anindya Nag,anindya nag,,,False,,SCIS,,,2,3,,2026-01-31 22:36:02.096959,2026-01-31 22:36:02.135147
+423,Srinivasa Raju Rudraraju,srinivasa raju rudraraju,,,False,,SCIS,,,2,4,,2026-01-31 22:36:02.139010,2026-01-31 22:36:02.162886
+424,S. R. Sahith,s r sahith,,,False,,SCIS,,,1,3,,2026-01-31 22:36:02.149175,2026-01-31 22:36:02.162886
+426,L. Barrack,l barrack,,,False,,SCIS,,,1,2,,2026-01-31 22:36:02.165520,2026-01-31 22:36:02.173247
+416,Subhas Mukhopadhyay,subhas mukhopadhyay,,,False,,SCIS,,,4,5,,2026-01-31 22:36:02.079780,2026-01-31 22:36:02.188248
+427,Hemant Ghayvat,hemant ghayvat,,,False,,SCIS,,,1,3,,2026-01-31 22:36:02.174343,2026-01-31 22:36:02.188249
+428,Xiang Gui,xiang gui,,,False,,SCIS,,,1,3,,2026-01-31 22:36:02.175574,2026-01-31 22:36:02.188591
+430,Joe-Air Jiang,joe-air jiang,,,False,,SCIS,,,1,3,,2026-01-31 22:36:02.196136,2026-01-31 22:36:02.210309
+432,Munhaw Kam,munhaw kam,,,False,,SCIS,,,1,3,,2026-01-31 22:36:02.211552,2026-01-31 22:36:02.226191
+433,Satinder Pal Singh Gill,satinder pal singh gill,,,False,,SCIS,,,1,3,,2026-01-31 22:36:02.212887,2026-01-31 22:36:02.226374
+434,R. Wang,r wang,,,False,,SCIS,,,2,5,,2026-01-31 22:36:02.227793,2026-01-31 22:36:02.265560
+436,Y. M. Huang,y m huang,,,False,,SCIS,,,1,4,,2026-01-31 22:36:02.245209,2026-01-31 22:36:02.266125
+411,Nagender Kumar Suryadevara,nagender kumar suryadevara,21/10736,,True,nks@uohyd.ac.in,SCIS,Professor,,16,24,,2026-01-31 22:36:02.053195,2026-01-31 22:36:02.276332
+437,Jyotsna Suryadevara,jyotsna suryadevara,,,False,,SCIS,,,1,2,,2026-01-31 22:36:02.267687,2026-01-31 22:36:02.276539
+438,Bollam Sunil,bollam sunil,,,False,,SCIS,,,1,2,,2026-01-31 22:36:02.268586,2026-01-31 22:36:02.276850
+429,Chia-Pang Chen,chia-pang chen,,,False,,SCIS,,,2,4,,2026-01-31 22:36:02.195261,2026-01-31 22:36:02.289472
+431,S. C. Mukhopadhyay,s c mukhopadhyay,,,False,,SCIS,,,3,7,,2026-01-31 22:36:02.196969,2026-01-31 22:36:02.289895
+435,R. K. Rayudu,r k rayudu,,,False,,SCIS,,,3,7,,2026-01-31 22:36:02.228603,2026-01-31 22:36:02.289895
+414,N. K. Suryadevara,n k suryadevara,,,False,,SCIS,,,7,13,,2026-01-31 22:36:02.064540,2026-01-31 22:36:02.306687
+425,Subhas C. Mukhopadhyay,subhas c mukhopadhyay,,,False,,SCIS,,,6,7,,2026-01-31 22:36:02.164580,2026-01-31 22:36:02.306688
+439,Tauseef Quazi,tauseef quazi,,,False,,SCIS,,,2,2,,2026-01-31 22:36:02.291682,2026-01-31 22:36:02.306688
+440,G. Y. Phani Kumar,g y phani kumar,,,False,,SCIS,,,2,3,,2026-01-31 22:36:02.308457,2026-01-31 22:36:02.346759
+443,Vadlamudi Aadarsh,vadlamudi aadarsh,,,False,,SCIS,,,2,2,,2026-01-31 22:36:02.325282,2026-01-31 22:36:02.360858
+445,Yelleti Vivek,yelleti vivek,,,False,,SCIS,,,1,1,,2026-01-31 22:36:02.370761,2026-01-31 22:36:02.375117
+446,Sravya Dunna,sravya dunna,,,False,,SCIS,,,1,2,,2026-01-31 22:36:02.383354,2026-01-31 22:36:02.392672
+447,Vivek Yelleti,vivek yelleti,,,False,,SCIS,,,1,1,,2026-01-31 22:36:02.393937,2026-01-31 22:36:02.398733
+448,Kiran Bandagar,kiran bandagar,,,False,,SCIS,,,1,3,,2026-01-31 22:36:02.415328,2026-01-31 22:36:02.430662
+441,Abhimanyu Bar,abhimanyu bar,,,False,,SCIS,,,4,3,,2026-01-31 22:36:02.309733,2026-01-31 22:36:02.438212
+444,Anil Kumar,anil kumar,,,False,,SCIS,,,8,4,,2026-01-31 22:36:02.326150,2026-01-31 22:36:02.438212
+442,Pandu Sowkuntla,pandu sowkuntla,,,False,,SCIS,,,6,6,,2026-01-31 22:36:02.319618,2026-01-31 22:36:02.453970
+449,Neeli Lakshmi Pavani,neeli lakshmi pavani,,,False,,SCIS,,,1,3,,2026-01-31 22:36:02.439931,2026-01-31 22:36:02.453971
+450,U. Venkata Divya,u venkata divya,,,False,,SCIS,,,1,1,,2026-01-31 22:36:02.455049,2026-01-31 22:36:02.459883
+451,H. Bala Subrahmanyam,h bala subrahmanyam,,,False,,SCIS,,,1,2,,2026-01-31 22:36:02.461608,2026-01-31 22:36:02.470423
+452,Praveen Kumar Singh,praveen kumar singh,,,False,,SCIS,,,2,2,,2026-01-31 22:36:02.462467,2026-01-31 22:36:02.480853
+453,Shashikant Ilager,shashikant ilager,,,False,,SCIS,,,3,4,,2026-01-31 22:36:02.471809,2026-01-31 22:36:03.223885
+454,Rama Devi Yellasiri,rama devi yellasiri,,,False,,SCIS,,,1,2,,2026-01-31 22:36:02.483019,2026-01-31 22:36:02.494482
+455,P. Venu Gopal,p venu gopal,,,False,,SCIS,,,1,2,,2026-01-31 22:36:02.484498,2026-01-31 22:36:02.494676
+465,Helena Bergold,helena bergold,,,False,,SCIS,,,1,5,,2026-01-31 22:36:02.553747,2026-01-31 22:36:02.587957
+466,Robert Lauff,robert lauff,,,False,,SCIS,,,1,5,,2026-01-31 22:36:02.554891,2026-01-31 22:36:02.587958
+467,Manfred Scheucher,manfred scheucher,,,False,,SCIS,,,1,5,,2026-01-31 22:36:02.555797,2026-01-31 22:36:02.587958
+468,Felix Schröder,felix schröder,,,False,,SCIS,,,1,5,,2026-01-31 22:36:02.556659,2026-01-31 22:36:02.588673
+469,Marie Diana Sieper,marie diana sieper,,,False,,SCIS,,,1,5,,2026-01-31 22:36:02.557587,2026-01-31 22:36:02.588673
+463,Michal Opler,michal opler,,,False,,SCIS,,,2,2,,2026-01-31 22:36:02.543719,2026-01-31 22:36:02.596401
+464,Tomás Valla,tomás valla,,,False,,SCIS,,,3,2,,2026-01-31 22:36:02.544600,2026-01-31 22:36:02.601079
+460,Sk Samim Islam,sk samim islam,,,False,,SCIS,,,2,4,,2026-01-31 22:36:02.519301,2026-01-31 22:36:02.618039
+461,Ritam M. Mitra,ritam m mitra,,,False,,SCIS,,,2,4,,2026-01-31 22:36:02.520327,2026-01-31 22:36:02.618040
+462,Bodhayan Roy,bodhayan roy,,,False,,SCIS,,,2,4,,2026-01-31 22:36:02.521232,2026-01-31 22:36:02.618040
+470,Guilherme Dias da Fonseca,guilherme dias da fonseca,,,False,,SCIS,,,3,4,,2026-01-31 22:36:02.620493,2026-01-31 22:36:02.721272
+471,Yan Gerard,yan gerard,,,False,,SCIS,,,3,4,,2026-01-31 22:36:02.621345,2026-01-31 22:36:02.721272
+472,Bastien Rivier,bastien rivier,,,False,,SCIS,,,3,4,,2026-01-31 22:36:02.622223,2026-01-31 22:36:02.721272
+474,Swami Sarvattomananda,swami sarvattomananda,,,False,,SCIS,,,3,4,,2026-01-31 22:36:02.652908,2026-01-31 22:36:02.749622
+457,Sergio Cabello,sergio cabello,,,False,,SCIS,,,3,3,,2026-01-31 22:36:02.499200,2026-01-31 22:36:02.784146
+476,Barunabha Chakraborty,barunabha chakraborty,,,False,,SCIS,,,1,3,,2026-01-31 22:36:02.785992,2026-01-31 22:36:02.799162
+490,Junaid Alam,junaid alam,,,False,,SCIS,,,2,4,,2026-01-31 22:36:02.915924,2026-01-31 22:36:06.099826
+486,A. B. Sagar,a b sagar,,,False,,SCIS,,,2,6,,2026-01-31 22:36:02.879524,2026-01-31 22:36:07.499829
+479,M. Nagamani,m nagamani,284/7780,,True,nagamanics@uohyd.ac.in,SCIS,Associate Professor,,3,12,,2026-01-31 22:36:02.833118,2026-01-31 22:36:02.913582
+473,Anil Maheshwari,anil maheshwari,,,False,,SCIS,,,4,5,,2026-01-31 22:36:02.652005,2026-01-31 22:36:02.821943
+475,Aritra Banik,aritra banik,,,False,,SCIS,,,2,5,,2026-01-31 22:36:02.731291,2026-01-31 22:36:02.822151
+477,Swami Sarvottamananda,swami sarvottamananda,,,False,,SCIS,,,1,4,,2026-01-31 22:36:02.801691,2026-01-31 22:36:02.822355
+456,Arun Kumar Das,arun kumar das,263/4582-1,,True,arunkumardas@uohyd.ac.in,SCIS,Assistant Professor,,23,21,,2026-01-31 22:36:02.495648,2026-01-31 22:36:02.830498
+458,Sandip Das,sandip das,,,False,,SCIS,,,17,14,,2026-01-31 22:36:02.500359,2026-01-31 22:36:02.830498
+459,Joydeep Mukherjee,joydeep mukherjee,,,False,,SCIS,,,8,4,,2026-01-31 22:36:02.501203,2026-01-31 22:36:02.830498
+478,Undru Vimal Babu,undru vimal babu,,,False,,SCIS,,,1,3,,2026-01-31 22:36:02.832195,2026-01-31 22:36:02.848388
+480,Shalam Raju,shalam raju,,,False,,SCIS,,,1,3,,2026-01-31 22:36:02.833995,2026-01-31 22:36:02.848769
+481,M. Rama Krishna,m rama krishna,,,False,,SCIS,,,1,3,,2026-01-31 22:36:02.834899,2026-01-31 22:36:02.848770
+487,Banothu Rambabu,banothu rambabu,,,False,,SCIS,,,1,5,,2026-01-31 22:36:02.880936,2026-01-31 22:36:02.913583
+488,Venkateswara Rao Juturi,venkateswara rao juturi,,,False,,SCIS,,,1,5,,2026-01-31 22:36:02.882523,2026-01-31 22:36:02.914319
+489,Preethi Kothari,preethi kothari,,,False,,SCIS,,,1,5,,2026-01-31 22:36:02.883468,2026-01-31 22:36:02.914321
+482,Velugumetla Siddhi Chaithanya,velugumetla siddhi chaithanya,,,False,,SCIS,,,1,4,,2026-01-31 22:36:02.850632,2026-01-31 22:36:02.875050
+483,Venkateswara Juturi,venkateswara juturi,,,False,,SCIS,,,1,4,,2026-01-31 22:36:02.851823,2026-01-31 22:36:02.875050
+484,C. Satyanarayana Prasad,c satyanarayana prasad,,,False,,SCIS,,,1,4,,2026-01-31 22:36:02.852698,2026-01-31 22:36:02.875619
+485,B. Sitaram,b sitaram,,,False,,SCIS,,,1,4,,2026-01-31 22:36:02.853682,2026-01-31 22:36:02.875620
+491,Soumyadev Maity,soumyadev maity,,,False,,SCIS,,,1,3,,2026-01-31 22:36:02.916877,2026-01-31 22:36:02.931769
+496,Goutham Reddy Alavalapati,goutham reddy alavalapati,,,False,,SCIS,,,1,5,,2026-01-31 22:36:02.935291,2026-01-31 22:36:02.970536
+498,Amir H. Gandomi,amir h gandomi,,,False,,SCIS,,,1,5,,2026-01-31 22:36:02.937367,2026-01-31 22:36:02.971340
+495,Raveendra Babu Ponnuru,raveendra babu ponnuru,,,False,,SCIS,,,2,7,,2026-01-31 22:36:02.934423,2026-01-31 22:36:03.003164
+497,Rizwan Patan,rizwan patan,,,False,,SCIS,,,2,7,,2026-01-31 22:36:02.936227,2026-01-31 22:36:03.003706
+499,Pavan Kumar Aakula,pavan kumar aakula,,,False,,SCIS,,,1,5,,2026-01-31 22:36:02.973606,2026-01-31 22:36:03.003915
+500,Rama Prakasha Reddy Chegireddy,rama prakasha reddy chegireddy,,,False,,SCIS,,,1,5,,2026-01-31 22:36:02.975140,2026-01-31 22:36:03.004104
+505,Ashok Kumar Das,ashok kumar das,,,False,,SCIS,,,2,8,,2026-01-31 22:36:03.018685,2026-01-31 22:36:07.223578
+506,Adesh Pandey,adesh pandey,,,False,,SCIS,,,1,5,,2026-01-31 22:36:03.019758,2026-01-31 22:36:03.052260
+493,Ruhul Amin,ruhul amin,,,False,,SCIS,,,3,9,,2026-01-31 22:36:02.918608,2026-01-31 22:36:03.084353
+503,Sanjeev Kumar Dwivedi,sanjeev kumar dwivedi,,,False,,SCIS,,,2,7,,2026-01-31 22:36:03.016159,2026-01-31 22:36:03.084730
+504,Muhammad Khurram Khan,muhammad khurram khan,,,False,,SCIS,,,2,7,,2026-01-31 22:36:03.017592,2026-01-31 22:36:03.085146
+507,Bimal Kumar Meher,bimal kumar meher,,,False,,SCIS,,,1,5,,2026-01-31 22:36:03.053259,2026-01-31 22:36:03.085148
+508,Mohammad Abdussami,mohammad abdussami,,,False,,SCIS,,,1,5,,2026-01-31 22:36:03.054494,2026-01-31 22:36:03.085653
+494,Nemalikanti Anand,nemalikanti anand,,,False,,SCIS,,,3,7,,2026-01-31 22:36:02.933246,2026-01-31 22:36:03.089906
+509,K. Sridevi,k sridevi,,,False,,SCIS,,,1,1,,2026-01-31 22:36:03.100301,2026-01-31 22:36:03.104383
+510,Jagjeet Suryawanshi,jagjeet suryawanshi,,,False,,SCIS,,,1,5,,2026-01-31 22:36:03.105469,2026-01-31 22:36:03.139645
+511,Nazrul Hoque,nazrul hoque,,,False,,SCIS,,,1,5,,2026-01-31 22:36:03.108134,2026-01-31 22:36:03.140391
+512,Nooraini Yusoff,nooraini yusoff,,,False,,SCIS,,,1,5,,2026-01-31 22:36:03.109289,2026-01-31 22:36:03.140391
+492,Saifulla Md. Abdul,saifulla md abdul,309/7711,,True,saifullah@uohyd.ac.in,SCIS,Assistant Professor,,11,23,,2026-01-31 22:36:02.917748,2026-01-31 22:36:03.149381
+501,Amarajyothi Aramanda,amarajyothi aramanda,,,False,,SCIS,,,4,6,,2026-01-31 22:36:03.005403,2026-01-31 22:36:03.149382
+513,N. D. Patel,n d patel,,,False,,SCIS,,,5,2,,2026-01-31 22:36:03.151481,2026-01-31 22:36:03.194907
+514,B. M. Mehtre,b m mehtre,,,False,,SCIS,,,5,2,,2026-01-31 22:36:03.152456,2026-01-31 22:36:03.194908
+515,Sarra Namane,sarra namane,,,False,,SCIS,,,1,5,,2026-01-31 22:36:03.226111,2026-01-31 22:36:03.261363
+516,Nacira Ghoualmi-Zine,nacira ghoualmi-zine,,,False,,SCIS,,,1,5,,2026-01-31 22:36:03.227820,2026-01-31 22:36:03.261364
+517,C. R. Rao,c r rao,,,False,,SCIS,,,1,5,,2026-01-31 22:36:03.228981,2026-01-31 22:36:03.262152
+518,Sakir Sezer,sakir sezer,,,False,,SCIS,,,1,5,,2026-01-31 22:36:03.229870,2026-01-31 22:36:03.262153
+521,Rajendra Akerkar,rajendra akerkar,,,False,,SCIS,,,1,1,,2026-01-31 22:36:03.322723,2026-01-31 22:36:03.326899
+519,Jitendra Kumar Rai,jitendra kumar rai,,,False,,SCIS,,,5,3,,2026-01-31 22:36:03.280648,2026-01-31 22:36:03.351061
+520,K. D. Nayak,k d nayak,,,False,,SCIS,,,3,3,,2026-01-31 22:36:03.305928,2026-01-31 22:36:03.351061
+522,Pradeep Kumar Nalla,pradeep kumar nalla,,,False,,SCIS,,,1,2,,2026-01-31 22:36:03.355663,2026-01-31 22:36:03.364323
+525,N. Govind,n govind,,,False,,SCIS,,,1,1,,2026-01-31 22:36:03.383076,2026-01-31 22:36:03.387214
+536,Dipanjan Roy,dipanjan roy,,,False,,SCIS,,,7,17,,2026-01-31 22:36:03.475249,2026-01-31 22:36:05.109875
+526,Cherian Roy,cherian roy,,,False,,SCIS,,,2,3,,2026-01-31 22:36:03.388564,2026-01-31 22:36:03.422810
+527,Abhaya Kumar Pradhan,abhaya kumar pradhan,,,False,,SCIS,,,1,2,,2026-01-31 22:36:03.424828,2026-01-31 22:36:03.434169
+529,Nishma Laitonjam,nishma laitonjam,,,False,,SCIS,,,1,3,,2026-01-31 22:36:03.435639,2026-01-31 22:36:03.450798
+530,Namita Das,namita das,,,False,,SCIS,,,1,2,,2026-01-31 22:36:03.452081,2026-01-31 22:36:03.461287
+531,Chandra Kishore Mohapatra,chandra kishore mohapatra,,,False,,SCIS,,,1,2,,2026-01-31 22:36:03.453216,2026-01-31 22:36:03.461474
+534,Krishna Chandra,krishna chandra,,,False,,SCIS,,,1,2,,2026-01-31 22:36:03.464766,2026-01-31 22:36:03.472867
+535,Sonam Sharma,sonam sharma,,,False,,SCIS,,,2,2,,2026-01-31 22:36:03.474341,2026-01-31 22:36:03.491655
+537,Neha Kaliya,neha kaliya,,,False,,SCIS,,,1,1,,2026-01-31 22:36:03.493937,2026-01-31 22:36:03.498457
+538,Raghavendra Gowada,raghavendra gowada,,,False,,SCIS,,,1,2,,2026-01-31 22:36:03.502723,2026-01-31 22:36:03.513107
+539,Biplab Barman,biplab barman,,,False,,SCIS,,,1,2,,2026-01-31 22:36:03.504244,2026-01-31 22:36:03.513311
+533,Raghavendra Gowda,raghavendra gowda,,,False,,SCIS,,,2,2,,2026-01-31 22:36:03.463831,2026-01-31 22:36:03.518302
+541,V. Radha,v radha,,,False,,SCIS,,,6,4,,2026-01-31 22:36:03.529905,2026-01-31 22:36:09.385988
+502,Radha Vedala,radha vedala,,,False,,SCIS,,,4,4,,2026-01-31 22:36:03.006611,2026-01-31 22:36:03.528112
+523,Akshay Badola,akshay badola,,,False,,SCIS,,,8,10,,2026-01-31 22:36:03.365577,2026-01-31 22:36:10.084429
+540,Pranitha Sanda,pranitha sanda,,,False,,SCIS,,,3,3,,2026-01-31 22:36:03.519868,2026-01-31 22:36:03.545443
+532,Digambar Pawar,digambar pawar,327/2466,,True,dpr@uohyd.ac.in,SCIS,Professor,,10,11,,2026-01-31 22:36:03.462941,2026-01-31 22:36:03.551443
+542,Mayank Gajpal,mayank gajpal,,,False,,SCIS,,,1,1,,2026-01-31 22:36:03.547311,2026-01-31 22:36:03.551443
+543,Vamsi Krishna Madduri,vamsi krishna madduri,,,False,,SCIS,,,1,1,,2026-01-31 22:36:03.552839,2026-01-31 22:36:03.557566
+545,Bairaboina Sai Sambasiva Rao,bairaboina sai sambasiva rao,,,False,,SCIS,,,1,1,,2026-01-31 22:36:03.558774,2026-01-31 22:36:03.562554
+546,Mudiyala Aparna,mudiyala aparna,,,False,,SCIS,,,1,1,,2026-01-31 22:36:03.563862,2026-01-31 22:36:03.567719
+548,Mallela Siva Naga Raju,mallela siva naga raju,,,False,,SCIS,,,1,1,,2026-01-31 22:36:03.575248,2026-01-31 22:36:03.579439
+544,Battula Srinivasa Rao,battula srinivasa rao,338/9977,,True,srinivas.battula@uohyd.ac.in,SCIS,Professor,,6,5,,2026-01-31 22:36:03.553912,2026-01-31 22:36:03.583471
+547,Sukanya Pechetti,sukanya pechetti,,,False,,SCIS,,,2,1,,2026-01-31 22:36:03.569111,2026-01-31 22:36:03.583472
+550,Vineet Nair,vineet nair,,,False,,SCIS,,,1,2,,2026-01-31 22:36:03.586355,2026-01-31 22:36:03.594763
+549,Yash Kumar Sharma,yash kumar sharma,,,False,,SCIS,,,2,5,,2026-01-31 22:36:03.585318,2026-01-31 22:36:03.617776
+524,Wilson Naik,wilson naik,,,False,,SCIS,,,4,7,,2026-01-31 22:36:03.367618,2026-01-31 22:36:03.622902
+552,Mahpara Yasmin Mohd Minhaz Alam,mahpara yasmin mohd minhaz alam,,,False,,SCIS,,,1,1,,2026-01-31 22:36:03.618997,2026-01-31 22:36:03.622903
+553,Swathi Baswaraju,swathi baswaraju,,,False,,SCIS,,,1,3,,2026-01-31 22:36:03.624639,2026-01-31 22:36:03.640237
+554,Soma Sekhar Kolisetty,soma sekhar kolisetty,,,False,,SCIS,,,1,3,,2026-01-31 22:36:03.625574,2026-01-31 22:36:03.640239
+555,G. Venkata Sivanarayana,g venkata sivanarayana,,,False,,SCIS,,,1,3,,2026-01-31 22:36:03.626424,2026-01-31 22:36:03.640813
+556,Srinivasa Rao Battula,srinivasa rao battula,,,False,,SCIS,,,1,3,,2026-01-31 22:36:03.627314,2026-01-31 22:36:03.640816
+551,Abdul Sattar,abdul sattar,,,False,,SCIS,,,13,15,,2026-01-31 22:36:03.596837,2026-01-31 22:36:10.401820
+558,Zijiao Chen,zijiao chen,,,False,,SCIS,,,1,6,,2026-01-31 22:36:03.643551,2026-01-31 22:36:03.688090
+563,Akshett Rai Jindal,akshett rai jindal,,,False,,SCIS,,,1,8,,2026-01-31 22:36:03.691034,2026-01-31 22:36:03.763254
+566,Satya Sai Srinath Namburi GNVV,satya sai srinath namburi gnvv,,,False,,SCIS,,,1,8,,2026-01-31 22:36:03.693697,2026-01-31 22:36:03.763255
+576,Harsh Shukla,harsh shukla,,,False,,SCIS,,,1,3,,2026-01-31 22:36:03.813916,2026-01-31 22:36:03.830719
+564,Ishani Mondal,ishani mondal,,,False,,SCIS,,,2,11,,2026-01-31 22:36:03.691928,2026-01-31 22:36:03.928110
+567,Manish Shrivastava,manish shrivastava,,,False,,SCIS,,,2,11,,2026-01-31 22:36:03.694879,2026-01-31 22:36:03.928111
+578,Akshett Jindal,akshett jindal,,,False,,SCIS,,,1,8,,2026-01-31 22:36:03.862295,2026-01-31 22:36:03.928111
+568,Maneesh Kumar Singh,maneesh kumar singh,,,False,,SCIS,,,5,16,,2026-01-31 22:36:03.695781,2026-01-31 22:36:03.982732
+579,Satya Sai Srinath Namburi,satya sai srinath namburi,,,False,,SCIS,,,2,11,,2026-01-31 22:36:03.863822,2026-01-31 22:36:03.983350
+581,Prachi Jindal,prachi jindal,,,False,,SCIS,,,1,7,,2026-01-31 22:36:03.930808,2026-01-31 22:36:03.983351
+582,Tanmoy Chakraborty,tanmoy chakraborty,,,False,,SCIS,,,1,7,,2026-01-31 22:36:03.932332,2026-01-31 22:36:03.983351
+572,Tapabrata Chakraborti,tapabrata chakraborti,,,False,,SCIS,,,2,3,,2026-01-31 22:36:03.795606,2026-01-31 22:36:03.995671
+585,Madhavi Alamuri,madhavi alamuri,,,False,,SCIS,,,2,3,,2026-01-31 22:36:04.013841,2026-01-31 22:36:05.206288
+586,Mehul Arora,mehul arora,,,False,,SCIS,,,2,5,,2026-01-31 22:36:04.026442,2026-01-31 22:36:04.071846
+587,Chirag Shantilal Jain,chirag shantilal jain,,,False,,SCIS,,,2,5,,2026-01-31 22:36:04.027436,2026-01-31 22:36:04.071847
+589,Rohan R. Donapati,rohan r donapati,,,False,,SCIS,,,1,2,,2026-01-31 22:36:04.101884,2026-01-31 22:36:04.111547
+565,Khushbu Pahwa,khushbu pahwa,,,False,,SCIS,,,6,16,,2026-01-31 22:36:03.692798,2026-01-31 22:36:04.128486
+574,Dolton Fernandes,dolton fernandes,,,False,,SCIS,,,2,4,,2026-01-31 22:36:03.812057,2026-01-31 22:36:04.142400
+592,Pindi Krishna Chandra Prasad,pindi krishna chandra prasad,,,False,,SCIS,,,2,4,,2026-01-31 22:36:04.143751,2026-01-31 22:36:04.529299
+594,Kamalakar Dadi,kamalakar dadi,,,False,,SCIS,,,2,12,,2026-01-31 22:36:04.153193,2026-01-31 22:36:04.671877
+601,Veeral Agarwal,veeral agarwal,,,False,,SCIS,,,3,6,,2026-01-31 22:36:04.206086,2026-01-31 22:36:04.768991
+575,Pramod S. Kaushik,pramod s kaushik,,,False,,SCIS,,,3,7,,2026-01-31 22:36:03.812998,2026-01-31 22:36:05.042637
+593,Upadrasta Naga Sita Sravanthi,upadrasta naga sita sravanthi,,,False,,SCIS,,,1,6,,2026-01-31 22:36:04.152313,2026-01-31 22:36:04.197529
+595,P. N. Sylaja,p n sylaja,,,False,,SCIS,,,1,6,,2026-01-31 22:36:04.154274,2026-01-31 22:36:04.197529
+596,C. Kesavadas,c kesavadas,,,False,,SCIS,,,1,6,,2026-01-31 22:36:04.155571,2026-01-31 22:36:04.197530
+597,Srijithesh PR,srijithesh pr,,,False,,SCIS,,,1,6,,2026-01-31 22:36:04.156403,2026-01-31 22:36:04.198495
+598,Rinta Paul,rinta paul,,,False,,SCIS,,,1,6,,2026-01-31 22:36:04.157393,2026-01-31 22:36:04.198496
+599,Gautham Venugopal,gautham venugopal,,,False,,SCIS,,,1,1,,2026-01-31 22:36:04.199649,2026-01-31 22:36:04.204452
+600,Bapi Surampudi Raju,bapi surampudi raju,,,False,,SCIS,,,1,1,,2026-01-31 22:36:04.200716,2026-01-31 22:36:04.204453
+603,Anindya Pattanayak,anindya pattanayak,,,False,,SCIS,,,1,2,,2026-01-31 22:36:04.227391,2026-01-31 22:36:04.235400
+591,Praveen Kumar Vesapogu,praveen kumar vesapogu,,,False,,SCIS,,,2,1,,2026-01-31 22:36:04.130387,2026-01-31 22:36:04.239493
+560,Gaël Jobard,gaël jobard,,,False,,SCIS,,,2,7,,2026-01-31 22:36:03.646087,2026-01-31 22:36:04.276707
+562,Xavier Hinaut,xavier hinaut,,,False,,SCIS,,,2,7,,2026-01-31 22:36:03.647833,2026-01-31 22:36:04.277432
+604,S. Mythirayee,s mythirayee,,,False,,SCIS,,,1,4,,2026-01-31 22:36:04.279064,2026-01-31 22:36:04.300691
+583,Suvadeep Maiti,suvadeep maiti,,,False,,SCIS,,,3,5,,2026-01-31 22:36:04.002877,2026-01-31 22:36:04.308347
+570,Lalith Bharadwaj Baru,lalith bharadwaj baru,,,False,,SCIS,,,6,7,,2026-01-31 22:36:03.793873,2026-01-31 22:36:04.320376
+588,Prantik Deb,prantik deb,,,False,,SCIS,,,2,3,,2026-01-31 22:36:04.086612,2026-01-31 22:36:04.320377
+571,Kamalaker Dadi,kamalaker dadi,,,False,,SCIS,,,10,15,,2026-01-31 22:36:03.794752,2026-01-31 22:36:04.589226
+606,Kushal Borkar,kushal borkar,,,False,,SCIS,,,1,3,,2026-01-31 22:36:04.323977,2026-01-31 22:36:04.345970
+607,Anusha Chaturvedi,anusha chaturvedi,,,False,,SCIS,,,1,3,,2026-01-31 22:36:04.327241,2026-01-31 22:36:04.345971
+584,Shivam Kumar Sharma,shivam kumar sharma,,,False,,SCIS,,,5,10,,2026-01-31 22:36:04.003739,2026-01-31 22:36:04.671517
+605,Srijithesh Rajendran,srijithesh rajendran,,,False,,SCIS,,,3,10,,2026-01-31 22:36:04.279926,2026-01-31 22:36:04.671877
+569,Mounika Marreddy,mounika marreddy,,,False,,SCIS,,,8,9,,2026-01-31 22:36:03.765733,2026-01-31 22:36:04.768991
+608,P. K. Vinod,p k vinod,,,False,,SCIS,,,4,11,,2026-01-31 22:36:04.328740,2026-01-31 22:36:04.965369
+561,Frédéric Alexandre,frédéric alexandre,,,False,,SCIS,,,3,10,,2026-01-31 22:36:03.646954,2026-01-31 22:36:05.042403
+602,Rakesh Sengupta,rakesh sengupta,,,False,,SCIS,,,2,6,,2026-01-31 22:36:04.226282,2026-01-31 22:36:05.250993
+577,Surampudi Bapi Raju,surampudi bapi raju,,,False,,SCIS,,,5,16,,2026-01-31 22:36:03.833359,2026-01-31 22:36:05.326844
+610,Mariya Toneva,mariya toneva,,,False,,SCIS,,,1,4,,2026-01-31 22:36:04.355679,2026-01-31 22:36:04.378127
+617,Archi Yadav,archi yadav,,,False,,SCIS,,,2,5,,2026-01-31 22:36:04.446015,2026-01-31 22:36:04.505061
+619,Arpita Dash,arpita dash,,,False,,SCIS,,,2,6,,2026-01-31 22:36:04.462039,2026-01-31 22:36:04.505613
+620,Yash Khare,yash khare,,,False,,SCIS,,,1,4,,2026-01-31 22:36:04.507847,2026-01-31 22:36:04.529838
+612,Anirban Bandyopadhyay,anirban bandyopadhyay,,,False,,SCIS,,,1,4,,2026-01-31 22:36:04.417320,2026-01-31 22:36:04.439827
+613,Sayan Ghosh,sayan ghosh,,,False,,SCIS,,,1,4,,2026-01-31 22:36:04.418242,2026-01-31 22:36:04.439828
+614,Dipayan Biswas,dipayan biswas,,,False,,SCIS,,,1,4,,2026-01-31 22:36:04.419103,2026-01-31 22:36:04.439828
+616,P. L. Ammar Ahmed,p l ammar ahmed,,,False,,SCIS,,,1,3,,2026-01-31 22:36:04.445034,2026-01-31 22:36:04.460867
+626,Pramod Kaushik,pramod kaushik,,,False,,SCIS,,,1,3,,2026-01-31 22:36:04.620754,2026-01-31 22:36:04.636012
+628,Perusha Moodley,perusha moodley,,,False,,SCIS,,,1,3,,2026-01-31 22:36:04.622510,2026-01-31 22:36:04.636346
+624,Vamsi Kumar,vamsi kumar,,,False,,SCIS,,,2,7,,2026-01-31 22:36:04.548273,2026-01-31 22:36:04.672227
+625,Chiranjeevi Yarra,chiranjeevi yarra,,,False,,SCIS,,,2,7,,2026-01-31 22:36:04.550347,2026-01-31 22:36:04.672228
+621,Ekansh Chauhan,ekansh chauhan,,,False,,SCIS,,,2,3,,2026-01-31 22:36:04.531209,2026-01-31 22:36:04.712920
+622,Swathi Guptha,swathi guptha,,,False,,SCIS,,,2,3,,2026-01-31 22:36:04.532239,2026-01-31 22:36:04.712920
+609,Jashn Arora,jashn arora,,,False,,SCIS,,,7,9,,2026-01-31 22:36:04.353939,2026-01-31 22:36:04.768992
+632,Md. Qutubuddin,md qutubuddin,,,False,,SCIS,,,1,3,,2026-01-31 22:36:04.771057,2026-01-31 22:36:04.786700
+633,Tilahun Kochito Gibo,tilahun kochito gibo,,,False,,SCIS,,,1,3,,2026-01-31 22:36:04.771953,2026-01-31 22:36:04.786700
+623,Likith Reddy,likith reddy,,,False,,SCIS,,,6,12,,2026-01-31 22:36:04.533130,2026-01-31 22:36:04.804049
+629,Vivek Talwar,vivek talwar,,,False,,SCIS,,,2,4,,2026-01-31 22:36:04.673951,2026-01-31 22:36:04.804049
+630,Shanmukh Alle,shanmukh alle,,,False,,SCIS,,,2,4,,2026-01-31 22:36:04.674929,2026-01-31 22:36:04.804049
+631,U. Deva Priyakumar,u deva priyakumar,,,False,,SCIS,,,2,4,,2026-01-31 22:36:04.676036,2026-01-31 22:36:04.804050
+635,John Eric Steephen,john eric steephen,,,False,,SCIS,,,1,3,,2026-01-31 22:36:04.806079,2026-01-31 22:36:04.820456
+636,Siva C. Obbineni,siva c obbineni,,,False,,SCIS,,,1,3,,2026-01-31 22:36:04.807033,2026-01-31 22:36:04.820796
+618,Avinash Sharma,avinash sharma,,,False,,SCIS,,,3,10,,2026-01-31 22:36:04.446860,2026-01-31 22:36:04.888203
+639,Sriniwas Govinda Surampudi,sriniwas govinda surampudi,,,False,,SCIS,,,1,5,,2026-01-31 22:36:04.853764,2026-01-31 22:36:04.888412
+640,Joyneel Misra,joyneel misra,,,False,,SCIS,,,1,5,,2026-01-31 22:36:04.854646,2026-01-31 22:36:04.888412
+559,Manish Gupta,manish gupta,,,False,,SCIS,,,19,24,,2026-01-31 22:36:03.644547,2026-01-31 22:36:04.900842
+611,Vijay Rowtula,vijay rowtula,,,False,,SCIS,,,3,4,,2026-01-31 22:36:04.397592,2026-01-31 22:36:04.900843
+580,Raju Surampudi Bapi,raju surampudi bapi,,,False,,SCIS,,,10,27,,2026-01-31 22:36:03.865632,2026-01-31 22:36:04.907893
+642,Preetam Srikar Dammu,preetam srikar dammu,,,False,,SCIS,,,2,2,,2026-01-31 22:36:04.903004,2026-01-31 22:36:04.912610
+643,Tejas Savalia,tejas savalia,,,False,,SCIS,,,1,2,,2026-01-31 22:36:04.913959,2026-01-31 22:36:04.922573
+637,Krishn Bera,krishn bera,,,False,,SCIS,,,5,5,,2026-01-31 22:36:04.822288,2026-01-31 22:36:04.939407
+638,Yash Mandilwar,yash mandilwar,,,False,,SCIS,,,2,3,,2026-01-31 22:36:04.823201,2026-01-31 22:36:04.939407
+645,Vatika Harlalka,vatika harlalka,,,False,,SCIS,,,1,3,,2026-01-31 22:36:04.941188,2026-01-31 22:36:04.955856
+646,Palakkad Krishnan Unni Vinod,palakkad krishnan unni vinod,,,False,,SCIS,,,1,3,,2026-01-31 22:36:04.942344,2026-01-31 22:36:04.956207
+647,Noor Pratap Singh,noor pratap singh,,,False,,SCIS,,,1,2,,2026-01-31 22:36:04.957522,2026-01-31 22:36:04.965369
+557,Subba Reddy Oota,subba reddy oota,,,False,,SCIS,,,25,29,,2026-01-31 22:36:03.642463,2026-01-31 22:36:04.995022
+644,Naresh Manwani,naresh manwani,,,False,,SCIS,,,4,3,,2026-01-31 22:36:04.923996,2026-01-31 22:36:04.995507
+648,Adithya Avvaru,adithya avvaru,,,False,,SCIS,,,1,3,,2026-01-31 22:36:04.982931,2026-01-31 22:36:04.995694
+627,Sneha Kummetha,sneha kummetha,,,False,,SCIS,,,3,6,,2026-01-31 22:36:04.621668,2026-01-31 22:36:05.003912
+590,Anuj Shukla,anuj shukla,,,False,,SCIS,,,7,7,,2026-01-31 22:36:04.102816,2026-01-31 22:36:05.013624
+649,Remya Sankar,remya sankar,,,False,,SCIS,,,1,2,,2026-01-31 22:36:05.005057,2026-01-31 22:36:05.013822
+650,Bhargav Teja Nallapu,bhargav teja nallapu,,,False,,SCIS,,,1,2,,2026-01-31 22:36:05.015497,2026-01-31 22:36:05.025074
+651,Nicolas P. Rougier,nicolas p rougier,,,False,,SCIS,,,1,2,,2026-01-31 22:36:05.016684,2026-01-31 22:36:05.025385
+652,Maxime Carrere,maxime carrere,,,False,,SCIS,,,1,3,,2026-01-31 22:36:05.027091,2026-01-31 22:36:05.043124
+653,Shruti Naik,shruti naik,,,False,,SCIS,,,1,4,,2026-01-31 22:36:05.044137,2026-01-31 22:36:05.068089
+654,Oota Subbareddy,oota subbareddy,,,False,,SCIS,,,1,4,,2026-01-31 22:36:05.045074,2026-01-31 22:36:05.068090
+656,Gautam Malu,gautam malu,,,False,,SCIS,,,2,2,,2026-01-31 22:36:05.070085,2026-01-31 22:36:05.086703
+657,Bipin Indurkhya,bipin indurkhya,,,False,,SCIS,,,2,2,,2026-01-31 22:36:05.071258,2026-01-31 22:36:05.086703
+641,Gustavo Deco,gustavo deco,,,False,,SCIS,,,2,8,,2026-01-31 22:36:04.855622,2026-01-31 22:36:05.110252
+655,Arpan Banerjee,arpan banerjee,,,False,,SCIS,,,2,7,,2026-01-31 22:36:05.045941,2026-01-31 22:36:05.110253
+658,Anirudh Nihalani Vattikonda,anirudh nihalani vattikonda,,,False,,SCIS,,,1,4,,2026-01-31 22:36:05.088375,2026-01-31 22:36:05.110611
+659,Jagadeeswara Rao Annam,jagadeeswara rao annam,,,False,,SCIS,,,1,1,,2026-01-31 22:36:05.112351,2026-01-31 22:36:05.116877
+661,Soumitra Ghosh,soumitra ghosh,,,False,,SCIS,,,1,3,,2026-01-31 22:36:05.119502,2026-01-31 22:36:05.134538
+662,Anand K. Kondapi,anand k kondapi,,,False,,SCIS,,,1,3,,2026-01-31 22:36:05.120723,2026-01-31 22:36:05.134902
+663,Kavita Vemuri,kavita vemuri,,,False,,SCIS,,,1,1,,2026-01-31 22:36:05.135857,2026-01-31 22:36:05.139705
+660,Pankaj Singh Dholaniya,pankaj singh dholaniya,,,False,,SCIS,,,2,5,,2026-01-31 22:36:05.118483,2026-01-31 22:36:06.083693
+666,Rudra N. Hota,rudra n hota,,,False,,SCIS,,,1,3,,2026-01-31 22:36:05.152872,2026-01-31 22:36:05.167699
+669,Vithal D. Mytri,vithal d mytri,,,False,,SCIS,,,1,2,,2026-01-31 22:36:05.170267,2026-01-31 22:36:05.178955
+671,Ujjval Pamnani,ujjval pamnani,,,False,,SCIS,,,1,3,,2026-01-31 22:36:05.181271,2026-01-31 22:36:05.196560
+673,Komala Anamalamudi,komala anamalamudi,,,False,,SCIS,,,1,2,,2026-01-31 22:36:05.207375,2026-01-31 22:36:05.216835
+674,Madhavilatha Maganti,madhavilatha maganti,,,False,,SCIS,,,1,2,,2026-01-31 22:36:05.208667,2026-01-31 22:36:05.217194
+675,Anvita Gopal,anvita gopal,,,False,,SCIS,,,1,4,,2026-01-31 22:36:05.227216,2026-01-31 22:36:05.250994
+676,Prajit Basu,prajit basu,,,False,,SCIS,,,1,4,,2026-01-31 22:36:05.228276,2026-01-31 22:36:05.250994
+677,David Melcher,david melcher,,,False,,SCIS,,,1,4,,2026-01-31 22:36:05.229176,2026-01-31 22:36:05.251517
+680,Kazuyuki Samejima,kazuyuki samejima,,,False,,SCIS,,,1,5,,2026-01-31 22:36:05.254729,2026-01-31 22:36:05.286579
+681,Mohammad Abdul Haque Farquad,mohammad abdul haque farquad,,,False,,SCIS,,,1,2,,2026-01-31 22:36:05.293349,2026-01-31 22:36:05.301372
+682,Mohammed Hussein Shukur,mohammed hussein shukur,,,False,,SCIS,,,1,4,,2026-01-31 22:36:05.302312,2026-01-31 22:36:05.327057
+685,B. Ravindra Reddy,b ravindra reddy,,,False,,SCIS,,,1,4,,2026-01-31 22:36:05.328401,2026-01-31 22:36:05.350161
+615,V. Srinivasa Chakravarthy,v srinivasa chakravarthy,,,False,,SCIS,,,2,6,,2026-01-31 22:36:04.420195,2026-01-31 22:36:05.360400
+686,Denny Joseph,denny joseph,,,False,,SCIS,,,1,2,,2026-01-31 22:36:05.351784,2026-01-31 22:36:05.360601
+664,M. A. H. Farquad,m a h farquad,,,False,,SCIS,,,4,2,,2026-01-31 22:36:05.140963,2026-01-31 22:36:05.413460
+684,G. Narahari Sastry,g narahari sastry,,,False,,SCIS,,,3,9,,2026-01-31 22:36:05.304690,2026-01-31 22:36:05.446072
+688,A. Srinivas Reddy,a srinivas reddy,,,False,,SCIS,,,1,4,,2026-01-31 22:36:05.423331,2026-01-31 22:36:05.446284
+689,H. S. Durga Amarnath,h s durga amarnath,,,False,,SCIS,,,1,4,,2026-01-31 22:36:05.424275,2026-01-31 22:36:05.446285
+690,G. Madhavi Sastry,g madhavi sastry,,,False,,SCIS,,,1,4,,2026-01-31 22:36:05.425565,2026-01-31 22:36:05.446632
+692,Sudhakara P. Reddy,sudhakara p reddy,,,False,,SCIS,,,1,3,,2026-01-31 22:36:05.489874,2026-01-31 22:36:05.505865
+694,Vishwajeet Singh,vishwajeet singh,,,False,,SCIS,,,1,2,,2026-01-31 22:36:05.507589,2026-01-31 22:36:05.516834
+695,Chaithanya Pichuka,chaithanya pichuka,,,False,,SCIS,,,1,4,,2026-01-31 22:36:05.517889,2026-01-31 22:36:05.539568
+665,T. Maruthi Padmaja,t maruthi padmaja,,,False,,SCIS,,,4,5,,2026-01-31 22:36:05.151746,2026-01-31 22:36:05.564517
+696,Narendra Dhulipalla,narendra dhulipalla,,,False,,SCIS,,,1,4,,2026-01-31 22:36:05.541659,2026-01-31 22:36:05.564519
+698,F. X. Graydon,f x graydon,,,False,,SCIS,,,1,3,,2026-01-31 22:36:05.566828,2026-01-31 22:36:05.579945
+699,Pisipati Radha Krishna,pisipati radha krishna,,,False,,SCIS,,,1,3,,2026-01-31 22:36:05.591178,2026-01-31 22:36:05.604588
+700,J. Naveen Kumar Reddy,j naveen kumar reddy,,,False,,SCIS,,,1,4,,2026-01-31 22:36:05.606549,2026-01-31 22:36:05.625484
+701,Lakshman Singh,lakshman singh,,,False,,SCIS,,,1,5,,2026-01-31 22:36:05.646085,2026-01-31 22:36:05.680241
+691,Supriya Kumar De,supriya kumar de,,,False,,SCIS,,,3,4,,2026-01-31 22:36:05.467908,2026-01-31 22:36:05.707083
+668,Shesharao M. Wanjerkhede,shesharao m wanjerkhede,,,False,,SCIS,,,4,2,,2026-01-31 22:36:05.169126,2026-01-31 22:36:05.712528
+667,P. Radha Krishna,p radha krishna,,,False,,SCIS,,,10,8,,2026-01-31 22:36:05.153748,2026-01-31 22:36:05.734155
+687,Pradeep Kumar,pradeep kumar,,,False,,SCIS,,,7,6,,2026-01-31 22:36:05.370030,2026-01-31 22:36:05.734155
+697,Arijit Laha,arijit laha,,,False,,SCIS,,,2,6,,2026-01-31 22:36:05.543036,2026-01-31 22:36:05.734767
+703,M. Venkateswara Rao,m venkateswara rao,,,False,,SCIS,,,2,4,,2026-01-31 22:36:05.682139,2026-01-31 22:36:05.734768
+634,Narri Yadaiah,narri yadaiah,,,False,,SCIS,,,3,10,,2026-01-31 22:36:04.773066,2026-01-31 22:36:05.788957
+702,V. Seshagiri Rao,v seshagiri rao,,,False,,SCIS,,,2,8,,2026-01-31 22:36:05.647236,2026-01-31 22:36:05.789755
+704,S. Kumar Chenna,s kumar chenna,,,False,,SCIS,,,1,7,,2026-01-31 22:36:05.736961,2026-01-31 22:36:05.789756
+705,Yogesh Kr. Jain,yogesh kr jain,,,False,,SCIS,,,1,7,,2026-01-31 22:36:05.737924,2026-01-31 22:36:05.789756
+706,Himanshu Kapoor,himanshu kapoor,,,False,,SCIS,,,1,7,,2026-01-31 22:36:05.738832,2026-01-31 22:36:05.790327
+670,Krishna P. Miyapuram,krishna p miyapuram,,,False,,SCIS,,,6,8,,2026-01-31 22:36:05.180359,2026-01-31 22:36:05.801817
+707,Anuj Kumar,anuj kumar,,,False,,SCIS,,,1,4,,2026-01-31 22:36:05.803623,2026-01-31 22:36:05.825501
+708,Pramod Kumar Upadhyay,pramod kumar upadhyay,,,False,,SCIS,,,1,4,,2026-01-31 22:36:05.804545,2026-01-31 22:36:05.825877
+683,T. Sobha Rani,t sobha rani,51/1349,,True,sobharani@uohyd.ac.in,SCIS,Associate Professor,,23,23,,2026-01-31 22:36:05.303204,2026-01-31 22:36:06.163022
+678,Chandrasekhar V. S. Pammi,chandrasekhar v s pammi,,,False,,SCIS,,,4,6,,2026-01-31 22:36:05.252472,2026-01-31 22:36:05.841099
+679,Ahmed,ahmed,,,False,,SCIS,,,3,6,,2026-01-31 22:36:05.253801,2026-01-31 22:36:05.841295
+709,M. Krishna Prasad,m krishna prasad,,,False,,SCIS,,,1,3,,2026-01-31 22:36:05.828776,2026-01-31 22:36:05.841491
+693,Bulusu Lakshmana Deekshatulu,bulusu lakshmana deekshatulu,,,False,,SCIS,,,12,21,,2026-01-31 22:36:05.491874,2026-01-31 22:36:09.201910
+710,John G. Taylor,john g taylor,,,False,,SCIS,,,1,4,,2026-01-31 22:36:05.847929,2026-01-31 22:36:05.872875
+711,Neill R. Taylor,neill r taylor,,,False,,SCIS,,,1,4,,2026-01-31 22:36:05.848908,2026-01-31 22:36:05.872876
+672,Kenji Doya,kenji doya,,,False,,SCIS,,,7,7,,2026-01-31 22:36:05.182139,2026-01-31 22:36:05.878115
+712,Guido Bugmann,guido bugmann,,,False,,SCIS,,,2,5,,2026-01-31 22:36:05.850198,2026-01-31 22:36:05.887951
+714,Brendan D'Cruz,brendan d'cruz,,,False,,SCIS,,,1,2,,2026-01-31 22:36:05.879773,2026-01-31 22:36:05.887951
+715,Michael J. Denham,michael j denham,,,False,,SCIS,,,1,1,,2026-01-31 22:36:05.889704,2026-01-31 22:36:05.893469
+573,Raju S. Bapi,raju s bapi,,,False,,SCIS,,,89,113,,2026-01-31 22:36:03.796471,2026-01-31 22:36:05.903274
+713,Daniel S. Levine,daniel s levine,,,False,,SCIS,,,3,4,,2026-01-31 22:36:05.851159,2026-01-31 22:36:05.903274
+716,Khaleda Afroaz,khaleda afroaz,,,False,,SCIS,,,1,2,,2026-01-31 22:36:05.904723,2026-01-31 22:36:05.914216
+719,Shiva Krishna Nallabothu,shiva krishna nallabothu,,,False,,SCIS,,,1,2,,2026-01-31 22:36:05.915702,2026-01-31 22:36:05.923956
+720,Rolla Subrahmanyam,rolla subrahmanyam,,,False,,SCIS,,,2,2,,2026-01-31 22:36:05.924951,2026-01-31 22:36:05.943802
+721,S. Devidas,s devidas,,,False,,SCIS,,,1,2,,2026-01-31 22:36:05.945420,2026-01-31 22:36:05.953473
+726,S. S. Brahmananda Rao,s s brahmananda rao,,,False,,SCIS,,,1,2,,2026-01-31 22:36:05.997129,2026-01-31 22:36:06.005053
+718,N. Rukma Rekha,n rukma rekha,83/9943,,True,rukmarekha@uohyd.ac.in,SCIS,Professor,,7,7,,2026-01-31 22:36:05.906502,2026-01-31 22:36:06.015102
+727,K. V. S. S. R. S. S. Sarma,k v s s r s s sarma,,,False,,SCIS,,,1,2,,2026-01-31 22:36:06.006945,2026-01-31 22:36:06.015381
+728,Subhamoy Maitra,subhamoy maitra,,,False,,SCIS,,,1,3,,2026-01-31 22:36:06.016695,2026-01-31 22:36:06.033449
+729,Pantelimon Stanica,pantelimon stanica,,,False,,SCIS,,,1,3,,2026-01-31 22:36:06.018020,2026-01-31 22:36:06.033858
+730,Sugata Gangopadhyay,sugata gangopadhyay,,,False,,SCIS,,,1,3,,2026-01-31 22:36:06.019058,2026-01-31 22:36:06.033859
+717,Y. V. Subba Rao,y v subba rao,50/971,,True,yvsrcs@uohyd.ac.in,SCIS,Associate Professor,,13,17,,2026-01-31 22:36:05.905611,2026-01-31 22:36:06.045680
+731,Abhijit Mitra,abhijit mitra,,,False,,SCIS,,,1,2,,2026-01-31 22:36:06.035826,2026-01-31 22:36:06.045877
+732,S. R. Mahadeva Prasanna,s r mahadeva prasanna,,,False,,SCIS,,,1,2,,2026-01-31 22:36:06.036695,2026-01-31 22:36:06.045878
+733,Sandhya Rani D,sandhya rani d,,,False,,SCIS,,,1,3,,2026-01-31 22:36:06.047012,2026-01-31 22:36:06.063323
+734,Bala Krishna G,bala krishna g,,,False,,SCIS,,,1,3,,2026-01-31 22:36:06.049517,2026-01-31 22:36:06.063677
+735,Harshitha Bingi,harshitha bingi,,,False,,SCIS,,,1,1,,2026-01-31 22:36:06.064656,2026-01-31 22:36:06.069151
+736,Shailendra Sahu,shailendra sahu,,,False,,SCIS,,,2,2,,2026-01-31 22:36:06.070499,2026-01-31 22:36:06.084043
+737,Swati Katiyar,swati katiyar,,,False,,SCIS,,,1,2,,2026-01-31 22:36:06.085578,2026-01-31 22:36:06.094709
+738,Y. Divya Brahmani,y divya brahmani,,,False,,SCIS,,,1,2,,2026-01-31 22:36:06.100964,2026-01-31 22:36:06.109439
+739,Rodda Monica,rodda monica,,,False,,SCIS,,,1,2,,2026-01-31 22:36:06.111045,2026-01-31 22:36:06.119036
+740,C. V. Krishna Veni,c v krishna veni,,,False,,SCIS,,,1,1,,2026-01-31 22:36:06.120138,2026-01-31 22:36:06.124326
+741,D. Sandhya Rani,d sandhya rani,,,False,,SCIS,,,2,2,,2026-01-31 22:36:06.125788,2026-01-31 22:36:06.141534
+742,P. V. Soujanya,p v soujanya,,,False,,SCIS,,,1,1,,2026-01-31 22:36:06.143442,2026-01-31 22:36:06.147235
+743,P. Manasa,p manasa,,,False,,SCIS,,,1,2,,2026-01-31 22:36:06.148421,2026-01-31 22:36:06.157782
+744,M. R. Prasad,m r prasad,,,False,,SCIS,,,1,2,,2026-01-31 22:36:06.149380,2026-01-31 22:36:06.158022
+745,A. Poorna Chandrasekhar,a poorna chandrasekhar,,,False,,SCIS,,,1,1,,2026-01-31 22:36:06.159156,2026-01-31 22:36:06.163022
+746,Sabhapathy Myakal,sabhapathy myakal,,,False,,SCIS,,,3,2,,2026-01-31 22:36:06.164108,2026-01-31 22:36:06.188625
+747,Mamillapalli Chilaka Rao,mamillapalli chilaka rao,,,False,,SCIS,,,1,1,,2026-01-31 22:36:06.190433,2026-01-31 22:36:06.194740
+748,Mayank Pandey,mayank pandey,,,False,,SCIS,,,1,2,,2026-01-31 22:36:06.196971,2026-01-31 22:36:06.204486
+749,Manideepto-Das,manideepto-das,,,False,,SCIS,,,2,2,,2026-01-31 22:36:06.206379,2026-01-31 22:36:06.221970
+750,Dudyala Anil Kumar,dudyala anil kumar,,,False,,SCIS,,,1,2,,2026-01-31 22:36:06.224148,2026-01-31 22:36:06.231965
+754,Monachary Kammari,monachary kammari,,,False,,SCIS,,,4,1,,2026-01-31 22:36:06.253926,2026-01-31 22:36:06.280468
+755,Indu Rodda,indu rodda,,,False,,SCIS,,,1,1,,2026-01-31 22:36:06.282037,2026-01-31 22:36:06.286026
+751,S. Tejaswi,s tejaswi,,,False,,SCIS,,,3,2,,2026-01-31 22:36:06.233086,2026-01-31 22:36:06.294093
+756,M. Dhilber,m dhilber,,,False,,SCIS,,,1,1,,2026-01-31 22:36:06.305069,2026-01-31 22:36:06.309412
+757,Anu Beniwal,anu beniwal,,,False,,SCIS,,,1,2,,2026-01-31 22:36:06.310546,2026-01-31 22:36:06.319758
+758,Gourav Roy,gourav roy,,,False,,SCIS,,,1,2,,2026-01-31 22:36:06.311438,2026-01-31 22:36:06.319951
+752,Ramesh Bobby Addanki,ramesh bobby addanki,,,False,,SCIS,,,3,1,,2026-01-31 22:36:06.243426,2026-01-31 22:36:06.323731
+759,Ankur Sharma,ankur sharma,,,False,,SCIS,,,1,1,,2026-01-31 22:36:06.325106,2026-01-31 22:36:06.329414
+760,Ritwik Malla,ritwik malla,,,False,,SCIS,,,1,1,,2026-01-31 22:36:06.330643,2026-01-31 22:36:06.334904
+761,Vivek Singh Baghel,vivek singh baghel,,,False,,SCIS,,,1,1,,2026-01-31 22:36:06.341153,2026-01-31 22:36:06.344907
+763,D. Shiva Shankar,d shiva shankar,,,False,,SCIS,,,1,1,,2026-01-31 22:36:06.361748,2026-01-31 22:36:06.366168
+764,Jatharakonda Mallesham,jatharakonda mallesham,,,False,,SCIS,,,1,1,,2026-01-31 22:36:06.367541,2026-01-31 22:36:06.371945
+753,T. Jaya Lakshmi,t jaya lakshmi,,,False,,SCIS,,,7,1,,2026-01-31 22:36:06.248692,2026-01-31 22:36:06.387389
+766,Mohamed Mustafa Faisan,mohamed mustafa faisan,,,False,,SCIS,,,1,1,,2026-01-31 22:36:06.388722,2026-01-31 22:36:06.393066
+767,Saifuddin Kaijar,saifuddin kaijar,,,False,,SCIS,,,1,1,,2026-01-31 22:36:06.404035,2026-01-31 22:36:06.407874
+765,K. Suvarna Vani,k suvarna vani,,,False,,SCIS,,,4,2,,2026-01-31 22:36:06.373510,2026-01-31 22:36:06.422633
+768,Somdatta Sinha,somdatta sinha,,,False,,SCIS,,,1,2,,2026-01-31 22:36:06.414785,2026-01-31 22:36:06.422634
+762,Prathuri Jhansi Rani,prathuri jhansi rani,,,False,,SCIS,,,3,1,,2026-01-31 22:36:06.351109,2026-01-31 22:36:06.427172
+769,Venkatesh Bandaru,venkatesh bandaru,,,False,,SCIS,,,1,1,,2026-01-31 22:36:06.428550,2026-01-31 22:36:06.433301
+770,V. Umakanta Sastry,v umakanta sastry,,,False,,SCIS,,,2,2,,2026-01-31 22:36:06.434409,2026-01-31 22:36:06.451093
+771,N. Ravi Shankar,n ravi shankar,,,False,,SCIS,,,2,2,,2026-01-31 22:36:06.435324,2026-01-31 22:36:06.451093
+380,S. Durga Bhavani,s durga bhavani,63/2890,,True,sdbcs@uohyd.ac.in,SCIS,Professor,,58,39,,2026-01-31 22:36:01.640327,2026-01-31 22:36:06.456543
+772,Umesh Kumar,umesh kumar,,,False,,SCIS,,,4,2,,2026-01-31 22:36:06.457686,2026-01-31 22:36:06.477455
+774,Ajeet Singh,ajeet singh,,,False,,SCIS,,,1,2,,2026-01-31 22:36:06.479020,2026-01-31 22:36:06.488508
+776,Y. Narasimhulu,y narasimhulu,,,False,,SCIS,,,1,3,,2026-01-31 22:36:06.490039,2026-01-31 22:36:06.507507
+777,Ashok Suthar,ashok suthar,,,False,,SCIS,,,1,3,,2026-01-31 22:36:06.491259,2026-01-31 22:36:06.507508
+778,Raghunadh Pasunuri,raghunadh pasunuri,,,False,,SCIS,,,1,3,,2026-01-31 22:36:06.492253,2026-01-31 22:36:06.507891
+781,Jyoti Lamba,jyoti lamba,,,False,,SCIS,,,1,1,,2026-01-31 22:36:06.525532,2026-01-31 22:36:06.529980
+782,Sesha Phani Deepika Vadlamudi,sesha phani deepika vadlamudi,,,False,,SCIS,,,1,1,,2026-01-31 22:36:06.531964,2026-01-31 22:36:06.535551
+780,Chanakya Patibandla,chanakya patibandla,,,False,,SCIS,,,2,5,,2026-01-31 22:36:06.509846,2026-01-31 22:36:06.570059
+783,Harsha Putla,harsha putla,,,False,,SCIS,,,1,2,,2026-01-31 22:36:06.561838,2026-01-31 22:36:06.570563
+722,N. Chaitanya Kumar,n chaitanya kumar,,,False,,SCIS,,,4,4,,2026-01-31 22:36:05.954648,2026-01-31 22:36:06.592738
+724,Priyadarshi Singh,priyadarshi singh,,,False,,SCIS,,,4,4,,2026-01-31 22:36:05.956612,2026-01-31 22:36:06.592739
+784,Kallepu Raju,kallepu raju,,,False,,SCIS,,,1,2,,2026-01-31 22:36:06.594648,2026-01-31 22:36:06.603047
+723,Abdul Basit,abdul basit,,,False,,SCIS,,,6,8,,2026-01-31 22:36:05.955538,2026-01-31 22:36:06.618413
+785,K. Bhavani,k bhavani,,,False,,SCIS,,,1,3,,2026-01-31 22:36:06.605337,2026-01-31 22:36:06.619033
+787,Allam Appa Rao,allam appa rao,,,False,,SCIS,,,1,3,,2026-01-31 22:36:06.621424,2026-01-31 22:36:06.635396
+788,Lalitha Kiran Nemana,lalitha kiran nemana,,,False,,SCIS,,,1,1,,2026-01-31 22:36:06.636356,2026-01-31 22:36:06.640144
+789,Banita Mahapatra,banita mahapatra,,,False,,SCIS,,,1,3,,2026-01-31 22:36:06.641600,2026-01-31 22:36:06.654912
+786,Dileep Kumar Pattipati,dileep kumar pattipati,,,False,,SCIS,,,2,3,,2026-01-31 22:36:06.620026,2026-01-31 22:36:06.680045
+802,Arogyaswami Paulraj,arogyaswami paulraj,,,False,,SCIS,,,1,1,,2026-01-31 22:36:06.795084,2026-01-31 22:36:06.798824
+725,V. Ch. Venkaiah,v ch venkaiah,66/8044,,True,vvcs@uohyd.ac.in,SCIS,Professor,,27,28,,2026-01-31 22:36:05.957959,2026-01-31 22:36:06.806239
+800,Eric A. Lord,eric a lord,,,False,,SCIS,,,2,2,,2026-01-31 22:36:06.783870,2026-01-31 22:36:06.806240
+801,Syamal Kumar Sen,syamal kumar sen,,,False,,SCIS,,,2,2,,2026-01-31 22:36:06.785036,2026-01-31 22:36:06.806240
+792,Neelima Jampala,neelima jampala,,,False,,SCIS,,,1,3,,2026-01-31 22:36:06.682758,2026-01-31 22:36:06.698251
+793,J. Rajendra Prasad,j rajendra prasad,,,False,,SCIS,,,1,3,,2026-01-31 22:36:06.683684,2026-01-31 22:36:06.698252
+779,China Venkaiah Vadlamudi,china venkaiah vadlamudi,,,False,,SCIS,,,6,10,,2026-01-31 22:36:06.493410,2026-01-31 22:36:06.707378
+775,Appala Naidu Tentu,appala naidu tentu,,,False,,SCIS,,,11,11,,2026-01-31 22:36:06.480076,2026-01-31 22:36:06.716833
+790,Prabal Paul,prabal paul,,,False,,SCIS,,,4,3,,2026-01-31 22:36:06.656717,2026-01-31 22:36:06.716833
+773,Vadlamudi Ch. Venkaiah,vadlamudi ch venkaiah,,,False,,SCIS,,,2,2,,2026-01-31 22:36:06.463011,2026-01-31 22:36:06.723871
+794,T. Aaron Gulliver,t aaron gulliver,,,False,,SCIS,,,1,1,,2026-01-31 22:36:06.719502,2026-01-31 22:36:06.723872
+795,D. M. Vinod Kumar,d m vinod kumar,,,False,,SCIS,,,1,1,,2026-01-31 22:36:06.725468,2026-01-31 22:36:06.729881
+806,Madhuri Gadwal,madhuri gadwal,,,False,,SCIS,,,1,1,,2026-01-31 22:36:06.828896,2026-01-31 22:36:06.833220
+796,Kishore Yadav,kishore yadav,,,False,,SCIS,,,2,3,,2026-01-31 22:36:06.731338,2026-01-31 22:36:06.764469
+797,Satish Varagani,satish varagani,,,False,,SCIS,,,2,3,,2026-01-31 22:36:06.732264,2026-01-31 22:36:06.764469
+791,K. Ramanjaneyulu,k ramanjaneyulu,,,False,,SCIS,,,2,4,,2026-01-31 22:36:06.681813,2026-01-31 22:36:06.772996
+798,Kishore Kothapalli,kishore kothapalli,,,False,,SCIS,,,3,4,,2026-01-31 22:36:06.733406,2026-01-31 22:36:06.772997
+799,Mukul S. Bansal,mukul s bansal,,,False,,SCIS,,,1,1,,2026-01-31 22:36:06.777640,2026-01-31 22:36:06.782253
+807,Mrudula Sarvabhatla,mrudula sarvabhatla,,,False,,SCIS,,,1,3,,2026-01-31 22:36:06.839321,2026-01-31 22:36:06.854955
+808,Konduru Upendra Raju,konduru upendra raju,,,False,,SCIS,,,1,3,,2026-01-31 22:36:06.840219,2026-01-31 22:36:06.854956
+809,Srinivasu Nulaka,srinivasu nulaka,,,False,,SCIS,,,1,3,,2026-01-31 22:36:06.841097,2026-01-31 22:36:06.855310
+803,Mudavath Ravi,mudavath ravi,,,False,,SCIS,,,3,1,,2026-01-31 22:36:06.808001,2026-01-31 22:36:06.859612
+811,Nitin Sai Bommi,nitin sai bommi,,,False,,SCIS,,,1,1,,2026-01-31 22:36:06.867199,2026-01-31 22:36:06.871665
+804,R. Aruna Flarence,r aruna flarence,,,False,,SCIS,,,3,2,,2026-01-31 22:36:06.813660,2026-01-31 22:36:06.884616
+805,Bogolu Rupa,bogolu rupa,,,False,,SCIS,,,3,2,,2026-01-31 22:36:06.814630,2026-01-31 22:36:06.884616
+810,G. Madhuri,g madhuri,,,False,,SCIS,,,3,1,,2026-01-31 22:36:06.860976,2026-01-31 22:36:06.904343
+813,Haider Banka,haider banka,,,False,,SCIS,,,2,2,,2026-01-31 22:36:06.891535,2026-01-31 22:36:06.912637
+828,G. R. Gangadharan,g r gangadharan,,,False,,SCIS,,,3,6,,2026-01-31 22:36:07.043350,2026-01-31 22:36:10.105394
+815,B. R. Tapas Bapu,b r tapas bapu,,,False,,SCIS,,,1,3,,2026-01-31 22:36:06.915536,2026-01-31 22:36:06.930256
+816,R. Anitha,r anitha,,,False,,SCIS,,,1,3,,2026-01-31 22:36:06.916424,2026-01-31 22:36:06.930257
+817,Abdulsalam Alammari,abdulsalam alammari,,,False,,SCIS,,,1,2,,2026-01-31 22:36:06.931832,2026-01-31 22:36:06.940976
+820,V. Raghu Venkataraman,v raghu venkataraman,,,False,,SCIS,,,1,3,,2026-01-31 22:36:06.944521,2026-01-31 22:36:06.959219
+821,Anish M. Rao,anish m rao,,,False,,SCIS,,,1,1,,2026-01-31 22:36:06.961194,2026-01-31 22:36:06.965768
+818,Vijender Busi Reddy,vijender busi reddy,,,False,,SCIS,,,3,3,,2026-01-31 22:36:06.942442,2026-01-31 22:36:07.001458
+819,S. Venkataraman,s venkataraman,,,False,,SCIS,,,3,3,,2026-01-31 22:36:06.943609,2026-01-31 22:36:07.001458
+823,Rajesh K,rajesh k,,,False,,SCIS,,,1,1,,2026-01-31 22:36:07.003352,2026-01-31 22:36:07.007697
+822,Devarapalli Koteswara Rao,devarapalli koteswara rao,,,False,,SCIS,,,2,1,,2026-01-31 22:36:06.988021,2026-01-31 22:36:07.020297
+824,Sukumar Burra,sukumar burra,,,False,,SCIS,,,1,3,,2026-01-31 22:36:07.021830,2026-01-31 22:36:07.039742
+825,Amit Patel,amit patel,,,False,,SCIS,,,1,3,,2026-01-31 22:36:07.022819,2026-01-31 22:36:07.039743
+826,Chandra Shekhar Verma,chandra shekhar verma,,,False,,SCIS,,,1,3,,2026-01-31 22:36:07.041475,2026-01-31 22:36:07.058212
+827,V. Dinesh Reddy,v dinesh reddy,,,False,,SCIS,,,1,3,,2026-01-31 22:36:07.042429,2026-01-31 22:36:07.058213
+830,Devarapalli Koteswara,devarapalli koteswara,,,False,,SCIS,,,1,1,,2026-01-31 22:36:07.067671,2026-01-31 22:36:07.071861
+831,T. Hitendra Sarma,t hitendra sarma,,,False,,SCIS,,,1,2,,2026-01-31 22:36:07.073342,2026-01-31 22:36:07.083336
+832,P. Viswanath,p viswanath,,,False,,SCIS,,,1,2,,2026-01-31 22:36:07.074325,2026-01-31 22:36:07.083534
+812,Tapan Kumar Sahoo,tapan kumar sahoo,,,False,,SCIS,,,3,3,,2026-01-31 22:36:06.890604,2026-01-31 22:36:07.100292
+834,Manoj Kumar Gundawar,manoj kumar gundawar,,,False,,SCIS,,,1,2,,2026-01-31 22:36:07.091579,2026-01-31 22:36:07.100494
+835,D. Koteswara Rao,d koteswara rao,,,False,,SCIS,,,1,1,,2026-01-31 22:36:07.101841,2026-01-31 22:36:07.106176
+836,Mohsen Hallaj Asghar,mohsen hallaj asghar,,,False,,SCIS,,,1,3,,2026-01-31 22:36:07.107842,2026-01-31 22:36:07.125384
+837,Nasibeh Mohammadzadeh,nasibeh mohammadzadeh,,,False,,SCIS,,,1,3,,2026-01-31 22:36:07.108911,2026-01-31 22:36:07.125385
+838,Taraneh Kazerouni,taraneh kazerouni,,,False,,SCIS,,,1,3,,2026-01-31 22:36:07.110360,2026-01-31 22:36:07.125818
+814,Nenavath Srinivas Naik,nenavath srinivas naik,,,False,,SCIS,,,4,4,,2026-01-31 22:36:06.914189,2026-01-31 22:36:07.153756
+840,Suresh Kumar Thirupuranthakam,suresh kumar thirupuranthakam,,,False,,SCIS,,,1,1,,2026-01-31 22:36:07.155481,2026-01-31 22:36:07.160199
+833,Kavitha Athota,kavitha athota,,,False,,SCIS,,,2,1,,2026-01-31 22:36:07.084622,2026-01-31 22:36:07.165131
+841,Sujoy Sarkar,sujoy sarkar,,,False,,SCIS,,,1,1,,2026-01-31 22:36:07.171195,2026-01-31 22:36:07.175670
+842,Saumya Jetley,saumya jetley,,,False,,SCIS,,,1,3,,2026-01-31 22:36:07.185919,2026-01-31 22:36:07.201962
+843,Swapnil Belhe,swapnil belhe,,,False,,SCIS,,,1,3,,2026-01-31 22:36:07.186822,2026-01-31 22:36:07.201963
+845,Samit Kumar Pradhan,samit kumar pradhan,,,False,,SCIS,,,1,1,,2026-01-31 22:36:07.203883,2026-01-31 22:36:07.208179
+839,Kavitha Ammayappan,kavitha ammayappan,,,False,,SCIS,,,3,3,,2026-01-31 22:36:07.127316,2026-01-31 22:36:07.223840
+846,P. Pavan Kumar,p pavan kumar,,,False,,SCIS,,,6,4,,2026-01-31 22:36:07.225265,2026-01-31 22:36:08.203659
+829,Vijaya Kumar Kadappa,vijaya kumar kadappa,,,False,,SCIS,,,5,1,,2026-01-31 22:36:07.061521,2026-01-31 22:36:07.255874
+844,Vijaya Kumar Koppula,vijaya kumar koppula,,,False,,SCIS,,,3,4,,2026-01-31 22:36:07.187715,2026-01-31 22:36:07.275868
+848,Utpal Garain,utpal garain,,,False,,SCIS,,,1,2,,2026-01-31 22:36:07.268595,2026-01-31 22:36:07.276056
+849,Kadappagari Vijaya Kumar,kadappagari vijaya kumar,,,False,,SCIS,,,3,1,,2026-01-31 22:36:07.276973,2026-01-31 22:36:07.291359
+850,B. Panigrahi,b panigrahi,,,False,,SCIS,,,1,3,,2026-01-31 22:36:07.293040,2026-01-31 22:36:07.309439
+851,Madhabananda Das,madhabananda das,,,False,,SCIS,,,1,3,,2026-01-31 22:36:07.294772,2026-01-31 22:36:07.309626
+852,N. Santosh Arjun,n santosh arjun,,,False,,SCIS,,,1,1,,2026-01-31 22:36:07.318759,2026-01-31 22:36:07.322764
+854,Manik Lal Das,manik lal das,,,False,,SCIS,,,1,3,,2026-01-31 22:36:07.324826,2026-01-31 22:36:07.339438
+853,Thulasi Goriparthi,thulasi goriparthi,,,False,,SCIS,,,1,3,,2026-01-31 22:36:07.323945,2026-01-31 22:36:07.339438
+856,Sameer Verma,sameer verma,,,False,,SCIS,,,1,2,,2026-01-31 22:36:07.341159,2026-01-31 22:36:07.350483
+857,Leigh Jin,leigh jin,,,False,,SCIS,,,1,2,,2026-01-31 22:36:07.342040,2026-01-31 22:36:07.350700
+855,Ashutosh Saxena,ashutosh saxena,,,False,,SCIS,,,5,7,,2026-01-31 22:36:07.325992,2026-01-31 22:36:09.364982
+847,G. Geethakumari,g geethakumari,,,False,,SCIS,,,3,2,,2026-01-31 22:36:07.257503,2026-01-31 22:36:07.359022
+858,Jignesh Dholakia,jignesh dholakia,,,False,,SCIS,,,1,2,,2026-01-31 22:36:07.360821,2026-01-31 22:36:07.369771
+859,S. Rama Mohan,s rama mohan,,,False,,SCIS,,,1,2,,2026-01-31 22:36:07.361978,2026-01-31 22:36:07.369956
+860,C. V. Raman,c v raman,,,False,,SCIS,,,1,1,,2026-01-31 22:36:07.370923,2026-01-31 22:36:07.375505
+861,Sadybakasov Ulanbek,sadybakasov ulanbek,,,False,,SCIS,,,1,2,,2026-01-31 22:36:07.376877,2026-01-31 22:36:07.385229
+862,Amarnath K. Koundinya,amarnath k koundinya,,,False,,SCIS,,,1,2,,2026-01-31 22:36:07.386891,2026-01-31 22:36:07.395287
+863,K. Nikhil Shanker,k nikhil shanker,,,False,,SCIS,,,1,2,,2026-01-31 22:36:07.397333,2026-01-31 22:36:07.406169
+864,Chandra Kanth Chereddi,chandra kanth chereddi,,,False,,SCIS,,,1,2,,2026-01-31 22:36:07.398431,2026-01-31 22:36:07.406169
+865,Tanuku Ravi,tanuku ravi,,,False,,SCIS,,,1,3,,2026-01-31 22:36:07.407628,2026-01-31 22:36:07.422838
+866,S. Mahesh Kumar,s mahesh kumar,,,False,,SCIS,,,1,3,,2026-01-31 22:36:07.408744,2026-01-31 22:36:07.423224
+867,B. Krishna,b krishna,,,False,,SCIS,,,1,2,,2026-01-31 22:36:07.425480,2026-01-31 22:36:07.433110
+868,P. Sreedevi,p sreedevi,,,False,,SCIS,,,1,2,,2026-01-31 22:36:07.434810,2026-01-31 22:36:07.443933
+869,P. Debbarma,p debbarma,,,False,,SCIS,,,1,2,,2026-01-31 22:36:07.435667,2026-01-31 22:36:07.443934
+113,Atul Negi,atul negi,73/4368,,True,atul.negi@uohyd.ac.in,SCIS,Professor,,89,103,,2026-01-31 22:35:56.871181,2026-01-31 22:36:07.453616
+870,K. S. Swaroop,k s swaroop,,,False,,SCIS,,,1,2,,2026-01-31 22:36:07.445675,2026-01-31 22:36:07.453900
+881,Martha VenkataSwamy,martha venkataswamy,,,False,,SCIS,,,2,5,,2026-01-31 22:36:07.621183,2026-01-31 22:36:07.654595
+883,Pillalamarri Thilak,pillalamarri thilak,,,False,,SCIS,,,1,3,,2026-01-31 22:36:07.641321,2026-01-31 22:36:07.654948
+884,Srinivasan Ramaswamy,srinivasan ramaswamy,,,False,,SCIS,,,1,3,,2026-01-31 22:36:07.642184,2026-01-31 22:36:07.654948
+872,Lakshmi H. N.,lakshmi h n,,,False,,SCIS,,,3,1,,2026-01-31 22:36:07.469013,2026-01-31 22:36:07.493914
+885,A. Murali M. Rao,a murali m rao,,,False,,SCIS,,,1,1,,2026-01-31 22:36:07.656011,2026-01-31 22:36:07.660627
+871,A. Vani Vathsala,a vani vathsala,,,False,,SCIS,,,4,1,,2026-01-31 22:36:07.463791,2026-01-31 22:36:07.520029
+886,Sumagna Patnaik,sumagna patnaik,,,False,,SCIS,,,1,1,,2026-01-31 22:36:07.666089,2026-01-31 22:36:07.669972
+876,Rajesh Kurra,rajesh kurra,,,False,,SCIS,,,1,2,,2026-01-31 22:36:07.551894,2026-01-31 22:36:07.562402
+877,A. Tripathi,a tripathi,,,False,,SCIS,,,1,4,,2026-01-31 22:36:07.579188,2026-01-31 22:36:07.613381
+882,Srini Ramaswamy,srini ramaswamy,,,False,,SCIS,,,1,3,,2026-01-31 22:36:07.622092,2026-01-31 22:36:07.634979
+873,Supriya Vaddi,supriya vaddi,,,False,,SCIS,,,4,4,,2026-01-31 22:36:07.501140,2026-01-31 22:36:07.685340
+888,R. K. Shyamsundar,r k shyamsundar,,,False,,SCIS,,,1,3,,2026-01-31 22:36:07.672817,2026-01-31 22:36:07.685693
+887,Deepak Chenthati,deepak chenthati,,,False,,SCIS,,,2,5,,2026-01-31 22:36:07.671292,2026-01-31 22:36:07.700257
+889,Jitesh Mulchandani,jitesh mulchandani,,,False,,SCIS,,,1,3,,2026-01-31 22:36:07.687266,2026-01-31 22:36:07.700636
+875,Sapna P. G.,sapna p g,,,False,,SCIS,,,7,1,,2026-01-31 22:36:07.540465,2026-01-31 22:36:07.704751
+890,G. Satya Reddy,g satya reddy,,,False,,SCIS,,,1,1,,2026-01-31 22:36:07.706060,2026-01-31 22:36:07.710329
+891,Kakarlamudi Prasad,kakarlamudi prasad,,,False,,SCIS,,,1,2,,2026-01-31 22:36:07.711945,2026-01-31 22:36:07.719344
+892,A. K. Prajapati,a k prajapati,,,False,,SCIS,,,1,2,,2026-01-31 22:36:07.721335,2026-01-31 22:36:07.729317
+894,Goutam Chakraborty,goutam chakraborty,,,False,,SCIS,,,1,3,,2026-01-31 22:36:07.732234,2026-01-31 22:36:07.744506
+895,Saurabh Aggarwala,saurabh aggarwala,,,False,,SCIS,,,1,4,,2026-01-31 22:36:07.745978,2026-01-31 22:36:07.768557
+896,Hemant Mishra,hemant mishra,,,False,,SCIS,,,1,4,,2026-01-31 22:36:07.746893,2026-01-31 22:36:07.768557
+897,Ashish Sharma,ashish sharma,,,False,,SCIS,,,1,4,,2026-01-31 22:36:07.747736,2026-01-31 22:36:07.769045
+899,Chris George,chris george,,,False,,SCIS,,,2,2,,2026-01-31 22:36:07.771237,2026-01-31 22:36:07.786949
+900,O. B. V. Ramanaiah,o b v ramanaiah,,,False,,SCIS,,,1,1,,2026-01-31 22:36:07.796601,2026-01-31 22:36:07.800461
+893,Chit Htay Lwin,chit htay lwin,,,False,,SCIS,,,3,3,,2026-01-31 22:36:07.730729,2026-01-31 22:36:07.807387
+874,R. K. Shyamasundar,r k shyamasundar,,,False,,SCIS,,,6,9,,2026-01-31 22:36:07.521956,2026-01-31 22:36:07.817436
+898,Satyajit Acharya,satyajit acharya,,,False,,SCIS,,,3,3,,2026-01-31 22:36:07.770329,2026-01-31 22:36:07.817437
+901,Shravan K. Rayanchu,shravan k rayanchu,,,False,,SCIS,,,1,2,,2026-01-31 22:36:07.819338,2026-01-31 22:36:07.826596
+878,T. Suman Kumar Reddy,t suman kumar reddy,,,False,,SCIS,,,2,4,,2026-01-31 22:36:07.580721,2026-01-31 22:36:07.838311
+879,Sanjay Madria,sanjay madria,,,False,,SCIS,,,2,4,,2026-01-31 22:36:07.582400,2026-01-31 22:36:07.838311
+880,R. K. Ghosh,r k ghosh,,,False,,SCIS,,,9,11,,2026-01-31 22:36:07.584826,2026-01-31 22:36:07.843416
+902,Manas Ranjan Patra,manas ranjan patra,,,False,,SCIS,,,1,1,,2026-01-31 22:36:07.844742,2026-01-31 22:36:07.848650
+903,G. P. Bhattacharjee,g p bhattacharjee,,,False,,SCIS,,,1,1,,2026-01-31 22:36:07.852898,2026-01-31 22:36:07.856542
+528,Hrushikesha Mohanty,hrushikesha mohanty,74/5678,,True,hmcs@uohyd.ernet.in,SCIS,Professor,,53,36,,2026-01-31 22:36:03.426020,2026-01-31 22:36:07.856541
+905,Chandana Narthu,chandana narthu,,,False,,SCIS,,,1,3,,2026-01-31 22:36:07.858613,2026-01-31 22:36:07.873526
+907,Audrika Borah,audrika borah,,,False,,SCIS,,,1,2,,2026-01-31 22:36:07.875519,2026-01-31 22:36:07.884572
+908,A. Sandhya Rani,a sandhya rani,,,False,,SCIS,,,2,2,,2026-01-31 22:36:07.885514,2026-01-31 22:36:07.899434
+909,Ashwitha Gatadi,ashwitha gatadi,,,False,,SCIS,,,2,2,,2026-01-31 22:36:07.886397,2026-01-31 22:36:07.903784
+906,Maneesha Gudapati,maneesha gudapati,,,False,,SCIS,,,2,2,,2026-01-31 22:36:07.874489,2026-01-31 22:36:07.908217
+904,Harinath Kuruva,harinath kuruva,,,False,,SCIS,,,2,3,,2026-01-31 22:36:07.857676,2026-01-31 22:36:07.916064
+911,Arunjyoti Neog,arunjyoti neog,,,False,,SCIS,,,1,2,,2026-01-31 22:36:07.918747,2026-01-31 22:36:07.926542
+910,Bhargavi B.,bhargavi b,,,False,,SCIS,,,3,2,,2026-01-31 22:36:07.917659,2026-01-31 22:36:07.934963
+912,Madhuri Latha Madaka,madhuri latha madaka,,,False,,SCIS,,,1,1,,2026-01-31 22:36:07.936224,2026-01-31 22:36:07.940723
+913,Yogesh Surapaneni,yogesh surapaneni,,,False,,SCIS,,,1,1,,2026-01-31 22:36:07.942439,2026-01-31 22:36:07.946172
+914,Arkaprabha Basu,arkaprabha basu,,,False,,SCIS,,,1,6,,2026-01-31 22:36:07.947195,2026-01-31 22:36:07.993149
+915,Sandip Paul,sandip paul,,,False,,SCIS,,,1,6,,2026-01-31 22:36:07.948275,2026-01-31 22:36:07.993150
+916,Sreeya Ghosh,sreeya ghosh,,,False,,SCIS,,,1,6,,2026-01-31 22:36:07.949258,2026-01-31 22:36:07.993150
+917,Swagatam Das,swagatam das,,,False,,SCIS,,,1,6,,2026-01-31 22:36:07.950108,2026-01-31 22:36:07.993150
+918,Bhabatosh Chanda,bhabatosh chanda,,,False,,SCIS,,,1,6,,2026-01-31 22:36:07.950989,2026-01-31 22:36:07.993150
+919,Václav Snásel,václav snásel,,,False,,SCIS,,,1,6,,2026-01-31 22:36:07.952064,2026-01-31 22:36:07.994079
+923,K. H. Salman,k h salman,,,False,,SCIS,,,2,4,,2026-01-31 22:36:08.016988,2026-01-31 22:36:08.890308
+921,V. Padma,v padma,,,False,,SCIS,,,2,1,,2026-01-31 22:36:08.000703,2026-01-31 22:36:08.026328
+922,Niyishaka Patrick,niyishaka patrick,,,False,,SCIS,,,4,1,,2026-01-31 22:36:08.006130,2026-01-31 22:36:08.055063
+924,Rakesh Kummari,rakesh kummari,,,False,,SCIS,,,2,1,,2026-01-31 22:36:08.027941,2026-01-31 22:36:08.060240
+926,Deepthi Kalavala,deepthi kalavala,,,False,,SCIS,,,1,1,,2026-01-31 22:36:08.088248,2026-01-31 22:36:08.093466
+920,Laiphangbam Melinda,laiphangbam melinda,,,False,,SCIS,,,3,2,,2026-01-31 22:36:07.995087,2026-01-31 22:36:08.103069
+927,Raghu Ghanapuram,raghu ghanapuram,,,False,,SCIS,,,1,2,,2026-01-31 22:36:08.095209,2026-01-31 22:36:08.103253
+929,Dilip Kumar Nayak,dilip kumar nayak,,,False,,SCIS,,,1,1,,2026-01-31 22:36:08.131033,2026-01-31 22:36:08.134874
+930,J. V. R. Sagar,j v r sagar,,,False,,SCIS,,,1,1,,2026-01-31 22:36:08.136050,2026-01-31 22:36:08.140108
+925,Ilaiah Kavati,ilaiah kavati,,,False,,SCIS,,,5,2,,2026-01-31 22:36:08.061658,2026-01-31 22:36:08.148184
+931,N. Anil Kumar,n anil kumar,,,False,,SCIS,,,1,1,,2026-01-31 22:36:08.171183,2026-01-31 22:36:08.175372
+932,S. M. Renuka Devi,s m renuka devi,,,False,,SCIS,,,3,1,,2026-01-31 22:36:08.181930,2026-01-31 22:36:08.195445
+928,R. Padmavathy,r padmavathy,,,False,,SCIS,,,7,1,,2026-01-31 22:36:08.104375,2026-01-31 22:36:08.218413
+958,Anshuman Singh,anshuman singh,,,False,,SCIS,,,1,5,,2026-01-31 22:36:08.480320,2026-01-31 22:36:08.513930
+959,Pavan Kalyan Reddy Neerudu,pavan kalyan reddy neerudu,,,False,,SCIS,,,1,5,,2026-01-31 22:36:08.481768,2026-01-31 22:36:08.513930
+934,R. K. Jain,r k jain,,,False,,SCIS,,,1,2,,2026-01-31 22:36:08.236027,2026-01-31 22:36:08.243279
+933,Haritha Dasari,haritha dasari,,,False,,SCIS,,,5,2,,2026-01-31 22:36:08.219979,2026-01-31 22:36:08.247846
+956,Adamya Shyam,adamya shyam,,,False,,SCIS,,,2,3,,2026-01-31 22:36:08.446364,2026-01-31 22:36:08.526625
+935,K. Jalaja,k jalaja,,,False,,SCIS,,,1,3,,2026-01-31 22:36:08.249319,2026-01-31 22:36:08.263317
+937,J. Nileema,j nileema,,,False,,SCIS,,,1,4,,2026-01-31 22:36:08.279773,2026-01-31 22:36:08.301394
+939,K. Kiran Kumar,k kiran kumar,,,False,,SCIS,,,1,3,,2026-01-31 22:36:08.302549,2026-01-31 22:36:08.315676
+401,Chakravarthy Bhagvati,chakravarthy bhagvati,91/1525,,True,chakravarthybhagvati@uohyd.ac.in,SCIS,Professor,,60,47,,2026-01-31 22:36:01.981016,2026-01-31 22:36:08.326831
+940,Michael M. Skolnick,michael m skolnick,,,False,,SCIS,,,1,2,,2026-01-31 22:36:08.318376,2026-01-31 22:36:08.327044
+941,Dimitri A. Grivas,dimitri a grivas,,,False,,SCIS,,,1,2,,2026-01-31 22:36:08.319247,2026-01-31 22:36:08.327045
+942,Vibhuti Kumari,vibhuti kumari,,,False,,SCIS,,,2,1,,2026-01-31 22:36:08.328140,2026-01-31 22:36:08.347491
+945,Ch. Ram Anirudh,ch ram anirudh,,,False,,SCIS,,,2,1,,2026-01-31 22:36:08.339161,2026-01-31 22:36:08.357031
+944,Renjith P. Ravindran,renjith p ravindran,,,False,,SCIS,,,3,2,,2026-01-31 22:36:08.334254,2026-01-31 22:36:08.367140
+963,Suvendu Chandan Nayak,suvendu chandan nayak,,,False,,SCIS,,,1,5,,2026-01-31 22:36:08.576324,2026-01-31 22:36:08.609484
+964,Tien-Hsiung Weng,tien-hsiung weng,,,False,,SCIS,,,1,5,,2026-01-31 22:36:08.577166,2026-01-31 22:36:08.609485
+965,Rasmikanta Pati,rasmikanta pati,,,False,,SCIS,,,2,3,,2026-01-31 22:36:08.610752,2026-01-31 22:36:08.634379
+946,Srinivasu Badugu,srinivasu badugu,,,False,,SCIS,,,1,1,,2026-01-31 22:36:08.368676,2026-01-31 22:36:08.372361
+947,Hla Hla Htay,hla hla htay,,,False,,SCIS,,,1,1,,2026-01-31 22:36:08.373820,2026-01-31 22:36:08.377736
+948,P. Srikanth,p srikanth,,,False,,SCIS,,,1,1,,2026-01-31 22:36:08.379251,2026-01-31 22:36:08.383053
+950,K. Raghuveer,k raghuveer,,,False,,SCIS,,,1,1,,2026-01-31 22:36:08.394713,2026-01-31 22:36:08.399317
+949,Guntur Bharadwaja Kumar,guntur bharadwaja kumar,,,False,,SCIS,,,3,1,,2026-01-31 22:36:08.389042,2026-01-31 22:36:08.409210
+943,Narayana Murthy Kavi,narayana murthy kavi,94/4013,,True,knmcs@uohyd.ac.in,SCIS,Professor,,15,10,,2026-01-31 22:36:08.329012,2026-01-31 22:36:08.414507
+951,Sasi Kanth Ala,sasi kanth ala,,,False,,SCIS,,,1,1,,2026-01-31 22:36:08.410667,2026-01-31 22:36:08.414508
+952,Aditya Sai Ellendula,aditya sai ellendula,,,False,,SCIS,,,1,3,,2026-01-31 22:36:08.415839,2026-01-31 22:36:08.431465
+955,Shamal Shaikh,shamal shaikh,,,False,,SCIS,,,2,3,,2026-01-31 22:36:08.432905,2026-01-31 22:36:08.477952
+966,Padmavati Gahan,padmavati gahan,,,False,,SCIS,,,2,3,,2026-01-31 22:36:08.611996,2026-01-31 22:36:08.634379
+967,Haris Aziz,haris aziz,,,False,,SCIS,,,1,4,,2026-01-31 22:36:08.637055,2026-01-31 22:36:08.656002
+961,Chhabi Rani Panigrahi,chhabi rani panigrahi,,,False,,SCIS,,,2,5,,2026-01-31 22:36:08.574576,2026-01-31 22:36:08.691750
+962,Bibudhendu Pati,bibudhendu pati,,,False,,SCIS,,,2,5,,2026-01-31 22:36:08.575429,2026-01-31 22:36:08.691751
+1033,Chariklia Georgopoulou,chariklia georgopoulou,,,False,,SCIS,,,1,6,,2026-01-31 22:36:09.747546,2026-01-31 22:36:09.792985
+1034,Swati Jain,swati jain,,,False,,SCIS,,,1,6,,2026-01-31 22:36:09.748539,2026-01-31 22:36:09.792985
+1035,Edward Rode,edward rode,,,False,,SCIS,,,1,6,,2026-01-31 22:36:09.749711,2026-01-31 22:36:09.792986
+1036,George Dimopoulos,george dimopoulos,,,False,,SCIS,,,1,6,,2026-01-31 22:36:09.750597,2026-01-31 22:36:09.792986
+1037,Narasi Sridhar,narasi sridhar,,,False,,SCIS,,,1,6,,2026-01-31 22:36:09.751465,2026-01-31 22:36:09.793842
+1038,Nikolaos Kakalis,nikolaos kakalis,,,False,,SCIS,,,1,6,,2026-01-31 22:36:09.752343,2026-01-31 22:36:09.793843
+957,Sowmini Devi Veeramachaneni,sowmini devi veeramachaneni,,,False,,SCIS,,,7,4,,2026-01-31 22:36:08.461946,2026-01-31 22:36:08.890700
+1039,Akhter Mohiuddin Rather,akhter mohiuddin rather,,,False,,SCIS,,,2,2,,2026-01-31 22:36:09.794973,2026-01-31 22:36:09.831776
+1041,Kabita Agarwal,kabita agarwal,,,False,,SCIS,,,1,1,,2026-01-31 22:36:09.833643,2026-01-31 22:36:09.837662
+971,Anubhuti Garg,anubhuti garg,,,False,,SCIS,,,2,3,,2026-01-31 22:36:08.919103,2026-01-31 22:36:08.943641
+953,Vikas Kumar,vikas kumar,,,False,,SCIS,,,27,16,,2026-01-31 22:36:08.417426,2026-01-31 22:36:10.070779
+954,Venkateswara Rao Kagita,venkateswara rao kagita,,,False,,SCIS,,,29,15,,2026-01-31 22:36:08.418313,2026-01-31 22:36:10.121631
+972,Pranay Goud,pranay goud,,,False,,SCIS,,,1,3,,2026-01-31 22:36:08.969486,2026-01-31 22:36:08.984839
+973,Harshit Sethy,harshit sethy,,,False,,SCIS,,,1,3,,2026-01-31 22:36:08.970609,2026-01-31 22:36:08.985043
+969,Tadiparthi V. R. Himabindu,tadiparthi v r himabindu,,,False,,SCIS,,,3,4,,2026-01-31 22:36:08.768812,2026-01-31 22:36:08.997193
+81,S. Mini,s mini,,,False,,SCIS,,,8,5,,2026-01-31 22:35:56.463907,2026-01-31 22:36:09.016257
+974,Trideba Padhi,trideba padhi,,,False,,SCIS,,,1,3,,2026-01-31 22:36:09.000200,2026-01-31 22:36:09.016638
+975,Prabhanjan Sahoo,prabhanjan sahoo,,,False,,SCIS,,,1,3,,2026-01-31 22:36:09.001110,2026-01-31 22:36:09.016639
+968,Sandeep Kumar Sahu,sandeep kumar sahu,,,False,,SCIS,,,7,4,,2026-01-31 22:36:08.746397,2026-01-31 22:36:09.037793
+970,Sowmini Devi V.,sowmini devi v,,,False,,SCIS,,,2,3,,2026-01-31 22:36:08.852385,2026-01-31 22:36:09.050066
+976,Krutika Verma,krutika verma,,,False,,SCIS,,,1,2,,2026-01-31 22:36:09.052611,2026-01-31 22:36:09.062250
+978,Chandana Mitra,chandana mitra,,,False,,SCIS,,,1,1,,2026-01-31 22:36:09.072086,2026-01-31 22:36:09.076144
+977,Mukesh K. Jadon,mukesh k jadon,,,False,,SCIS,,,2,3,,2026-01-31 22:36:09.053530,2026-01-31 22:36:09.085255
+979,Anil Goyal,anil goyal,,,False,,SCIS,,,1,2,,2026-01-31 22:36:09.077235,2026-01-31 22:36:09.085448
+980,Tusar Kanti Mishra,tusar kanti mishra,,,False,,SCIS,,,1,1,,2026-01-31 22:36:09.094701,2026-01-31 22:36:09.099337
+984,P. Rajasekhara,p rajasekhara,,,False,,SCIS,,,1,1,,2026-01-31 22:36:09.116678,2026-01-31 22:36:09.120767
+960,Arko Banerjee,arko banerjee,,,False,,SCIS,,,3,5,,2026-01-31 22:36:08.573446,2026-01-31 22:36:09.125042
+983,Manju Chaudhary,manju chaudhary,,,False,,SCIS,,,2,1,,2026-01-31 22:36:09.111079,2026-01-31 22:36:09.129592
+985,Alok Sharma,alok sharma,,,False,,SCIS,,,1,2,,2026-01-31 22:36:09.132354,2026-01-31 22:36:09.140802
+986,Kuldip K. Paliwal,kuldip k paliwal,,,False,,SCIS,,,1,2,,2026-01-31 22:36:09.133457,2026-01-31 22:36:09.140983
+989,M. Ravindranath,m ravindranath,,,False,,SCIS,,,1,3,,2026-01-31 22:36:09.157593,2026-01-31 22:36:09.170639
+936,Challa S. Sastry,challa s sastry,,,False,,SCIS,,,4,6,,2026-01-31 22:36:08.264307,2026-01-31 22:36:09.201910
+991,Krishna Sandeep Reddy Dubba,krishna sandeep reddy dubba,,,False,,SCIS,,,2,2,,2026-01-31 22:36:09.203461,2026-01-31 22:36:09.215171
+993,Mala Dutta,mala dutta,,,False,,SCIS,,,1,2,,2026-01-31 22:36:09.248226,2026-01-31 22:36:09.257096
+994,Anjana Kakoti Mahanta,anjana kakoti mahanta,,,False,,SCIS,,,1,2,,2026-01-31 22:36:09.249008,2026-01-31 22:36:09.257344
+990,A. R. Dani,a r dani,,,False,,SCIS,,,6,2,,2026-01-31 22:36:09.172062,2026-01-31 22:36:09.287967
+981,Subrat Kumar Dash,subrat kumar dash,,,False,,SCIS,,,4,4,,2026-01-31 22:36:09.100761,2026-01-31 22:36:09.295544
+982,Krupa Sagar Reddy,krupa sagar reddy,,,False,,SCIS,,,2,2,,2026-01-31 22:36:09.101724,2026-01-31 22:36:09.295544
+938,Priti Chandra,priti chandra,,,False,,SCIS,,,2,4,,2026-01-31 22:36:08.280662,2026-01-31 22:36:09.300475
+992,Ravi Sankar Veerubhotla,ravi sankar veerubhotla,,,False,,SCIS,,,3,3,,2026-01-31 22:36:09.233766,2026-01-31 22:36:09.364983
+998,T. Adilakshmi,t adilakshmi,,,False,,SCIS,,,1,1,,2026-01-31 22:36:09.366978,2026-01-31 22:36:09.370636
+987,Sanjay Rawat,sanjay rawat,,,False,,SCIS,,,5,4,,2026-01-31 22:36:09.142391,2026-01-31 22:36:09.378323
+988,Ved Prakash Gulati,ved prakash gulati,,,False,,SCIS,,,17,7,,2026-01-31 22:36:09.143568,2026-01-31 22:36:09.385988
+995,Challa Dhanunjaya Naidu,challa dhanunjaya naidu,,,False,,SCIS,,,2,3,,2026-01-31 22:36:09.321919,2026-01-31 22:36:09.393879
+997,B. C. Jinaga,b c jinaga,,,False,,SCIS,,,2,3,,2026-01-31 22:36:09.323831,2026-01-31 22:36:09.393879
+999,Chinmoy Goswami,chinmoy goswami,,,False,,SCIS,,,1,3,,2026-01-31 22:36:09.396224,2026-01-31 22:36:09.408604
+1011,Anita G. Pai,anita g pai,,,False,,SCIS,,,1,2,,2026-01-31 22:36:09.506804,2026-01-31 22:36:09.516316
+1001,G. Vijaya Kumari,g vijaya kumari,,,False,,SCIS,,,1,2,,2026-01-31 22:36:09.420623,2026-01-31 22:36:09.428122
+1012,H. Usha,h usha,,,False,,SCIS,,,1,2,,2026-01-31 22:36:09.507957,2026-01-31 22:36:09.516507
+1000,A. K. Shiny,a k shiny,,,False,,SCIS,,,2,1,,2026-01-31 22:36:09.414879,2026-01-31 22:36:09.437539
+996,M. Sreenivasa Rao,m sreenivasa rao,,,False,,SCIS,,,3,4,,2026-01-31 22:36:09.322824,2026-01-31 22:36:09.447180
+1002,Bala Srinivasan,bala srinivasan,,,False,,SCIS,,,1,2,,2026-01-31 22:36:09.439503,2026-01-31 22:36:09.447383
+1013,R. Ethindra Kumar,r ethindra kumar,,,False,,SCIS,,,1,2,,2026-01-31 22:36:09.517775,2026-01-31 22:36:09.527534
+1009,B. Lavakusha,b lavakusha,,,False,,SCIS,,,2,2,,2026-01-31 22:36:09.494443,2026-01-31 22:36:09.534795
+1010,P. G. Reddy,p g reddy,,,False,,SCIS,,,2,2,,2026-01-31 22:36:09.496062,2026-01-31 22:36:09.534795
+1003,M. B. Sukhaswami,m b sukhaswami,,,False,,SCIS,,,2,2,,2026-01-31 22:36:09.448544,2026-01-31 22:36:09.462296
+1014,S. L. Mehndiratta,s l mehndiratta,,,False,,SCIS,,,1,1,,2026-01-31 22:36:09.539343,2026-01-31 22:36:09.542864
+1005,V. B. Nitya,v b nitya,,,False,,SCIS,,,1,2,,2026-01-31 22:36:09.466410,2026-01-31 22:36:09.474814
+1006,N. Sridevi,n sridevi,,,False,,SCIS,,,1,2,,2026-01-31 22:36:09.467292,2026-01-31 22:36:09.475007
+1004,P. Seetharamulu,p seetharamulu,,,False,,SCIS,,,2,3,,2026-01-31 22:36:09.453923,2026-01-31 22:36:09.487584
+1007,Deepak Bhatnagar,deepak bhatnagar,,,False,,SCIS,,,1,2,,2026-01-31 22:36:09.479318,2026-01-31 22:36:09.487585
+1008,K. Shanmukh,k shanmukh,,,False,,SCIS,,,1,1,,2026-01-31 22:36:09.488721,2026-01-31 22:36:09.493279
+95,Arun K. Pujari,arun k pujari,95/6184,,True,akpcs@uohyd.ernet.in,SCIS,Professor,,112,89,,2026-01-31 22:35:56.703861,2026-01-31 22:36:09.553528
+1015,Ashok K. Mittal,ashok k mittal,,,False,,SCIS,,,1,2,,2026-01-31 22:36:09.544172,2026-01-31 22:36:09.553743
+1016,S. K. Gupta,s k gupta,,,False,,SCIS,,,1,2,,2026-01-31 22:36:09.545047,2026-01-31 22:36:09.553743
+1017,Upali Aparajita Dash,upali aparajita dash,,,False,,SCIS,,,1,2,,2026-01-31 22:36:09.555474,2026-01-31 22:36:09.564887
+1018,Sasmita Pahadsingh,sasmita pahadsingh,,,False,,SCIS,,,1,2,,2026-01-31 22:36:09.556648,2026-01-31 22:36:09.565098
+1019,Shaktimayee Mishra,shaktimayee mishra,,,False,,SCIS,,,2,2,,2026-01-31 22:36:09.566065,2026-01-31 22:36:09.582953
+1020,Asit Kumar Panda,asit kumar panda,,,False,,SCIS,,,2,2,,2026-01-31 22:36:09.566961,2026-01-31 22:36:09.582953
+1026,Rakesh Kumar Yadav,rakesh kumar yadav,,,False,,SCIS,,,1,2,,2026-01-31 22:36:09.614834,2026-01-31 22:36:09.622072
+1024,Amit Kumar Singh,amit kumar singh,,,False,,SCIS,,,2,3,,2026-01-31 22:36:09.597472,2026-01-31 22:36:09.647693
+1023,Kamlesh Kumar Raghuvanshi,kamlesh kumar raghuvanshi,,,False,,SCIS,,,3,4,,2026-01-31 22:36:09.596323,2026-01-31 22:36:09.662428
+1028,V. B. Singh,v b singh,,,False,,SCIS,,,1,3,,2026-01-31 22:36:09.650627,2026-01-31 22:36:09.662793
+1029,Pawan Singh Mehra,pawan singh mehra,,,False,,SCIS,,,1,3,,2026-01-31 22:36:09.664292,2026-01-31 22:36:09.679505
+1030,Anshu Kumar Dwivedi,anshu kumar dwivedi,,,False,,SCIS,,,1,3,,2026-01-31 22:36:09.665352,2026-01-31 22:36:09.679858
+1031,Ashima Jain,ashima jain,,,False,,SCIS,,,1,3,,2026-01-31 22:36:09.681841,2026-01-31 22:36:09.696135
+1025,Khushboo Jain,khushboo jain,,,False,,SCIS,,,8,10,,2026-01-31 22:36:09.598431,2026-01-31 22:36:09.705885
+1021,Yaswanth Gavini,yaswanth gavini,,,False,,SCIS,,,3,2,,2026-01-31 22:36:09.584677,2026-01-31 22:36:09.735996
+1022,Babu M. Mehtre,babu m mehtre,,,False,,SCIS,,,3,2,,2026-01-31 22:36:09.586184,2026-01-31 22:36:09.735997
+1032,Saurabh N. Mehta,saurabh n mehta,,,False,,SCIS,,,3,1,,2026-01-31 22:36:09.707999,2026-01-31 22:36:09.740956
+1027,Amita Dev,amita dev,,,False,,SCIS,,,3,2,,2026-01-31 22:36:09.632264,2026-01-31 22:36:09.745963
+1042,Ted Xenodemetropoulos,ted xenodemetropoulos,,,False,,SCIS,,,1,5,,2026-01-31 22:36:09.839340,2026-01-31 22:36:09.873690
+1043,Yumna Abdelrahman,yumna abdelrahman,,,False,,SCIS,,,1,5,,2026-01-31 22:36:09.840211,2026-01-31 22:36:09.873690
+1044,Michael Dohan,michael dohan,,,False,,SCIS,,,1,5,,2026-01-31 22:36:09.841110,2026-01-31 22:36:09.873690
+1045,K. Ann McKibbon,k ann mckibbon,,,False,,SCIS,,,1,5,,2026-01-31 22:36:09.841977,2026-01-31 22:36:09.874482
+1046,Joseph Tan,joseph tan,,,False,,SCIS,,,1,5,,2026-01-31 22:36:09.842813,2026-01-31 22:36:09.874482
+1047,Pramod Kumar Konugurthi,pramod kumar konugurthi,,,False,,SCIS,,,1,2,,2026-01-31 22:36:09.901892,2026-01-31 22:36:09.911213
+1048,R. Krishnan,r krishnan,,,False,,SCIS,,,1,2,,2026-01-31 22:36:09.903004,2026-01-31 22:36:09.911417
+1049,A. H. Abdul Hafez,a h abdul hafez,,,False,,SCIS,,,1,2,,2026-01-31 22:36:09.912362,2026-01-31 22:36:09.921650
+1050,Ahmed Alrabie,ahmed alrabie,,,False,,SCIS,,,1,2,,2026-01-31 22:36:09.913259,2026-01-31 22:36:09.921853
+1054,Homayoun Navabi,homayoun navabi,,,False,,SCIS,,,1,1,,2026-01-31 22:36:09.939337,2026-01-31 22:36:09.943791
+1055,Patrick S. P. Wang,patrick s p wang,,,False,,SCIS,,,1,3,,2026-01-31 22:36:09.946062,2026-01-31 22:36:09.958087
+1051,Karim Hussein,karim hussein,,,False,,SCIS,,,3,5,,2026-01-31 22:36:09.922824,2026-01-31 22:36:09.978058
+1056,Len Granowetter,len granowetter,,,False,,SCIS,,,1,4,,2026-01-31 22:36:09.959683,2026-01-31 22:36:09.978573
+131,Arun Agarwal,arun agarwal,97/3869,,True,arunagarwal@uohyd.ac.in,SCIS,Senior Professor,,73,77,,2026-01-31 22:35:57.058698,2026-01-31 22:36:10.004896
+1052,Amar Gupta,amar gupta,,,False,,SCIS,,,5,6,,2026-01-31 22:36:09.923999,2026-01-31 22:36:10.004896
+1053,Patrick Shen-Pei Wang,patrick shen-pei wang,,,False,,SCIS,,,4,5,,2026-01-31 22:36:09.924870,2026-01-31 22:36:10.004897
+1057,Lik Mui,lik mui,,,False,,SCIS,,,2,3,,2026-01-31 22:36:09.979666,2026-01-31 22:36:10.004897
+1058,Brahmani Nutakki,brahmani nutakki,,,False,,SCIS,,,1,2,,2026-01-31 22:36:10.017267,2026-01-31 22:36:10.025994
+1060,Thomas Cherian,thomas cherian,,,False,,SCIS,,,1,2,,2026-01-31 22:36:10.076709,2026-01-31 22:36:10.084618
+1061,Vidyadhar Rao,vidyadhar rao,,,False,,SCIS,,,1,2,,2026-01-31 22:36:10.086899,2026-01-31 22:36:10.096964
+1062,Rosni K. Vasu,rosni k vasu,,,False,,SCIS,,,1,2,,2026-01-31 22:36:10.088070,2026-01-31 22:36:10.097203
+1059,Gopal N. Rai,gopal n rai,,,False,,SCIS,,,2,3,,2026-01-31 22:36:10.031860,2026-01-31 22:36:10.105394
+1064,Krishna Charan Meka,krishna charan meka,,,False,,SCIS,,,1,2,,2026-01-31 22:36:10.113623,2026-01-31 22:36:10.121826
+1063,Abinash Pujahari,abinash pujahari,,,False,,SCIS,,,2,1,,2026-01-31 22:36:10.107079,2026-01-31 22:36:10.126001
+1065,Abhishek Anand,abhishek anand,,,False,,SCIS,,,1,1,,2026-01-31 22:36:10.127420,2026-01-31 22:36:10.131966
+1066,Prabhu Kiran,prabhu kiran,,,False,,SCIS,,,1,2,,2026-01-31 22:36:10.138617,2026-01-31 22:36:10.146260
+1040,Upendra Kumar Singh,upendra kumar singh,,,False,,SCIS,,,4,2,,2026-01-31 22:36:09.814817,2026-01-31 22:36:10.151296
+1067,Kaifu Zhang,kaifu zhang,,,False,,SCIS,,,1,3,,2026-01-31 22:36:10.152746,2026-01-31 22:36:10.168885
+1068,Theodoros Evgeniou,theodoros evgeniou,,,False,,SCIS,,,1,3,,2026-01-31 22:36:10.153635,2026-01-31 22:36:10.168885
+1069,Emile Richard,emile richard,,,False,,SCIS,,,1,3,,2026-01-31 22:36:10.154734,2026-01-31 22:36:10.169241
+1070,Pushan Dutt,pushan dutt,,,False,,SCIS,,,1,1,,2026-01-31 22:36:10.170297,2026-01-31 22:36:10.174464
+1073,Rakesh Niraj,rakesh niraj,,,False,,SCIS,,,1,2,,2026-01-31 22:36:10.213529,2026-01-31 22:36:10.222416
+1074,P. B. Seetharaman,p b seetharaman,,,False,,SCIS,,,1,2,,2026-01-31 22:36:10.214697,2026-01-31 22:36:10.222609
+1075,Subhasis Thakur,subhasis thakur,,,False,,SCIS,,,3,3,,2026-01-31 22:36:10.224453,2026-01-31 22:36:10.258770
+1076,Jenny Eriksson Lundström,jenny eriksson lundström,,,False,,SCIS,,,2,3,,2026-01-31 22:36:10.233941,2026-01-31 22:36:10.258770
+1077,Ruopeng Lu,ruopeng lu,,,False,,SCIS,,,1,3,,2026-01-31 22:36:10.260806,2026-01-31 22:36:10.275210
+1078,Shazia Sadiq,shazia sadiq,,,False,,SCIS,,,2,5,,2026-01-31 22:36:10.261726,2026-01-31 22:36:10.296096
+1079,Robert M. Colomb,robert m colomb,,,False,,SCIS,,,1,4,,2026-01-31 22:36:10.277651,2026-01-31 22:36:10.296284
+1072,Antonino Rotolo,antonino rotolo,,,False,,SCIS,,,4,5,,2026-01-31 22:36:10.199794,2026-01-31 22:36:10.317143
+1080,Kaile Su,kaile su,,,False,,SCIS,,,1,5,,2026-01-31 22:36:10.323564,2026-01-31 22:36:10.353559
+1081,Kewen Wang,kewen wang,,,False,,SCIS,,,1,5,,2026-01-31 22:36:10.324675,2026-01-31 22:36:10.353560
+1082,Xiangyu Luo,xiangyu luo,,,False,,SCIS,,,1,5,,2026-01-31 22:36:10.325559,2026-01-31 22:36:10.354208
+1083,Hau L. Lee,hau l lee,,,False,,SCIS,,,2,2,,2026-01-31 22:36:10.355866,2026-01-31 22:36:10.372542
+1084,Seungjin Whang,seungjin whang,,,False,,SCIS,,,2,2,,2026-01-31 22:36:10.357086,2026-01-31 22:36:10.372543
+74,Vineet Padmanabhan,vineet padmanabhan,98/255,,True,vineetnair@uohyd.ac.in,SCIS,Professor,,87,59,,2026-01-31 22:35:56.378478,2026-01-31 22:36:10.401819
+1071,Guido Governatori,guido governatori,,,False,,SCIS,,,17,12,,2026-01-31 22:36:10.176045,2026-01-31 22:36:10.401820
+1085,Thirupathi Guggulothu,thirupathi guggulothu,,,False,,SCIS,,,2,1,,2026-01-31 22:36:10.406514,2026-01-31 22:36:10.415103
+1087,Mohammed Rizwanullah,mohammed rizwanullah,,,False,,SCIS,,,1,2,,2026-01-31 22:36:10.425904,2026-01-31 22:36:10.433164
+1088,A. A. Moiz Qyser,a a moiz qyser,,,False,,SCIS,,,1,2,,2026-01-31 22:36:10.434627,2026-01-31 22:36:10.441955
+1086,N. Md. Jubair Basha,n md jubair basha,,,False,,SCIS,,,5,3,,2026-01-31 22:36:10.416462,2026-01-31 22:36:10.446103
+1089,Supriya N. Pal,supriya n pal,,,False,,SCIS,,,1,2,,2026-01-31 22:36:10.448391,2026-01-31 22:36:10.456080
+1090,Mohammed Khaja Nizamuddin,mohammed khaja nizamuddin,,,False,,SCIS,,,1,1,,2026-01-31 22:36:10.476835,2026-01-31 22:36:10.480710

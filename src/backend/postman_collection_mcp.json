@@ -1,0 +1,246 @@
+{
+  "info": {
+    "name": "SCISLiSA MCP Analytics API",
+    "description": "Natural Language Query Interface for Faculty Publications",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "MCP Analytics",
+      "item": [
+        {
+          "name": "Query - Publication Trends",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"question\": \"Show publication trends over the last 10 years\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8000/api/v1/mcp/query",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8000",
+              "path": ["api", "v1", "mcp", "query"]
+            }
+          }
+        },
+        {
+          "name": "Query - Top Faculty",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"question\": \"Who are the top 10 most productive faculty members?\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8000/api/v1/mcp/query",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8000",
+              "path": ["api", "v1", "mcp", "query"]
+            }
+          }
+        },
+        {
+          "name": "Query - Top Venues",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"question\": \"What are the top 15 publication venues?\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8000/api/v1/mcp/query",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8000",
+              "path": ["api", "v1", "mcp", "query"]
+            }
+          }
+        },
+        {
+          "name": "Query - Collaborations",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"question\": \"Show me the top collaborations between faculty members\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8000/api/v1/mcp/query",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8000",
+              "path": ["api", "v1", "mcp", "query"]
+            }
+          }
+        },
+        {
+          "name": "Query - Publication Types",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"question\": \"What types of publications do we have?\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8000/api/v1/mcp/query",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8000",
+              "path": ["api", "v1", "mcp", "query"]
+            }
+          }
+        },
+        {
+          "name": "Query - Specific Faculty",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"question\": \"How many publications did Satish Srirama publish in 2024?\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8000/api/v1/mcp/query",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8000",
+              "path": ["api", "v1", "mcp", "query"]
+            }
+          }
+        },
+        {
+          "name": "Query - Recent Publications",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"question\": \"Show me the most recent publications\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8000/api/v1/mcp/query",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8000",
+              "path": ["api", "v1", "mcp", "query"]
+            }
+          }
+        },
+        {
+          "name": "Query - Faculty Comparison",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"question\": \"Compare publication output of different faculty over the years\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8000/api/v1/mcp/query",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8000",
+              "path": ["api", "v1", "mcp", "query"]
+            }
+          }
+        },
+        {
+          "name": "Get Example Queries",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8000/api/v1/mcp/examples",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8000",
+              "path": ["api", "v1", "mcp", "examples"]
+            }
+          }
+        },
+        {
+          "name": "Get Database Schema",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8000/api/v1/mcp/schema",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8000",
+              "path": ["api", "v1", "mcp", "schema"]
+            }
+          }
+        },
+        {
+          "name": "Validate SQL Query",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8000/api/v1/mcp/validate-sql?sql=SELECT COUNT(*) FROM publications WHERE has_faculty_author = true",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8000",
+              "path": ["api", "v1", "mcp", "validate-sql"],
+              "query": [
+                {
+                  "key": "sql",
+                  "value": "SELECT COUNT(*) FROM publications WHERE has_faculty_author = true"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

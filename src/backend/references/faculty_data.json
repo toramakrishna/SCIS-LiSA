@@ -1,0 +1,550 @@
+[
+  {
+    "name": "Siba K. Udgata",
+    "dblp_names": [
+      "Siba K. Udgata",
+      "Siba Kumar Udgata"
+    ],
+    "designation": "Professor",
+    "email": "deanscis@uohyd.ac.in",
+    "phone": "",
+    "department": "SCIS",
+    "dblp_urls": [
+      "https://dblp.org/pid/04/3517.html"
+    ],
+    "dblp_count": 76,
+    "dblp_pid": "04/3517",
+    "dblp_matched": true
+  },
+  {
+    "name": "Alok Singh",
+    "designation": "Professor",
+    "email": "alok@uohyd.ac.in",
+    "phone": "",
+    "department": "SCIS",
+    "dblp_names": [
+      "Alok Singh 0001"
+    ],
+    "dblp_urls": [
+      "https://dblp.org/pid/01/1744-1.html"
+    ],
+    "dblp_count": 97,
+    "dblp_pid": "01/1744-1",
+    "dblp_matched": true
+  },
+  {
+    "name": "Anjeneya Swami Kare",
+    "designation": "Assistant Professor",
+    "email": "askcs@uohyd.ac.in",
+    "phone": "",
+    "department": "SCIS",
+    "dblp_names": [
+      "Anjeneya Swami Kare"
+    ],
+    "dblp_urls": [
+      "https://dblp.org/pid/138/0168.html"
+    ],
+    "dblp_count": 33,
+    "dblp_pid": "138/0168",
+    "dblp_matched": true
+  },
+  {
+    "name": "Anupama Potluri",
+    "designation": "Assistant Professor",
+    "email": "apcs@uohyd.ac.in",
+    "phone": "",
+    "department": "SCIS",
+    "dblp_names": [
+      "Anupama Potluri"
+    ],
+    "dblp_urls": [
+      "https://dblp.org/pid/16/5380.html"
+    ],
+    "dblp_count": 14,
+    "dblp_pid": "16/5380",
+    "dblp_matched": true
+  },
+  {
+    "name": "Arun Kumar Das",
+    "designation": "Assistant Professor",
+    "email": "arunkumardas@uohyd.ac.in",
+    "phone": "",
+    "department": "SCIS",
+    "dblp_names": [
+      "Arun Kumar Das"
+    ],
+    "dblp_urls": [
+      "https://dblp.org/pid/263/4582-1.html"
+    ],
+    "dblp_count": 23,
+    "dblp_pid": "263/4582-1",
+    "dblp_matched": true
+  },
+  {
+    "name": "Atul Negi",
+    "designation": "Professor",
+    "email": "atul.negi@uohyd.ac.in",
+    "phone": "",
+    "department": "SCIS",
+    "dblp_names": [
+      "Atul Negi"
+    ],
+    "dblp_urls": [
+      "https://dblp.org/pid/73/4368.html"
+    ],
+    "dblp_count": 91,
+    "dblp_pid": "73/4368",
+    "dblp_matched": true
+  },
+  {
+    "name": "Avatharam Ganivada",
+    "designation": "Assistant Professor",
+    "email": "avatharg@uohyd.ac.in",
+    "phone": "",
+    "department": "SCIS",
+    "dblp_names": [
+      "Avatharam Ganivada"
+    ],
+    "dblp_urls": [
+      "https://dblp.org/pid/06/10134.html"
+    ],
+    "dblp_count": 19,
+    "dblp_pid": "06/10134",
+    "dblp_matched": true
+  },
+  {
+    "name": "Chakravarthy Bhagvati",
+    "designation": "Professor",
+    "email": "chakravarthybhagvati@uohyd.ac.in",
+    "phone": "",
+    "department": "SCIS",
+    "dblp_names": [
+      "Chakravarthy Bhagvati"
+    ],
+    "dblp_urls": [
+      "https://dblp.org/pid/91/1525.html"
+    ],
+    "dblp_count": 60,
+    "dblp_pid": "91/1525",
+    "dblp_matched": true
+  },
+  {
+    "name": "Digambar Pawar",
+    "designation": "Professor",
+    "email": "dpr@uohyd.ac.in",
+    "phone": "",
+    "department": "SCIS",
+    "dblp_names": [
+      "Digambar Pawar"
+    ],
+    "dblp_urls": [
+      "https://dblp.org/pid/327/2466.html"
+    ],
+    "dblp_count": 10,
+    "dblp_pid": "327/2466",
+    "dblp_matched": true
+  },
+  {
+    "name": "Durga Bhavani S.",
+    "designation": "Professor",
+    "email": "sdbcs@uohyd.ac.in",
+    "phone": "",
+    "department": "SCIS",
+    "dblp_names": [
+      "Durga Bhavani S.",
+      "S. Durga Bhavani"
+    ],
+    "dblp_urls": [
+      "https://dblp.org/pid/63/2890.html"
+    ],
+    "dblp_count": 58,
+    "dblp_pid": "63/2890",
+    "dblp_matched": true
+  },
+  {
+    "name": "Nagamani M.",
+    "designation": "Associate Professor",
+    "email": "nagamanics@uohyd.ac.in",
+    "phone": "",
+    "department": "SCIS",
+    "dblp_names": [
+      "Nagamani M.",
+      "M. Nagamani"
+    ],
+    "dblp_urls": [
+      "https://dblp.org/pid/284/7780.html"
+    ],
+    "dblp_count": 3,
+    "dblp_pid": "284/7780",
+    "dblp_matched": true
+  },
+  {
+    "name": "Nagender Kumar S.",
+    "designation": "Professor",
+    "email": "nks@uohyd.ac.in",
+    "phone": "",
+    "department": "SCIS",
+    "dblp_names": [
+      "Nagender Kumar Suryadevara"
+    ],
+    "dblp_urls": [
+      "https://dblp.org/pid/21/10736.html"
+    ],
+    "dblp_count": 23,
+    "dblp_pid": "21/10736",
+    "dblp_matched": true
+  },
+  {
+    "name": "Naveen Nekuri",
+    "designation": "Assistant Professor",
+    "email": "naveencis@uohyd.ac.in",
+    "phone": "",
+    "department": "SCIS",
+    "dblp_names": [
+      "Nekuri Naveen"
+    ],
+    "dblp_urls": [
+      "https://dblp.org/pid/55/8654.html"
+    ],
+    "dblp_count": 14,
+    "dblp_pid": "55/8654",
+    "dblp_matched": true
+  },
+  {
+    "name": "Rajeev Wankar",
+    "designation": "Professor",
+    "email": "wankarcs@uohyd.ac.in",
+    "phone": "",
+    "department": "SCIS",
+    "dblp_names": [
+      "Rajeev Wankar"
+    ],
+    "dblp_urls": [
+      "https://dblp.org/pid/31/566.html"
+    ],
+    "dblp_count": 50,
+    "dblp_pid": "31/566",
+    "dblp_matched": true
+  },
+  {
+    "name": "Rajendra Prasad Lal",
+    "designation": "Assistant Professor",
+    "email": "rajendraprasd@uohyd.ac.in",
+    "phone": "",
+    "department": "SCIS",
+    "dblp_names": [
+      "Rajendra Prasad Lal"
+    ],
+    "dblp_urls": [
+      "https://dblp.org/pid/31/9532.html"
+    ],
+    "dblp_count": 12,
+    "dblp_pid": "31/9532",
+    "dblp_matched": true
+  },
+  {
+    "name": "Rukma Rekha N.",
+    "designation": "Professor",
+    "email": "rukmarekha@uohyd.ac.in",
+    "phone": "",
+    "department": "SCIS",
+    "dblp_names": [
+      "N. Rukma Rekha"
+    ],
+    "dblp_urls": [
+      "https://dblp.org/pid/83/9943.html"
+    ],
+    "dblp_count": 7,
+    "dblp_pid": "83/9943",
+    "dblp_matched": true
+  },
+  {
+    "name": "Sai Prasad P.S.V.S.",
+    "designation": "Professor",
+    "email": "saics@uohyd.ac.in",
+    "phone": "",
+    "department": "SCIS",
+    "dblp_names": [
+      "P. S. V. S. Sai Prasad"
+    ],
+    "dblp_urls": [
+      "https://dblp.org/pid/23/2953.html"
+    ],
+    "dblp_count": 37,
+    "dblp_pid": "23/2953",
+    "dblp_matched": true
+  },
+  {
+    "name": "Saifulla Md. Abdul",
+    "designation": "Assistant Professor",
+    "email": "saifullah@uohyd.ac.in",
+    "phone": "",
+    "department": "SCIS",
+    "dblp_names": [
+      "Saifulla Md. Abdul"
+    ],
+    "dblp_urls": [
+      "https://dblp.org/pid/309/7711.html"
+    ],
+    "dblp_count": 11,
+    "dblp_pid": "309/7711",
+    "dblp_matched": true
+  },
+  {
+    "name": "Salman Abdul Moiz",
+    "designation": "Professor",
+    "email": "salman@uohyd.ac.in",
+    "phone": "",
+    "department": "SCIS",
+    "dblp_names": [
+      "Salman Abdul Moiz"
+    ],
+    "dblp_urls": [
+      "https://dblp.org/pid/98/6017.html"
+    ],
+    "dblp_count": 22,
+    "dblp_pid": "98/6017",
+    "dblp_matched": true
+  },
+  {
+    "name": "Satish Srirama",
+    "designation": "Professor",
+    "email": "satish.srirama@uohyd.ac.in",
+    "phone": "",
+    "department": "SCIS",
+    "dblp_names": [
+      "Satish Narayana Srirama"
+    ],
+    "dblp_urls": [
+      "https://dblp.org/pid/09/1571.html"
+    ],
+    "dblp_count": 197,
+    "dblp_pid": "09/1571",
+    "dblp_matched": true
+  },
+  {
+    "name": "Sobha Rani T.",
+    "designation": "Associate Professor",
+    "email": "sobharani@uohyd.ac.in",
+    "phone": "",
+    "department": "SCIS",
+    "dblp_names": [
+      "T. Sobha Rani"
+    ],
+    "dblp_urls": [
+      "https://dblp.org/pid/51/1349.html"
+    ],
+    "dblp_count": 23,
+    "dblp_pid": "51/1349",
+    "dblp_matched": true
+  },
+  {
+    "name": "Srinivasa Rao Battula",
+    "designation": "Professor",
+    "email": "srinivas.battula@uohyd.ac.in",
+    "phone": "",
+    "department": "SCIS",
+    "dblp_names": [
+      "Battula Srinivasa Rao",
+      "Srinivasa Rao Battula"
+    ],
+    "dblp_urls": [
+      "https://dblp.org/pid/338/9977.html",
+      "https://dblp.org/pid/385/8058.html"
+    ],
+    "dblp_count": 6,
+    "dblp_pid": "338/9977",
+    "dblp_matched": true
+  },
+  {
+    "name": "Subba Rao Y.V.",
+    "designation": "Associate Professor",
+    "email": "yvsrcs@uohyd.ac.in",
+    "phone": "",
+    "department": "SCIS",
+    "dblp_names": [
+      "Y. V. Subba Rao"
+    ],
+    "dblp_urls": [
+      "https://dblp.org/pid/50/971.html"
+    ],
+    "dblp_count": 13,
+    "dblp_pid": "50/971",
+    "dblp_matched": true
+  },
+  {
+    "name": "Swarupa Rani K.",
+    "designation": "Professor",
+    "email": "swarupacs@uohyd.ac.in",
+    "phone": "",
+    "department": "SCIS",
+    "dblp_names": [
+      "K. Swarupa Rani"
+    ],
+    "dblp_urls": [
+      "https://dblp.org/pid/77/10593.html"
+    ],
+    "dblp_count": 14,
+    "dblp_pid": "77/10593",
+    "dblp_matched": true
+  },
+  {
+    "name": "Vineet C. P. Nair",
+    "designation": "Professor",
+    "email": "vineetnair@uohyd.ac.in",
+    "phone": "",
+    "department": "SCIS",
+    "dblp_names": [
+      "Vineet Padmanabhan"
+    ],
+    "dblp_urls": [
+      "https://dblp.org/pid/98/255.html"
+    ],
+    "dblp_count": 87,
+    "dblp_pid": "98/255",
+    "dblp_matched": true
+  },
+  {
+    "name": "Wilson Naik Bhukya",
+    "designation": "Associate Professor",
+    "email": "rathore@uohyd.ac.in",
+    "phone": "",
+    "department": "SCIS",
+    "dblp_names": [
+      "Wilson Naik Bhukya",
+      "Wilson Naik"
+    ],
+    "dblp_urls": [
+      "https://dblp.org/pid/05/2858.html",
+      "https://dblp.org/pid/350/3124.html"
+    ],
+    "dblp_count": 14,
+    "dblp_pid": "05/2858",
+    "dblp_matched": true
+  },
+  {
+    "name": "Arun Agarwal",
+    "designation": "Senior Professor",
+    "email": "arunagarwal@uohyd.ac.in",
+    "phone": "",
+    "department": "SCIS",
+    "dblp_names": [
+      "Arun Agarwal"
+    ],
+    "dblp_urls": [
+      "https://dblp.org/pid/97/3869.html", 74
+    ],
+    "dblp_pid": "97/3869",
+    "dblp_matched": true
+  },
+  {
+    "name": "Arun K Pujari",
+    "designation": "Professor",
+    "email": "akpcs@uohyd.ernet.in",
+    "phone": "",
+    "department": "SCIS",
+    "dblp_names": [
+      "Arun K. Pujari"
+    ],
+    "dblp_urls": [
+      "https://dblp.org/pid/95/6184.html", 113
+    ],
+    "dblp_pid": "95/6184",
+    "dblp_matched": true
+  },
+  {
+    "name": "Bapi Raju S.",
+    "designation": "Professor",
+    "email": "bapics@uohyd.ernet.in",
+    "phone": "",
+    "department": "SCIS",
+    "dblp_names": [
+      "S. Bapi Raju",
+      "Bapi Raju Surampudi"
+    ],
+    "dblp_urls": [
+      "https://dblp.org/pid/50/1424.html", 139
+    ],
+    "dblp_pid": "50/1424",
+    "dblp_matched": true
+  },
+  {
+    "name": "Girija P.N.",
+    "designation": "Professor",
+    "email": "pngcs@uohyd.ernet.in",
+    "phone": "",
+    "department": "SCIS",
+    "dblp_names": [
+      "P. N. Girija"
+    ],
+    "dblp_urls": [
+      "https://dblp.org/pid/10/2362.html", 3
+    ],
+    "dblp_pid": "10/2362",
+    "dblp_matched": true
+  },
+  {
+    "name": "Hrushikesha Mohanty",
+    "designation": "Professor",
+    "email": "hmcs@uohyd.ernet.in",
+    "phone": "",
+    "department": "SCIS",
+    "dblp_names": [
+      "Hrushikesha Mohanty"
+    ],
+    "dblp_urls": [
+      "https://dblp.org/pid/74/5678.html", 56
+    ],
+    "dblp_pid": "74/5678",
+    "dblp_matched": true
+  },
+  {
+    "name": "Narayana Murthy K.",
+    "designation": "Professor",
+    "email": "knmcs@uohyd.ac.in",
+    "phone": "",
+    "department": "SCIS",
+    "dblp_names": [
+      "Narayana Murthy Kavi",
+      "Kavi Narayana Murthy"
+    ],
+    "dblp_urls": [
+      "https://dblp.org/pid/94/4013.html", 15
+    ],
+    "dblp_pid": "94/4013",
+    "dblp_matched": true
+  },
+  {
+    "name": "Raghavendra Rao C.",
+    "designation": "Senior Professor",
+    "email": "crrao@uohyd.ac.in",
+    "phone": "",
+    "department": "SCIS",
+    "dblp_names": [
+      "C. Raghavendra Rao 0001",
+      "Chillarige Raghavendra Rao"
+    ],
+    "dblp_urls": [
+      "https://dblp.org/pid/07/5281-1.html"
+    ],
+    "dblp_count": 83,
+    "dblp_pid": "07/5281-1",
+    "dblp_matched": true
+  },
+  {
+    "name": "Venkaiah V.C.",
+    "designation": "Professor",
+    "email": "vvcs@uohyd.ac.in",
+    "phone": "",
+    "department": "SCIS",
+    "dblp_names": [
+      "V. Ch. Venkaiah"
+    ],
+    "dblp_urls": [
+      "https://dblp.org/pid/66/8044.html"
+    ],
+    "dblp_count": 35,
+    "dblp_pid": "66/8044",
+    "dblp_matched": true
+  }
+]
