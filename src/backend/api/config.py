@@ -28,9 +28,13 @@ class Settings(BaseSettings):
     DB_NAME: str = "scislisa-service"
     
     # CORS
-    CORS_ORIGINS: list[str] = ["http://localhost:3000", "http://localhost:8000"]
-    CORS_CREDENTIALS: bool = True
-    CORS_METHODS: list[str] = ["*"]
+    CORS_ORIGINS: list[str] = [
+        "http://localhost:3000",
+        "http://localhost:5173",  # Vite dev server
+        "http://localhost:8000"
+    ]
+    CORS_CREDENTIALS: bool = False
+    CORS_METHODS: list[str] = ["GET", "POST", "PUT", "DELETE", "OPTIONS"]
     CORS_HEADERS: list[str] = ["*"]
     
     # Pagination

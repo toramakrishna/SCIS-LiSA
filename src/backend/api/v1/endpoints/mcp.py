@@ -36,17 +36,114 @@ class QueryResponse(BaseModel):
     question: str
     sql: Optional[str]
     explanation: str
+    note: Optional[str] = None  # Assumptions or context about the query
     data: List[Dict[str, Any]]
     visualization: Dict[str, Any]
     row_count: int
     confidence: Optional[float] = None
     error: Optional[str] = None
+    suggested_questions: List[str] = []
 
 
 # Initialize agent (will be created per request to allow model selection)
 def get_agent(model: str = "llama3.2") -> OllamaAgent:
     """Get or create Ollama agent instance"""
     return OllamaAgent(model=model)
+
+
+def generate_follow_up_questions(question: str, data: List[Dict[str, Any]], sql: str) -> List[str]:
+    """
+    Generate contextual follow-up questions based on the query and results.
+    
+    Args:
+        question: Original user question
+        data: Query results
+        sql: Generated SQL query
+        
+    Returns:
+        List of suggested follow-up questions
+    """
+    suggestions = []
+    
+    # Analyze the question type and results
+    question_lower = question.lower()
+    has_data = len(data) > 0
+    
+    # Check what was asked about
+    is_trend = any(word in question_lower for word in ['trend', 'over time', 'years', 'timeline'])
+    is_top = any(word in question_lower for word in ['top', 'best', 'most', 'highest'])
+    is_faculty = any(word in question_lower for word in ['faculty', 'professor', 'researcher'])
+    is_venue = any(word in question_lower for word in ['venue', 'journal', 'conference'])
+    is_collaboration = any(word in question_lower for word in ['collaboration', 'coauthor', 'together'])
+    is_count = any(word in question_lower for word in ['how many', 'count', 'number of'])
+    
+    if has_data:
+        # Get column names from first row
+        columns = list(data[0].keys()) if data else []
+        
+        # Extract specific names/values from results for context
+        first_row = data[0] if data else {}
+        top_name = first_row.get('name', None)
+        
+        # For faculty queries with top results
+        if is_faculty and is_top and 'name' in columns:
+            # Get top 3 faculty names
+            faculty_names = [row.get('name') for row in data[:3] if row.get('name')]
+            if len(faculty_names) >= 2:
+                name_list = f"{faculty_names[0]}, {faculty_names[1]}"
+                if len(faculty_names) > 2:
+                    name_list += f", and {faculty_names[2]}"
+                suggestions.append(f"Show publication trends for {name_list} over the last 5 years")
+                suggestions.append(f"What are the top venues where {faculty_names[0]} publishes?")
+                suggestions.append(f"Show collaborations between {faculty_names[0]} and {faculty_names[1]}")
+            elif len(faculty_names) == 1:
+                suggestions.append(f"Show publication trends for {faculty_names[0]} over the last 5 years")
+                suggestions.append(f"What are the top venues where {faculty_names[0]} publishes?")
+                suggestions.append(f"Who are {faculty_names[0]}'s main collaborators?")
+        elif is_faculty and not is_trend and top_name:
+            suggestions.append(f"Show publication trends for {top_name} over time")
+            suggestions.append(f"What are {top_name}'s most cited publications?")
+            
+        # For trend queries
+        if is_trend:
+            suggestions.append("Which faculty contributed most to publications in recent years?")
+            suggestions.append("Break down publication trends by type")
+            suggestions.append("Show the top publication venues for recent years")
+            
+        # For venue queries
+        if is_venue and 'venue' in columns:
+            venue_names = [row.get('venue') for row in data[:2] if row.get('venue')]
+            if venue_names:
+                suggestions.append(f"Which faculty publish most in {venue_names[0]}?")
+                suggestions.append("Show publication trends in top venues over time")
+            else:
+                suggestions.append("Which faculty publish most in these venues?")
+                suggestions.append("Show publication trends in these venues over time")
+            
+        # For collaboration queries
+        if is_collaboration:
+            suggestions.append("Show the most productive faculty collaborations")
+            suggestions.append("Which faculty have the most diverse collaboration networks?")
+            suggestions.append("Show publication counts for collaborative work")
+            
+        # Generic follow-ups based on result structure
+        if 'name' in columns and 'publication_count' in columns and not suggestions:
+            if top_name:
+                suggestions.append(f"Show publication trends for {top_name}")
+                suggestions.append(f"What venues does {top_name} publish in?")
+        
+        if 'year' in columns and not suggestions:
+            suggestions.append("What are the top publication venues in recent years?")
+            suggestions.append("Which faculty are most productive in recent years?")
+            
+    else:
+        # No data returned
+        suggestions.append("Show top 10 faculty by publication count")
+        suggestions.append("Show publication trends over the last 10 years")
+        suggestions.append("What are the most popular publication venues?")
+        
+    # Limit to 3 suggestions and make them unique
+    return list(dict.fromkeys(suggestions))[:3]
 
 
 @router.post("/query", response_model=QueryResponse)
@@ -128,14 +225,19 @@ async def natural_language_query(
         if 'series' in generation_result:
             viz_config['series'] = generation_result['series']
         
+        # Generate follow-up questions
+        suggested_questions = generate_follow_up_questions(request.question, data, sql)
+        
         return QueryResponse(
             question=request.question,
             sql=sql,
             explanation=generation_result['explanation'],
+            note=generation_result.get('note'),  # Include the note if present
             data=data,
             visualization=viz_config,
             row_count=len(data),
-            confidence=generation_result.get('confidence')
+            confidence=generation_result.get('confidence'),
+            suggested_questions=suggested_questions
         )
         
     except Exception as e:

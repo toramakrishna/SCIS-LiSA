@@ -182,6 +182,19 @@ ORDER BY publication_count DESC;
 """
 
 QUERY_EXAMPLES = {
+    "simple_count": {
+        "question": "How many publications does Satish Srirama have?",
+        "sql": """
+SELECT COUNT(DISTINCT p.id) as publication_count
+FROM publications p
+JOIN publication_authors pa ON p.id = pa.publication_id
+JOIN authors a ON pa.author_id = a.id
+WHERE a.name ILIKE '%Satish%Srirama%';
+""",
+        "visualization": "none",
+        "explanation": "Satish Narayana Srirama has published 78 papers in total.",
+        "note": "Using partial name matching to handle name variations. No chart needed for a single number."
+    },
     "publications_by_year": {
         "question": "Show publication trends over the years",
         "sql": """
@@ -210,6 +223,22 @@ LIMIT 10;
         "visualization": "bar_chart",
         "x_axis": "name",
         "y_axis": "publications"
+    },
+    "top_faculty_by_year": {
+        "question": "Who published the most in 2024?",
+        "sql": """
+SELECT a.name, COUNT(DISTINCT p.id) as publications
+FROM authors a
+JOIN publication_authors pa ON a.id = pa.author_id
+JOIN publications p ON pa.publication_id = p.id
+WHERE a.is_faculty = true AND p.year = 2024
+GROUP BY a.id, a.name
+ORDER BY publications DESC
+LIMIT 1;
+""",
+        "visualization": "none",
+        "explanation": "The most productive faculty member in 2024",
+        "note": "Returns a single faculty member - no chart needed for simple answer"
     },
     "publication_types": {
         "question": "What types of publications do faculty produce?",
@@ -279,6 +308,32 @@ LIMIT 20;
 """,
         "visualization": "table",
         "columns": ["title", "year", "publication_type", "venue", "authors"]
+    },
+    "faculty_member_publications": {
+        "question": "What are the recent publications by Satish Srirama?",
+        "sql": """
+SELECT 
+    p.title,
+    p.year,
+    p.publication_type,
+    COALESCE(p.journal, p.booktitle) as venue,
+    STRING_AGG(a.name, ', ') as authors
+FROM publications p
+JOIN publication_authors pa ON p.id = pa.publication_id
+JOIN authors a ON pa.author_id = a.id
+WHERE EXISTS (
+    SELECT 1 FROM publication_authors pa2
+    JOIN authors a2 ON pa2.author_id = a2.id
+    WHERE pa2.publication_id = p.id 
+    AND a2.name ILIKE '%Satish%Srirama%'
+)
+GROUP BY p.id, p.title, p.year, p.publication_type, p.journal, p.booktitle
+ORDER BY p.year DESC, p.title
+LIMIT 10;
+""",
+        "visualization": "table",
+        "columns": ["title", "year", "publication_type", "venue", "authors"],
+        "note": "Using partial name matching with ILIKE to handle name variations like 'Satish Narayana Srirama' or 'Satish N. Srirama'"
     },
     "faculty_growth": {
         "question": "How has faculty publication output changed over time?",

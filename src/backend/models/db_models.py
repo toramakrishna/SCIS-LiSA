@@ -15,10 +15,14 @@ publication_authors = Table(
     Column('publication_id', Integer, ForeignKey('publications.id', ondelete='CASCADE'), nullable=False),
     Column('author_id', Integer, ForeignKey('authors.id', ondelete='CASCADE'), nullable=False),
     Column('author_position', Integer),  # Position in author list (1st, 2nd, etc.)
+    Column('is_verified', Boolean, default=None),  # None=pending, True=accepted, False=rejected
+    Column('verified_at', DateTime),
+    Column('verified_by', String(255)),  # Email/ID of person who verified
     Column('created_at', DateTime, default=datetime.utcnow),
     UniqueConstraint('publication_id', 'author_id', name='uq_pub_author'),
     Index('idx_pub_authors_pub', 'publication_id'),
-    Index('idx_pub_authors_author', 'author_id')
+    Index('idx_pub_authors_author', 'author_id'),
+    Index('idx_pub_authors_verified', 'is_verified')
 )
 
 
@@ -38,6 +42,8 @@ class Author(Base):
     department = Column(String(255), default='SCIS')
     designation = Column(String(255))
     phone = Column(String(50))
+    homepage = Column(String(500))
+    research_interests = Column(Text)
     
     # Statistics
     total_publications = Column(Integer, default=0)

@@ -109,13 +109,18 @@ class PublicationSchema(PublicationBase, TimestampMixin):
     author_count: Optional[int] = 0
     has_faculty_author: bool = False
     source_pids: Optional[List[str]] = []
+    authors: Optional[List[str]] = []  # List of author names for DBLP format
+    editor: Optional[str] = None
+    series: Optional[str] = None
+    ee: Optional[str] = None
+    is_verified: Optional[bool] = None  # Verification status for current faculty
     
     model_config = ConfigDict(from_attributes=True)
 
 
 class PublicationDetail(PublicationSchema):
     """Detailed publication with authors"""
-    authors: List[AuthorSchema] = []
+    author_objects: List[AuthorSchema] = []
     venue_name: Optional[str] = None
 
 
@@ -140,6 +145,11 @@ class FacultySchema(FacultyBase, TimestampMixin):
     id: int
     dblp_names: Optional[List[str]] = []
     dblp_urls: Optional[List[str]] = []
+    publication_count: Optional[int] = 0
+    total_publications: Optional[int] = 0
+    h_index: Optional[int] = None
+    homepage: Optional[str] = None
+    research_interests: Optional[str] = None
     
     model_config = ConfigDict(from_attributes=True)
 
@@ -268,5 +278,23 @@ class FilterParams(BaseModel):
     has_faculty_author: Optional[bool] = None
     author_id: Optional[int] = None
     venue_id: Optional[int] = None
+
+
+# Publication Attribution Verification
+class AttributionVerificationRequest(BaseModel):
+    """Request to verify/reject a publication attribution"""
+    publication_id: int
+    faculty_id: int
+    is_verified: bool  # True = accept, False = reject
+    verified_by: Optional[str] = None  # Email or identifier of verifier
+
+
+class AttributionVerificationResponse(BaseModel):
+    """Response after verifying attribution"""
+    success: bool
+    message: str
+    publication_id: int
+    faculty_id: int
+    is_verified: bool
     journal: Optional[str] = None
     booktitle: Optional[str] = None

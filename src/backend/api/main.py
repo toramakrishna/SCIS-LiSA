@@ -71,13 +71,13 @@ app = FastAPI(
     default_response_class=PrettyJSONResponse
 )
 
-# CORS middleware
+# CORS middleware - Allow all origins in development
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=settings.CORS_ORIGINS,
-    allow_credentials=settings.CORS_CREDENTIALS,
-    allow_methods=settings.CORS_METHODS,
-    allow_headers=settings.CORS_HEADERS,
+    allow_origins=["*"],  # Allow all origins in development
+    allow_credentials=False,
+    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allow_headers=["*"],
 )
 
 

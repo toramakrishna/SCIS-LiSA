@@ -4,7 +4,7 @@ Combines all API endpoint routers
 """
 
 from fastapi import APIRouter
-from api.v1.endpoints import publications, faculty, authors, venues, analytics, mcp
+from api.v1.endpoints import publications, faculty, authors, venues, analytics, mcp, admin
 
 api_router = APIRouter()
 
@@ -42,4 +42,10 @@ api_router.include_router(
 api_router.include_router(
     mcp.router,
     tags=["MCP Analytics"]
+)
+
+api_router.include_router(
+    admin.router,
+    prefix="/admin",
+    tags=["Admin"]
 )
