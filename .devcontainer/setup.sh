@@ -59,10 +59,10 @@ cd /workspaces/SCISLiSA/src/backend
 if [ ! -f ".env" ]; then
     cat > .env << EOF
 # Database Configuration
-DATABASE_URL=postgresql://scislisa:scislisa_pass@localhost:5432/scislisa_db
-POSTGRES_USER=scislisa
-POSTGRES_PASSWORD=scislisa_pass
-POSTGRES_DB=scislisa_db
+DATABASE_URL=postgresql://postgres:postgres@localhost:5432/scislisa-service
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=postgres
+POSTGRES_DB=scislisa-service
 
 # Ollama Configuration
 OLLAMA_URL=http://localhost:11434

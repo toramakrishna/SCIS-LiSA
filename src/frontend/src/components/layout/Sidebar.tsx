@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import { Home, Search, TrendingUp, Users } from 'lucide-react';
+import { Home, Search, TrendingUp, Users, Settings } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const navigation = [
@@ -7,6 +7,7 @@ const navigation = [
   { name: 'Query', path: '/query', icon: Search, gradient: 'from-purple-500 to-pink-600', color: 'text-purple-600' },
   { name: 'Faculty', path: '/faculty', icon: Users, gradient: 'from-green-500 to-emerald-600', color: 'text-green-600' },
   { name: 'Analytics', path: '/analytics', icon: TrendingUp, gradient: 'from-orange-500 to-yellow-600', color: 'text-orange-600' },
+  { name: 'Admin', path: '/admin', icon: Settings, gradient: 'from-red-500 to-orange-600', color: 'text-red-600' },
 ];
 
 export function Sidebar() {

@@ -5,6 +5,7 @@ import { QueryPage } from '@/pages/QueryPage';
 import { AnalyticsPage } from '@/pages/AnalyticsPage';
 import { FacultyPage } from '@/pages/FacultyPage';
 import { FacultyDetailPage } from '@/pages/FacultyDetailPage';
+import { AdminPage } from '@/pages/AdminPage';
 
 export const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ export const router = createBrowserRouter([
       {
         path: 'analytics',
         element: <AnalyticsPage />,
+      },
+      {
+        path: 'admin',
+        element: <AdminPage />,
       },
     ],
   },

@@ -123,7 +123,7 @@ curl http://localhost:8000/api/v1/analytics/overview
 
 ### Database Connection Error
 - Ensure PostgreSQL is running: `docker ps`
-- Check database exists: `docker exec postgres psql -U postgres -l | grep scislisa`
+- Check database exists: `docker exec postgres psql -U postgres -l | grep postgres`
 
 ### Import Errors
 - Install missing packages: `pip install -r requirements.txt`

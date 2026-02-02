@@ -63,9 +63,9 @@ This repository is configured to run seamlessly in GitHub Codespaces with all de
 ### Database
 - Host: `localhost`
 - Port: `5432`
-- Database: `scislisa_db`
-- User: `scislisa`
-- Password: `scislisa_pass`
+- Database: `scislisa-service`
+- User: `postgres`
+- Password: `postgres`
 
 ## 🔧 Optional: Enable Natural Language Query (Ollama)
 

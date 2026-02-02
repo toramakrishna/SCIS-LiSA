@@ -12,7 +12,8 @@ import {
   BookOpen, 
   Award,
   ExternalLink,
-  Maximize2
+  Maximize2,
+  Database
 } from 'lucide-react';
 import type { Author, Publication } from '@/types';
 
@@ -125,6 +126,19 @@ export function FacultyCard({
           >
             <ExternalLink className="h-4 w-4" />
             <span>Visit Homepage</span>
+          </a>
+        )}
+
+        {/* DBLP Profile Link */}
+        {faculty.dblp_pid && (
+          <a
+            href={`https://dblp.org/pid/${faculty.dblp_pid}.html`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-sm text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 transition-colors font-medium"
+          >
+            <Database className="h-4 w-4" />
+            <span>View DBLP Profile</span>
           </a>
         )}
 
