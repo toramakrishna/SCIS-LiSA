@@ -1,6 +1,6 @@
 import { Card } from '@/components/ui/card';
 import { EXAMPLE_QUERIES, CHART_TYPE_COLORS } from '@/lib/constants/exampleQueries';
-import { BarChart3, TrendingUp, PieChart, Table, MessageSquare } from 'lucide-react';
+import { BarChart3, TrendingUp, PieChart, Table, MessageSquare, Network, Activity } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 interface FrequentlyAskedQuestionsProps {
@@ -12,6 +12,8 @@ const CHART_ICONS = {
   line: TrendingUp,
   pie: PieChart,
   table: Table,
+  network: Network,
+  scatter: Activity,
   none: MessageSquare
 };
 
@@ -25,7 +27,7 @@ export function FrequentlyAskedQuestions({ onSelectQuery }: FrequentlyAskedQuest
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         {EXAMPLE_QUERIES.map((example, index) => {
-          const Icon = CHART_ICONS[example.chartType];
+          const Icon = CHART_ICONS[example.chartType] || MessageSquare;
           
           return (
             <Card
@@ -40,7 +42,7 @@ export function FrequentlyAskedQuestions({ onSelectQuery }: FrequentlyAskedQuest
                       {example.question}
                     </h3>
                   </div>
-                  <Icon className="h-5 w-5 text-slate-400 dark:text-slate-500 shrink-0" />
+                  {Icon && <Icon className="h-5 w-5 text-slate-400 dark:text-slate-500 shrink-0" />}
                 </div>
                 
                 <p className="text-xs text-slate-500 dark:text-slate-400 line-clamp-1">

@@ -208,3 +208,7 @@ __marimo__/
 dataset/.DS_Store
 dataset/csv/.DS_Store
 src/.DS_Store
+
+# Database backups
+database_backups/*.sql
+*.sql

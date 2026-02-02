@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Card, CardContent } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { FacultyCard } from '@/components/faculty/FacultyCard';
@@ -9,9 +9,10 @@ import {
   Users,
   Filter,
   SortAsc,
-  Loader2
+  Loader2,
+  AlertCircle
 } from 'lucide-react';
-import axios from 'axios';
+import { mcpAPI } from '@/lib/api/endpoints';
 import type { Author, Publication } from '@/types';
 
 interface FacultyWithPublications extends Author {
@@ -26,24 +27,23 @@ export function FacultyPage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [sortBy, setSortBy] = useState('name');
   const [totalCount, setTotalCount] = useState(0);
+  const [error, setError] = useState<string | null>(null);
 
   const loadFaculty = async (refresh = false) => {
     try {
       if (refresh) setIsRefreshing(true);
       else setIsLoading(true);
+      setError(null);
 
-      const response = await axios.get('http://localhost:8000/api/v1/faculty/', {
-        params: {
-          page: 1,
-          page_size: 100,
-          sort_by: sortBy
-        }
-      });
+      const response = await mcpAPI.faculty.list();
 
-      setFaculty(response.data.items);
-      setTotalCount(response.data.total);
-    } catch (error) {
+      setFaculty(response.items || []);
+      setTotalCount(response.total || 0);
+    } catch (error: any) {
       console.error('Failed to load faculty:', error);
+      const errorMsg = error?.message || 'Cannot connect to backend server. Make sure the backend is running at http://localhost:8000';
+      setError(errorMsg);
+      setFaculty([]);
     } finally {
       setIsLoading(false);
       setIsRefreshing(false);
@@ -59,19 +59,11 @@ export function FacultyPage() {
     ));
 
     try {
-      const response = await axios.get(
-        `http://localhost:8000/api/v1/faculty/${facultyId}/publications`,
-        {
-          params: {
-            page: 1,
-            page_size: 100
-          }
-        }
-      );
+      const response = await mcpAPI.faculty.publications(facultyId);
 
       setFaculty(prev => prev.map(f =>
         f.id === facultyId
-          ? { ...f, publications: response.data.items, isLoadingPublications: false }
+          ? { ...f, publications: response.items || [], isLoadingPublications: false }
           : f
       ));
     } catch (error) {
@@ -197,6 +189,25 @@ export function FacultyPage() {
       </div>
 
       {/* Faculty Grid */}
+      {error && (
+        <Card className="border-l-4 border-l-red-500 bg-gradient-to-r from-red-50 to-pink-50 dark:from-red-950/30 dark:to-pink-950/30">
+          <CardContent className="p-4 flex items-start gap-3">
+            <AlertCircle className="h-5 w-5 text-red-600 dark:text-red-400 shrink-0 mt-0.5" />
+            <div className="flex-1">
+              <p className="font-medium text-red-700 dark:text-red-400">Error Loading Faculty</p>
+              <p className="text-sm text-red-600 dark:text-red-300 mt-1">{error}</p>
+              <Button 
+                onClick={() => loadFaculty()} 
+                size="sm" 
+                className="mt-3 bg-red-600 hover:bg-red-700 text-white"
+              >
+                Try Again
+              </Button>
+            </div>
+          </CardContent>
+        </Card>
+      )}
+
       {isLoading ? (
         <div className="flex items-center justify-center py-12">
           <Loader2 className="h-8 w-8 animate-spin text-blue-600" />
