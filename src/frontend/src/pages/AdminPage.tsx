@@ -13,11 +13,10 @@ import {
   Activity,
   Settings,
   BarChart3,
-  RefreshCw
+  RefreshCw,
+  AlertCircle
 } from 'lucide-react';
-import axios from 'axios';
-
-const API_BASE_URL = 'http://localhost:8000/api/v1';
+import { mcpAPI } from '@/lib/api/endpoints';
 
 interface ConnectionConfig {
   host: string;
@@ -80,8 +79,9 @@ export function AdminPage() {
     if (fetchStatus.status === 'running' || fetchStatus.status === 'starting') {
       interval = setInterval(async () => {
         try {
-          const response = await axios.get(`${API_BASE_URL}/admin/fetch-status`);
-          setFetchStatus(response.data);
+          const response = await fetch(`/api/v1/admin/fetch-status`);
+          const data = await response.json();
+          setFetchStatus(data);
         } catch (error) {
           console.error('Failed to get fetch status:', error);
         }
@@ -97,11 +97,12 @@ export function AdminPage() {
     if (ingestStatus.status === 'running' || ingestStatus.status === 'starting') {
       interval = setInterval(async () => {
         try {
-          const response = await axios.get(`${API_BASE_URL}/admin/ingest-status`);
-          setIngestStatus(response.data);
+          const response = await fetch(`/api/v1/admin/ingest-status`);
+          const data = await response.json();
+          setIngestStatus(data);
           
           // Refresh stats when ingestion completes
-          if (response.data.status === 'completed') {
+          if (data.status === 'completed') {
             loadDatabaseStats();
           }
         } catch (error) {
@@ -123,12 +124,18 @@ export function AdminPage() {
     setConnectionMessage('Testing current database connection...');
 
     try {
-      const response = await axios.get(`${API_BASE_URL}/admin/test-current-db`);
-      setConnectionStatus('success');
-      setConnectionMessage(`Connected successfully! Database version: ${response.data.database_version.split(' ')[1]}`);
+      const response = await fetch(`/api/v1/admin/test-current-db`);
+      const data = await response.json();
+      if (response.ok) {
+        setConnectionStatus('success');
+        setConnectionMessage(`Connected successfully! Database version: ${data.database_version?.split(' ')[1] || 'Unknown'}`);
+      } else {
+        setConnectionStatus('error');
+        setConnectionMessage(data.detail || 'Connection failed');
+      }
     } catch (error: any) {
       setConnectionStatus('error');
-      setConnectionMessage(error.response?.data?.detail || 'Connection failed');
+      setConnectionMessage(error.message || 'Connection failed');
     }
   };
 
@@ -137,12 +144,22 @@ export function AdminPage() {
     setConnectionMessage('Testing custom database connection...');
 
     try {
-      const response = await axios.post(`${API_BASE_URL}/admin/test-db-connection`, connectionConfig);
-      setConnectionStatus('success');
-      setConnectionMessage('Custom connection successful!');
+      const response = await fetch(`/api/v1/admin/test-db-connection`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(connectionConfig)
+      });
+      const data = await response.json();
+      if (response.ok) {
+        setConnectionStatus('success');
+        setConnectionMessage('Custom connection successful!');
+      } else {
+        setConnectionStatus('error');
+        setConnectionMessage(data.detail || 'Connection failed');
+      }
     } catch (error: any) {
       setConnectionStatus('error');
-      setConnectionMessage(error.response?.data?.detail || 'Connection failed');
+      setConnectionMessage(error.message || 'Connection failed');
     }
   };
 
@@ -151,46 +168,72 @@ export function AdminPage() {
     setDblpApiMessage('Testing DBLP API connectivity...');
 
     try {
-      const response = await axios.get(`${API_BASE_URL}/admin/test-dblp-api`);
-      setDblpApiStatus('success');
-      setDblpApiMessage(response.data.message);
+      const response = await fetch(`/api/v1/admin/test-dblp-api`);
+      const data = await response.json();
+      if (response.ok) {
+        setDblpApiStatus('success');
+        setDblpApiMessage(data.message);
+      } else {
+        setDblpApiStatus('error');
+        setDblpApiMessage(data.detail || 'DBLP API test failed');
+      }
     } catch (error: any) {
       setDblpApiStatus('error');
-      setDblpApiMessage(error.response?.data?.detail || 'DBLP API test failed');
+      setDblpApiMessage(error.message || 'DBLP API test failed');
     }
   };
 
   const startFetchDblp = async () => {
     try {
-      await axios.post(`${API_BASE_URL}/admin/fetch-dblp-data`, {
-        output_directory: fetchPath,
-        faculty_json_path: 'src/backend/references/dblp/faculty_dblp_matched.json'
+      const response = await fetch(`/api/v1/admin/fetch-dblp-data`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          output_directory: fetchPath,
+          faculty_json_path: 'src/backend/references/dblp/faculty_dblp_matched.json'
+        })
       });
-      setFetchStatus({ status: 'starting', progress: 0, message: 'Starting fetch...' });
+      const data = await response.json();
+      if (response.ok) {
+        setFetchStatus({ status: 'starting', progress: 0, message: 'Starting fetch...' });
+      } else {
+        alert(`Failed to start fetch: ${data.detail || 'Unknown error'}`);
+      }
     } catch (error: any) {
-      alert(`Failed to start fetch: ${error.response?.data?.detail || 'Unknown error'}`);
+      alert(`Failed to start fetch: ${error.message || 'Unknown error'}`);
     }
   };
 
   const startIngestion = async () => {
     try {
-      await axios.post(`${API_BASE_URL}/admin/ingest-data`, {
-        dataset_path: ingestPath,
-        source_name: 'DBLP'
+      const response = await fetch(`/api/v1/admin/ingest-data`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          dataset_path: ingestPath,
+          source_name: 'DBLP'
+        })
       });
-      setIngestStatus({ status: 'starting', progress: 0, message: 'Starting ingestion...' });
+      const data = await response.json();
+      if (response.ok) {
+        setIngestStatus({ status: 'starting', progress: 0, message: 'Starting ingestion...' });
+      } else {
+        alert(`Failed to start ingestion: ${data.detail || 'Unknown error'}`);
+      }
     } catch (error: any) {
-      alert(`Failed to start ingestion: ${error.response?.data?.detail || 'Unknown error'}`);
+      alert(`Failed to start ingestion: ${error.message || 'Unknown error'}`);
     }
   };
 
   const loadDatabaseStats = async () => {
     setStatsLoading(true);
     try {
-      const response = await axios.get(`${API_BASE_URL}/admin/database-stats`);
-      setDbStats(response.data.stats);
-    } catch (error) {
+      const response = await mcpAPI.analytics.stats();
+      setDbStats(response.stats || response);
+    } catch (error: any) {
       console.error('Failed to load database stats:', error);
+      const errorMsg = error?.message || 'Cannot connect to backend. Make sure the backend is running at http://localhost:8000';
+      alert(errorMsg);
     } finally {
       setStatsLoading(false);
     }

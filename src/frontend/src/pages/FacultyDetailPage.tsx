@@ -16,7 +16,6 @@ import {
   Loader2
 } from 'lucide-react';
 import type { Author, Publication } from '@/types';
-import axios from 'axios';
 
 export function FacultyDetailPage() {
   const { id } = useParams<{ id: string }>();
@@ -50,24 +49,28 @@ export function FacultyDetailPage() {
       // First try to get faculty details directly - if endpoint exists
       // Otherwise fall back to searching in the list
       try {
-        const directResponse = await axios.get(`http://localhost:8000/api/v1/faculty/${id}`);
-        setFaculty(directResponse.data);
+        const response = await fetch(`/api/v1/faculty/${id}`);
+        if (response.ok) {
+          const data = await response.json();
+          setFaculty(data);
+        } else {
+          throw new Error('Direct fetch failed');
+        }
       } catch {
         // Fallback: search in paginated list
         let found = false;
         let page = 1;
         
         while (!found) {
-          const response = await axios.get(`http://localhost:8000/api/v1/faculty/`, {
-            params: { page, page_size: 100 }
-          });
+          const response = await fetch(`/api/v1/faculty/?page=${page}&page_size=100`);
+          const data = await response.json();
           
-          const facultyMember = response.data.items.find((f: Author) => f.id === parseInt(id!));
+          const facultyMember = data.items.find((f: Author) => f.id === parseInt(id!));
           
           if (facultyMember) {
             setFaculty(facultyMember);
             found = true;
-          } else if (page >= response.data.pages) {
+          } else if (page >= data.pages) {
             // Reached last page, faculty not found
             console.error('Faculty member not found');
             break;
@@ -86,17 +89,12 @@ export function FacultyDetailPage() {
   const loadPublications = async (page: number) => {
     setIsLoadingPublications(true);
     try {
-      const response = await axios.get(
-        `http://localhost:8000/api/v1/faculty/${id}/publications`,
-        {
-          params: {
-            page,
-            page_size: pageSize
-          }
-        }
+      const response = await fetch(
+        `/api/v1/faculty/${id}/publications?page=${page}&page_size=${pageSize}`
       );
-      setPublications(response.data.items);
-      setTotalPages(response.data.pages);
+      const data = await response.json();
+      setPublications(data.items);
+      setTotalPages(data.pages);
       setCurrentPage(page);
     } catch (error) {
       console.error('Failed to load publications:', error);
@@ -120,31 +118,21 @@ export function FacultyDetailPage() {
       let totalPages = 1;
       
       // Fetch first page to get total pages
-      const firstResponse = await axios.get(
-        `http://localhost:8000/api/v1/faculty/${id}/publications`,
-        {
-          params: {
-            page: 1,
-            page_size: 100
-          }
-        }
+      const firstResponse = await fetch(
+        `/api/v1/faculty/${id}/publications?page=1&page_size=100`
       );
+      const firstData = await firstResponse.json();
       
-      allPublications = firstResponse.data.items;
-      totalPages = firstResponse.data.pages;
+      allPublications = firstData.items;
+      totalPages = firstData.pages;
       
       // Fetch remaining pages
       for (let page = 2; page <= totalPages; page++) {
-        const response = await axios.get(
-          `http://localhost:8000/api/v1/faculty/${id}/publications`,
-          {
-            params: {
-              page,
-              page_size: 100
-            }
-          }
+        const response = await fetch(
+          `/api/v1/faculty/${id}/publications?page=${page}&page_size=100`
         );
-        allPublications = [...allPublications, ...response.data.items];
+        const data = await response.json();
+        allPublications = [...allPublications, ...data.items];
       }
       
       console.log('Total publications fetched:', allPublications.length);

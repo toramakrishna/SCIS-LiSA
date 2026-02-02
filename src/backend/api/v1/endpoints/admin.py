@@ -358,6 +358,16 @@ def ingest_data_background(config: IngestionConfig):
             service = DatabaseIngestionService(db)
             parser = BibTeXParser()
             
+            # Load faculty mapping
+            current_file = Path(__file__)
+            backend_dir = current_file.parent.parent.parent.parent  # Go up to src/backend
+            faculty_json_path = backend_dir / 'references' / 'faculty_data.json'
+            
+            if not faculty_json_path.exists():
+                raise ValueError(f"Faculty data not found at {faculty_json_path}")
+            
+            faculty_mapping = service.load_faculty_mapping(str(faculty_json_path))
+            
             for idx, bib_file in enumerate(bib_files, 1):
                 task_status["ingest"]["current"] = idx
                 task_status["ingest"]["progress"] = int((idx / total) * 100)
@@ -365,10 +375,10 @@ def ingest_data_background(config: IngestionConfig):
                 
                 try:
                     # Parse BibTeX file
-                    publications = parser.parse_file(str(bib_file))
+                    publications, _, _ = parser.parse_bib_file(str(bib_file))
                     
                     # Ingest into database
-                    service.ingest_publications(publications, config.source_name)
+                    service.ingest_publications(publications, faculty_mapping)
                     
                     logger.info(f"✅ Processed {bib_file.name} ({idx}/{total})")
                     
@@ -377,6 +387,9 @@ def ingest_data_background(config: IngestionConfig):
             
             # Commit final changes
             db.commit()
+            
+            # Update data source tracking
+            service.update_data_source('DBLP')
             
             task_status["ingest"]["status"] = "completed"
             task_status["ingest"]["message"] = "Ingestion completed successfully"
