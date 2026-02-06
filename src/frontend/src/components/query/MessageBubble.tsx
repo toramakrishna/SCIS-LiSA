@@ -112,7 +112,7 @@ export function MessageBubble({
                     View SQL Query
                   </span>
                   <span className="text-xs text-slate-500 dark:text-slate-400">
-                    {queryResponse.row_count} rows • {Math.round(queryResponse.confidence * 100)}% confidence
+                    {queryResponse.row_count} rows {queryResponse.confidence ? `• ${Math.round(queryResponse.confidence * 100)}% confidence` : ''}
                   </span>
                 </div>
                 {showSQL ? (
@@ -126,7 +126,7 @@ export function MessageBubble({
                 <div className="px-3 pb-3">
                   <div className="relative">
                     <pre className="text-xs bg-slate-100 dark:bg-slate-800 p-3 pr-12 rounded-md overflow-x-auto border border-slate-200 dark:border-slate-700">
-                      <code className="text-slate-800 dark:text-slate-200 whitespace-pre">{formatSQL(queryResponse.sql)}</code>
+                      <code className="text-slate-800 dark:text-slate-200 whitespace-pre">{queryResponse.sql ? formatSQL(queryResponse.sql) : 'No SQL generated'}</code>
                     </pre>
                     <Button
                       variant="ghost"

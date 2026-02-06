@@ -110,10 +110,10 @@ async def get_system_overview(db: Session = Depends(get_db)):
             "collaborations": total_collaborations or 0
         },
         "publications_by_type": {
-            pub_type.publication_type: pub_type.count for pub_type in pubs_by_type
+            str(pub_type.publication_type or "Unknown"): pub_type.count for pub_type in pubs_by_type
         },
         "publications_by_year": {
-            year.year: year.count for year in pubs_by_year
+            str(year.year or "Unknown"): year.count for year in pubs_by_year
         },
         "top_faculty": [
             {

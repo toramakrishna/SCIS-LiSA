@@ -23,7 +23,8 @@
     "phone": "",
     "department": "SCIS",
     "dblp_names": [
-      "Alok Singh 0001"
+      "Alok Singh 0001",
+      "Alok Singh"
     ],
     "dblp_urls": [
       "https://dblp.org/pid/01/1744-1.html"
@@ -185,7 +186,8 @@
     "phone": "",
     "department": "SCIS",
     "dblp_names": [
-      "Nagender Kumar Suryadevara"
+      "Nagender Kumar Suryadevara",
+      "N. K. Suryadevara"
     ],
     "dblp_urls": [
       "https://dblp.org/pid/21/10736.html"
@@ -249,7 +251,8 @@
     "phone": "",
     "department": "SCIS",
     "dblp_names": [
-      "N. Rukma Rekha"
+      "N. Rukma Rekha",
+      "Rukma Rekha N."
     ],
     "dblp_urls": [
       "https://dblp.org/pid/83/9943.html"
@@ -432,8 +435,9 @@
       "Arun Agarwal"
     ],
     "dblp_urls": [
-      "https://dblp.org/pid/97/3869.html", 74
+      "https://dblp.org/pid/97/3869.html"
     ],
+    "dblp_count": 74,
     "dblp_pid": "97/3869",
     "dblp_matched": true
   },
@@ -447,8 +451,9 @@
       "Arun K. Pujari"
     ],
     "dblp_urls": [
-      "https://dblp.org/pid/95/6184.html", 113
+      "https://dblp.org/pid/95/6184.html"
     ],
+    "dblp_count": 113,
     "dblp_pid": "95/6184",
     "dblp_matched": true
   },
@@ -460,11 +465,16 @@
     "department": "SCIS",
     "dblp_names": [
       "S. Bapi Raju",
-      "Bapi Raju Surampudi"
+      "Bapi Raju Surampudi",
+      "Raju S. Bapi",
+      "Raju Surampudi Bapi",
+      "Bapi Surampudi Raju",
+      "Surampudi Bapi Raju"
     ],
     "dblp_urls": [
-      "https://dblp.org/pid/50/1424.html", 139
+      "https://dblp.org/pid/50/1424.html"
     ],
+    "dblp_count": 139,
     "dblp_pid": "50/1424",
     "dblp_matched": true
   },
@@ -478,8 +488,9 @@
       "P. N. Girija"
     ],
     "dblp_urls": [
-      "https://dblp.org/pid/10/2362.html", 3
+      "https://dblp.org/pid/10/2362.html"
     ],
+    "dblp_count": 3,
     "dblp_pid": "10/2362",
     "dblp_matched": true
   },
@@ -493,8 +504,9 @@
       "Hrushikesha Mohanty"
     ],
     "dblp_urls": [
-      "https://dblp.org/pid/74/5678.html", 56
+      "https://dblp.org/pid/74/5678.html"
     ],
+    "dblp_count": 56,
     "dblp_pid": "74/5678",
     "dblp_matched": true
   },
@@ -509,8 +521,9 @@
       "Kavi Narayana Murthy"
     ],
     "dblp_urls": [
-      "https://dblp.org/pid/94/4013.html", 15
+      "https://dblp.org/pid/94/4013.html"
     ],
+    "dblp_count": 15,
     "dblp_pid": "94/4013",
     "dblp_matched": true
   },
@@ -522,7 +535,8 @@
     "department": "SCIS",
     "dblp_names": [
       "C. Raghavendra Rao 0001",
-      "Chillarige Raghavendra Rao"
+      "Chillarige Raghavendra Rao",
+      "C. Raghavendra Rao"
     ],
     "dblp_urls": [
       "https://dblp.org/pid/07/5281-1.html"
@@ -538,7 +552,9 @@
     "phone": "",
     "department": "SCIS",
     "dblp_names": [
-      "V. Ch. Venkaiah"
+      "V. Ch. Venkaiah",
+      "China Venkaiah Vadlamudi",
+      "Vadlamudi Ch. Venkaiah"
     ],
     "dblp_urls": [
       "https://dblp.org/pid/66/8044.html"

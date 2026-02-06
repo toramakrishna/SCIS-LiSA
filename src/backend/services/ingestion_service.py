@@ -135,6 +135,67 @@ class DatabaseIngestionService:
         self.venue_cache[venue_name] = venue
         return venue
     
+    def _update_existing_publication_authors(self, publication: Publication, pub_data: Dict, faculty_mapping: Dict[str, Dict]):
+        """
+        Update an existing publication's author associations
+        This ensures faculty from the current source_pid are properly linked
+        even if the publication was already ingested from another faculty's file
+        """
+        from models.db_models import publication_authors
+        
+        source_pid = pub_data.get('source_pid')
+        pid_mapping = faculty_mapping.get('by_pid', {})
+        
+        # Check if this publication is from a faculty member's DBLP profile
+        if not source_pid or source_pid not in pid_mapping:
+            return
+        
+        faculty_info = pid_mapping[source_pid]
+        faculty_dblp_names = faculty_info.get('dblp_names', [])
+        
+        # Find the faculty member in the author list
+        for author_name in pub_data['authors']:
+            normalized_author = self.normalize_name(author_name)
+            
+            # Check if this author matches the faculty member
+            is_match = False
+            for faculty_name_variant in faculty_dblp_names:
+                if self.normalize_name(faculty_name_variant) == normalized_author:
+                    is_match = True
+                    break
+            
+            if is_match:
+                # Found the faculty member - ensure they're linked to this publication
+                author = self.get_or_create_author(
+                    author_name,
+                    is_faculty=True,
+                    dblp_pid=source_pid,
+                    faculty_data=faculty_info
+                )
+                
+                # Check if association already exists
+                existing_assoc = self.db.query(publication_authors).filter(
+                    publication_authors.c.publication_id == publication.id,
+                    publication_authors.c.author_id == author.id
+                ).first()
+                
+                if not existing_assoc:
+                    # Create the association
+                    self.db.execute(
+                        publication_authors.insert().values(
+                            publication_id=publication.id,
+                            author_id=author.id,
+                            author_position=pub_data['authors'].index(author_name) + 1
+                        )
+                    )
+                    logger.debug(f"Added missing author link: {author_name} -> {publication.title[:50]}")
+                    
+                    # Update publication's has_faculty_author flag
+                    if not publication.has_faculty_author:
+                        publication.has_faculty_author = True
+                
+                break  # Found and processed the faculty member, no need to continue
+    
     def create_publication(self, pub_data: Dict, faculty_mapping: Dict[str, Dict]) -> bool:
         """
         Create publication and associate with authors
@@ -149,6 +210,9 @@ class DatabaseIngestionService:
             ).first()
             
             if existing:
+                # Publication exists, but we still need to check if the current faculty
+                # member (from source_pid) is properly linked to it
+                self._update_existing_publication_authors(existing, pub_data, faculty_mapping)
                 self.stats['publications_skipped'] += 1
                 logger.debug(f"Skipping duplicate publication: {dblp_key}")
                 return False
@@ -207,26 +271,32 @@ class DatabaseIngestionService:
                 has_faculty = True
             
             for position, author_name in enumerate(pub_data['authors'], 1):
-                # Match author by name using dblp_names from faculty_data.json
+                # Match author based on PID-based faculty identification
                 is_faculty = False
                 dblp_pid = None
                 faculty_data = None
                 
-                # Normalize author name for matching
-                normalized_author = self.normalize_name(author_name)
+                # Get PID mapping for faculty identification
+                pid_mapping = faculty_mapping.get('by_pid', {})
+                source_pid = pub_data.get('source_pid')
                 
-                # Try to match author name against faculty name variations
-                name_mapping = faculty_mapping.get('by_name', {})
-                if normalized_author in name_mapping:
-                    # Found a match! Get the faculty info
-                    faculty_info = name_mapping[normalized_author]
-                    faculty_pid = faculty_info.get('dblp_pid')
+                # Check if this publication's source_pid matches a faculty member
+                if source_pid and source_pid in pid_mapping:
+                    # This publication comes from a faculty member's DBLP profile
+                    faculty_info = pid_mapping[source_pid]
+                    faculty_dblp_names = faculty_info.get('dblp_names', [])
                     
-                    # Verify this faculty member is in this publication's source PIDs
-                    if faculty_pid in faculty_pids_in_pub:
-                        is_faculty = True
-                        dblp_pid = faculty_pid
-                        faculty_data = faculty_info
+                    # Check if current author matches any of the faculty's name variations
+                    normalized_author = self.normalize_name(author_name)
+                    
+                    for faculty_name_variant in faculty_dblp_names:
+                        if self.normalize_name(faculty_name_variant) == normalized_author:
+                            # Found a match! Mark as faculty
+                            is_faculty = True
+                            dblp_pid = source_pid
+                            faculty_data = faculty_info
+                            logger.debug(f"Matched author '{author_name}' to faculty {faculty_info.get('faculty_name')} via PID {source_pid}")
+                            break
                 
                 # Get or create author
                 author = self.get_or_create_author(
@@ -362,6 +432,7 @@ class DatabaseIngestionService:
                 faculty_info = {
                     'faculty_name': faculty['name'],  # Changed from 'faculty_name' to 'name'
                     'dblp_pid': faculty.get('dblp_pid'),
+                    'dblp_names': faculty.get('dblp_names', []),  # ADD THIS
                     'email': faculty.get('email'),
                     'phone': faculty.get('phone'),
                     'designation': faculty.get('designation'),

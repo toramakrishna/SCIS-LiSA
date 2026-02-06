@@ -40,8 +40,11 @@ export function QueryPage() {
       // Call MCP API
       const response = await mcpAPI.query(query);
       
-      // Add assistant response (this will set isLoading to false)
-      addAssistantMessage(response.data);
+      // Add assistant response with explanation as content and full response as metadata
+      addAssistantMessage({
+        content: response.explanation || "Query executed successfully",
+        queryResponse: response
+      });
     } catch (err: any) {
       console.error('Query error:', err);
       let errorMessage = 'Failed to process query';

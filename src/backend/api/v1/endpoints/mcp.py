@@ -146,6 +146,134 @@ def generate_follow_up_questions(question: str, data: List[Dict[str, Any]], sql:
     return list(dict.fromkeys(suggestions))[:3]
 
 
+# Pattern-based query handler - works without Ollama for common queries
+async def handle_predefined_query(question: str, db: Session) -> Optional[QueryResponse]:
+    """
+    Handle common predefined queries without needing LLM/Ollama.
+    Returns None if question doesn't match any pattern.
+    """
+    from sqlalchemy import text
+    
+    question_lower = question.lower()
+    
+    # Pattern 1: Top faculty by publication count
+    if any(p in question_lower for p in ['top', 'most productive', 'most published']) and \
+       any(p in question_lower for p in ['faculty', 'professor', 'researcher']):
+        limit = 10
+        # Try to extract number
+        import re
+        match = re.search(r'(\d+)', question)
+        if match:
+            limit = min(int(match.group(1)), 50)
+        
+        sql = f"""
+        SELECT 
+            f.id,
+            f.name,
+            COUNT(pa.publication_id) as publication_count
+        FROM authors f
+        LEFT JOIN publication_authors pa ON f.id = pa.author_id
+        WHERE f.is_faculty = true
+        GROUP BY f.id, f.name
+        ORDER BY publication_count DESC
+        LIMIT {limit}
+        """
+        
+        try:
+            result = db.execute(text(sql)).fetchall()
+            data = [dict(row._mapping) for row in result]
+            return QueryResponse(
+                question=question,
+                sql=sql,
+                explanation=f"Top {limit} faculty by publication count",
+                data=data,
+                visualization={
+                    "type": "bar_chart",
+                    "title": f"Top {limit} Faculty by Publication Count",
+                    "x_axis": "name",
+                    "y_axis": "publication_count"
+                },
+                row_count=len(data),
+                suggested_questions=["Show publication trends for " + (data[0]['name'] if data else 'faculty') + " over time"]
+            )
+        except Exception as e:
+            logger.error(f"Error executing predefined query: {e}")
+            return None
+    
+    # Pattern 2: Publications by year/trends
+    if any(p in question_lower for p in ['trend', 'over time', 'by year', 'timeline', 'history', 'publication count', 'count by year']):
+        # Group publications by year
+        sql = """
+        SELECT 
+            COALESCE(year, 2023) as year,
+            COUNT(*) as publication_count
+        FROM publications
+        GROUP BY COALESCE(year, 2023)
+        ORDER BY year DESC
+        LIMIT 20
+        """
+        
+        try:
+            result = db.execute(text(sql)).fetchall()
+            data = [dict(row._mapping) for row in result]
+            if data:  # Return if we have any data
+                return QueryResponse(
+                    question=question,
+                    sql=sql,
+                    explanation="Publication trends over time",
+                    data=data,
+                    visualization={
+                        "type": "line_chart" if len(data) > 1 else "bar_chart",
+                        "title": "Publication Trends Over Time",
+                        "x_axis": "year",
+                        "y_axis": "publication_count"
+                    },
+                    row_count=len(data),
+                    suggested_questions=["Which faculty contributed most in recent years?"]
+                )
+        except Exception as e:
+            logger.error(f"Error executing trends query: {e}")
+            pass  # Continue to try next if this fails
+    
+    # Pattern 3: Top publication venues
+    if any(p in question_lower for p in ['venue', 'journal', 'conference', 'published in']):
+        # Get top venues from publication journal/booktitle fields
+        sql = """
+        SELECT 
+            COALESCE(journal, booktitle, 'Unknown Venue') as venue,
+            publication_type as venue_type,
+            COUNT(id) as publication_count
+        FROM publications
+        WHERE journal IS NOT NULL OR booktitle IS NOT NULL
+        GROUP BY COALESCE(journal, booktitle, 'Unknown Venue'), publication_type
+        ORDER BY publication_count DESC
+        LIMIT 15
+        """
+        
+        try:
+            result = db.execute(text(sql)).fetchall()
+            data = [dict(row._mapping) for row in result]
+            return QueryResponse(
+                question=question,
+                sql=sql,
+                explanation="Top publication venues by count",
+                data=data,
+                visualization={
+                    "type": "bar_chart",
+                    "title": "Top Publication Venues",
+                    "x_axis": "venue",
+                    "y_axis": "publication_count"
+                },
+                row_count=len(data),
+                suggested_questions=["Which faculty publish most in " + (data[0]['venue'] if data else 'these venues') + "?"]
+            )
+        except Exception as e:
+            logger.error(f"Error executing venue query: {e}")
+            return None
+    
+    return None
+
+
 @router.post("/query", response_model=QueryResponse)
 async def natural_language_query(
     request: QueryRequest,
@@ -177,11 +305,18 @@ async def natural_language_query(
     - Visualization configuration (chart type, axes, etc.)
     """
     try:
-        # Initialize agent
+        # First, try predefined queries that don't require Ollama
+        logger.info(f"Processing question: {request.question}")
+        predefined_response = await handle_predefined_query(request.question, db)
+        if predefined_response:
+            logger.info("Using predefined query handler")
+            return predefined_response
+        
+        # Fall back to LLM-based query
+        logger.info("Attempting LLM-based query generation")
         agent = get_agent(request.model)
         
         # Generate SQL from natural language
-        logger.info(f"Processing question: {request.question}")
         generation_result = await agent.generate_sql(request.question)
         
         if 'error' in generation_result:

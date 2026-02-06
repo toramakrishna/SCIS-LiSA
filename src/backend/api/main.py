@@ -39,6 +39,14 @@ async def lifespan(app: FastAPI):
         logger.error(f"✗ Database connection failed: {e}")
         raise
     
+    # Create database tables if they don't exist
+    try:
+        Base.metadata.create_all(bind=engine)
+        logger.info("✓ Database tables initialized")
+    except Exception as e:
+        logger.error(f"✗ Table initialization failed: {e}")
+        raise
+    
     yield
     
     # Shutdown

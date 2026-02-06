@@ -13,11 +13,11 @@ import {
   Activity,
   Settings,
   BarChart3,
-  RefreshCw
+  RefreshCw,
+  AlertCircle,
+  FileCheck
 } from 'lucide-react';
-import axios from 'axios';
-
-const API_BASE_URL = 'http://localhost:8000/api/v1';
+import { mcpAPI } from '@/lib/api/endpoints';
 
 interface ConnectionConfig {
   host: string;
@@ -43,6 +43,38 @@ interface DatabaseStats {
   venues: number;
   faculty: number;
   recent_by_year: Array<{ year: number; count: number }>;
+}
+
+interface QualityCheckItem {
+  faculty_name: string;
+  db_name: string;
+  dblp_pid: string;
+  expected: number;
+  actual: number;
+  difference: number;
+  pct_difference: number;
+}
+
+interface QualityCheckResult {
+  status: string;
+  timestamp: string;
+  summary: {
+    total_faculty: number;
+    perfect_matches: number;
+    close_matches: number;
+    mismatches: number;
+    accuracy_rate: number;
+    perfect_match_rate: number;
+  };
+  overall_stats: {
+    total_expected_publications: number;
+    total_actual_publications: number;
+    overall_difference: number;
+    overall_accuracy: number;
+  };
+  perfect_matches: QualityCheckItem[];
+  close_matches: QualityCheckItem[];
+  mismatches: QualityCheckItem[];
 }
 
 export function AdminPage() {
@@ -73,6 +105,10 @@ export function AdminPage() {
   const [dbStats, setDbStats] = useState<DatabaseStats | null>(null);
   const [statsLoading, setStatsLoading] = useState(false);
 
+  // Data Quality Check
+  const [qualityCheckResult, setQualityCheckResult] = useState<QualityCheckResult | null>(null);
+  const [qualityCheckLoading, setQualityCheckLoading] = useState(false);
+
   // Poll for task status
   useEffect(() => {
     let interval: NodeJS.Timeout;
@@ -80,8 +116,9 @@ export function AdminPage() {
     if (fetchStatus.status === 'running' || fetchStatus.status === 'starting') {
       interval = setInterval(async () => {
         try {
-          const response = await axios.get(`${API_BASE_URL}/admin/fetch-status`);
-          setFetchStatus(response.data);
+          const response = await fetch(`/api/v1/admin/fetch-status`);
+          const data = await response.json();
+          setFetchStatus(data);
         } catch (error) {
           console.error('Failed to get fetch status:', error);
         }
@@ -97,12 +134,13 @@ export function AdminPage() {
     if (ingestStatus.status === 'running' || ingestStatus.status === 'starting') {
       interval = setInterval(async () => {
         try {
-          const response = await axios.get(`${API_BASE_URL}/admin/ingest-status`);
-          setIngestStatus(response.data);
+          const response = await fetch(`/api/v1/admin/ingest-status`);
+          const data = await response.json();
+          setIngestStatus(data);
           
-          // Refresh stats when ingestion completes
-          if (response.data.status === 'completed') {
-            loadDatabaseStats();
+          // Refresh stats immediately when ingestion completes
+          if (data.status === 'completed') {
+            setTimeout(() => loadDatabaseStats(), 500);
           }
         } catch (error) {
           console.error('Failed to get ingest status:', error);
@@ -123,12 +161,18 @@ export function AdminPage() {
     setConnectionMessage('Testing current database connection...');
 
     try {
-      const response = await axios.get(`${API_BASE_URL}/admin/test-current-db`);
-      setConnectionStatus('success');
-      setConnectionMessage(`Connected successfully! Database version: ${response.data.database_version.split(' ')[1]}`);
+      const response = await fetch(`/api/v1/admin/test-current-db`);
+      const data = await response.json();
+      if (response.ok) {
+        setConnectionStatus('success');
+        setConnectionMessage(`Connected successfully! Database version: ${data.database_version?.split(' ')[1] || 'Unknown'}`);
+      } else {
+        setConnectionStatus('error');
+        setConnectionMessage(data.detail || 'Connection failed');
+      }
     } catch (error: any) {
       setConnectionStatus('error');
-      setConnectionMessage(error.response?.data?.detail || 'Connection failed');
+      setConnectionMessage(error.message || 'Connection failed');
     }
   };
 
@@ -137,12 +181,22 @@ export function AdminPage() {
     setConnectionMessage('Testing custom database connection...');
 
     try {
-      const response = await axios.post(`${API_BASE_URL}/admin/test-db-connection`, connectionConfig);
-      setConnectionStatus('success');
-      setConnectionMessage('Custom connection successful!');
+      const response = await fetch(`/api/v1/admin/test-db-connection`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(connectionConfig)
+      });
+      const data = await response.json();
+      if (response.ok) {
+        setConnectionStatus('success');
+        setConnectionMessage('Custom connection successful!');
+      } else {
+        setConnectionStatus('error');
+        setConnectionMessage(data.detail || 'Connection failed');
+      }
     } catch (error: any) {
       setConnectionStatus('error');
-      setConnectionMessage(error.response?.data?.detail || 'Connection failed');
+      setConnectionMessage(error.message || 'Connection failed');
     }
   };
 
@@ -151,48 +205,97 @@ export function AdminPage() {
     setDblpApiMessage('Testing DBLP API connectivity...');
 
     try {
-      const response = await axios.get(`${API_BASE_URL}/admin/test-dblp-api`);
-      setDblpApiStatus('success');
-      setDblpApiMessage(response.data.message);
+      const response = await fetch(`/api/v1/admin/test-dblp-api`);
+      const data = await response.json();
+      if (response.ok) {
+        setDblpApiStatus('success');
+        setDblpApiMessage(data.message);
+      } else {
+        setDblpApiStatus('error');
+        setDblpApiMessage(data.detail || 'DBLP API test failed');
+      }
     } catch (error: any) {
       setDblpApiStatus('error');
-      setDblpApiMessage(error.response?.data?.detail || 'DBLP API test failed');
+      setDblpApiMessage(error.message || 'DBLP API test failed');
     }
   };
 
   const startFetchDblp = async () => {
     try {
-      await axios.post(`${API_BASE_URL}/admin/fetch-dblp-data`, {
-        output_directory: fetchPath,
-        faculty_json_path: 'src/backend/references/dblp/faculty_dblp_matched.json'
+      const response = await fetch(`/api/v1/admin/fetch-dblp-data`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          output_directory: fetchPath,
+          faculty_json_path: 'src/backend/references/dblp/faculty_dblp_matched.json'
+        })
       });
-      setFetchStatus({ status: 'starting', progress: 0, message: 'Starting fetch...' });
+      const data = await response.json();
+      if (response.ok) {
+        setFetchStatus({ status: 'starting', progress: 0, message: 'Starting fetch...' });
+      } else {
+        alert(`Failed to start fetch: ${data.detail || 'Unknown error'}`);
+      }
     } catch (error: any) {
-      alert(`Failed to start fetch: ${error.response?.data?.detail || 'Unknown error'}`);
+      alert(`Failed to start fetch: ${error.message || 'Unknown error'}`);
     }
   };
 
   const startIngestion = async () => {
     try {
-      await axios.post(`${API_BASE_URL}/admin/ingest-data`, {
-        dataset_path: ingestPath,
-        source_name: 'DBLP'
+      const response = await fetch(`/api/v1/admin/ingest-data`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          dataset_path: ingestPath,
+          source_name: 'DBLP'
+        })
       });
-      setIngestStatus({ status: 'starting', progress: 0, message: 'Starting ingestion...' });
+      const data = await response.json();
+      if (response.ok) {
+        setIngestStatus({ status: 'starting', progress: 0, message: 'Starting ingestion...' });
+      } else {
+        alert(`Failed to start ingestion: ${data.detail || 'Unknown error'}`);
+      }
     } catch (error: any) {
-      alert(`Failed to start ingestion: ${error.response?.data?.detail || 'Unknown error'}`);
+      alert(`Failed to start ingestion: ${error.message || 'Unknown error'}`);
     }
   };
 
   const loadDatabaseStats = async () => {
     setStatsLoading(true);
     try {
-      const response = await axios.get(`${API_BASE_URL}/admin/database-stats`);
-      setDbStats(response.data.stats);
-    } catch (error) {
+      const response = await mcpAPI.analytics.stats();
+      console.log('API Response:', response);
+      console.log('Response data:', response.data);
+      // API returns { totals: { faculty, publications, authors, ... } } wrapped in response.data
+      const stats = response.data?.totals || response.data || {};
+      console.log('Extracted stats:', stats);
+      setDbStats(stats);
+    } catch (error: any) {
       console.error('Failed to load database stats:', error);
+      const errorMsg = error?.message || 'Cannot connect to backend. Make sure the backend is running at http://localhost:8000';
+      alert(errorMsg);
     } finally {
       setStatsLoading(false);
+    }
+  };
+
+  const runDataQualityCheck = async () => {
+    setQualityCheckLoading(true);
+    try {
+      const response = await fetch(`/api/v1/admin/data-quality-check`);
+      const data = await response.json();
+      if (response.ok) {
+        setQualityCheckResult(data);
+      } else {
+        alert(`Data quality check failed: ${data.detail || 'Unknown error'}`);
+      }
+    } catch (error: any) {
+      console.error('Failed to run data quality check:', error);
+      alert(`Failed to run data quality check: ${error.message || 'Unknown error'}`);
+    } finally {
+      setQualityCheckLoading(false);
     }
   };
 
@@ -481,6 +584,189 @@ export function AdminPage() {
                   )}
                 </div>
               )}
+            </div>
+          )}
+        </CardContent>
+      </Card>
+
+      {/* Data Quality Check */}
+      <Card className="border-l-4 border-l-indigo-500">
+        <CardHeader>
+          <div className="flex items-center justify-between">
+            <div>
+              <CardTitle className="flex items-center gap-2 text-indigo-700 dark:text-indigo-400">
+                <FileCheck className="h-5 w-5" />
+                Data Quality Validation
+              </CardTitle>
+              <CardDescription>
+                Verify publication counts match DBLP expectations after ingestion
+              </CardDescription>
+            </div>
+            <Button 
+              size="sm" 
+              onClick={runDataQualityCheck} 
+              disabled={qualityCheckLoading}
+              className="bg-gradient-to-r from-indigo-500 to-purple-600"
+            >
+              {qualityCheckLoading ? (
+                <><Loader2 className="h-4 w-4 mr-2 animate-spin" /> Checking...</>
+              ) : (
+                <><FileCheck className="h-4 w-4 mr-2" /> Run Check</>
+              )}
+            </Button>
+          </div>
+        </CardHeader>
+        <CardContent>
+          {qualityCheckResult ? (
+            <div className="space-y-6">
+              {/* Summary Statistics */}
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div className="p-4 bg-green-50 dark:bg-green-950/30 rounded-lg">
+                  <div className="text-2xl font-bold text-green-700 dark:text-green-400">
+                    {qualityCheckResult.summary.perfect_matches}
+                  </div>
+                  <div className="text-sm text-slate-600 dark:text-slate-400">Perfect Matches</div>
+                  <div className="text-xs text-slate-500 mt-1">
+                    {qualityCheckResult.summary.perfect_match_rate}%
+                  </div>
+                </div>
+                <div className="p-4 bg-yellow-50 dark:bg-yellow-950/30 rounded-lg">
+                  <div className="text-2xl font-bold text-yellow-700 dark:text-yellow-400">
+                    {qualityCheckResult.summary.close_matches}
+                  </div>
+                  <div className="text-sm text-slate-600 dark:text-slate-400">Close Matches</div>
+                  <div className="text-xs text-slate-500 mt-1">
+                    Within 5% tolerance
+                  </div>
+                </div>
+                <div className="p-4 bg-red-50 dark:bg-red-950/30 rounded-lg">
+                  <div className="text-2xl font-bold text-red-700 dark:text-red-400">
+                    {qualityCheckResult.summary.mismatches}
+                  </div>
+                  <div className="text-sm text-slate-600 dark:text-slate-400">Mismatches</div>
+                  <div className="text-xs text-slate-500 mt-1">
+                    &gt;5% difference
+                  </div>
+                </div>
+              </div>
+
+              {/* Overall Accuracy */}
+              <div className="p-4 bg-indigo-50 dark:bg-indigo-950/30 rounded-lg">
+                <div className="text-sm font-semibold text-indigo-700 dark:text-indigo-400 mb-2">
+                  Overall Accuracy: {qualityCheckResult.summary.accuracy_rate}%
+                </div>
+                <div className="text-xs space-y-1 text-slate-600 dark:text-slate-400">
+                  <p>Total Expected Publications: {qualityCheckResult.overall_stats.total_expected_publications}</p>
+                  <p>Total Actual Publications: {qualityCheckResult.overall_stats.total_actual_publications}</p>
+                  <p>
+                    Overall Difference: 
+                    <span className={qualityCheckResult.overall_stats.overall_difference >= 0 ? 'text-green-600' : 'text-red-600'}>
+                      {' '}{qualityCheckResult.overall_stats.overall_difference >= 0 ? '+' : ''}{qualityCheckResult.overall_stats.overall_difference}
+                    </span>
+                  </p>
+                </div>
+              </div>
+
+              {/* Mismatches Table (only show if there are any) */}
+              {qualityCheckResult.mismatches.length > 0 && (
+                <div>
+                  <h3 className="text-lg font-semibold text-red-700 dark:text-red-400 mb-3 flex items-center gap-2">
+                    <AlertCircle className="h-5 w-5" />
+                    Mismatches (Requires Attention)
+                  </h3>
+                  <div className="overflow-x-auto">
+                    <table className="w-full text-sm">
+                      <thead className="bg-red-50 dark:bg-red-950/30">
+                        <tr>
+                          <th className="text-left p-2">Faculty Name</th>
+                          <th className="text-left p-2">DBLP PID</th>
+                          <th className="text-right p-2">Expected</th>
+                          <th className="text-right p-2">Actual</th>
+                          <th className="text-right p-2">Diff</th>
+                          <th className="text-right p-2">% Diff</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {qualityCheckResult.mismatches.map((item, idx) => (
+                          <tr key={idx} className="border-t border-slate-200 dark:border-slate-700">
+                            <td className="p-2">{item.faculty_name}</td>
+                            <td className="p-2 font-mono text-xs">{item.dblp_pid}</td>
+                            <td className="p-2 text-right">{item.expected}</td>
+                            <td className="p-2 text-right">{item.actual}</td>
+                            <td className={`p-2 text-right font-semibold ${item.difference >= 0 ? 'text-green-600' : 'text-red-600'}`}>
+                              {item.difference >= 0 ? '+' : ''}{item.difference}
+                            </td>
+                            <td className="p-2 text-right text-red-600 dark:text-red-400 font-semibold">
+                              {item.pct_difference}%
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              )}
+
+              {/* Close Matches Table (only show if there are any) */}
+              {qualityCheckResult.close_matches.length > 0 && (
+                <div>
+                  <h3 className="text-lg font-semibold text-yellow-700 dark:text-yellow-400 mb-3 flex items-center gap-2">
+                    <CheckCircle className="h-5 w-5" />
+                    Close Matches (Within Tolerance)
+                  </h3>
+                  <div className="overflow-x-auto">
+                    <table className="w-full text-sm">
+                      <thead className="bg-yellow-50 dark:bg-yellow-950/30">
+                        <tr>
+                          <th className="text-left p-2">Faculty Name</th>
+                          <th className="text-left p-2">DBLP PID</th>
+                          <th className="text-right p-2">Expected</th>
+                          <th className="text-right p-2">Actual</th>
+                          <th className="text-right p-2">Diff</th>
+                          <th className="text-right p-2">% Diff</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {qualityCheckResult.close_matches.map((item, idx) => (
+                          <tr key={idx} className="border-t border-slate-200 dark:border-slate-700">
+                            <td className="p-2">{item.faculty_name}</td>
+                            <td className="p-2 font-mono text-xs">{item.dblp_pid}</td>
+                            <td className="p-2 text-right">{item.expected}</td>
+                            <td className="p-2 text-right">{item.actual}</td>
+                            <td className={`p-2 text-right font-semibold ${item.difference >= 0 ? 'text-green-600' : 'text-red-600'}`}>
+                              {item.difference >= 0 ? '+' : ''}{item.difference}
+                            </td>
+                            <td className="p-2 text-right text-yellow-600 dark:text-yellow-400">
+                              {item.pct_difference}%
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              )}
+
+              {/* Perfect Matches Summary (collapsed by default) */}
+              {qualityCheckResult.perfect_matches.length > 0 && (
+                <div>
+                  <h3 className="text-lg font-semibold text-green-700 dark:text-green-400 mb-2 flex items-center gap-2">
+                    <CheckCircle className="h-5 w-5" />
+                    Perfect Matches ({qualityCheckResult.perfect_matches.length})
+                  </h3>
+                  <p className="text-sm text-slate-600 dark:text-slate-400">
+                    All counts exactly match DBLP expectations. Excellent! ✓
+                  </p>
+                </div>
+              )}
+            </div>
+          ) : (
+            <div className="text-center py-8 text-slate-500">
+              <FileCheck className="h-12 w-12 mx-auto mb-3 opacity-50" />
+              <p>Click "Run Check" to validate publication counts</p>
+              <p className="text-sm mt-2">
+                This will compare database counts with DBLP expectations
+              </p>
             </div>
           )}
         </CardContent>

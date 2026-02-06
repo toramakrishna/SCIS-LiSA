@@ -65,14 +65,20 @@ export interface Author {
   id: number;
   name: string;
   dblp_pid?: string;
-  h_index?: number;
+  h_index?: number | null;
   publication_count: number;
+  total_publications?: number;
   designation?: string;
   email?: string;
   phone?: string;
-  research_interests?: string;
-  homepage?: string;
+  department?: string;
+  research_interests?: string | null;
+  homepage?: string | null;
   is_faculty?: boolean;
+  dblp_names?: string[];
+  dblp_urls?: string[];
+  created_at?: string;
+  updated_at?: string;
 }
 
 export interface Faculty {
@@ -84,3 +90,17 @@ export interface Faculty {
   collaborations: number;
   h_index?: number;
 }
+
+// API Response Types
+export interface PaginatedResponse<T> {
+  items: T[];
+  total: number;
+  page: number;
+  page_size: number;
+  total_pages?: number;
+  has_next?: boolean;
+  has_prev?: boolean;
+}
+
+export type FacultyListResponse = PaginatedResponse<Author>;
+export type PublicationListResponse = PaginatedResponse<Publication>;

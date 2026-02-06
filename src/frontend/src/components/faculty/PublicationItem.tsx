@@ -3,7 +3,6 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Check, X, ExternalLink, Loader2 } from 'lucide-react';
 import type { Publication } from '@/types';
-import axios from 'axios';
 
 interface PublicationItemProps {
   publication: Publication;
@@ -20,19 +19,17 @@ export function PublicationItem({ publication, facultyId, onVerificationChange }
   const handleVerify = async (isVerified: boolean) => {
     setIsUpdating(true);
     try {
-      await axios.post(
-        `http://localhost:8000/api/v1/faculty/${facultyId}/publications/${publication.id}/verify`,
-        null,
-        {
-          params: {
-            is_verified: isVerified,
-            verified_by: 'system' // You can replace this with actual user email
-          }
-        }
+      const response = await fetch(
+        `/api/v1/faculty/${facultyId}/publications/${publication.id}/verify?is_verified=${isVerified}&verified_by=system`,
+        { method: 'POST' }
       );
       
-      setVerificationStatus(isVerified);
-      onVerificationChange(publication.id, isVerified);
+      if (response.ok) {
+        setVerificationStatus(isVerified);
+        onVerificationChange(publication.id, isVerified);
+      } else {
+        console.error('Failed to verify publication:', await response.text());
+      }
     } catch (error) {
       console.error('Failed to verify publication:', error);
     } finally {

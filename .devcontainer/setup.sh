@@ -42,6 +42,14 @@ done
 echo "✅ PostgreSQL is ready"
 
 # ============================================
+# 3.5. Create additional databases
+# ============================================
+echo "🗄️  Creating additional databases..."
+psql -h localhost -U postgres -d postgres -c "SELECT 1 FROM pg_database WHERE datname = 'certification_service'" | grep -q 1 || \
+    psql -h localhost -U postgres -d postgres -c "CREATE DATABASE certification_service"
+echo "✅ Additional databases ready"
+
+# ============================================
 # 4. Set up database (create tables, etc.)
 # ============================================
 echo "🗄️  Setting up database..."
