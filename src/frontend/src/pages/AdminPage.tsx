@@ -267,9 +267,9 @@ export function AdminPage() {
     try {
       const response = await mcpAPI.analytics.stats();
       console.log('API Response:', response);
-      console.log('Response data:', response.data);
-      // API returns { totals: { faculty, publications, authors, ... } } wrapped in response.data
-      const stats = response.data?.totals || response.data || {};
+      // API client already returns response.data, so response is the actual data object
+      // API returns { totals: { faculty, publications, authors, ... } }
+      const stats = response.totals || response || {};
       console.log('Extracted stats:', stats);
       setDbStats(stats);
     } catch (error: any) {
@@ -324,7 +324,7 @@ export function AdminPage() {
           {/* Current Connection Test */}
           <div className="space-y-3">
             <Label className="text-base font-semibold">Current Database Connection</Label>
-            <div className="flex items-center gap-3">
+            <div className="flex flex-wrap items-center gap-3">
               <Button onClick={testCurrentConnection} disabled={connectionStatus === 'testing'}>
                 {connectionStatus === 'testing' ? (
                   <><Loader2 className="h-4 w-4 mr-2 animate-spin" /> Testing...</>
@@ -429,7 +429,7 @@ export function AdminPage() {
       {/* Database Statistics */}
       <Card className="border-l-4 border-l-purple-500">
         <CardHeader>
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div>
               <CardTitle className="flex items-center gap-2 text-purple-700 dark:text-purple-400">
                 <BarChart3 className="h-5 w-5" />
@@ -437,7 +437,7 @@ export function AdminPage() {
               </CardTitle>
               <CardDescription>Current database record counts</CardDescription>
             </div>
-            <Button size="sm" variant="outline" onClick={loadDatabaseStats} disabled={statsLoading}>
+            <Button size="sm" variant="outline" onClick={loadDatabaseStats} disabled={statsLoading} className="w-full sm:w-auto">
               <RefreshCw className={`h-4 w-4 mr-2 ${statsLoading ? 'animate-spin' : ''}`} />
               Refresh
             </Button>
@@ -592,7 +592,7 @@ export function AdminPage() {
       {/* Data Quality Check */}
       <Card className="border-l-4 border-l-indigo-500">
         <CardHeader>
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div>
               <CardTitle className="flex items-center gap-2 text-indigo-700 dark:text-indigo-400">
                 <FileCheck className="h-5 w-5" />
@@ -606,7 +606,7 @@ export function AdminPage() {
               size="sm" 
               onClick={runDataQualityCheck} 
               disabled={qualityCheckLoading}
-              className="bg-gradient-to-r from-indigo-500 to-purple-600"
+              className="bg-gradient-to-r from-indigo-500 to-purple-600 w-full sm:w-auto"
             >
               {qualityCheckLoading ? (
                 <><Loader2 className="h-4 w-4 mr-2 animate-spin" /> Checking...</>

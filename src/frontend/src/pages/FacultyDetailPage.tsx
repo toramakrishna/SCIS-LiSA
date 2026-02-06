@@ -230,7 +230,7 @@ export function FacultyDetailPage() {
                 </Badge>
               )}
             </div>
-            <div className="flex gap-6">
+            <div className="flex flex-wrap gap-6">
               <div className="text-center p-4 rounded-lg bg-gradient-to-br from-blue-500 to-blue-600 text-white shadow-lg">
                 <div className="text-3xl font-bold">{faculty.publication_count || 0}</div>
                 <div className="text-sm opacity-90">Publications</div>

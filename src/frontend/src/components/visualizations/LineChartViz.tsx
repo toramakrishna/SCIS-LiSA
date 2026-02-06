@@ -55,32 +55,37 @@ export function LineChartViz({ data, config }: LineChartVizProps) {
   return (
     <Card className="border-l-4 border-l-green-500">
       <CardHeader className="bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-950/30 dark:to-emerald-950/30">
-        <CardTitle className="text-green-700 dark:text-green-400">{title || 'Line Chart'}</CardTitle>
+        <CardTitle className="text-sm sm:text-base text-green-700 dark:text-green-400">{title || 'Line Chart'}</CardTitle>
       </CardHeader>
-      <CardContent className="pt-6">
-        <ResponsiveContainer width="100%" height={350}>
+      <CardContent className="pt-4 sm:pt-6 px-2 sm:px-6">
+        <ResponsiveContainer width="100%" height={300} className="sm:h-[350px]">
           <LineChart 
             data={data}
-            margin={{ top: 20, right: 30, left: 20, bottom: 20 }}
+            margin={{ top: 10, right: 10, left: 0, bottom: 10 }}
           >
             <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
             <XAxis 
               dataKey={xKey} 
-              tick={{ fill: '#64748b', fontSize: 12 }}
+              tick={{ fill: '#64748b', fontSize: 10 }}
             />
             <YAxis 
-              tick={{ fill: '#64748b', fontSize: 12 }}
-              label={{ value: yKey, angle: -90, position: 'insideLeft', style: { fill: '#64748b' } }}
+              tick={{ fill: '#64748b', fontSize: 10 }}
+              width={40}
+              label={{ value: yKey, angle: -90, position: 'insideLeft', style: { fill: '#64748b', fontSize: 10 } }}
             />
             <Tooltip 
               contentStyle={{ 
                 backgroundColor: 'white', 
                 border: '1px solid #e5e7eb',
                 borderRadius: '8px',
-                boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)'
+                boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)',
+                fontSize: '12px'
               }}
             />
-            <Legend wrapperStyle={{ paddingTop: '20px' }} />
+            <Legend 
+              wrapperStyle={{ paddingTop: '10px', fontSize: '11px' }}
+              iconSize={12}
+            />
             {lineFields.map((line, index) => (
               <Line
                 key={line.field}

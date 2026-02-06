@@ -80,12 +80,25 @@ app = FastAPI(
 )
 
 # CORS middleware - Allow all origins in development
+# Build allowed origins list
+import os
+allowed_origins = ["*"]  # Allow all origins in development
+
+# In Codespaces, explicitly add the frontend URL
+if os.getenv("CODESPACE_NAME"):
+    codespace_name = os.getenv("CODESPACE_NAME")
+    port_forwarding_domain = os.getenv("GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN", "app.github.dev")
+    # Add common frontend ports
+    for port in [5173, 5174, 3000]:
+        allowed_origins.append(f"https://{codespace_name}-{port}.{port_forwarding_domain}")
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Allow all origins in development
-    allow_credentials=False,
-    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allow_origins=allowed_origins if os.getenv("CODESPACE_NAME") else ["*"],
+    allow_credentials=True,
+    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"],
     allow_headers=["*"],
+    expose_headers=["*"],
 )
 
 

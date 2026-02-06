@@ -43,15 +43,18 @@
   "portsAttributes": {
     "5173": {
       "label": "Frontend",
-      "onAutoForward": "notify"
+      "onAutoForward": "notify",
+      "visibility": "public"
     },
     "8000": {
       "label": "Backend API",
-      "onAutoForward": "notify"
+      "onAutoForward": "notify",
+      "visibility": "public"
     },
     "5432": {
       "label": "PostgreSQL",
-      "onAutoForward": "silent"
+      "onAutoForward": "silent",
+      "visibility": "private"
     }
   },
 

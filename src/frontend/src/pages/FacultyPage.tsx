@@ -37,15 +37,10 @@ export function FacultyPage() {
       console.log('Loading faculty data...');
       const response = await mcpAPI.faculty.list({ page_size: 100 }); // Request all faculty
       console.log('Faculty API response:', response);
-      console.log('Response data:', response.data);
 
-      // Axios wraps the response in a 'data' property
-      const facultyData = response.data;
-      console.log('Faculty items:', facultyData.items);
-      console.log('Total faculty:', facultyData.total);
-
-      setFaculty(facultyData.items || []);
-      setTotalCount(facultyData.total || 0);
+      // The API client already returns response.data, so response is the actual data object
+      setFaculty(response.items || []);
+      setTotalCount(response.total || 0);
     } catch (error: any) {
       console.error('Failed to load faculty:', error);
       console.error('Error details:', error.response);
@@ -68,11 +63,11 @@ export function FacultyPage() {
 
     try {
       const response = await mcpAPI.faculty.publications(facultyId);
-      console.log('Publications response for faculty', facultyId, ':', response.data);
+      console.log('Publications response for faculty', facultyId, ':', response);
 
       setFaculty(prev => prev.map(f =>
         f.id === facultyId
-          ? { ...f, publications: response.data.items || [], isLoadingPublications: false }
+          ? { ...f, publications: response.items || [], isLoadingPublications: false }
           : f
       ));
     } catch (error) {
@@ -108,7 +103,7 @@ export function FacultyPage() {
     <div className="space-y-6">
       {/* Header */}
       <div className="flex flex-col gap-4">
-        <div className="flex items-start justify-between">
+        <div className="flex flex-col sm:flex-row items-start justify-between gap-3">
           <div>
             <h1 className="text-3xl font-bold flex items-center gap-3 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               <Users className="h-8 w-8 text-blue-600" />
@@ -122,7 +117,7 @@ export function FacultyPage() {
             onClick={() => loadFaculty(true)}
             disabled={isRefreshing}
             size="sm"
-            className="bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 shadow-md text-white"
+            className="bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 shadow-md text-white w-full sm:w-auto"
           >
             {isRefreshing ? (
               <>

@@ -17,15 +17,15 @@ export function TableViz({ data, config }: TableVizProps) {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>{title || 'Data Table'}</CardTitle>
+        <CardTitle className="text-sm sm:text-base">{title || 'Data Table'}</CardTitle>
       </CardHeader>
-      <CardContent>
-        <div className="overflow-auto max-h-96">
-          <table className="w-full text-sm border-collapse">
+      <CardContent className="px-2 sm:px-6">
+        <div className="overflow-x-auto overflow-y-auto max-h-96 -mx-2 sm:mx-0">
+          <table className="w-full text-xs sm:text-sm border-collapse min-w-[500px]">
             <thead className="sticky top-0 bg-muted">
               <tr>
                 {displayColumns.map((col) => (
-                  <th key={col} className="p-2 text-left font-medium border-b">
+                  <th key={col} className="p-1.5 sm:p-2 text-left font-medium border-b whitespace-nowrap">
                     {col}
                   </th>
                 ))}
@@ -35,7 +35,7 @@ export function TableViz({ data, config }: TableVizProps) {
               {data.map((row, idx) => (
                 <tr key={idx} className="border-b hover:bg-accent">
                   {displayColumns.map((col) => (
-                    <td key={col} className="p-2">
+                    <td key={col} className="p-1.5 sm:p-2">
                       {String(row[col] ?? '')}
                     </td>
                   ))}

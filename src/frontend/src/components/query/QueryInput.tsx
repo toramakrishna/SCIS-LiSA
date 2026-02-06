@@ -136,16 +136,16 @@ export function QueryInput({
             </div>
           )}
         </div>
-        <Button type="submit" disabled={!query.trim() || isLoading} className="min-w-[120px]">
+        <Button type="submit" disabled={!query.trim() || isLoading} className="min-w-[80px] sm:min-w-[120px]">
           {isLoading ? (
             <>
-              <Loader2 className="h-4 w-4 mr-2 animate-spin" />
-              Processing
+              <Loader2 className="h-4 w-4 mr-1 sm:mr-2 animate-spin" />
+              <span className="hidden sm:inline">Processing</span>
             </>
           ) : (
             <>
-              <Send className="h-4 w-4 mr-2" />
-              Send
+              <Send className="h-4 w-4 sm:mr-2" />
+              <span className="hidden sm:inline">Send</span>
             </>
           )}
         </Button>

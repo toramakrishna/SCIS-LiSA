@@ -12,8 +12,8 @@ const navigation = [
 
 export function Sidebar() {
   return (
-    <aside className="w-64 border-r bg-gradient-to-b from-slate-50 to-blue-50 dark:from-slate-900 dark:to-blue-950/30">
-      <nav className="flex flex-col gap-2 p-4">
+    <aside className="w-full md:w-64 border-b md:border-b-0 md:border-r bg-gradient-to-r md:bg-gradient-to-b from-slate-50 to-blue-50 dark:from-slate-900 dark:to-blue-950/30">
+      <nav className="flex flex-row md:flex-col gap-2 p-2 md:p-4 overflow-x-auto md:overflow-x-visible">
         {navigation.map((item) => {
           const Icon = item.icon;
           return (
@@ -22,7 +22,7 @@ export function Sidebar() {
               to={item.path}
               className={({ isActive }) =>
                 cn(
-                  'flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition-all duration-200',
+                  'flex items-center gap-2 md:gap-3 rounded-lg px-3 py-2 text-xs md:text-sm font-medium transition-all duration-200 whitespace-nowrap',
                   isActive
                     ? `bg-gradient-to-r ${item.gradient} text-white shadow-md scale-[1.02]`
                     : `${item.color} dark:text-slate-400 hover:bg-white/50 dark:hover:bg-slate-800/50 hover:scale-[1.02] hover:shadow-sm`
@@ -30,7 +30,7 @@ export function Sidebar() {
               }
             >
               <Icon className="h-4 w-4" />
-              {item.name}
+              <span className="hidden sm:inline">{item.name}</span>
             </NavLink>
           );
         })}

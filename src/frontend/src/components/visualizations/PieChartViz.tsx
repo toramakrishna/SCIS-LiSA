@@ -48,18 +48,18 @@ export function PieChartViz({ data, config }: PieChartVizProps) {
   return (
     <Card className="border-l-4 border-l-purple-500">
       <CardHeader className="bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-950/30 dark:to-pink-950/30">
-        <CardTitle className="text-purple-700 dark:text-purple-400">{title || 'Pie Chart'}</CardTitle>
+        <CardTitle className="text-sm sm:text-base text-purple-700 dark:text-purple-400">{title || 'Pie Chart'}</CardTitle>
       </CardHeader>
-      <CardContent className="pt-6">
-        <ResponsiveContainer width="100%" height={350}>
+      <CardContent className="pt-4 sm:pt-6 px-2 sm:px-6">
+        <ResponsiveContainer width="100%" height={300} className="sm:h-[350px]">
           <PieChart>
             <Pie
               data={pieData}
               cx="50%"
               cy="50%"
-              labelLine={true}
-              label={(entry) => `${entry.name}: ${entry.value}`}
-              outerRadius={100}
+              labelLine={false}
+              label={false}
+              outerRadius={80}
               fill="#8884d8"
               dataKey="value"
             >
@@ -72,10 +72,14 @@ export function PieChartViz({ data, config }: PieChartVizProps) {
                 backgroundColor: 'white', 
                 border: '1px solid #e5e7eb',
                 borderRadius: '8px',
-                boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)'
+                boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)',
+                fontSize: '12px'
               }}
             />
-            <Legend />
+            <Legend 
+              wrapperStyle={{ fontSize: '11px' }}
+              iconSize={12}
+            />
           </PieChart>
         </ResponsiveContainer>
       </CardContent>
