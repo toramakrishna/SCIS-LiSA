@@ -84,6 +84,11 @@ class DatabaseIngestionService:
                     author.email = faculty_data.get('email') or author.email
                     author.phone = faculty_data.get('phone') or author.phone
                     author.designation = faculty_data.get('designation') or author.designation
+                    author.homepage = faculty_data.get('homepage') or author.homepage
+                    author.education = faculty_data.get('education') or author.education
+                    author.areas_of_interest = faculty_data.get('areas_of_interest') or author.areas_of_interest
+                    author.profile_page = faculty_data.get('profile_page') or author.profile_page
+                    author.status = faculty_data.get('status') or author.status
                 self.stats['authors_updated'] += 1
         else:
             # Create new author
@@ -95,6 +100,11 @@ class DatabaseIngestionService:
                 email=faculty_data.get('email') if faculty_data else None,
                 phone=faculty_data.get('phone') if faculty_data else None,
                 designation=faculty_data.get('designation') if faculty_data else None,
+                homepage=faculty_data.get('homepage') if faculty_data else None,
+                education=faculty_data.get('education') if faculty_data else None,
+                areas_of_interest=faculty_data.get('areas_of_interest') if faculty_data else None,
+                profile_page=faculty_data.get('profile_page') if faculty_data else None,
+                status=faculty_data.get('status') if faculty_data else None,
                 department='SCIS' if is_faculty else None
             )
             self.db.add(author)
@@ -436,7 +446,12 @@ class DatabaseIngestionService:
                     'email': faculty.get('email'),
                     'phone': faculty.get('phone'),
                     'designation': faculty.get('designation'),
-                    'department': faculty.get('department')
+                    'department': faculty.get('department'),
+                    'homepage': faculty.get('homepage'),
+                    'education': faculty.get('education'),
+                    'areas_of_interest': faculty.get('areas_of_interest'),
+                    'profile_page': faculty.get('profile_page'),
+                    'status': faculty.get('status')
                 }
                 
                 name_mapping[faculty['name']] = faculty_info
@@ -512,6 +527,79 @@ class DatabaseIngestionService:
         
         self.db.commit()
     
+    def update_faculty_extended_info(self, faculty_json_path: str):
+        """
+        Update faculty with extended information from faculty_data.json
+        Adds education, areas_of_interest, profile_page, and status fields
+        """
+        logger.info("Updating faculty extended information...")
+        
+        # Load faculty data
+        with open(faculty_json_path, 'r', encoding='utf-8') as f:
+            faculty_data = json.load(f)
+        
+        updated_count = 0
+        not_found = []
+        
+        for faculty in faculty_data:
+            name = faculty.get('name')
+            dblp_pid = faculty.get('dblp_pid')
+            
+            # Try to find faculty by DBLP PID first (more reliable), then by name
+            author = None
+            if dblp_pid:
+                author = self.db.query(Author).filter(
+                    Author.dblp_pid == dblp_pid,
+                    Author.is_faculty == True
+                ).first()
+            
+            if not author:
+                # Fallback to name matching
+                author = self.db.query(Author).filter(
+                    Author.name == name,
+                    Author.is_faculty == True
+                ).first()
+            
+            if author:
+                # Update extended fields
+                author.education = faculty.get('education')
+                author.areas_of_interest = faculty.get('areas_of_interest')
+                author.profile_page = faculty.get('profile_page')
+                author.status = faculty.get('status')  # Will be None for current faculty
+                
+                # Also update other fields if they're missing or empty
+                if not author.phone and faculty.get('phone'):
+                    author.phone = faculty.get('phone')
+                if not author.homepage and faculty.get('homepage'):
+                    author.homepage = faculty.get('homepage')
+                if not author.designation and faculty.get('designation'):
+                    author.designation = faculty.get('designation')
+                if not author.email and faculty.get('email'):
+                    author.email = faculty.get('email')
+                
+                author.updated_at = datetime.utcnow()
+                updated_count += 1
+                logger.debug(f"  ✓ Updated: {name} (DB name: {author.name})")
+            else:
+                not_found.append(f"{name} (PID: {dblp_pid})")
+                logger.debug(f"  ✗ Not found in database: {name} (PID: {dblp_pid})")
+        
+        # Commit all updates
+        try:
+            self.db.commit()
+            logger.info(f"✓ Updated extended information for {updated_count} faculty members")
+            
+            if not_found:
+                logger.warning(f"  ⚠ {len(not_found)} faculty not found in database:")
+                for name in not_found[:5]:  # Show first 5
+                    logger.warning(f"    - {name}")
+                if len(not_found) > 5:
+                    logger.warning(f"    ... and {len(not_found) - 5} more")
+        except Exception as e:
+            logger.error(f"✗ Error updating faculty extended info: {e}")
+            self.db.rollback()
+            raise
+    
     def print_stats(self):
         """Print ingestion statistics"""
         print(f"\n{'='*80}")
@@ -567,8 +655,13 @@ def main():
     service.ingest_publications(publications, faculty_mapping)
     logger.info("✓ Data ingestion complete")
     
-    # Step 5: Update data source
-    logger.info("Step 5: Updating data source record...")
+    # Step 5: Update faculty extended information
+    logger.info("Step 5: Updating faculty extended information...")
+    service.update_faculty_extended_info(str(faculty_json))
+    logger.info("✓ Faculty extended information updated")
+    
+    # Step 6: Update data source
+    logger.info("Step 6: Updating data source record...")
     service.update_data_source('DBLP')
     logger.info("✓ Data source updated")
     

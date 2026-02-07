@@ -138,6 +138,10 @@ class FacultyBase(BaseModel):
     phone: Optional[str] = None
     dblp_pid: Optional[str] = None
     is_faculty: bool = True
+    education: Optional[str] = None
+    areas_of_interest: Optional[str] = None
+    profile_page: Optional[str] = None
+    status: Optional[str] = None
 
 
 class FacultySchema(FacultyBase, TimestampMixin):
@@ -148,8 +152,14 @@ class FacultySchema(FacultyBase, TimestampMixin):
     publication_count: Optional[int] = 0
     total_publications: Optional[int] = 0
     h_index: Optional[int] = None
+    scopus_author_id: Optional[str] = None
+    scopus_url: Optional[str] = None
     homepage: Optional[str] = None
     research_interests: Optional[str] = None
+    irins_profile: Optional[str] = None
+    irins_url: Optional[str] = None
+    irins_photo_url: Optional[str] = None
+    photo_path: Optional[str] = None
     
     model_config = ConfigDict(from_attributes=True)
 

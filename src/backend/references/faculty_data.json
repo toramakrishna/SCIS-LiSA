@@ -5,23 +5,38 @@
       "Siba K. Udgata",
       "Siba Kumar Udgata"
     ],
-    "designation": "Professor",
+    "designation": "Professor and Dean",
     "email": "deanscis@uohyd.ac.in",
-    "phone": "",
+    "phone": "91-040-23134101",
     "department": "SCIS",
+    "homepage": "http://scis.uohyd.ac.in/~udgatacs/",
+    "profile_page": "People/profile/sku_profile.php",
+    "education": "Ph.D, Berhampur University (Odisha), India",
+    "areas_of_interest": "Mobile Computing, Networks and Architecture",
     "dblp_urls": [
       "https://dblp.org/pid/04/3517.html"
     ],
     "dblp_count": 76,
     "dblp_pid": "04/3517",
-    "dblp_matched": true
+    "dblp_matched": true,
+    "irins_profile": "71829",
+    "irins_url": "https://uohyd.irins.org/profile/71829",
+    "irins_photo_url": "https://uohyd.irins.org/profile_images/71829.jpg",
+    "photo_path": "dataset/images/faculty/71829.jpg",
+    "scopus_author_id": "6505814190",
+    "h_index": 18,
+    "scopus_url": "https://www.scopus.com/authid/detail.uri?authorId=6505814190"
   },
   {
     "name": "Alok Singh",
     "designation": "Professor",
     "email": "alok@uohyd.ac.in",
-    "phone": "",
+    "phone": "91-040-23134011",
     "department": "SCIS",
+    "homepage": "http://scis.uohyd.ac.in/~alokcs/",
+    "profile_page": "People/profile/as_profile.php",
+    "education": "D.Phil, University of Allahabad, India",
+    "areas_of_interest": "Combinatorial Optimization using Heuristic and Metaheuristic techniques",
     "dblp_names": [
       "Alok Singh 0001",
       "Alok Singh"
@@ -31,14 +46,25 @@
     ],
     "dblp_count": 97,
     "dblp_pid": "01/1744-1",
-    "dblp_matched": true
+    "dblp_matched": true,
+    "irins_profile": "61035",
+    "irins_url": "https://uohyd.irins.org/profile/61035",
+    "irins_photo_url": "https://uohyd.irins.org/profile_images/61035.png",
+    "photo_path": "dataset/images/faculty/61035.png",
+    "scopus_author_id": "35254330000",
+    "h_index": 28,
+    "scopus_url": "https://www.scopus.com/authid/detail.uri?authorId=35254330000"
   },
   {
     "name": "Anjeneya Swami Kare",
     "designation": "Assistant Professor",
     "email": "askcs@uohyd.ac.in",
-    "phone": "",
+    "phone": "91-040-23134110",
     "department": "SCIS",
+    "homepage": "http://scis.uohyd.ac.in/~askcs/",
+    "profile_page": "People/profile/ka_profile.php",
+    "education": "Ph.D, IIT Hyderabad, India; M.Tech., IIT Kanpur, India",
+    "areas_of_interest": "Graph Theory, Algorithms and Theoretical Computer Science",
     "dblp_names": [
       "Anjeneya Swami Kare"
     ],
@@ -47,14 +73,25 @@
     ],
     "dblp_count": 33,
     "dblp_pid": "138/0168",
-    "dblp_matched": true
+    "dblp_matched": true,
+    "irins_profile": "68485",
+    "irins_url": "https://uohyd.irins.org/profile/68485",
+    "irins_photo_url": "https://uohyd.irins.org/profile_images/684851.jpg",
+    "photo_path": "dataset/images/faculty/684851.jpg",
+    "scopus_author_id": "55903487100",
+    "h_index": 6,
+    "scopus_url": "https://www.scopus.com/authid/detail.uri?authorId=55903487100"
   },
   {
     "name": "Anupama Potluri",
     "designation": "Assistant Professor",
     "email": "apcs@uohyd.ac.in",
-    "phone": "",
+    "phone": "91-040-23134103",
     "department": "SCIS",
+    "homepage": "http://scis.uohyd.ac.in/~apcs/",
+    "profile_page": "People/profile/ap_profile.php",
+    "education": "M.S., UMBC, USA; Ph.D, University of Hyderabad, India",
+    "areas_of_interest": "Networking, Systems Security, Operating Systems",
     "dblp_names": [
       "Anupama Potluri"
     ],
@@ -63,14 +100,25 @@
     ],
     "dblp_count": 14,
     "dblp_pid": "16/5380",
-    "dblp_matched": true
+    "dblp_matched": true,
+    "irins_profile": "112625",
+    "irins_url": "https://uohyd.irins.org/profile/112625",
+    "irins_photo_url": "https://uohyd.irins.org/profile_images/1126251.jpg",
+    "photo_path": "dataset/images/faculty/1126251.jpg",
+    "scopus_author_id": "19933884500",
+    "h_index": 6,
+    "scopus_url": "https://www.scopus.com/authid/detail.uri?authorId=19933884500"
   },
   {
     "name": "Arun Kumar Das",
     "designation": "Assistant Professor",
     "email": "arunkumardas@uohyd.ac.in",
-    "phone": "",
+    "phone": "91-040-23134000",
     "department": "SCIS",
+    "homepage": "http://scis.uohyd.ac.in/~akdas/",
+    "profile_page": "People/profile/akd_profile.php",
+    "education": "Ph.D, Indian Statistical Institute, Kolkata, India; Post Doc, Czech Technical University, Prague, Czechia",
+    "areas_of_interest": "Algorithms and Combinatorics",
     "dblp_names": [
       "Arun Kumar Das"
     ],
@@ -85,8 +133,11 @@
     "name": "Atul Negi",
     "designation": "Professor",
     "email": "atul.negi@uohyd.ac.in",
-    "phone": "",
+    "phone": "91-040-23134031",
     "department": "SCIS",
+    "profile_page": "People/profile/an_profile.php",
+    "education": "Ph.D, University of Hyderabad, India",
+    "areas_of_interest": "Pattern Recognition and its Applications, Computer Networks",
     "dblp_names": [
       "Atul Negi"
     ],
@@ -95,14 +146,25 @@
     ],
     "dblp_count": 91,
     "dblp_pid": "73/4368",
-    "dblp_matched": true
+    "dblp_matched": true,
+    "irins_profile": "36729",
+    "irins_url": "https://uohyd.irins.org/profile/36729",
+    "irins_photo_url": "https://uohyd.irins.org/profile_images/36729.jpg",
+    "photo_path": "dataset/images/faculty/36729.jpg",
+    "scopus_author_id": "7006204235",
+    "h_index": 17,
+    "scopus_url": "https://www.scopus.com/authid/detail.uri?authorId=7006204235"
   },
   {
     "name": "Avatharam Ganivada",
     "designation": "Assistant Professor",
     "email": "avatharg@uohyd.ac.in",
-    "phone": "",
+    "phone": "91-040-23134125",
     "department": "SCIS",
+    "homepage": "http://scis.uohyd.ac.in/~avatharg/",
+    "profile_page": "People/profile/ga_profile.php",
+    "education": "Ph.D, Calcutta University (Research work carried out at Indian Statistical Institute)",
+    "areas_of_interest": "Deep Neural Networks, Computer Vision, Pattern Recognition, Fuzzy and Rough Sets",
     "dblp_names": [
       "Avatharam Ganivada"
     ],
@@ -111,14 +173,22 @@
     ],
     "dblp_count": 19,
     "dblp_pid": "06/10134",
-    "dblp_matched": true
+    "dblp_matched": true,
+    "irins_profile": "71039",
+    "irins_url": "https://uohyd.irins.org/profile/71039",
+    "irins_photo_url": "https://uohyd.irins.org/profile_images/71039.png",
+    "photo_path": "dataset/images/faculty/71039.png"
   },
   {
     "name": "Chakravarthy Bhagvati",
     "designation": "Professor",
     "email": "chakravarthybhagvati@uohyd.ac.in",
-    "phone": "",
+    "phone": "91-040-23134056",
     "department": "SCIS",
+    "homepage": "http://scis.uohyd.ac.in/~chakcs",
+    "profile_page": "People/profile/cb_profile.php",
+    "education": "Ph.D, RPI, New York, USA",
+    "areas_of_interest": "Image Processing, Computer Vision, Pattern Recognition",
     "dblp_names": [
       "Chakravarthy Bhagvati"
     ],
@@ -127,14 +197,25 @@
     ],
     "dblp_count": 60,
     "dblp_pid": "91/1525",
-    "dblp_matched": true
+    "dblp_matched": true,
+    "irins_profile": "36727",
+    "irins_url": "https://uohyd.irins.org/profile/36727",
+    "irins_photo_url": "https://uohyd.irins.org/profile_images/36727.png",
+    "photo_path": "dataset/images/faculty/36727.png",
+    "scopus_author_id": "6603217032",
+    "h_index": 14,
+    "scopus_url": "https://www.scopus.com/authid/detail.uri?authorId=6603217032"
   },
   {
     "name": "Digambar Pawar",
     "designation": "Professor",
     "email": "dpr@uohyd.ac.in",
-    "phone": "",
+    "phone": "91-040-23134123",
     "department": "SCIS",
+    "homepage": "http://scis.uohyd.ac.in/~dpcs/",
+    "profile_page": "People/profile/dp_profile.php",
+    "education": "Ph.D, BITS Pilani, India",
+    "areas_of_interest": "Digital Forensics, Cloud Computing, Cyber Security",
     "dblp_names": [
       "Digambar Pawar"
     ],
@@ -143,14 +224,25 @@
     ],
     "dblp_count": 10,
     "dblp_pid": "327/2466",
-    "dblp_matched": true
+    "dblp_matched": true,
+    "irins_profile": "71149",
+    "irins_url": "https://uohyd.irins.org/profile/71149",
+    "irins_photo_url": "https://uohyd.irins.org/profile_images/71149.png",
+    "photo_path": "dataset/images/faculty/71149.png",
+    "scopus_author_id": "46661973200",
+    "h_index": 6,
+    "scopus_url": "https://www.scopus.com/authid/detail.uri?authorId=46661973200"
   },
   {
     "name": "Durga Bhavani S.",
     "designation": "Professor",
     "email": "sdbcs@uohyd.ac.in",
-    "phone": "",
+    "phone": "91-040-23134205",
     "department": "SCIS",
+    "homepage": "http://scis.uohyd.ac.in/~sdbcs/",
+    "profile_page": "People/profile/sdb_profile.php",
+    "education": "Ph.D, University of Hyderabad, India",
+    "areas_of_interest": "Social and Biological Network Analysis, Graph Algorithms, Network Science",
     "dblp_names": [
       "Durga Bhavani S.",
       "S. Durga Bhavani"
@@ -160,14 +252,24 @@
     ],
     "dblp_count": 58,
     "dblp_pid": "63/2890",
-    "dblp_matched": true
+    "dblp_matched": true,
+    "irins_profile": "36731",
+    "irins_url": "https://uohyd.irins.org/profile/36731",
+    "irins_photo_url": "https://uohyd.irins.org/profile_images/36731.png",
+    "photo_path": "dataset/images/faculty/36731.png",
+    "scopus_author_id": "45261068300",
+    "h_index": 9,
+    "scopus_url": "https://www.scopus.com/authid/detail.uri?authorId=45261068300"
   },
   {
     "name": "Nagamani M.",
     "designation": "Associate Professor",
     "email": "nagamanics@uohyd.ac.in",
-    "phone": "",
+    "phone": "91-040-23134018",
     "department": "SCIS",
+    "profile_page": "People/profile/mn_profile.php",
+    "education": "Ph.D, University of Hyderabad, India",
+    "areas_of_interest": "Human Computer and Interaction, Robotics, Embedded System and Signal processing, Data Engineering for Science and Social science and Language Sciences",
     "dblp_names": [
       "Nagamani M.",
       "M. Nagamani"
@@ -177,14 +279,25 @@
     ],
     "dblp_count": 3,
     "dblp_pid": "284/7780",
-    "dblp_matched": true
+    "dblp_matched": true,
+    "irins_profile": "112626",
+    "irins_url": "https://uohyd.irins.org/profile/112626",
+    "irins_photo_url": "https://uohyd.irins.org/profile_images/112626.png",
+    "photo_path": "dataset/images/faculty/112626.png",
+    "scopus_author_id": "9738565300",
+    "h_index": 3,
+    "scopus_url": "https://www.scopus.com/authid/detail.uri?authorId=9738565300"
   },
   {
     "name": "Nagender Kumar S.",
     "designation": "Professor",
     "email": "nks@uohyd.ac.in",
-    "phone": "",
+    "phone": "91-040-23134105",
     "department": "SCIS",
+    "homepage": "http://scis.uohyd.ac.in/~nks/",
+    "profile_page": "People/profile/nks_profile.php",
+    "education": "Ph.D, Massey University-New Zealand",
+    "areas_of_interest": "Internet of Things, Real-Time Data Mining, Ambient Assisted Living Environment",
     "dblp_names": [
       "Nagender Kumar Suryadevara",
       "N. K. Suryadevara"
@@ -194,14 +307,25 @@
     ],
     "dblp_count": 23,
     "dblp_pid": "21/10736",
-    "dblp_matched": true
+    "dblp_matched": true,
+    "irins_profile": "71041",
+    "irins_url": "https://uohyd.irins.org/profile/71041",
+    "irins_photo_url": "https://uohyd.irins.org/profile_images/71041.png",
+    "photo_path": "dataset/images/faculty/71041.png",
+    "scopus_author_id": "54416457200",
+    "h_index": 22,
+    "scopus_url": "https://www.scopus.com/authid/detail.uri?authorId=54416457200"
   },
   {
     "name": "Naveen Nekuri",
     "designation": "Assistant Professor",
     "email": "naveencis@uohyd.ac.in",
-    "phone": "",
+    "phone": "91-040-23134124",
     "department": "SCIS",
+    "homepage": "http://scis.uohyd.ac.in/~nncs/",
+    "profile_page": "People/profile/nn_profile.php",
+    "education": "Ph.D,University of Hyderabad, India",
+    "areas_of_interest": "Data Mining, Optimization techniques, Neural Networks",
     "dblp_names": [
       "Nekuri Naveen"
     ],
@@ -210,14 +334,25 @@
     ],
     "dblp_count": 14,
     "dblp_pid": "55/8654",
-    "dblp_matched": true
+    "dblp_matched": true,
+    "irins_profile": "71001",
+    "irins_url": "https://uohyd.irins.org/profile/71001",
+    "irins_photo_url": "https://uohyd.irins.org/profile_images/71001.jpg",
+    "photo_path": "dataset/images/faculty/71001.jpg",
+    "scopus_author_id": "57193574372",
+    "h_index": 5,
+    "scopus_url": "https://www.scopus.com/authid/detail.uri?authorId=57193574372"
   },
   {
     "name": "Rajeev Wankar",
     "designation": "Professor",
     "email": "wankarcs@uohyd.ac.in",
-    "phone": "",
+    "phone": "91-040-23134107",
     "department": "SCIS",
+    "homepage": "http://scis.uohyd.ac.in/~wankarcs/",
+    "profile_page": "People/profile/rw_profile.php",
+    "education": "Ph.D, Devi Ahilya University, Indore",
+    "areas_of_interest": "Parallel Computing, Cloud Computing, Algorithms",
     "dblp_names": [
       "Rajeev Wankar"
     ],
@@ -226,14 +361,24 @@
     ],
     "dblp_count": 50,
     "dblp_pid": "31/566",
-    "dblp_matched": true
+    "dblp_matched": true,
+    "irins_profile": "71033",
+    "irins_url": "https://uohyd.irins.org/profile/71033",
+    "irins_photo_url": "https://uohyd.irins.org/profile_images/71033.jpg",
+    "photo_path": "dataset/images/faculty/71033.jpg",
+    "scopus_author_id": "23502558500",
+    "h_index": 9,
+    "scopus_url": "https://www.scopus.com/authid/detail.uri?authorId=23502558500"
   },
   {
     "name": "Rajendra Prasad Lal",
     "designation": "Assistant Professor",
     "email": "rajendraprasd@uohyd.ac.in",
-    "phone": "",
+    "phone": "91-040-23134019",
     "department": "SCIS",
+    "profile_page": "People/profile/rpl_profile.php",
+    "education": "Ph.D, Utkal University, Bhubaneswar, India",
+    "areas_of_interest": "Graph Algorithms, Mathematical Programming, Computational Geometry",
     "dblp_names": [
       "Rajendra Prasad Lal"
     ],
@@ -242,14 +387,24 @@
     ],
     "dblp_count": 12,
     "dblp_pid": "31/9532",
-    "dblp_matched": true
+    "dblp_matched": true,
+    "irins_profile": "71163",
+    "irins_url": "https://uohyd.irins.org/profile/71163",
+    "irins_photo_url": "https://uohyd.irins.org/profile_images/71163.png",
+    "photo_path": "dataset/images/faculty/71163.png",
+    "scopus_author_id": "22980493500",
+    "h_index": 3,
+    "scopus_url": "https://www.scopus.com/authid/detail.uri?authorId=22980493500"
   },
   {
     "name": "Rukma Rekha N.",
     "designation": "Professor",
     "email": "rukmarekha@uohyd.ac.in",
-    "phone": "",
+    "phone": "91-040-23134113",
     "department": "SCIS",
+    "profile_page": "People/profile/nrr_profile.php",
+    "education": "Ph.D, Andhra University, India",
+    "areas_of_interest": "Cryptography, Information Security, Block chain Technologies, Pervasive Computing and Computer Architecture",
     "dblp_names": [
       "N. Rukma Rekha",
       "Rukma Rekha N."
@@ -259,14 +414,25 @@
     ],
     "dblp_count": 7,
     "dblp_pid": "83/9943",
-    "dblp_matched": true
+    "dblp_matched": true,
+    "irins_profile": "71189",
+    "irins_url": "https://uohyd.irins.org/profile/71189",
+    "irins_photo_url": "https://uohyd.irins.org/profile_images/71189.jpg",
+    "photo_path": "dataset/images/faculty/71189.jpg",
+    "scopus_author_id": "57208300291",
+    "h_index": 4,
+    "scopus_url": "https://www.scopus.com/authid/detail.uri?authorId=57208300291"
   },
   {
     "name": "Sai Prasad P.S.V.S.",
     "designation": "Professor",
     "email": "saics@uohyd.ac.in",
-    "phone": "",
+    "phone": "+91-9390924283",
     "department": "SCIS",
+    "homepage": "https://sites.google.com/uohyd.ac.in/saisc/home",
+    "profile_page": "People/profile/psvs_profile.php",
+    "education": "Ph.D, University of Hyderabad, India",
+    "areas_of_interest": "Distributed Machine Learning, Data Science, Big Data Engineering, Soft Computing, Rough Sets",
     "dblp_names": [
       "P. S. V. S. Sai Prasad"
     ],
@@ -275,14 +441,25 @@
     ],
     "dblp_count": 37,
     "dblp_pid": "23/2953",
-    "dblp_matched": true
+    "dblp_matched": true,
+    "irins_profile": "71151",
+    "irins_url": "https://uohyd.irins.org/profile/71151",
+    "irins_photo_url": "https://uohyd.irins.org/profile_images/71151.png",
+    "photo_path": "dataset/images/faculty/71151.png",
+    "scopus_author_id": "35485463200",
+    "h_index": 8,
+    "scopus_url": "https://www.scopus.com/authid/detail.uri?authorId=35485463200"
   },
   {
     "name": "Saifulla Md. Abdul",
     "designation": "Assistant Professor",
     "email": "saifullah@uohyd.ac.in",
-    "phone": "",
+    "phone": "91-040-23134224",
     "department": "SCIS",
+    "homepage": "http://scis.uohyd.ac.in/~mascs/",
+    "profile_page": "People/profile/sma_profile.php",
+    "education": "Ph.D, Anna University, India",
+    "areas_of_interest": "Cybersecurity, AI/ML applications, Computer Networks, SDN, NDN, IoT, Recommender Systems, Digital Twin, Quantum Computing",
     "dblp_names": [
       "Saifulla Md. Abdul"
     ],
@@ -291,14 +468,25 @@
     ],
     "dblp_count": 11,
     "dblp_pid": "309/7711",
-    "dblp_matched": true
+    "dblp_matched": true,
+    "irins_profile": "112629",
+    "irins_url": "https://uohyd.irins.org/profile/112629",
+    "irins_photo_url": "https://uohyd.irins.org/profile_images/112629.png",
+    "photo_path": "dataset/images/faculty/112629.png",
+    "scopus_author_id": "56680975500",
+    "h_index": 3,
+    "scopus_url": "https://www.scopus.com/authid/detail.uri?authorId=56680975500"
   },
   {
     "name": "Salman Abdul Moiz",
     "designation": "Professor",
     "email": "salman@uohyd.ac.in",
-    "phone": "",
+    "phone": "91-040-23134126",
     "department": "SCIS",
+    "homepage": "http://scis.uohyd.ac.in/~samcs/",
+    "profile_page": "People/profile/sam_profile.php",
+    "education": "Ph.D. (CSE), Osmania University, India",
+    "areas_of_interest": "Software Engineering, Mobile Databases, E-Learning",
     "dblp_names": [
       "Salman Abdul Moiz"
     ],
@@ -307,14 +495,25 @@
     ],
     "dblp_count": 22,
     "dblp_pid": "98/6017",
-    "dblp_matched": true
+    "dblp_matched": true,
+    "irins_profile": "71035",
+    "irins_url": "https://uohyd.irins.org/profile/71035",
+    "irins_photo_url": "https://uohyd.irins.org/profile_images/71035.JPG",
+    "photo_path": "dataset/images/faculty/71035.JPG",
+    "scopus_author_id": "23467539000",
+    "h_index": 7,
+    "scopus_url": "https://www.scopus.com/authid/detail.uri?authorId=23467539000"
   },
   {
     "name": "Satish Srirama",
     "designation": "Professor",
     "email": "satish.srirama@uohyd.ac.in",
-    "phone": "",
+    "phone": "040-23134105",
     "department": "SCIS",
+    "homepage": "https://scis.uohyd.ac.in/~srirama/",
+    "profile_page": "People/profile/ssn_profile.php",
+    "education": "Ph.D, RWTH Aachen University, Germany",
+    "areas_of_interest": "Cloud Computing, Data Science on the Cloud, Internet of Things and Fog Computing",
     "dblp_names": [
       "Satish Narayana Srirama"
     ],
@@ -329,8 +528,11 @@
     "name": "Sobha Rani T.",
     "designation": "Associate Professor",
     "email": "sobharani@uohyd.ac.in",
-    "phone": "",
+    "phone": "91-040-23134203",
     "department": "SCIS",
+    "profile_page": "People/profile/tsr_profile.php",
+    "education": "Ph.D, University of Hyderabad, India",
+    "areas_of_interest": "Bioinformatics, Machine Learning Techniques, Language Processors",
     "dblp_names": [
       "T. Sobha Rani"
     ],
@@ -339,14 +541,22 @@
     ],
     "dblp_count": 23,
     "dblp_pid": "51/1349",
-    "dblp_matched": true
+    "dblp_matched": true,
+    "irins_profile": "36732",
+    "irins_url": "https://uohyd.irins.org/profile/36732",
+    "irins_photo_url": "https://uohyd.irins.org/profile_images/36732.png",
+    "photo_path": "dataset/images/faculty/36732.png"
   },
   {
     "name": "Srinivasa Rao Battula",
     "designation": "Professor",
     "email": "srinivas.battula@uohyd.ac.in",
-    "phone": "",
+    "phone": "91-040-23134000",
     "department": "SCIS",
+    "homepage": "http://scis.uohyd.ac.in/~bscs/",
+    "profile_page": "People/profile/bsr_profile.php",
+    "education": "Ph.D, Acharya Nagarjuna University, India",
+    "areas_of_interest": "Medical Image Analysis, Image Processing, Machine Learning and Deep Learning",
     "dblp_names": [
       "Battula Srinivasa Rao",
       "Srinivasa Rao Battula"
@@ -363,8 +573,11 @@
     "name": "Subba Rao Y.V.",
     "designation": "Associate Professor",
     "email": "yvsrcs@uohyd.ac.in",
-    "phone": "",
+    "phone": "91-040-23134109",
     "department": "SCIS",
+    "profile_page": "People/profile/yvsr_profile.php",
+    "education": "Ph.D, University of Hyderabad, India",
+    "areas_of_interest": "Cryptography, Theory of Computation, DBMS, Data Forensics",
     "dblp_names": [
       "Y. V. Subba Rao"
     ],
@@ -373,14 +586,24 @@
     ],
     "dblp_count": 13,
     "dblp_pid": "50/971",
-    "dblp_matched": true
+    "dblp_matched": true,
+    "irins_profile": "71311",
+    "irins_url": "https://uohyd.irins.org/profile/71311",
+    "irins_photo_url": "https://uohyd.irins.org/profile_images/71311.png",
+    "photo_path": "dataset/images/faculty/71311.png",
+    "scopus_author_id": "55247584300",
+    "h_index": 5,
+    "scopus_url": "https://www.scopus.com/authid/detail.uri?authorId=55247584300"
   },
   {
     "name": "Swarupa Rani K.",
     "designation": "Professor",
     "email": "swarupacs@uohyd.ac.in",
-    "phone": "",
+    "phone": "91-040-23134020",
     "department": "SCIS",
+    "profile_page": "People/profile/ks_profile.php",
+    "education": "Ph.D. (CSE), ANU, India",
+    "areas_of_interest": "Data Science & Big Data Analytics, Artificial Intelligence & some of the related areas",
     "dblp_names": [
       "K. Swarupa Rani"
     ],
@@ -389,14 +612,24 @@
     ],
     "dblp_count": 14,
     "dblp_pid": "77/10593",
-    "dblp_matched": true
+    "dblp_matched": true,
+    "irins_profile": "107771",
+    "irins_url": "https://uohyd.irins.org/profile/107771",
+    "irins_photo_url": "https://uohyd.irins.org/profile_images/107771.png",
+    "photo_path": "dataset/images/faculty/107771.png",
+    "scopus_author_id": "54788531100",
+    "scopus_url": "https://www.scopus.com/authid/detail.uri?authorId=54788531100"
   },
   {
     "name": "Vineet C. P. Nair",
     "designation": "Professor",
     "email": "vineetnair@uohyd.ac.in",
-    "phone": "",
+    "phone": "91-040-23134012",
     "department": "SCIS",
+    "homepage": "http://scis.uohyd.ac.in/~vineetcs/",
+    "profile_page": "People/profile/vn_profile.php",
+    "education": "Ph.D, Griffith University, Australia",
+    "areas_of_interest": "Knowledge Representation and Reasoning, Multi-Agent Systems, Logics in Artificial Intelligence",
     "dblp_names": [
       "Vineet Padmanabhan"
     ],
@@ -405,14 +638,24 @@
     ],
     "dblp_count": 87,
     "dblp_pid": "98/255",
-    "dblp_matched": true
+    "dblp_matched": true,
+    "irins_profile": "107769",
+    "irins_url": "https://uohyd.irins.org/profile/107769",
+    "irins_photo_url": "https://uohyd.irins.org/profile_images/107769.png",
+    "photo_path": "dataset/images/faculty/107769.png",
+    "scopus_author_id": "7102543978",
+    "h_index": 16,
+    "scopus_url": "https://www.scopus.com/authid/detail.uri?authorId=7102543978"
   },
   {
     "name": "Wilson Naik Bhukya",
     "designation": "Associate Professor",
     "email": "rathore@uohyd.ac.in",
-    "phone": "",
+    "phone": "91-040-23134106",
     "department": "SCIS",
+    "profile_page": "People/profile/wn_profile.php",
+    "education": "Ph.D, University of Hyderabad, India",
+    "areas_of_interest": "Network Forensics, Systems Security, Networking",
     "dblp_names": [
       "Wilson Naik Bhukya",
       "Wilson Naik"
@@ -423,14 +666,24 @@
     ],
     "dblp_count": 14,
     "dblp_pid": "05/2858",
-    "dblp_matched": true
+    "dblp_matched": true,
+    "irins_profile": "108337",
+    "irins_url": "https://uohyd.irins.org/profile/108337",
+    "irins_photo_url": "https://uohyd.irins.org/assets/images/img1-sm.jpg",
+    "scopus_author_id": "18133327200",
+    "h_index": 4,
+    "scopus_url": "https://www.scopus.com/authid/detail.uri?authorId=18133327200"
   },
   {
     "name": "Arun Agarwal",
     "designation": "Senior Professor",
     "email": "arunagarwal@uohyd.ac.in",
-    "phone": "",
+    "phone": "91-040-23134000",
     "department": "SCIS",
+    "profile_page": "People/profile/aa_profile.php",
+    "education": "Ph.D, IIT Delhi, India; B.Tech(EE), IIT Delhi, India",
+    "areas_of_interest": "Image Processing, Computer vision, Pattern Recognition, Neural Networks, Grid and Cloud Computing",
+    "status": "Former Faculty",
     "dblp_names": [
       "Arun Agarwal"
     ],
@@ -439,14 +692,26 @@
     ],
     "dblp_count": 74,
     "dblp_pid": "97/3869",
-    "dblp_matched": true
+    "dblp_matched": true,
+    "irins_profile": "36721",
+    "irins_url": "https://uohyd.irins.org/profile/36721",
+    "irins_photo_url": "https://uohyd.irins.org/profile_images/36721.jpg",
+    "photo_path": "dataset/images/faculty/36721.jpg",
+    "scopus_author_id": "7401480554",
+    "h_index": 12,
+    "scopus_url": "https://www.scopus.com/authid/detail.uri?authorId=7401480554"
   },
   {
     "name": "Arun K Pujari",
     "designation": "Professor",
     "email": "akpcs@uohyd.ernet.in",
-    "phone": "",
+    "phone": "91-040-23134000",
     "department": "SCIS",
+    "homepage": "http://scis.uohyd.ac.in/~akpcs/",
+    "profile_page": "People/profile/akp_profile.php",
+    "education": "Ph.D, IIT Kanpur, India",
+    "areas_of_interest": "Combinatorial Algorithms, Data Mining, Logic and Reasoning",
+    "status": "Former Faculty",
     "dblp_names": [
       "Arun K. Pujari"
     ],
@@ -455,14 +720,25 @@
     ],
     "dblp_count": 113,
     "dblp_pid": "95/6184",
-    "dblp_matched": true
+    "dblp_matched": true,
+    "irins_profile": "36720",
+    "irins_url": "https://uohyd.irins.org/profile/36720",
+    "irins_photo_url": "https://uohyd.irins.org/profile_images/36720.jpg",
+    "photo_path": "dataset/images/faculty/36720.jpg",
+    "scopus_author_id": "6701839025",
+    "h_index": 21,
+    "scopus_url": "https://www.scopus.com/authid/detail.uri?authorId=6701839025"
   },
   {
     "name": "Bapi Raju S.",
     "designation": "Professor",
     "email": "bapics@uohyd.ernet.in",
-    "phone": "",
+    "phone": "91-040-23134000",
     "department": "SCIS",
+    "profile_page": "People/profile/sb_profile.php",
+    "education": "Ph.D, University of Texas, Arlington, USA",
+    "areas_of_interest": "Neural Networks, Cognitive Modeling, Pattern Recognition",
+    "status": "Former Faculty",
     "dblp_names": [
       "S. Bapi Raju",
       "Bapi Raju Surampudi",
@@ -476,14 +752,25 @@
     ],
     "dblp_count": 139,
     "dblp_pid": "50/1424",
-    "dblp_matched": true
+    "dblp_matched": true,
+    "irins_profile": "36728",
+    "irins_url": "https://uohyd.irins.org/profile/36728",
+    "irins_photo_url": "https://uohyd.irins.org/profile_images/36728.png",
+    "photo_path": "dataset/images/faculty/36728.png",
+    "scopus_author_id": "6603442804",
+    "h_index": 2,
+    "scopus_url": "https://www.scopus.com/authid/detail.uri?authorId=6603442804"
   },
   {
     "name": "Girija P.N.",
     "designation": "Professor",
     "email": "pngcs@uohyd.ernet.in",
-    "phone": "",
+    "phone": "91-040-23134000",
     "department": "SCIS",
+    "profile_page": "People/profile/png_profile.php",
+    "education": "Ph.D, Sri Venkateswara University, AP, India",
+    "areas_of_interest": "Speech Synthesis, Speech Recognition, Spoken Dialog Systems, Human Computer Interaction, Intelligent Agents",
+    "status": "Former Faculty",
     "dblp_names": [
       "P. N. Girija"
     ],
@@ -492,14 +779,25 @@
     ],
     "dblp_count": 3,
     "dblp_pid": "10/2362",
-    "dblp_matched": true
+    "dblp_matched": true,
+    "irins_profile": "71067",
+    "irins_url": "https://uohyd.irins.org/profile/71067",
+    "irins_photo_url": "https://uohyd.irins.org/profile_images/71067.png",
+    "photo_path": "dataset/images/faculty/71067.png",
+    "scopus_author_id": "9737152400",
+    "h_index": 4,
+    "scopus_url": "https://www.scopus.com/authid/detail.uri?authorId=9737152400"
   },
   {
     "name": "Hrushikesha Mohanty",
     "designation": "Professor",
     "email": "hmcs@uohyd.ernet.in",
-    "phone": "",
+    "phone": "91-040-23134000",
     "department": "SCIS",
+    "profile_page": "People/profile/hm_profile.php",
+    "education": "Ph.D, IIT Kharagpur, India",
+    "areas_of_interest": "Distributed Computing, Software Engineering Business Process Re-engineering and Mobile Computing",
+    "status": "Former Faculty",
     "dblp_names": [
       "Hrushikesha Mohanty"
     ],
@@ -514,8 +812,13 @@
     "name": "Narayana Murthy K.",
     "designation": "Professor",
     "email": "knmcs@uohyd.ac.in",
-    "phone": "",
+    "phone": "91-040-23134000",
     "department": "SCIS",
+    "homepage": "http://languagetechnologies.uohyd.ac.in",
+    "profile_page": "People/profile/knm_profile.php",
+    "education": "Ph.D, University of Hyderabad, India",
+    "areas_of_interest": "Natural Language Engineering, Machine Translation, Text Analytics, Machine Learning, Speech Recognition and Synthesis",
+    "status": "Former Faculty",
     "dblp_names": [
       "Narayana Murthy Kavi",
       "Kavi Narayana Murthy"
@@ -525,14 +828,24 @@
     ],
     "dblp_count": 15,
     "dblp_pid": "94/4013",
-    "dblp_matched": true
+    "dblp_matched": true,
+    "irins_profile": "70993",
+    "irins_url": "https://uohyd.irins.org/profile/70993",
+    "irins_photo_url": "https://uohyd.irins.org/profile_images/70993.jpg",
+    "photo_path": "dataset/images/faculty/70993.jpg",
+    "scopus_author_id": "8537001200",
+    "scopus_url": "https://www.scopus.com/authid/detail.uri?authorId=8537001200"
   },
   {
     "name": "Raghavendra Rao C.",
     "designation": "Senior Professor",
     "email": "crrao@uohyd.ac.in",
-    "phone": "",
+    "phone": "91-040-23134000",
     "department": "SCIS",
+    "profile_page": "People/profile/crr_profile.php",
+    "education": "Ph.D, Osmania University, India",
+    "areas_of_interest": "Simulation & Modeling and Knowledge Discovery",
+    "status": "Former Faculty",
     "dblp_names": [
       "C. Raghavendra Rao 0001",
       "Chillarige Raghavendra Rao",
@@ -549,8 +862,13 @@
     "name": "Venkaiah V.C.",
     "designation": "Professor",
     "email": "vvcs@uohyd.ac.in",
-    "phone": "",
+    "phone": "91-040-23134000",
     "department": "SCIS",
+    "homepage": "http://scis.uohyd.ac.in/~vvcs/",
+    "profile_page": "People/profile/vch_profile.php",
+    "education": "Ph.D, IISc, India",
+    "areas_of_interest": "Cryptography, Machine Learning, Algorithms and Discrete Mathematics",
+    "status": "Former Faculty",
     "dblp_names": [
       "V. Ch. Venkaiah",
       "China Venkaiah Vadlamudi",

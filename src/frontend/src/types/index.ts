@@ -66,6 +66,8 @@ export interface Author {
   name: string;
   dblp_pid?: string;
   h_index?: number | null;
+  scopus_author_id?: string | null;
+  scopus_url?: string | null;
   publication_count: number;
   total_publications?: number;
   designation?: string;
@@ -74,9 +76,17 @@ export interface Author {
   department?: string;
   research_interests?: string | null;
   homepage?: string | null;
+  profile_page?: string | null;
+  education?: string | null;
+  areas_of_interest?: string | null;
+  status?: string | null;
   is_faculty?: boolean;
   dblp_names?: string[];
   dblp_urls?: string[];
+  irins_profile?: string | null;
+  irins_url?: string | null;
+  irins_photo_url?: string | null;
+  photo_path?: string | null;
   created_at?: string;
   updated_at?: string;
 }
