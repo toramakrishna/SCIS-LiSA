@@ -5,20 +5,65 @@ Uses Ollama LLM to convert natural language questions to SQL queries
 
 import json
 import re
+import os
+import logging
+from pathlib import Path
 from typing import Dict, List, Optional, Tuple
-import httpx
 from sqlalchemy import text
 from sqlalchemy.orm import Session
+from ollama import Client
+from dotenv import load_dotenv
+
+# Load .env file at module import time
+env_path = Path(__file__).parent.parent.parent.parent / '.env'
+load_dotenv(dotenv_path=env_path, override=True)
 
 from mcp.schema_context import get_schema_context, get_example_queries
+
+logger = logging.getLogger(__name__)
 
 
 class OllamaAgent:
     """Ollama-based agent for NL-to-SQL conversion"""
     
-    def __init__(self, model: str = "llama3.2", base_url: str = "http://localhost:11434"):
-        self.model = model
-        self.base_url = base_url
+    def __init__(self, model: Optional[str] = None, base_url: Optional[str] = None):
+        # Determine mode: cloud or local
+        ollama_mode = os.getenv("OLLAMA_MODE", "local").lower()
+        
+        if ollama_mode == "cloud":
+            # Cloud Ollama configuration
+            default_host = os.getenv("OLLAMA_CLOUD_HOST", "https://ollama.com")
+            default_model = os.getenv("OLLAMA_CLOUD_MODEL", "qwen3-coder-next")
+            self.api_key = os.getenv("OLLAMA_API_KEY")
+            
+            logger.info(f"🌩️  Using CLOUD Ollama mode")
+        else:
+            # Local Ollama configuration
+            default_host = os.getenv("OLLAMA_LOCAL_HOST", "http://localhost:11434")
+            default_model = os.getenv("OLLAMA_LOCAL_MODEL", "llama3.2")
+            self.api_key = None
+            
+            logger.info(f"🖥️  Using LOCAL Ollama mode")
+        
+        # Allow override via parameters
+        self.model = model or default_model
+        self.base_url = base_url or default_host
+        
+        logger.info(f"Initializing OllamaAgent - Mode: {ollama_mode}, Model: '{self.model}', Host: '{self.base_url}', API Key: {'✓ set' if self.api_key else '✗ not set'}")
+        
+        # Initialize Ollama client with or without API key
+        if self.api_key:
+            # Cloud Ollama with API key authentication
+            self.client = Client(
+                host=self.base_url,
+                headers={'Authorization': f'Bearer {self.api_key}'}
+            )
+            logger.info("✓ Client initialized with API key authentication")
+        else:
+            # Local Ollama without API key
+            self.client = Client(host=self.base_url)
+            logger.info("✓ Client initialized for local connection")
+        
         self.schema_context = get_schema_context()
         self.examples = get_example_queries()
     
@@ -38,34 +83,37 @@ class OllamaAgent:
         prompt = self._build_prompt(question)
         
         try:
-            async with httpx.AsyncClient(timeout=60.0) as client:  # Increased timeout for complex queries
-                response = await client.post(
-                    f"{self.base_url}/api/generate",
-                    json={
-                        "model": self.model,
-                        "prompt": prompt,
-                        "stream": False,
-                        "format": "json",  # Request JSON format explicitly
-                        "options": {
-                            "temperature": 0.1,  # Low temperature for more deterministic SQL
-                            "top_p": 0.9,
-                            "num_predict": 1000  # Allow longer responses for complex queries
-                        }
-                    }
-                )
-                response.raise_for_status()
-                result = response.json()
+            # Use Ollama client to generate response
+            response = self.client.generate(
+                model=self.model,
+                prompt=prompt,
+                stream=False,
+                format='json',  # Request JSON format explicitly
+                options={
+                    'temperature': 0.1,  # Low temperature for more deterministic SQL
+                    'top_p': 0.9,
+                    'num_predict': 1000  # Allow longer responses for complex queries
+                }
+            )
+            
+            # Parse the LLM response
+            return self._parse_llm_response(response['response'], question)
                 
-                # Parse the LLM response
-                return self._parse_llm_response(result["response"], question)
-                
-        except httpx.HTTPError as e:
+        except Exception as e:
+            # Provide context-specific error guidance
+            ollama_mode = os.getenv("OLLAMA_MODE", "local").lower()
+            
+            if ollama_mode == "cloud":
+                guidance = "Check OLLAMA_CLOUD_HOST, OLLAMA_CLOUD_MODEL, and OLLAMA_API_KEY in .env"
+            else:
+                guidance = f"Make sure Ollama is running locally at {self.base_url} and model '{self.model}' is pulled"
+            
             return {
-                "error": f"Ollama API error: {str(e)}. Make sure Ollama is running and the model '{self.model}' is available.",
+                "error": f"Ollama API error: {str(e)}",
                 "sql": None,
                 "visualization": "table",
                 "explanation": "Failed to connect to LLM service",
-                "note": "Check if Ollama is running with: ollama list"
+                "note": f"Mode: {ollama_mode}. {guidance}"
             }
     
     def _build_prompt(self, question: str) -> str:

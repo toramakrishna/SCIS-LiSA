@@ -3,6 +3,15 @@ FastAPI Main Application
 Entry point for SCISLiSA API service
 """
 
+# Load environment variables first
+import os
+from pathlib import Path
+from dotenv import load_dotenv
+
+# Load .env file from project root
+env_path = Path(__file__).parent.parent.parent.parent / '.env'
+load_dotenv(dotenv_path=env_path)
+
 from fastapi import FastAPI, Request, status
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
@@ -12,7 +21,6 @@ from sqlalchemy.exc import SQLAlchemyError
 import logging
 import time
 from contextlib import asynccontextmanager
-from pathlib import Path
 
 from api.config import settings
 from api.v1.router import api_router

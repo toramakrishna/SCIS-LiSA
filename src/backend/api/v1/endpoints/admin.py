@@ -664,3 +664,209 @@ async def data_quality_check(db: Session = Depends(get_db)):
             status_code=500,
             detail=f"Data quality check failed: {str(e)}"
         )
+
+
+# ========== Ollama Configuration Endpoints ==========
+
+class OllamaSettings(BaseModel):
+    """Ollama configuration settings"""
+    mode: str  # 'cloud' or 'local'
+    cloud_host: str = "https://ollama.com"
+    cloud_model: str = "qwen3-coder-next"
+    cloud_api_key: Optional[str] = None
+    local_host: str = "http://localhost:11434"
+    local_model: str = "llama3.2"
+
+
+class TestConnectionRequest(BaseModel):
+    """Request to test Ollama connection"""
+    mode: str
+    host: str
+    model: str
+    api_key: Optional[str] = None
+
+
+class TestConnectionResponse(BaseModel):
+    """Response from connection test"""
+    success: bool
+    message: str
+    model_count: Optional[int] = None
+    available_models: Optional[List[str]] = None
+
+
+# Path to .env file
+ENV_FILE_PATH = Path(__file__).parent.parent.parent.parent.parent.parent / ".env"
+
+
+@router.get("/settings/ollama")
+async def get_ollama_settings() -> OllamaSettings:
+    """Get current Ollama settings from environment"""
+    try:
+        # Load current settings from .env file
+        settings = {}
+        if ENV_FILE_PATH.exists():
+            with open(ENV_FILE_PATH, 'r') as f:
+                for line in f:
+                    line = line.strip()
+                    if line and not line.startswith('#') and '=' in line:
+                        key, value = line.split('=', 1)
+                        settings[key.strip()] = value.strip()
+        
+        # Mask the API key for security - only show first 8 and last 4 characters
+        api_key = settings.get('OLLAMA_API_KEY', '')
+        masked_key = ''
+        if api_key:
+            if len(api_key) > 12:
+                masked_key = api_key[:8] + '...' + api_key[-4:]
+            else:
+                masked_key = '***********'
+        
+        return OllamaSettings(
+            mode=settings.get('OLLAMA_MODE', 'local'),
+            cloud_host=settings.get('OLLAMA_CLOUD_HOST', 'https://ollama.com'),
+            cloud_model=settings.get('OLLAMA_CLOUD_MODEL', 'qwen3-coder-next'),
+            cloud_api_key=masked_key,
+            local_host=settings.get('OLLAMA_LOCAL_HOST', 'http://localhost:11434'),
+            local_model=settings.get('OLLAMA_LOCAL_MODEL', 'llama3.2')
+        )
+    except Exception as e:
+        logger.error(f"Error loading Ollama settings: {e}")
+        raise HTTPException(
+            status_code=500,
+            detail=f"Failed to load settings: {str(e)}"
+        )
+
+
+@router.post("/settings/ollama/test")
+async def test_ollama_connection(request: TestConnectionRequest) -> TestConnectionResponse:
+    """Test Ollama connection with provided settings"""
+    try:
+        from ollama import Client
+        
+        # Initialize client
+        if request.api_key:
+            client = Client(host=request.host, headers={'Authorization': f'Bearer {request.api_key}'})
+        else:
+            client = Client(host=request.host)
+        
+        # Try to list models
+        try:
+            models_response = client.list()
+            models = [model['name'] for model in models_response.get('models', [])]
+            
+            # Test if the specified model exists
+            if request.model not in models:
+                return TestConnectionResponse(
+                    success=False,
+                    message=f"Model '{request.model}' not found. Available models: {', '.join(models[:5])}...",
+                    model_count=len(models),
+                    available_models=models[:10]
+                )
+            
+            # Try a simple generate request
+            response = client.generate(
+                model=request.model,
+                prompt="Hello",
+                options={"num_predict": 10}
+            )
+            
+            return TestConnectionResponse(
+                success=True,
+                message=f"Successfully connected to {request.mode} Ollama! Found {len(models)} models.",
+                model_count=len(models),
+                available_models=models[:10]
+            )
+            
+        except Exception as e:
+            logger.error(f"Connection test failed: {e}")
+            return TestConnectionResponse(
+                success=False,
+                message=f"Connection failed: {str(e)}"
+            )
+            
+    except Exception as e:
+        logger.error(f"Error initializing client: {e}")
+        raise HTTPException(
+            status_code=500,
+            detail=f"Failed to initialize client: {str(e)}"
+        )
+
+
+@router.post("/settings/ollama")
+async def save_ollama_settings(settings: OllamaSettings) -> Dict:
+    """Save Ollama settings to .env file"""
+    try:
+        if not ENV_FILE_PATH.exists():
+            raise HTTPException(
+                status_code=404,
+                detail=".env file not found"
+            )
+        
+        # Read current .env file
+        with open(ENV_FILE_PATH, 'r') as f:
+            lines = f.readlines()
+        
+        # Load existing settings to preserve API key if not being updated
+        existing_api_key = ''
+        for line in lines:
+            line_stripped = line.strip()
+            if line_stripped and not line_stripped.startswith('#') and '=' in line_stripped:
+                key, value = line_stripped.split('=', 1)
+                if key.strip() == 'OLLAMA_API_KEY':
+                    existing_api_key = value.strip()
+                    break
+        
+        # Update the relevant settings
+        # If API key is empty string, preserve the existing one (don't overwrite)
+        api_key_to_save = settings.cloud_api_key if settings.cloud_api_key else existing_api_key
+        
+        updated_lines = []
+        settings_to_update = {
+            'OLLAMA_MODE': settings.mode,
+            'OLLAMA_CLOUD_HOST': settings.cloud_host,
+            'OLLAMA_CLOUD_MODEL': settings.cloud_model,
+            'OLLAMA_API_KEY': api_key_to_save,
+            'OLLAMA_LOCAL_HOST': settings.local_host,
+            'OLLAMA_LOCAL_MODEL': settings.local_model
+        }
+        
+        updated_keys = set()
+        
+        for line in lines:
+            line_stripped = line.strip()
+            if line_stripped and not line_stripped.startswith('#') and '=' in line_stripped:
+                key = line_stripped.split('=', 1)[0].strip()
+                if key in settings_to_update:
+                    updated_lines.append(f"{key}={settings_to_update[key]}\n")
+                    updated_keys.add(key)
+                else:
+                    updated_lines.append(line)
+            else:
+                updated_lines.append(line)
+        
+        # Add any missing keys
+        for key, value in settings_to_update.items():
+            if key not in updated_keys:
+                updated_lines.append(f"{key}={value}\n")
+        
+        # Write back to .env file
+        with open(ENV_FILE_PATH, 'w') as f:
+            f.writelines(updated_lines)
+        
+        logger.info(f"Successfully updated Ollama settings to {settings.mode} mode")
+        
+        return {
+            "success": True,
+            "message": f"Settings saved successfully. Mode set to: {settings.mode}",
+            "settings": settings.dict()
+        }
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Error saving Ollama settings: {e}")
+        raise HTTPException(
+            status_code=500,
+            detail=f"Failed to save settings: {str(e)}"
+        )
+

@@ -77,6 +77,298 @@ interface QualityCheckResult {
   mismatches: QualityCheckItem[];
 }
 
+// Ollama Configuration Component
+function OllamaConfigSection() {
+  const [settings, setSettings] = useState({
+    mode: 'cloud',
+    cloud_host: 'https://ollama.com',
+    cloud_model: 'qwen3-coder-next',
+    cloud_api_key: '',
+    local_host: 'http://localhost:11434',
+    local_model: 'llama3.2'
+  });
+  const [originalMaskedKey, setOriginalMaskedKey] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [testResult, setTestResult] = useState<any>(null);
+  const [saveMessage, setSaveMessage] = useState('');
+
+  // Load current settings
+  useEffect(() => {
+    loadSettings();
+  }, []);
+
+  const loadSettings = async () => {
+    try {
+      const response = await fetch('/api/v1/admin/settings/ollama');
+      const data = await response.json();
+      setSettings(data);
+      // Store the masked key to detect if user actually changed it
+      setOriginalMaskedKey(data.cloud_api_key);
+    } catch (error) {
+      console.error('Failed to load Ollama settings:', error);
+    }
+  };
+
+  const testConnection = async () => {
+    setLoading(true);
+    setTestResult(null);
+    
+    // Check if we're trying to test with a masked key
+    if (settings.mode === 'cloud' && settings.cloud_api_key === originalMaskedKey && originalMaskedKey.includes('...')) {
+      setTestResult({ 
+        success: false, 
+        message: 'Cannot test with masked API key. Please enter your full API key to test the connection.' 
+      });
+      setLoading(false);
+      return;
+    }
+    
+    try {
+      const testConfig = {
+        mode: settings.mode,
+        host: settings.mode === 'cloud' ? settings.cloud_host : settings.local_host,
+        model: settings.mode === 'cloud' ? settings.cloud_model : settings.local_model,
+        api_key: settings.mode === 'cloud' ? settings.cloud_api_key : null
+      };
+
+      const response = await fetch('/api/v1/admin/settings/ollama/test', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(testConfig)
+      });
+
+      const result = await response.json();
+      setTestResult(result);
+    } catch (error) {
+      setTestResult({ success: false, message: `Error: ${error}` });
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const saveSettings = async () => {
+    setLoading(true);
+    setSaveMessage('');
+    try {
+      // If the API key hasn't been changed (still masked), don't send it
+      const settingsToSave = { ...settings };
+      if (settingsToSave.cloud_api_key === originalMaskedKey && originalMaskedKey.includes('...')) {
+        // Don't include the masked key - backend will keep the existing one
+        settingsToSave.cloud_api_key = '';
+      }
+      
+      const response = await fetch('/api/v1/admin/settings/ollama', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(settingsToSave)
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        setSaveMessage('Settings saved successfully!');
+        setTimeout(() => setSaveMessage(''), 3000);
+        // Reload settings to get the updated masked key
+        await loadSettings();
+      } else {
+        setSaveMessage('Failed to save settings: ' + result.message);
+      }
+    } catch (error) {
+      setSaveMessage(`Error: ${error}`);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <div className="space-y-6">
+      {/* Mode Selection */}
+      <div className="space-y-2">
+        <Label>Ollama Mode</Label>
+        <div className="flex gap-4">
+          <label className="flex items-center gap-2 cursor-pointer">
+            <input
+              type="radio"
+              name="mode"
+              value="cloud"
+              checked={settings.mode === 'cloud'}
+              onChange={(e) => setSettings({ ...settings, mode: e.target.value })}
+              className="w-4 h-4"
+            />
+            <span>Cloud (https://ollama.com)</span>
+          </label>
+          <label className="flex items-center gap-2 cursor-pointer">
+            <input
+              type="radio"
+              name="mode"
+              value="local"
+              checked={settings.mode === 'local'}
+              onChange={(e) => setSettings({ ...settings, mode: e.target.value })}
+              className="w-4 h-4"
+            />
+            <span>Local (localhost)</span>
+          </label>
+        </div>
+      </div>
+
+      {/* Cloud Configuration */}
+      {settings.mode === 'cloud' && (
+        <div className="space-y-4 p-4 bg-teal-50 dark:bg-teal-950 rounded-lg">
+          <h4 className="font-semibold text-teal-700 dark:text-teal-400">Cloud Ollama Settings</h4>
+          
+          <div className="space-y-2">
+            <Label htmlFor="cloud_host">Host URL</Label>
+            <Input
+              id="cloud_host"
+              value={settings.cloud_host}
+              onChange={(e) => setSettings({ ...settings, cloud_host: e.target.value })}
+              placeholder="https://ollama.com"
+            />
+          </div>
+
+          <div className="space-y-2">
+            <Label htmlFor="cloud_model">Model</Label>
+            <Input
+              id="cloud_model"
+              value={settings.cloud_model}
+              onChange={(e) => setSettings({ ...settings, cloud_model: e.target.value })}
+              placeholder="qwen3-coder-next"
+            />
+          </div>
+
+          <div className="space-y-2">
+            <Label htmlFor="cloud_api_key">API Key</Label>
+            <Input
+              id="cloud_api_key"
+              type="password"
+              value={settings.cloud_api_key}
+              onChange={(e) => setSettings({ ...settings, cloud_api_key: e.target.value })}
+              placeholder={originalMaskedKey.includes('...') ? "Leave unchanged or enter new key" : "Enter your Ollama API key"}
+              className={originalMaskedKey.includes('...') ? 'border-green-300 dark:border-green-700' : ''}
+            />
+            {originalMaskedKey.includes('...') ? (
+              <p className="text-xs text-green-600 dark:text-green-400 flex items-center gap-1">
+                <CheckCircle className="h-3 w-3" />
+                API key already configured (masked for security). Enter a new key to update.
+              </p>
+            ) : (
+              <p className="text-xs text-slate-500">Required for cloud Ollama access</p>
+            )}
+          </div>
+        </div>
+      )}
+
+      {/* Local Configuration */}
+      {settings.mode === 'local' && (
+        <div className="space-y-4 p-4 bg-slate-50 dark:bg-slate-950 rounded-lg">
+          <h4 className="font-semibold text-slate-700 dark:text-slate-400">Local Ollama Settings</h4>
+          
+          <div className="space-y-2">
+            <Label htmlFor="local_host">Host URL</Label>
+            <Input
+              id="local_host"
+              value={settings.local_host}
+              onChange={(e) => setSettings({ ...settings, local_host: e.target.value })}
+              placeholder="http://localhost:11434"
+            />
+          </div>
+
+          <div className="space-y-2">
+            <Label htmlFor="local_model">Model</Label>
+            <Input
+              id="local_model"
+              value={settings.local_model}
+              onChange={(e) => setSettings({ ...settings, local_model: e.target.value })}
+              placeholder="llama3.2"
+            />
+          </div>
+        </div>
+      )}
+
+      {/* Test Connection Button */}
+      <div className="flex gap-2">
+        <Button 
+          onClick={testConnection}
+          disabled={loading}
+          variant="outline"
+          className="flex items-center gap-2"
+        >
+          {loading ? (
+            <>
+              <Loader2 className="h-4 w-4 animate-spin" />
+              Testing...
+            </>
+          ) : (
+            <>
+              <Activity className="h-4 w-4" />
+              Test Connection
+            </>
+          )}
+        </Button>
+
+        <Button 
+          onClick={saveSettings}
+          disabled={loading}
+          className="flex items-center gap-2 bg-teal-600 hover:bg-teal-700"
+        >
+          {loading ? (
+            <>
+              <Loader2 className="h-4 w-4 animate-spin" />
+              Saving...
+            </>
+          ) : (
+            <>
+              <CheckCircle className="h-4 w-4" />
+              Save Settings
+            </>
+          )}
+        </Button>
+      </div>
+
+      {/* Test Result */}
+      {testResult && (
+        <div className={`p-4 rounded-lg ${testResult.success ? 'bg-green-50 dark:bg-green-950' : 'bg-red-50 dark:bg-red-950'}`}>
+          <div className="flex items-start gap-2">
+            {testResult.success ? (
+              <CheckCircle className="h-5 w-5 text-green-600 dark:text-green-400 mt-0.5" />
+            ) : (
+              <XCircle className="h-5 w-5 text-red-600 dark:text-red-400 mt-0.5" />
+            )}
+            <div className="flex-1">
+              <p className={`font-semibold ${testResult.success ? 'text-green-700 dark:text-green-400' : 'text-red-700 dark:text-red-400'}`}>
+                {testResult.message}
+              </p>
+              {testResult.model_count && (
+                <p className="text-sm mt-1 text-slate-600 dark:text-slate-400">
+                  Found {testResult.model_count} available models
+                </p>
+              )}
+              {testResult.available_models && testResult.available_models.length > 0 && (
+                <details className="mt-2">
+                  <summary className="text-sm cursor-pointer text-slate-600 dark:text-slate-400">
+                    View available models
+                  </summary>
+                  <ul className="mt-2 text-sm space-y-1 text-slate-600 dark:text-slate-400">
+                    {testResult.available_models.map((model: string) => (
+                      <li key={model} className="ml-4">• {model}</li>
+                    ))}
+                  </ul>
+                </details>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Save Message */}
+      {saveMessage && (
+        <div className="p-3 rounded-lg bg-blue-50 dark:bg-blue-950 text-blue-700 dark:text-blue-400">
+          {saveMessage}
+        </div>
+      )}
+    </div>
+  );
+}
+
 export function AdminPage() {
   // Connection testing
   const [connectionConfig, setConnectionConfig] = useState<ConnectionConfig>({
@@ -771,6 +1063,21 @@ export function AdminPage() {
           )}
         </CardContent>
       </Card>
+
+      {/* Ollama Configuration */}
+      <Card className="border-l-4 border-l-teal-500">
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2 text-teal-700 dark:text-teal-400">
+            <Settings className="h-5 w-5" />
+            Ollama Configuration
+          </CardTitle>
+          <CardDescription>Configure Ollama mode and connection settings for natural language queries</CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-6">
+          <OllamaConfigSection />
+        </CardContent>
+      </Card>
     </div>
   );
 }
+

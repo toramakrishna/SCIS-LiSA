@@ -20,13 +20,13 @@ router = APIRouter(prefix="/mcp", tags=["MCP Analytics"])
 class QueryRequest(BaseModel):
     """Natural language query request"""
     question: str = Field(..., description="Natural language question about faculty publications")
-    model: Optional[str] = Field("llama3.2", description="Ollama model to use")
+    model: Optional[str] = Field(None, description="Ollama model to use (defaults to OLLAMA_MODEL from .env)")
     
     class Config:
         json_schema_extra = {
             "example": {
                 "question": "Show publication trends over the last 10 years",
-                "model": "llama3.2"
+                "model": None
             }
         }
 
@@ -46,7 +46,7 @@ class QueryResponse(BaseModel):
 
 
 # Initialize agent (will be created per request to allow model selection)
-def get_agent(model: str = "llama3.2") -> OllamaAgent:
+def get_agent(model: Optional[str] = None) -> OllamaAgent:
     """Get or create Ollama agent instance"""
     return OllamaAgent(model=model)
 

@@ -3,9 +3,12 @@ SCISLiSA API Configuration
 Handles environment variables and application settings
 """
 
+import os
+from pathlib import Path
 from pydantic_settings import BaseSettings
+from pydantic import field_validator
 from functools import lru_cache
-from typing import Optional
+from typing import Optional, Union
 
 
 class Settings(BaseSettings):
@@ -28,7 +31,7 @@ class Settings(BaseSettings):
     DB_NAME: str = "scislisa-service"
     
     # CORS
-    CORS_ORIGINS: list[str] = [
+    CORS_ORIGINS: Union[list[str], str] = [
         "http://localhost:3000",
         "http://localhost:5173",  # Vite dev server
         "http://localhost:8000"
@@ -36,6 +39,14 @@ class Settings(BaseSettings):
     CORS_CREDENTIALS: bool = False
     CORS_METHODS: list[str] = ["GET", "POST", "PUT", "DELETE", "OPTIONS"]
     CORS_HEADERS: list[str] = ["*"]
+    
+    @field_validator('CORS_ORIGINS', mode='before')
+    @classmethod
+    def parse_cors_origins(cls, v):
+        """Parse CORS_ORIGINS from comma-separated string or list"""
+        if isinstance(v, str):
+            return [origin.strip() for origin in v.split(',')]
+        return v
     
     # Pagination
     DEFAULT_PAGE_SIZE: int = 20
@@ -53,7 +64,8 @@ class Settings(BaseSettings):
         return f"postgresql://{self.DB_USER}:{self.DB_PASSWORD}@{self.DB_HOST}:{self.DB_PORT}/{self.DB_NAME}"
     
     class Config:
-        env_file = ".env"
+        # Point to .env file in the project root (two directories up from api/config.py)
+        env_file = str(Path(__file__).parent.parent.parent.parent / ".env")
         case_sensitive = True
         extra = "ignore"  # Allow extra environment variables without validation errors
 
