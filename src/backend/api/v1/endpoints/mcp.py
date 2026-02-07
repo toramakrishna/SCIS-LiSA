@@ -16,17 +16,29 @@ logger = logging.getLogger(__name__)
 
 router = APIRouter(prefix="/mcp", tags=["MCP Analytics"])
 
+# Message structure for conversation history
+class Message(BaseModel):
+    """Single message in conversation history"""
+    role: str = Field(..., description="Role: 'user' or 'assistant'")
+    content: str = Field(..., description="Message content")
+
+
 # Pydantic models
 class QueryRequest(BaseModel):
     """Natural language query request"""
     question: str = Field(..., description="Natural language question about faculty publications")
     model: Optional[str] = Field(None, description="Ollama model to use (defaults to OLLAMA_MODEL from .env)")
+    conversation_history: Optional[List[Message]] = Field(None, description="Previous conversation context")
     
     class Config:
         json_schema_extra = {
             "example": {
                 "question": "Show publication trends over the last 10 years",
-                "model": None
+                "model": None,
+                "conversation_history": [
+                    {"role": "user", "content": "what are recent publications done by Durga Bhavani"},
+                    {"role": "assistant", "content": "SELECT p.title, STRING_AGG(DISTINCT a.name, ', ') as authors..."}
+                ]
             }
         }
 
@@ -76,6 +88,8 @@ def generate_follow_up_questions(question: str, data: List[Dict[str, Any]], sql:
     is_venue = any(word in question_lower for word in ['venue', 'journal', 'conference'])
     is_collaboration = any(word in question_lower for word in ['collaboration', 'coauthor', 'together'])
     is_count = any(word in question_lower for word in ['how many', 'count', 'number of'])
+    is_publication_search = any(word in question_lower for word in ['who published', 'who wrote', 'who authored', 
+                                                                     'paper', 'publication titled', 'article'])
     
     if has_data:
         # Get column names from first row
@@ -103,6 +117,50 @@ def generate_follow_up_questions(question: str, data: List[Dict[str, Any]], sql:
         elif is_faculty and not is_trend and top_name:
             suggestions.append(f"Show publication trends for {top_name} over time")
             suggestions.append(f"What are {top_name}'s most cited publications?")
+        
+        # For publication title searches - extract author names
+        # Detect by result structure: has title column, small-ish result set, not asking for aggregations
+        is_likely_pub_search = ('title' in columns and 
+                                 len(data) <= 10 and not is_top and not is_trend and not is_count and
+                                 'publication_count' not in columns)  # Not a count/aggregation query
+        
+        if (is_publication_search or is_likely_pub_search) and 'title' in columns:
+            first_row = data[0] if data else {}
+            title = first_row.get('title', '')
+            venue = first_row.get('venue', '')
+            pub_type = first_row.get('publication_type', '')
+            year = first_row.get('year', '')
+            
+            # If authors column exists, use it for personalized suggestions
+            if 'authors' in columns:
+                authors_str = first_row.get('authors', '')
+                if authors_str:
+                    author_list = [a.strip() for a in authors_str.split(',')]
+                    if len(author_list) >= 1:
+                        suggestions.append(f"Show all publications by {author_list[0]}")
+                        if len(author_list) >= 2:
+                            suggestions.append(f"Show collaborations between {author_list[0]} and {author_list[1]}")
+                        else:
+                            suggestions.append(f"Show publication trends for {author_list[0]}")
+            else:
+                # No authors column - make generic suggestions about the publications
+                if len(data) == 1:
+                    # Single publication - ask who wrote it
+                    suggestions.append(f"Who are the authors of '{title[:50]}...?'")
+                    if venue:
+                        suggestions.append(f"What other papers were published in {venue}?")
+                    if year:
+                        suggestions.append(f"What are other publications from {year}?")
+                else:
+                    # Multiple publications about a topic
+                    if title:
+                        # Extract key topic words from first title
+                        topic_words = [w for w in title.split() if len(w) > 4 and w[0].isupper()][:2]
+                        topic = ' '.join(topic_words) if topic_words else 'this topic'
+                        suggestions.append(f"Who are the main researchers working on {topic}?")
+                    suggestions.append(f"Show publication trends for papers on this topic")
+                    if venue:
+                        suggestions.append(f"What other topics are published in {venue}?")
             
         # For trend queries
         if is_trend:
@@ -201,7 +259,18 @@ async def handle_predefined_query(question: str, db: Session) -> Optional[QueryR
             return None
     
     # Pattern 2: Publications by year/trends
-    if any(p in question_lower for p in ['trend', 'over time', 'by year', 'timeline', 'history', 'publication count', 'count by year']):
+    # Skip predefined if the question contains a specific faculty/author name
+    # Check for capitalized words that might be names (excluding common keywords)
+    import re
+    name_pattern = r'\b[A-Z][a-z]+(?:\s+[A-Z][a-z]+)+\b'  # Matches capitalized names like "Anjeneya Swami Kare"
+    has_name = re.search(name_pattern, question)
+    
+    # Check for patterns like "for [name]" or "of [name]" or "by [name]"
+    has_name_context = any(p in question_lower for p in [' for ', ' of ', ' by ', "'s ", ' about '])
+    
+    # Only use predefined query if no specific name is mentioned
+    if any(p in question_lower for p in ['trend', 'over time', 'by year', 'timeline', 'history', 'publication count', 'count by year']) \
+       and not (has_name and has_name_context):
         # Group publications by year
         sql = """
         SELECT 
@@ -316,8 +385,11 @@ async def natural_language_query(
         logger.info("Attempting LLM-based query generation")
         agent = get_agent(request.model)
         
-        # Generate SQL from natural language
-        generation_result = await agent.generate_sql(request.question)
+        # Generate SQL from natural language with conversation context
+        generation_result = await agent.generate_sql(
+            request.question,
+            conversation_history=request.conversation_history
+        )
         
         if 'error' in generation_result:
             return QueryResponse(

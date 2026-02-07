@@ -294,33 +294,54 @@ LIMIT 20;
         "sql": """
 SELECT 
     p.title,
+    STRING_AGG(DISTINCT a.name, ', ') as authors,
     p.year,
     p.publication_type,
-    COALESCE(p.journal, p.booktitle) as venue,
-    STRING_AGG(a.name, ', ') as authors
+    COALESCE(NULLIF(p.journal, ''), p.booktitle) as venue
 FROM publications p
-JOIN publication_authors pa ON p.id = pa.publication_id
-JOIN authors a ON pa.author_id = a.id
+LEFT JOIN publication_authors pa ON p.id = pa.publication_id
+LEFT JOIN authors a ON pa.author_id = a.id
 WHERE p.has_faculty_author = true
 GROUP BY p.id, p.title, p.year, p.publication_type, p.journal, p.booktitle
 ORDER BY p.year DESC, p.title
 LIMIT 20;
 """,
         "visualization": "table",
-        "columns": ["title", "year", "publication_type", "venue", "authors"]
+        "columns": ["title", "authors", "year", "publication_type", "venue"]
+    },
+    "publication_by_title": {
+        "question": "Who published the paper 'Interest maximization in social networks'?",
+        "sql": """
+SELECT 
+    p.title,
+    STRING_AGG(DISTINCT a.name, ', ') as authors,
+    p.year,
+    p.publication_type,
+    COALESCE(NULLIF(p.journal, ''), p.booktitle) as venue
+FROM publications p
+LEFT JOIN publication_authors pa ON p.id = pa.publication_id
+LEFT JOIN authors a ON pa.author_id = a.id
+WHERE p.title ILIKE '%Interest maximization in social networks%'
+GROUP BY p.id, p.title, p.year, p.publication_type, p.journal, p.booktitle
+ORDER BY p.year DESC
+LIMIT 5;
+""",
+        "visualization": "table",
+        "columns": ["title", "authors", "year", "publication_type", "venue"],
+        "note": "Searching by publication title. Use ILIKE with wildcards for flexible matching. MUST include LEFT JOINs to show authors."
     },
     "faculty_member_publications": {
         "question": "What are the recent publications by Satish Srirama?",
         "sql": """
 SELECT 
     p.title,
+    STRING_AGG(DISTINCT a.name, ', ') as authors,
     p.year,
     p.publication_type,
-    COALESCE(p.journal, p.booktitle) as venue,
-    STRING_AGG(a.name, ', ') as authors
+    COALESCE(NULLIF(p.journal, ''), p.booktitle) as venue
 FROM publications p
-JOIN publication_authors pa ON p.id = pa.publication_id
-JOIN authors a ON pa.author_id = a.id
+LEFT JOIN publication_authors pa ON p.id = pa.publication_id
+LEFT JOIN authors a ON pa.author_id = a.id
 WHERE EXISTS (
     SELECT 1 FROM publication_authors pa2
     JOIN authors a2 ON pa2.author_id = a2.id
@@ -332,7 +353,7 @@ ORDER BY p.year DESC, p.title
 LIMIT 10;
 """,
         "visualization": "table",
-        "columns": ["title", "year", "publication_type", "venue", "authors"],
+        "columns": ["title", "authors", "year", "publication_type", "venue"],
         "note": "Using partial name matching with ILIKE to handle name variations like 'Satish Narayana Srirama' or 'Satish N. Srirama'"
     },
     "faculty_growth": {
