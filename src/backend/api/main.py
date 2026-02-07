@@ -7,10 +7,12 @@ from fastapi import FastAPI, Request, status
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from fastapi.exceptions import RequestValidationError
+from fastapi.staticfiles import StaticFiles
 from sqlalchemy.exc import SQLAlchemyError
 import logging
 import time
 from contextlib import asynccontextmanager
+from pathlib import Path
 
 from api.config import settings
 from api.v1.router import api_router
@@ -80,26 +82,21 @@ app = FastAPI(
 )
 
 # CORS middleware - Allow all origins in development
-# Build allowed origins list
 import os
-allowed_origins = ["*"]  # Allow all origins in development
-
-# In Codespaces, explicitly add the frontend URL
-if os.getenv("CODESPACE_NAME"):
-    codespace_name = os.getenv("CODESPACE_NAME")
-    port_forwarding_domain = os.getenv("GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN", "app.github.dev")
-    # Add common frontend ports
-    for port in [5173, 5174, 3000]:
-        allowed_origins.append(f"https://{codespace_name}-{port}.{port_forwarding_domain}")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=allowed_origins if os.getenv("CODESPACE_NAME") else ["*"],
-    allow_credentials=True,
+    allow_origins=["*"],  # Allow all origins in development
+    allow_credentials=False,  # Must be False when using wildcard origins
     allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"],
     allow_headers=["*"],
     expose_headers=["*"],
 )
+
+
+# Mount static files for faculty images and other assets
+dataset_path = Path(__file__).parent.parent.parent.parent / "dataset"
+app.mount("/dataset", StaticFiles(directory=str(dataset_path)), name="dataset")
 
 
 # Request timing middleware

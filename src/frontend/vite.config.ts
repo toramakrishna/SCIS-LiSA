@@ -2,12 +2,6 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path'
 
-// Detect if running in GitHub Codespaces
-const isCodespaces = process.env.CODESPACE_NAME !== undefined;
-const codespaceUrl = isCodespaces 
-  ? `https://${process.env.CODESPACE_NAME}-8000.${process.env.GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN || 'app.github.dev'}`
-  : 'http://localhost:8000';
-
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
@@ -21,11 +15,11 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: codespaceUrl,
+        // Always use localhost since frontend and backend run in the same container
+        // This avoids Codespaces authentication issues with public URLs
+        target: 'http://localhost:8000',
         changeOrigin: true,
         secure: false,
-        autoRewrite: true,  // Automatically rewrite the Host header on (301/302/307/308) redirects
-        protocolRewrite: isCodespaces ? 'https' : 'http',  // Protocol to use for redirects
         configure: (proxy, _options) => {
           proxy.on('error', (err, _req, _res) => {
             console.log('proxy error', err);
@@ -37,6 +31,11 @@ export default defineConfig({
             console.log('Received Response:', proxyRes.statusCode, req.url);
           });
         },
+      },
+      '/dataset': {
+        target: 'http://localhost:8000',
+        changeOrigin: true,
+        secure: false,
       },
     },
   },

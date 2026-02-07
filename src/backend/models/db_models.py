@@ -44,11 +44,25 @@ class Author(Base):
     phone = Column(String(50))
     homepage = Column(String(500))
     research_interests = Column(Text)
+    education = Column(Text)
+    areas_of_interest = Column(Text)
+    profile_page = Column(String(500))
+    status = Column(String(100))  # Current, Former Faculty, etc.
+    
+    # IRINS Profile Information
+    irins_profile = Column(String(100))  # IRINS profile ID
+    irins_url = Column(String(500))  # Full IRINS profile URL
+    irins_photo_url = Column(String(500))  # IRINS photo URL
+    photo_path = Column(String(500))  # Local photo path
+    
+    # Academic Metrics
+    scopus_author_id = Column(String(100))  # Scopus Author ID
+    scopus_url = Column(String(500))  # Scopus profile URL
+    h_index = Column(Integer)  # h-index from IRINS/Scopus
     
     # Statistics
     total_publications = Column(Integer, default=0)
     total_collaborations = Column(Integer, default=0)
-    h_index = Column(Integer)
     
     created_at = Column(DateTime, default=datetime.utcnow)
     updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
