@@ -64,8 +64,8 @@ class Settings(BaseSettings):
         return f"postgresql://{self.DB_USER}:{self.DB_PASSWORD}@{self.DB_HOST}:{self.DB_PORT}/{self.DB_NAME}"
     
     class Config:
-        # Point to .env file in the project root (two directories up from api/config.py)
-        env_file = str(Path(__file__).parent.parent.parent.parent / ".env")
+        # Point to .env file in the backend directory (one level up from api/config.py)
+        env_file = str(Path(__file__).parent.parent / ".env")
         case_sensitive = True
         extra = "ignore"  # Allow extra environment variables without validation errors
 

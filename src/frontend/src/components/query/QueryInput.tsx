@@ -25,6 +25,17 @@ export function QueryInput({
   const suggestionsRef = useRef<HTMLDivElement>(null);
   const justSelectedRef = useRef(false);
 
+  // Auto-focus input after response is received
+  useEffect(() => {
+    if (!isLoading && inputRef.current) {
+      // Small delay to ensure DOM is updated
+      const timer = setTimeout(() => {
+        inputRef.current?.focus();
+      }, 100);
+      return () => clearTimeout(timer);
+    }
+  }, [isLoading]);
+
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (

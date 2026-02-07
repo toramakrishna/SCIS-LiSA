@@ -67,9 +67,14 @@ class OllamaAgent:
         self.schema_context = get_schema_context()
         self.examples = get_example_queries()
     
-    async def generate_sql(self, question: str) -> Dict:
+    async def generate_sql(self, question: str, conversation_history: Optional[List] = None) -> Dict:
         """
         Generate SQL query from natural language question
+        
+        Args:
+            question: Natural language question
+            conversation_history: Optional list of previous messages for context
+                                 [{"role": "user", "content": "..."}, {"role": "assistant", "content": "..."}]
         
         Returns:
             {
@@ -79,8 +84,8 @@ class OllamaAgent:
                 "confidence": 0.95
             }
         """
-        # Build prompt with schema context and examples
-        prompt = self._build_prompt(question)
+        # Build prompt with schema context, examples, and conversation history
+        prompt = self._build_prompt(question, conversation_history)
         
         try:
             # Use Ollama client to generate response
@@ -116,16 +121,77 @@ class OllamaAgent:
                 "note": f"Mode: {ollama_mode}. {guidance}"
             }
     
-    def _build_prompt(self, question: str) -> str:
-        """Build comprehensive prompt with schema and examples"""
+    def _build_prompt(self, question: str, conversation_history: Optional[List] = None) -> str:
+        """Build comprehensive prompt with schema, examples, and conversation history"""
         
         # Find most relevant example
         relevant_example = self._find_similar_example(question)
         
+        # Build conversation context section if history provided
+        context_section = ""
+        last_user_question = None
+        last_sql_query = None
+        last_visualization_type = None
+        
+        if conversation_history and len(conversation_history) > 0:
+            context_section = "\n## Previous Conversation Context\n"
+            
+            # Include up to last 4 messages (2 exchanges) to avoid overwhelming the prompt
+            recent_history = conversation_history[-4:] if len(conversation_history) > 4 else conversation_history
+            
+            for msg in recent_history:
+                # Handle both Pydantic objects and dictionaries
+                if hasattr(msg, 'role'):
+                    # Pydantic Message object
+                    role = msg.role
+                    content = msg.content
+                else:
+                    # Dictionary
+                    role = msg.get("role", "user")
+                    content = msg.get("content", "")
+                
+                if role == "user":
+                    last_user_question = content
+                    context_section += f"Previous question: \"{content}\"\n"
+                elif role == "assistant":
+                    # Extract SQL and visualization type from assistant response
+                    if "SELECT" in content.upper():
+                        # This is likely SQL
+                        sql_match = re.search(r'(SELECT.*?;)', content, re.IGNORECASE | re.DOTALL)
+                        if sql_match:
+                            last_sql_query = sql_match.group(1)
+                            context_section += f"Previous query: {sql_match.group(1)[:300]}...\n"
+                        
+                        # Extract visualization type if present
+                        viz_match = re.search(r'\[VISUALIZATION:\s*(\w+)\]', content, re.IGNORECASE)
+                        if viz_match:
+                            last_visualization_type = viz_match.group(1)
+                            context_section += f"Previous visualization format: {last_visualization_type}\n"
+            
+            # Detect if current question is a follow-up
+            follow_up_indicators = ['also', 'what about', 'how about', 'and for', 'show for', 'same for', 'for']
+            is_follow_up = any(indicator in question.lower() for indicator in follow_up_indicators)
+            
+            if is_follow_up and last_user_question and last_sql_query:
+                context_section += f"\n🔄 **FOLLOW-UP DETECTED**:\n"
+                context_section += f"The current question appears to be a follow-up asking the same thing about a different entity/filter.\n"
+                context_section += f"Previous question was: \"{last_user_question}\"\n"
+                context_section += f"Current question is: \"{question}\"\n\n"
+                context_section += f"**CRITICAL INSTRUCTION**: Generate the EXACT SAME type of query AND visualization:\n"
+                context_section += f"- Keep the same SELECT columns\n"
+                context_section += f"- Keep the same JOINs\n"
+                context_section += f"- Keep the same query structure\n"
+                if last_visualization_type:
+                    context_section += f"- **MUST use the same visualization type: \"{last_visualization_type}\" (DO NOT CHANGE THIS)**\n"
+                context_section += f"- ONLY change the filter condition (e.g., name, year, category) to match: \"{question}\"\n"
+                context_section += f"- Extract the new filter value from the current question and apply it in the WHERE clause\n\n"
+            else:
+                context_section += "\nThis appears to be a new question (not a follow-up).\n\n"
+        
         prompt = f"""You are an expert SQL query generator for a faculty publication analytics database.
 
 {self.schema_context}
-
+{context_section}
 ## Your Task
 Convert this natural language question into a SQL query:
 "{question}"
@@ -141,7 +207,11 @@ Convert this natural language question into a SQL query:
 5. IMPORTANT: If selecting a column, either include it in GROUP BY or use an aggregate function
 6. The collaborations table already has pre-computed collaboration_count - no GROUP BY needed
 7. Add ORDER BY for sorted results
-8. Limit results to reasonable numbers (10-50 for lists, no limit for time series)
+8. **ALWAYS add LIMIT clause**:
+   - If user specifies a number (e.g., "5 recent", "top 10"), use that limit
+   - If NO limit specified, DEFAULT to LIMIT 5
+   - Examples: "recent publications" → LIMIT 5, "top publications" → LIMIT 5
+   - Only omit LIMIT for time series/trend data or when explicitly asked for "all"
 
 ## Understanding User Questions - CRITICAL
 - **"Who" questions** = ALWAYS include author/faculty names in SELECT and GROUP BY
@@ -157,8 +227,14 @@ Convert this natural language question into a SQL query:
 9. **Faculty/Author Names - SEARCH IN THE AUTHORS TABLE**:
    - To find publications by a specific author: JOIN with authors table and filter on authors.name
    - NEVER search for author names in publications.title or publications.dblp_key
-   - Use ILIKE '%partial_name%' for partial, case-insensitive matching
-   - Example: "Durga Bhavani" may be stored as "Durga Bhavani S." or "S. Durga Bhavani"
+   - Use ILIKE with flexible patterns to handle name variations
+   - Names may include periods, middle initials, and different orderings:
+     * "S Durga Bhavani" might be stored as "S. Durga Bhavani" (with period)
+     * "Durga Bhavani" might be stored as "Durga Bhavani S." or "S. Durga Bhavani"
+     * Use patterns like '%Durga%Bhavani%' to catch all variations
+   - For single-letter initials, use patterns that work with or without periods:
+     * Instead of ILIKE '%S Durga Bhavani%', use ILIKE '%Durga%Bhavani%'
+     * Or use: (a2.name ILIKE '%S.%Durga%Bhavani%' OR a2.name ILIKE '%S %Durga%Bhavani%')
    
    CORRECT way to find publications by author:
    ```sql
@@ -166,7 +242,7 @@ Convert this natural language question into a SQL query:
        SELECT 1 FROM publication_authors pa2
        JOIN authors a2 ON pa2.author_id = a2.id
        WHERE pa2.publication_id = p.id 
-       AND a2.name ILIKE '%Durga Bhavani%'
+       AND a2.name ILIKE '%Durga%Bhavani%'  -- Flexible pattern
    )
    ```
    
@@ -174,10 +250,93 @@ Convert this natural language question into a SQL query:
    ```sql
    WHERE p.title ILIKE '%Durga Bhavani%'  -- DON'T search in title
    WHERE p.dblp_key ILIKE '%Durga Bhavani%'  -- DON'T search in dblp_key
+   WHERE a2.name ILIKE '%S Durga Bhavani%'  -- Too specific, won't match "S. Durga Bhavani"
+   ```
+
+9b. **CRITICAL: Displaying Publications WITH Authors (No Duplicates)**:
+   - When listing publications, ALWAYS show author names using STRING_AGG with DISTINCT
+   - This combines all unique authors into one comma-separated string per publication
+   - Results: Each publication appears ONCE with ALL unique authors shown
+   
+   CORRECT - shows each publication ONCE with unique authors only:
+   ```sql
+   SELECT 
+       p.title,
+       STRING_AGG(DISTINCT a.name, ', ') as authors,
+       p.year,
+       p.publication_type,
+       COALESCE(NULLIF(p.journal, ''), p.booktitle) as venue
+   FROM publications p
+   JOIN publication_authors pa ON p.id = pa.publication_id
+   JOIN authors a ON pa.author_id = a.id
+   WHERE EXISTS (
+       SELECT 1 FROM publication_authors pa2
+       JOIN authors a2 ON pa2.author_id = a2.id
+       WHERE pa2.publication_id = p.id AND a2.name ILIKE '%Durga%Bhavani%'
+   )
+   GROUP BY p.id, p.title, p.year, p.publication_type, p.journal, p.booktitle
+   ORDER BY p.year DESC
+   LIMIT 5;
+   ```
+   
+   NOTE: Use STRING_AGG(DISTINCT a.name, ', ') to avoid duplicate author names
+   Do NOT use ORDER BY inside STRING_AGG when using DISTINCT (not compatible)
+   
+   WRONG - creates duplicate rows (one per co-author):
+   ```sql
+   SELECT p.title, a.name as author_name, p.year
+   FROM publications p
+   JOIN publication_authors pa ON p.id = pa.publication_id
+   JOIN authors a ON pa.author_id = a.id
+   WHERE a.name ILIKE '%Durga%Bhavani%'
+   -- This returns one row per author per publication - BAD!
+   ```
+   
+   **Column Selection Rules**:
+   - **WHEN LISTING/SEARCHING PUBLICATIONS - ALWAYS INCLUDE THESE 5 COLUMNS**:
+     1. p.title
+     2. STRING_AGG(DISTINCT a.name, ', ') as authors  -- NEVER omit this!
+     3. p.year
+     4. p.publication_type
+     5. COALESCE(NULLIF(p.journal, ''), p.booktitle) as venue
+   - This applies to ALL publication queries: searching by title, by author, by venue, by year, etc.
+   - **Even if user doesn't ask for authors, INCLUDE THEM** - they are essential context
+   - NEVER include: volume, number, pages (too detailed, clutters display)
+   - Use NULLIF to convert empty strings to NULL so conferences show booktitle properly
+
+9c. **CRITICAL: ALWAYS Include JOINs When Showing Authors**:
+   - **IF you use STRING_AGG(DISTINCT a.name, ', ') or reference authors table 'a'**:
+   - **THEN you MUST include these JOINs in your FROM clause**:
+     ```sql
+     FROM publications p
+     LEFT JOIN publication_authors pa ON p.id = pa.publication_id
+     LEFT JOIN authors a ON pa.author_id = a.id
+     ```
+   - This applies to ALL queries that display authors, including:
+     * Searching publications by title
+     * Listing all publications
+     * Filtering by venue, year, type, etc.
+   - **WITHOUT these JOINs, you will get SQL error: "missing FROM-clause entry for table 'a'"**
+   
+   **Example - Searching publication by title with authors**:
+   ```sql
+   SELECT 
+       p.title,
+       STRING_AGG(DISTINCT a.name, ', ') as authors,
+       p.year,
+       p.publication_type,
+       COALESCE(NULLIF(p.journal, ''), p.booktitle) as venue
+   FROM publications p
+   LEFT JOIN publication_authors pa ON p.id = pa.publication_id  -- REQUIRED!
+   LEFT JOIN authors a ON pa.author_id = a.id                     -- REQUIRED!
+   WHERE p.title ILIKE '%searched title%'
+   GROUP BY p.id, p.title, p.year, p.publication_type, p.journal, p.booktitle
+   ORDER BY p.year DESC
+   LIMIT 5;
    ```
 
 10. **When using partial matching, ALWAYS add a note**:
-   - Example: "Note: Using partial name matching for 'Durga Bhavani' to catch variations like 'Durga Bhavani S.'"
+   - Example: "Note: Using flexible name matching to handle variations like 'S. Durga Bhavani', 'Durga Bhavani S.', etc."
    - Mention if multiple matches might be found
 
 11. **SQL Syntax - CRITICAL**:
@@ -198,22 +357,41 @@ Convert this natural language question into a SQL query:
    - Provide a conversational explanation that includes the actual answer
    - Example: "explanation": "Satish Srirama has published 78 papers in total."
 
-13. **For Data that NEEDS Visualization**:
+13. **CRITICAL: Keywords Determine Format - List vs Visualize**:
+   
+   A. **Use Table Format (No Chart)** when question contains:
+      - "list" → user wants tabular list
+      - "enumerate" → user wants enumerated table
+      - Examples:
+        * "list the number of publications..." → table
+        * "list faculty publications..." → table
+        * "enumerate the top authors..." → table
+   
+   B. **Use Visualization (Chart/Graph)** when question contains:
+      - "show" → user wants visual chart
+      - "display" → user wants visual representation
+      - "visualize" → user wants chart
+      - Examples:
+        * "show publication trends..." → line_chart/bar_chart
+        * "display faculty comparison..." → bar_chart
+        * "show distribution of..." → pie_chart
+
+14. **For Data that NEEDS Visualization (Charts/Graphs)**:
    Choose from these types:
    - line_chart: for time series trends (multiple data points over time)
    - bar_chart: for comparisons and rankings (multiple items to compare)
    - pie_chart: for distribution/proportions (multiple categories)
-   - table: for detailed listings with multiple rows
+   - table: for detailed listings with multiple rows (when user says "list" or "enumerate")
    - network_graph: for relationships/collaborations
    - multi_line_chart: for comparing multiple series over time
 
-14. **Decision Rule**:
-   - If query result is 1 row with 1-2 columns → visualization: "none"
-   - If query result is multiple rows or complex data → use appropriate chart
-   - If asking for a list (even if short) → use "table"
-   - table: for detailed listings
-   - network_graph: for relationships/collaborations
-   - multi_line_chart: for comparing multiple series over time
+15. **Decision Rule Priority**:
+   1. If user says "list" or "enumerate" → ALWAYS use "table"
+   2. If user says "show" or "display" → use appropriate chart (bar/line/pie)
+   3. If query result is 1 row with 1-2 columns → visualization: "none"
+   4. If query asks for trends/over time → use "line_chart" or "multi_line_chart"
+   5. If query asks for comparison/ranking → use "bar_chart"
+   6. If query result is multiple rows and no keyword → use "table" as default
 
 ## Response Format (JSON)
 CRITICAL: You MUST generate actual, complete, executable SQL - NOT placeholders like "SELECT ..." or "..." 
@@ -255,6 +433,13 @@ Generate the JSON response now:"""
         if any(pattern in question_lower for pattern in simple_query_patterns):
             # This is likely a simple count/fact query
             return self.examples.get('simple_count', {})
+        
+        # Check if searching for a specific publication by title
+        publication_search_patterns = ['who published', 'who wrote', 'who authored', 'paper titled', 
+                                       'publication titled', 'article titled', 'find paper', 
+                                       'find publication', 'search for paper']
+        if any(pattern in question_lower for pattern in publication_search_patterns):
+            return self.examples.get('publication_by_title', {})
         
         # Check if asking about a specific person (contains a name-like pattern)
         # Look for common faculty name patterns or words like "by", "from", "done by"

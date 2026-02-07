@@ -1,6 +1,13 @@
 // MCP API Types
+export interface Message {
+  role: 'user' | 'assistant';
+  content: string;
+}
+
 export interface QueryRequest {
   question: string;
+  model?: string;
+  conversation_history?: Message[];
 }
 
 export interface QueryResponse {

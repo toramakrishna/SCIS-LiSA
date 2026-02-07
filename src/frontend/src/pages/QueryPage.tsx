@@ -34,11 +34,22 @@ export function QueryPage() {
       setError(null);
       setLoading(true);
       
+      // Build conversation history from existing messages
+      // Include only the last few messages to avoid overwhelming the LLM
+      const conversationHistory = messages.slice(-6).map(msg => ({
+        role: msg.type === 'user' ? 'user' : 'assistant',
+        content: msg.type === 'user' 
+          ? msg.content 
+          : msg.queryResponse?.sql 
+            ? `${msg.queryResponse.sql} [VISUALIZATION: ${msg.queryResponse.visualization.type}]`  // Include visualization type
+            : msg.content
+      }));
+      
       // Add user message
       addUserMessage(query);
 
-      // Call MCP API
-      const response = await mcpAPI.query(query);
+      // Call MCP API with conversation history
+      const response = await mcpAPI.query(query, conversationHistory);
       
       // Add assistant response with explanation as content and full response as metadata
       addAssistantMessage({
@@ -49,12 +60,15 @@ export function QueryPage() {
       console.error('Query error:', err);
       let errorMessage = 'Failed to process query';
       
-      if (err.response) {
+      if (err.code === 'ECONNABORTED' || err.message?.includes('timeout')) {
+        // Request timeout
+        errorMessage = '⏱️ Query took too long to process (timeout after 60 seconds). The query might be too complex or the AI model is overloaded. Please try: (1) Simplifying your question, (2) Asking for less data with LIMIT, or (3) Trying again in a moment.';
+      } else if (err.response) {
         // Server responded with error status
         errorMessage = `Server error (${err.response.status}): ${err.response.data?.detail || err.response.statusText}`;
       } else if (err.request) {
-        // Request made but no response
-        errorMessage = 'Cannot connect to backend server. Make sure the backend is running at http://localhost:8000';
+        // Request made but no response received
+        errorMessage = '🔌 Cannot connect to backend server. Make sure the backend is running at http://localhost:8000 and that the Ollama service is available.';
       } else {
         // Error in request configuration
         errorMessage = err.message || 'Unknown error occurred';
