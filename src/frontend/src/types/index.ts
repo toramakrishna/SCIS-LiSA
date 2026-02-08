@@ -20,10 +20,11 @@ export interface QueryResponse {
   row_count: number;
   confidence: number;
   suggested_questions?: string[];
+  report_format?: string;
 }
 
 export interface VisualizationConfig {
-  type: 'line_chart' | 'bar_chart' | 'pie_chart' | 'table' | 'network_graph' | 'multi_line_chart' | 'none';
+  type: 'line_chart' | 'bar_chart' | 'pie_chart' | 'table' | 'network_graph' | 'multi_line_chart' | 'none' | 'report';
   title: string;
   x_axis?: string;
   y_axis?: string;

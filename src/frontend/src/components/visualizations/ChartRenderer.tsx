@@ -4,13 +4,15 @@ import { BarChartViz } from './BarChartViz';
 import { PieChartViz } from './PieChartViz';
 import { TableViz } from './TableViz';
 import { NetworkGraphViz } from './NetworkGraphViz';
+import { ReportView } from './ReportView';
 
 interface ChartRendererProps {
   data: any[];
   config: VisualizationConfig;
+  reportFormat?: string;
 }
 
-export function ChartRenderer({ data, config }: ChartRendererProps) {
+export function ChartRenderer({ data, config, reportFormat }: ChartRendererProps) {
   // Handle undefined or missing config
   if (!config) {
     return (
@@ -186,6 +188,17 @@ export function ChartRenderer({ data, config }: ChartRendererProps) {
   }
 
   switch (config.type) {
+    case 'report':
+      // Ensure we have valid data and config for report view
+      if (!data || !Array.isArray(data)) {
+        return (
+          <div className="text-center py-8 text-amber-600 dark:text-amber-400">
+            No data available for report
+          </div>
+        );
+      }
+      return <ReportView data={data} config={config} reportFormat={reportFormat} />;
+    
     case 'line':
     case 'line_chart':
     case 'multi_line_chart':
