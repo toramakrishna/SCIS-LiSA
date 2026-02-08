@@ -383,9 +383,27 @@ Convert this natural language question into a SQL query:
    - Provide a conversational explanation that includes the actual answer
    - Example: "explanation": "Satish Srirama has published 78 papers in total."
 
-14. **CRITICAL: Keywords Determine Format - List vs Visualize**:
+14. **CRITICAL: Keywords Determine Format - Report vs List vs Visualize**:
    
-   A. **Use Table Format (No Chart)** when question contains:
+   A. **Use "report" Format (Text/Paragraph)** when question contains:
+      - "in the format" → user specifies custom format
+      - "in the below format" → user wants specific layout
+      - "report" → user wants report-style output
+      - "format as" → user wants custom formatting
+      - Key indicators:
+        * Question includes line breaks or formatting instructions
+        * Question mentions specific fields to display
+        * User wants downloadable text format for official use
+      - Examples:
+        * "list all publications of X in the format:\nTitle\nAuthors\nDetails" → report
+        * "generate report for faculty Y" → report
+        * "show publications in the below format..." → report
+      - For report format:
+        * Still generate normal SQL query
+        * Set visualization type to "report"
+        * Frontend will format as text with download option
+   
+   B. **Use Table Format (No Chart)** when question contains:
       - "list" → user wants tabular list
       - "enumerate" → user wants enumerated table
       - Examples:
@@ -393,7 +411,7 @@ Convert this natural language question into a SQL query:
         * "list faculty publications..." → table
         * "enumerate the top authors..." → table
    
-   B. **Use Visualization (Chart/Graph)** when question contains:
+   C. **Use Visualization (Chart/Graph)** when question contains:
       - "show" → user wants visual chart
       - "display" → user wants visual representation
       - "visualize" → user wants chart
@@ -430,8 +448,16 @@ The SQL must be ready to run in PostgreSQL immediately without any modifications
     "note": "Any assumptions made (e.g., partial name matching used, date range assumed, etc.) - INCLUDE THIS if using ILIKE or making assumptions",
     "x_axis": "column name for x-axis (if applicable)",
     "y_axis": "column name for y-axis (if applicable)",
-    "series": "column name for series grouping (if multi-line)"
+    "series": "column name for series grouping (if multi-line)",
+    "report_format": "template string for report output (only if visualization=report, e.g., 'Title: {{title}}\nAuthors: {{authors}}\nYear: {{year}}')"
 }}
+
+Visualization types:
+- "report" = Text/paragraph format with download option (use when user specifies format or wants report)
+- "table" = Data table (use for lists and searches)
+- "bar_chart", "pie_chart", "line_chart", "multi_line_chart" = Charts
+- "network_graph" = Network visualization
+- "none" = No visualization (simple text answer)
 
 IMPORTANT: 
 - The "sql" field must contain a COMPLETE, EXECUTABLE PostgreSQL query
@@ -450,6 +476,15 @@ Generate the JSON response now:"""
     def _find_similar_example(self, question: str) -> Dict:
         """Find the most relevant example query based on question keywords"""
         question_lower = question.lower()
+        
+        # Check for report format requests - highest priority
+        report_patterns = [
+            'in the format', 'in the below format', 'report', 'format as',
+            'in this format', 'generate report', 'publications report'
+        ]
+        if any(pattern in question_lower for pattern in report_patterns):
+            # User wants a formatted report - use publication example but will set visualization to 'report'
+            return self.examples.get('faculty_member_publications', {})
         
         # Check for simple count/number queries - should use "none" visualization
         simple_query_patterns = [

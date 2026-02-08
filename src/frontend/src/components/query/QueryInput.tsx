@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { Send, Loader2, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
 import { cn } from '@/lib/utils';
 import { EXAMPLE_QUERIES, CHART_TYPE_COLORS } from '@/lib/constants/exampleQueries';
 
@@ -21,7 +21,7 @@ export function QueryInput({
   const [query, setQuery] = useState('');
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [filteredSuggestions, setFilteredSuggestions] = useState(EXAMPLE_QUERIES);
-  const inputRef = useRef<HTMLInputElement>(null);
+  const inputRef = useRef<HTMLTextAreaElement>(null);
   const suggestionsRef = useRef<HTMLDivElement>(null);
   const justSelectedRef = useRef(false);
 
@@ -51,7 +51,7 @@ export function QueryInput({
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     const value = e.target.value;
     setQuery(value);
     justSelectedRef.current = false; // Reset flag when user manually types
@@ -93,18 +93,28 @@ export function QueryInput({
     }
   };
 
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
+    // Submit on Enter, allow Shift+Enter for new line
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      handleSubmit(e as any);
+    }
+  };
+
   return (
     <div className="relative">
       <form onSubmit={handleSubmit} className={cn('flex gap-2', className)}>
         <div className="relative flex-1">
-          <Input
+          <Textarea
             ref={inputRef}
             value={query}
             onChange={handleInputChange}
             onFocus={handleInputFocus}
+            onKeyDown={handleKeyDown}
             placeholder={placeholder}
             disabled={isLoading}
-            className="flex-1"
+            className="flex-1 min-h-[60px] max-h-[200px] resize-y"
+            rows={2}
           />
           {showSuggestions && filteredSuggestions.length > 0 && (
             <div

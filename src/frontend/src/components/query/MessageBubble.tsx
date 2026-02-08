@@ -94,7 +94,8 @@ export function MessageBubble({
             {/* Visualization - Now appears FIRST */}
             <ChartRenderer 
               data={queryResponse.data} 
-              config={queryResponse.visualization} 
+              config={queryResponse.visualization}
+              reportFormat={queryResponse.report_format}
             />
 
             {/* Suggested Follow-up Questions */}
