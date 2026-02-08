@@ -42,6 +42,8 @@ interface DatabaseStats {
   collaborations: number;
   venues: number;
   faculty: number;
+  students: number;
+  scis_students: number;
   recent_by_year: Array<{ year: number; count: number }>;
 }
 
@@ -369,6 +371,218 @@ function OllamaConfigSection() {
   );
 }
 
+// Student Upload Component
+function StudentUploadSection() {
+  const [uploadFile, setUploadFile] = useState<File | null>(null);
+  const [uploadStatus, setUploadStatus] = useState<TaskStatus>({ status: 'idle', progress: 0, message: '' });
+  const [uploadResult, setUploadResult] = useState<any>(null);
+  const [isUploading, setIsUploading] = useState(false);
+
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (file && file.type === 'application/pdf') {
+      setUploadFile(file);
+      setUploadResult(null);
+      setUploadStatus({ status: 'idle', progress: 0, message: '' });
+    } else {
+      alert('Please select a PDF file');
+    }
+  };
+
+  const uploadPDF = async () => {
+    if (!uploadFile) {
+      alert('Please select a PDF file first');
+      return;
+    }
+
+    setIsUploading(true);
+    setUploadStatus({ status: 'starting', progress: 0, message: 'Uploading PDF...' });
+    setUploadResult(null);
+
+    try {
+      const formData = new FormData();
+      formData.append('file', uploadFile);
+
+      const response = await fetch('/api/v1/admin/students/upload', {
+        method: 'POST',
+        body: formData,
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.detail || 'Upload failed');
+      }
+
+      const result = await response.json();
+      setUploadResult(result);
+      setUploadStatus({ 
+        status: 'completed', 
+        progress: 100, 
+        message: 'Upload completed successfully',
+        stats: result.stats
+      });
+
+      // Poll for status updates
+      const pollInterval = setInterval(async () => {
+        try {
+          const statusResponse = await fetch('/api/v1/admin/students/upload/status');
+          if (statusResponse.ok) {
+            const status = await statusResponse.json();
+            setUploadStatus(status);
+            
+            if (status.status === 'completed' || status.status === 'error') {
+              clearInterval(pollInterval);
+              setIsUploading(false);
+            }
+          }
+        } catch (error) {
+          console.error('Error polling status:', error);
+        }
+      }, 1000);
+
+      // Clear interval after 30 seconds max
+      setTimeout(() => {
+        clearInterval(pollInterval);
+        setIsUploading(false);
+      }, 30000);
+
+    } catch (error: any) {
+      console.error('Upload error:', error);
+      setUploadStatus({ 
+        status: 'error', 
+        progress: 0, 
+        message: error.message || 'Upload failed'
+      });
+      setIsUploading(false);
+    }
+  };
+
+  return (
+    <div className="space-y-4">
+      {/* File Input */}
+      <div className="space-y-2">
+        <Label htmlFor="student-pdf">Select Student PDF File</Label>
+        <Input
+          id="student-pdf"
+          type="file"
+          accept=".pdf"
+          onChange={handleFileChange}
+          disabled={isUploading}
+          className="cursor-pointer"
+        />
+        {uploadFile && (
+          <p className="text-sm text-slate-600 dark:text-slate-400">
+            Selected: {uploadFile.name} ({(uploadFile.size / 1024).toFixed(2)} KB)
+          </p>
+        )}
+      </div>
+
+      {/* Upload Button */}
+      <Button
+        onClick={uploadPDF}
+        disabled={!uploadFile || isUploading}
+        className="flex items-center gap-2 bg-purple-600 hover:bg-purple-700"
+      >
+        {isUploading ? (
+          <>
+            <Loader2 className="h-4 w-4 animate-spin" />
+            Processing...
+          </>
+        ) : (
+          <>
+            <Upload className="h-4 w-4" />
+            Upload & Process PDF
+          </>
+        )}
+      </Button>
+
+      {/* Progress Indicator */}
+      {uploadStatus.status !== 'idle' && (
+        <div className={`p-4 rounded-lg ${
+          uploadStatus.status === 'completed' ? 'bg-green-50 dark:bg-green-950' :
+          uploadStatus.status === 'error' ? 'bg-red-50 dark:bg-red-950' :
+          'bg-blue-50 dark:bg-blue-950'
+        }`}>
+          <div className="flex items-start gap-2">
+            {uploadStatus.status === 'completed' ? (
+              <CheckCircle className="h-5 w-5 text-green-600 dark:text-green-400 mt-0.5" />
+            ) : uploadStatus.status === 'error' ? (
+              <XCircle className="h-5 w-5 text-red-600 dark:text-red-400 mt-0.5" />
+            ) : (
+              <Loader2 className="h-5 w-5 text-blue-600 dark:text-blue-400 animate-spin mt-0.5" />
+            )}
+            <div className="flex-1">
+              <p className={`font-semibold ${
+                uploadStatus.status === 'completed' ? 'text-green-700 dark:text-green-400' :
+                uploadStatus.status === 'error' ? 'text-red-700 dark:text-red-400' :
+                'text-blue-700 dark:text-blue-400'
+              }`}>
+                {uploadStatus.message}
+              </p>
+              
+              {uploadStatus.progress > 0 && uploadStatus.status === 'running' && (
+                <div className="mt-2">
+                  <div className="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-2">
+                    <div 
+                      className="bg-purple-600 h-2 rounded-full transition-all duration-300"
+                      style={{ width: `${uploadStatus.progress}%` }}
+                    />
+                  </div>
+                  <p className="text-sm mt-1 text-slate-600 dark:text-slate-400">
+                    {uploadStatus.progress}% complete
+                  </p>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Upload Result Stats */}
+      {uploadResult && uploadResult.stats && (
+        <div className="p-4 rounded-lg bg-slate-50 dark:bg-slate-800">
+          <h3 className="font-semibold text-slate-700 dark:text-slate-300 mb-3">Upload Statistics</h3>
+          <div className="grid grid-cols-3 gap-4">
+            <div>
+              <p className="text-2xl font-bold text-green-600">{uploadResult.stats.inserted || 0}</p>
+              <p className="text-sm text-slate-600 dark:text-slate-400">Students Inserted</p>
+            </div>
+            <div>
+              <p className="text-2xl font-bold text-yellow-600">{uploadResult.stats.duplicates || 0}</p>
+              <p className="text-sm text-slate-600 dark:text-slate-400">Duplicates Skipped</p>
+            </div>
+            <div>
+              <p className="text-2xl font-bold text-red-600">{uploadResult.stats.errors || 0}</p>
+              <p className="text-sm text-slate-600 dark:text-slate-400">Errors</p>
+            </div>
+          </div>
+          {uploadResult.total_extracted && (
+            <p className="mt-3 text-sm text-slate-600 dark:text-slate-400">
+              Total extracted from PDF: {uploadResult.total_extracted} students
+            </p>
+          )}
+        </div>
+      )}
+
+      {/* Instructions */}
+      <div className="p-4 rounded-lg bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+        <div className="flex items-start gap-2">
+          <AlertCircle className="h-5 w-5 text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0" />
+          <div className="text-sm text-slate-600 dark:text-slate-400 space-y-1">
+            <p className="font-semibold text-slate-700 dark:text-slate-300">Instructions:</p>
+            <ul className="list-disc list-inside space-y-1 ml-2">
+              <li>Upload a PDF file containing student data in tabular format</li>
+              <li>The PDF should have columns: Reg No, Name, Semester, Program, School Name, Programme-Type</li>
+              <li>Duplicate registration numbers will be automatically skipped</li>
+              <li>Processing may take a few minutes depending on file size</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export function AdminPage() {
   // Connection testing
   const [connectionConfig, setConnectionConfig] = useState<ConnectionConfig>({
@@ -557,11 +771,12 @@ export function AdminPage() {
   const loadDatabaseStats = async () => {
     setStatsLoading(true);
     try {
-      const response = await mcpAPI.analytics.stats();
-      console.log('API Response:', response);
-      // API client already returns response.data, so response is the actual data object
-      // API returns { totals: { faculty, publications, authors, ... } }
-      const stats = response.totals || response || {};
+      const response = await fetch('/api/v1/admin/database-stats');
+      if (!response.ok) throw new Error('Failed to fetch database stats');
+      const data = await response.json();
+      console.log('Database stats response:', data);
+      // Admin endpoint returns { status: "success", stats: {...}, timestamp: "..." }
+      const stats = data.stats || {};
       console.log('Extracted stats:', stats);
       setDbStats(stats);
     } catch (error: any) {
@@ -737,22 +952,43 @@ export function AdminPage() {
         </CardHeader>
         <CardContent>
           {dbStats && (
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <div className="p-4 bg-blue-50 dark:bg-blue-950/30 rounded-lg">
-                <div className="text-2xl font-bold text-blue-700 dark:text-blue-400">{dbStats.faculty}</div>
-                <div className="text-sm text-slate-600 dark:text-slate-400">Faculty Members</div>
+            <div className="space-y-6">
+              {/* Publication-related Statistics */}
+              <div>
+                <h3 className="text-sm font-semibold text-slate-700 dark:text-slate-300 mb-3">Publication Statistics</h3>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                  <div className="p-4 bg-blue-50 dark:bg-blue-950/30 rounded-lg">
+                    <div className="text-2xl font-bold text-blue-700 dark:text-blue-400">{dbStats.faculty}</div>
+                    <div className="text-sm text-slate-600 dark:text-slate-400">Faculty Members</div>
+                  </div>
+                  <div className="p-4 bg-green-50 dark:bg-green-950/30 rounded-lg">
+                    <div className="text-2xl font-bold text-green-700 dark:text-green-400">{dbStats.publications}</div>
+                    <div className="text-sm text-slate-600 dark:text-slate-400">Publications</div>
+                  </div>
+                  <div className="p-4 bg-purple-50 dark:bg-purple-950/30 rounded-lg">
+                    <div className="text-2xl font-bold text-purple-700 dark:text-purple-400">{dbStats.authors}</div>
+                    <div className="text-sm text-slate-600 dark:text-slate-400">Total Authors</div>
+                  </div>
+                  <div className="p-4 bg-orange-50 dark:bg-orange-950/30 rounded-lg">
+                    <div className="text-2xl font-bold text-orange-700 dark:text-orange-400">{dbStats.collaborations}</div>
+                    <div className="text-sm text-slate-600 dark:text-slate-400">Collaborations</div>
+                  </div>
+                </div>
               </div>
-              <div className="p-4 bg-green-50 dark:bg-green-950/30 rounded-lg">
-                <div className="text-2xl font-bold text-green-700 dark:text-green-400">{dbStats.publications}</div>
-                <div className="text-sm text-slate-600 dark:text-slate-400">Publications</div>
-              </div>
-              <div className="p-4 bg-purple-50 dark:bg-purple-950/30 rounded-lg">
-                <div className="text-2xl font-bold text-purple-700 dark:text-purple-400">{dbStats.authors}</div>
-                <div className="text-sm text-slate-600 dark:text-slate-400">Total Authors</div>
-              </div>
-              <div className="p-4 bg-orange-50 dark:bg-orange-950/30 rounded-lg">
-                <div className="text-2xl font-bold text-orange-700 dark:text-orange-400">{dbStats.collaborations}</div>
-                <div className="text-sm text-slate-600 dark:text-slate-400">Collaborations</div>
+
+              {/* Student Statistics */}
+              <div>
+                <h3 className="text-sm font-semibold text-slate-700 dark:text-slate-300 mb-3">Student Statistics</h3>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                  <div className="p-4 bg-cyan-50 dark:bg-cyan-950/30 rounded-lg">
+                    <div className="text-2xl font-bold text-cyan-700 dark:text-cyan-400">{dbStats.students}</div>
+                    <div className="text-sm text-slate-600 dark:text-slate-400">Total Students</div>
+                  </div>
+                  <div className="p-4 bg-teal-50 dark:bg-teal-950/30 rounded-lg">
+                    <div className="text-2xl font-bold text-teal-700 dark:text-teal-400">{dbStats.scis_students}</div>
+                    <div className="text-sm text-slate-600 dark:text-slate-400">SCIS Students</div>
+                  </div>
+                </div>
               </div>
             </div>
           )}
@@ -1061,6 +1297,20 @@ export function AdminPage() {
               </p>
             </div>
           )}
+        </CardContent>
+      </Card>
+
+      {/* Student PDF Upload */}
+      <Card className="border-l-4 border-l-purple-500">
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2 text-purple-700 dark:text-purple-400">
+            <Upload className="h-5 w-5" />
+            Student Data Upload
+          </CardTitle>
+          <CardDescription>Upload student PDF to ingest new student records into the database</CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-6">
+          <StudentUploadSection />
         </CardContent>
       </Card>
 

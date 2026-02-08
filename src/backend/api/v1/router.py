@@ -4,7 +4,7 @@ Combines all API endpoint routers
 """
 
 from fastapi import APIRouter
-from api.v1.endpoints import publications, faculty, authors, venues, analytics, mcp, admin
+from api.v1.endpoints import publications, faculty, authors, venues, analytics, mcp, admin, students
 
 api_router = APIRouter()
 
@@ -37,6 +37,12 @@ api_router.include_router(
     analytics.router,
     prefix="/analytics",
     tags=["Analytics"]
+)
+
+api_router.include_router(
+    students.router,
+    prefix="/students",
+    tags=["Students"]
 )
 
 api_router.include_router(

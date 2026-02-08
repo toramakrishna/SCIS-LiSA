@@ -214,8 +214,14 @@ async def handle_predefined_query(question: str, db: Session) -> Optional[QueryR
     
     question_lower = question.lower()
     
+    # Check for venue/conference queries first (higher priority)
+    # This prevents "top conferences where faculty publish" from being caught by faculty pattern
+    is_asking_for_venues = any(p in question_lower for p in ['venue', 'journal', 'conference', 'published in', 'publish in'])
+    
     # Pattern 1: Top faculty by publication count
-    if any(p in question_lower for p in ['top', 'most productive', 'most published']) and \
+    # BUT: exclude if asking about venues/conferences
+    if not is_asking_for_venues and \
+       any(p in question_lower for p in ['top', 'most productive', 'most published']) and \
        any(p in question_lower for p in ['faculty', 'professor', 'researcher']):
         limit = 10
         # Try to extract number
@@ -305,16 +311,20 @@ async def handle_predefined_query(question: str, db: Session) -> Optional[QueryR
             pass  # Continue to try next if this fails
     
     # Pattern 3: Top publication venues
-    if any(p in question_lower for p in ['venue', 'journal', 'conference', 'published in']):
+    if any(p in question_lower for p in ['venue', 'journal', 'conference', 'published in', 'publish in']):
+        # Check if asking specifically about faculty
+        filter_faculty = any(p in question_lower for p in ['faculty', 'professor', 'our', 'we', 'scis'])
+        
         # Get top venues from publication journal/booktitle fields
-        sql = """
+        sql = f"""
         SELECT 
-            COALESCE(journal, booktitle, 'Unknown Venue') as venue,
+            COALESCE(NULLIF(journal, ''), NULLIF(booktitle, '')) as venue,
             publication_type as venue_type,
             COUNT(id) as publication_count
         FROM publications
-        WHERE journal IS NOT NULL OR booktitle IS NOT NULL
-        GROUP BY COALESCE(journal, booktitle, 'Unknown Venue'), publication_type
+        WHERE (journal IS NOT NULL AND journal != '' OR booktitle IS NOT NULL AND booktitle != '')
+        {"AND has_faculty_author = true" if filter_faculty else ""}
+        GROUP BY COALESCE(NULLIF(journal, ''), NULLIF(booktitle, '')), publication_type
         ORDER BY publication_count DESC
         LIMIT 15
         """
@@ -322,14 +332,19 @@ async def handle_predefined_query(question: str, db: Session) -> Optional[QueryR
         try:
             result = db.execute(text(sql)).fetchall()
             data = [dict(row._mapping) for row in result]
+            
+            # Determine title based on filtering
+            title_suffix = " (Faculty Publications)" if filter_faculty else ""
+            explanation_suffix = " by faculty" if filter_faculty else ""
+            
             return QueryResponse(
                 question=question,
                 sql=sql,
-                explanation="Top publication venues by count",
+                explanation=f"Top publication venues by count{explanation_suffix}",
                 data=data,
                 visualization={
                     "type": "bar_chart",
-                    "title": "Top Publication Venues",
+                    "title": f"Top Publication Venues{title_suffix}",
                     "x_axis": "venue",
                     "y_axis": "publication_count"
                 },

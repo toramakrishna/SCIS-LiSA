@@ -22,6 +22,91 @@ const COLORS = [
   '#6366f1', // indigo
 ];
 
+// Custom tick component for multi-line labels
+const CustomXAxisTick = ({ x, y, payload }: any) => {
+  const text = String(payload.value);
+  const maxCharsPerLine = 25; // Maximum characters per line
+  const maxLines = 3;
+  
+  // Split text into words
+  const words = text.split(/\s+/);
+  const lines: string[] = [];
+  let currentLine = '';
+  
+  // Build lines by adding words until reaching max chars
+  for (const word of words) {
+    if (lines.length >= maxLines) break;
+    
+    const testLine = currentLine ? `${currentLine} ${word}` : word;
+    
+    if (testLine.length <= maxCharsPerLine) {
+      currentLine = testLine;
+    } else {
+      if (currentLine) {
+        lines.push(currentLine);
+        currentLine = word;
+      } else {
+        // Single word is too long, truncate it
+        lines.push(word.substring(0, maxCharsPerLine - 3) + '...');
+        currentLine = '';
+      }
+    }
+  }
+  
+  // Add remaining text
+  if (currentLine && lines.length < maxLines) {
+    lines.push(currentLine);
+  }
+  
+  // If we still have more text, add ellipsis to last line
+  if (words.length > lines.join(' ').split(/\s+/).length) {
+    const lastLine = lines[lines.length - 1];
+    if (lastLine.length > maxCharsPerLine - 3) {
+      lines[lines.length - 1] = lastLine.substring(0, maxCharsPerLine - 3) + '...';
+    } else {
+      lines[lines.length - 1] = lastLine + '...';
+    }
+  }
+  
+  return (
+    <g transform={`translate(${x},${y})`}>
+      <text
+        x={0}
+        y={0}
+        dy={8}
+        textAnchor="end"
+        fill="#64748b"
+        fontSize={9}
+        transform="rotate(-45)"
+      >
+        {lines.map((line, index) => (
+          <tspan key={index} x={0} dy={index === 0 ? 0 : 10}>
+            {line}
+          </tspan>
+        ))}
+      </text>
+    </g>
+  );
+};
+
+// Custom tooltip to show full text
+const CustomTooltip = ({ active, payload, xKey, yKey }: any) => {
+  if (active && payload && payload.length) {
+    const data = payload[0].payload;
+    return (
+      <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg p-3 max-w-xs">
+        <p className="text-xs font-semibold text-gray-700 dark:text-gray-300 mb-1">
+          {data[xKey]}
+        </p>
+        <p className="text-sm font-bold text-blue-600 dark:text-blue-400">
+          {yKey}: <span className="text-gray-900 dark:text-white">{data[yKey]}</span>
+        </p>
+      </div>
+    );
+  }
+  return null;
+};
+
 export function BarChartViz({ data, config }: BarChartVizProps) {
   const { title, x_axis, y_axis, columns } = config;
 
@@ -66,33 +151,24 @@ export function BarChartViz({ data, config }: BarChartVizProps) {
         <CardTitle className="text-sm sm:text-base text-blue-700 dark:text-blue-400">{title || 'Bar Chart'}</CardTitle>
       </CardHeader>
       <CardContent className="pt-4 sm:pt-6 px-2 sm:px-6">
-        <ResponsiveContainer width="100%" height={300} className="sm:h-[350px]">
+        <ResponsiveContainer width="100%" height={400} className="sm:h-[450px]">
           <BarChart 
             data={data}
-            margin={{ top: 10, right: 10, left: 0, bottom: 50 }}
+            margin={{ top: 10, right: 10, left: 0, bottom: 100 }}
           >
             <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
             <XAxis 
               dataKey={xKey} 
-              angle={-45}
-              textAnchor="end"
-              height={80}
-              tick={{ fill: '#64748b', fontSize: 10 }}
+              height={100}
+              tick={<CustomXAxisTick />}
+              interval={0}
             />
             <YAxis 
               tick={{ fill: '#64748b', fontSize: 10 }}
               width={40}
               label={{ value: yKey, angle: -90, position: 'insideLeft', style: { fill: '#64748b', fontSize: 10 } }}
             />
-            <Tooltip 
-              contentStyle={{ 
-                backgroundColor: 'white', 
-                border: '1px solid #e5e7eb',
-                borderRadius: '8px',
-                boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)',
-                fontSize: '12px'
-              }}
-            />
+            <Tooltip content={<CustomTooltip xKey={xKey} yKey={yKey} />} />
             <Legend 
               wrapperStyle={{ paddingTop: '10px', fontSize: '11px' }}
               iconSize={12}
