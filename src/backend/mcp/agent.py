@@ -207,11 +207,16 @@ Convert this natural language question into a SQL query:
 5. IMPORTANT: If selecting a column, either include it in GROUP BY or use an aggregate function
 6. The collaborations table already has pre-computed collaboration_count - no GROUP BY needed
 7. Add ORDER BY for sorted results
-8. **ALWAYS add LIMIT clause**:
-   - If user specifies a number (e.g., "5 recent", "top 10"), use that limit
-   - If NO limit specified, DEFAULT to LIMIT 5
-   - Examples: "recent publications" → LIMIT 5, "top publications" → LIMIT 5
-   - Only omit LIMIT for time series/trend data or when explicitly asked for "all"
+8. **ALWAYS add LIMIT clause (EXCEPT when user says "all")**:
+   - If user says "all" or "show all" → **DO NOT add LIMIT** (return all matching records)
+   - If user specifies a number (e.g., "5 recent", "top 10") → use that limit
+   - If NO limit specified and NOT asking for "all" → DEFAULT to LIMIT 5
+   - Examples: 
+     * "recent publications" → LIMIT 5
+     * "top publications" → LIMIT 5
+     * "show all faculty with h-index > 10" → NO LIMIT (return all 8 faculty)
+     * "list all publications by X" → NO LIMIT (return all publications)
+   - Only omit LIMIT for: time series/trend data, queries with "all", or full dataset requests
 
 ## Understanding User Questions - CRITICAL
 - **"Who" questions** = ALWAYS include author/faculty names in SELECT and GROUP BY
@@ -335,18 +340,39 @@ Convert this natural language question into a SQL query:
    LIMIT 5;
    ```
 
-10. **When using partial matching, ALWAYS add a note**:
+10. **Collaboration Network Queries - CRITICAL**:
+   - When asked for "collaboration network" or "collaborations between faculty":
+   - **IMPORTANT**: Faculty typically collaborate with external researchers, not with each other
+   - Use: WHERE a1.is_faculty = true (only require one author to be faculty)
+   - Do NOT use: WHERE a1.is_faculty = true AND a2.is_faculty = true (too restrictive, returns 0 results)
+   - Query pattern:
+   ```sql
+   SELECT 
+       a1.name as faculty_member,
+       a2.name as collaborator,
+       c.collaboration_count as joint_papers
+   FROM collaborations c
+   JOIN authors a1 ON c.author1_id = a1.id
+   JOIN authors a2 ON c.author2_id = a2.id
+   WHERE a1.is_faculty = true
+   ORDER BY c.collaboration_count DESC
+   LIMIT 30;
+   ```
+   - Use visualization: "network_graph"
+   - Add note: "Showing faculty members and their top collaborators (including external researchers)"
+
+11. **When using partial matching, ALWAYS add a note**:
    - Example: "Note: Using flexible name matching to handle variations like 'S. Durga Bhavani', 'Durga Bhavani S.', etc."
    - Mention if multiple matches might be found
 
-11. **SQL Syntax - CRITICAL**:
+12. **SQL Syntax - CRITICAL**:
    - ALWAYS close ALL string literals with matching quotes
    - Check: every ILIKE '%text%' must have closing quote
    - Use parentheses for complex WHERE conditions with AND/OR
    - Example: WHERE (condition1 OR condition2) AND condition3
 
 ## Visualization Selection - CRITICAL
-12. **For Simple/Single-Value Answers - Use "none" visualization**:
+13. **For Simple/Single-Value Answers - Use "none" visualization**:
    - When the query returns a SINGLE number, count, or simple fact
    - Examples requiring NO visualization:
      * "How many publications does X have?" → single count
@@ -357,7 +383,7 @@ Convert this natural language question into a SQL query:
    - Provide a conversational explanation that includes the actual answer
    - Example: "explanation": "Satish Srirama has published 78 papers in total."
 
-13. **CRITICAL: Keywords Determine Format - List vs Visualize**:
+14. **CRITICAL: Keywords Determine Format - List vs Visualize**:
    
    A. **Use Table Format (No Chart)** when question contains:
       - "list" → user wants tabular list
@@ -376,7 +402,7 @@ Convert this natural language question into a SQL query:
         * "display faculty comparison..." → bar_chart
         * "show distribution of..." → pie_chart
 
-14. **For Data that NEEDS Visualization (Charts/Graphs)**:
+15. **For Data that NEEDS Visualization (Charts/Graphs)**:
    Choose from these types:
    - line_chart: for time series trends (multiple data points over time)
    - bar_chart: for comparisons and rankings (multiple items to compare)
@@ -385,7 +411,7 @@ Convert this natural language question into a SQL query:
    - network_graph: for relationships/collaborations
    - multi_line_chart: for comparing multiple series over time
 
-15. **Decision Rule Priority**:
+16. **Decision Rule Priority**:
    1. If user says "list" or "enumerate" → ALWAYS use "table"
    2. If user says "show" or "display" → use appropriate chart (bar/line/pie)
    3. If query result is 1 row with 1-2 columns → visualization: "none"
@@ -576,7 +602,6 @@ Generate the JSON response now:"""
         
         viz_config = {
             "type": viz_type,
-            "data": data,
             "columns": columns
         }
         
