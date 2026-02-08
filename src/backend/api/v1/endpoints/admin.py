@@ -2,7 +2,7 @@
 Admin API Endpoints
 Handles system administration tasks including DBLP data extraction, ingestion, and configuration
 """
-from fastapi import APIRouter, HTTPException, Depends, BackgroundTasks
+from fastapi import APIRouter, HTTPException, Depends, BackgroundTasks, UploadFile, File
 from fastapi.responses import JSONResponse
 from sqlalchemy.orm import Session
 from sqlalchemy import text
@@ -13,10 +13,14 @@ import requests
 import logging
 from datetime import datetime
 from pathlib import Path
+import tempfile
+import pdfplumber
+from sqlalchemy.exc import IntegrityError
 
 from config.db_config import get_db, engine
 from services.ingestion_service import DatabaseIngestionService
 from parsers.bibtex_parser import BibTeXParser
+from models.db_models import Student
 import json
 
 router = APIRouter()
@@ -25,7 +29,8 @@ logger = logging.getLogger(__name__)
 # Store background task status
 task_status = {
     "fetch": {"status": "idle", "progress": 0, "message": "", "total": 0, "current": 0},
-    "ingest": {"status": "idle", "progress": 0, "message": "", "stats": {}}
+    "ingest": {"status": "idle", "progress": 0, "message": "", "stats": {}},
+    "students": {"status": "idle", "progress": 0, "message": "", "stats": {}}
 }
 
 
@@ -525,6 +530,23 @@ async def get_database_stats(db: Session = Depends(get_db)):
         result = db.execute(text("SELECT COUNT(*) FROM authors WHERE is_faculty = true"))
         stats['faculty'] = result.fetchone()[0]
         
+        # Get students count
+        try:
+            result = db.execute(text("SELECT COUNT(*) FROM students"))
+            stats['students'] = result.fetchone()[0]
+        except:
+            stats['students'] = 0
+        
+        # Get SCIS students count
+        try:
+            result = db.execute(text("""
+                SELECT COUNT(*) FROM students 
+                WHERE school_name LIKE '%Computer%Information%'
+            """))
+            stats['scis_students'] = result.fetchone()[0]
+        except:
+            stats['scis_students'] = 0
+        
         # Get recent publications
         result = db.execute(text("""
             SELECT year, COUNT(*) as count
@@ -869,4 +891,281 @@ async def save_ollama_settings(settings: OllamaSettings) -> Dict:
             status_code=500,
             detail=f"Failed to save settings: {str(e)}"
         )
+
+
+# =====================================================
+# Students PDF Upload & Ingestion
+# =====================================================
+
+def normalize_program_name(program: str) -> str:
+    """
+    Normalize program name to fix common inconsistencies
+    - Adds space before parenthesis if missing
+    - Fixes case inconsistencies
+    - Removes newlines and extra spaces
+    """
+    if not program or program == 'None':
+        return None
+    
+    # Remove newlines and extra spaces
+    program = ' '.join(program.split())
+    
+    # Fix missing space before parenthesis
+    program = program.replace('Technology(', 'Technology (')
+    program = program.replace('Application(', 'Application (')
+    program = program.replace('Philosophy(', 'Philosophy (')
+    
+    # Standardize case for "Computer science" -> "Computer Science"
+    program = program.replace('Computer science', 'Computer Science')
+    
+    return program
+
+
+def extract_students_from_pdf_content(pdf_file) -> list:
+    """
+    Extract student data from PDF file content
+    Returns list of student dictionaries
+    """
+    students = []
+    
+    # Column indices (based on observed structure)
+    reg_no_idx = 1
+    name_idx = 2
+    semester_idx = 3
+    program_idx = 4
+    school_idx = 5
+    prog_type_idx = 6
+    
+    try:
+        with pdfplumber.open(pdf_file) as pdf:
+            logger.info(f"Processing {len(pdf.pages)} pages from uploaded PDF")
+            
+            # First, find column indices from first page header
+            if len(pdf.pages) > 0:
+                first_page = pdf.pages[0]
+                tables = first_page.extract_tables()
+                if tables and len(tables[0]) > 1:
+                    table = tables[0]
+                    for idx, row in enumerate(table):
+                        if row and len(row) > 1 and row[1] and 'Reg No' in str(row[1]):
+                            headers = row
+                            try:
+                                reg_no_idx = next(i for i, h in enumerate(headers) if h and 'Reg No' in str(h))
+                                name_idx = next(i for i, h in enumerate(headers) if h and 'Name' in str(h) and 'School' not in str(h))
+                                semester_idx = next(i for i, h in enumerate(headers) if h and 'Semester' in str(h))
+                                program_idx = next(i for i, h in enumerate(headers) if h and 'Program' in str(h) and 'Type' not in str(h))
+                                school_idx = next(i for i, h in enumerate(headers) if h and 'School Name' in str(h))
+                                prog_type_idx = next(i for i, h in enumerate(headers) if h and 'Programme-Type' in str(h))
+                                logger.info(f"Column indices found: RegNo={reg_no_idx}, Name={name_idx}")
+                                break
+                            except StopIteration:
+                                logger.warning("Could not find all required columns in header")
+            
+            # Process all pages
+            for page_num, page in enumerate(pdf.pages, 1):
+                if page_num % 10 == 0:
+                    logger.info(f"Processing page {page_num}/{len(pdf.pages)}")
+                
+                tables = page.extract_tables()
+                if not tables:
+                    continue
+                
+                table = tables[0]
+                
+                # Find where to start processing (skip header rows)
+                start_row = 0
+                for idx, row in enumerate(table):
+                    if row and len(row) > 1:
+                        cell_text = str(row[1]) if row[1] else ""
+                        if 'ELECTORAL' in cell_text or 'Reg No' in cell_text or 'SNo' in cell_text:
+                            start_row = idx + 1
+                            continue
+                        break
+                
+                # Process data rows
+                for row_idx in range(start_row, len(table)):
+                    row = table[row_idx]
+                    
+                    if not row or len(row) <= max(reg_no_idx, name_idx, semester_idx, program_idx, school_idx, prog_type_idx):
+                        continue
+                    
+                    reg_no = str(row[reg_no_idx]).strip() if row[reg_no_idx] else None
+                    name = str(row[name_idx]).strip() if row[name_idx] else None
+                    semester_str = str(row[semester_idx]).strip() if row[semester_idx] else None
+                    program = str(row[program_idx]).strip() if row[program_idx] else None
+                    school_name = str(row[school_idx]).strip() if row[school_idx] else None
+                    prog_type = str(row[prog_type_idx]).strip() if row[prog_type_idx] else None
+                    
+                    if not reg_no or not name or reg_no == 'None' or name == 'None':
+                        continue
+                    
+                    if 'Reg No' in reg_no or 'SNo' in reg_no:
+                        continue
+                    
+                    try:
+                        semester = int(semester_str) if semester_str and semester_str != 'None' else None
+                    except ValueError:
+                        semester = None
+                    
+                    # Normalize program name
+                    normalized_program = normalize_program_name(program)
+                    
+                    students.append({
+                        'registration_number': reg_no,
+                        'name': name,
+                        'semester': semester,
+                        'program': normalized_program,
+                        'school_name': school_name if school_name != 'None' else None,
+                        'programme_type': prog_type if prog_type != 'None' else None
+                    })
+                    
+        logger.info(f"Extracted {len(students)} students from PDF")
+        return students
+        
+    except Exception as e:
+        logger.error(f"Error extracting students from PDF: {e}")
+        raise
+
+
+def ingest_students_to_db_task(students: list, db: Session) -> dict:
+    """
+    Ingest students into database
+    Returns dictionary with statistics
+    """
+    stats = {
+        'inserted': 0,
+        'duplicates': 0,
+        'errors': 0
+    }
+    
+    for student_data in students:
+        try:
+            existing = db.query(Student).filter(
+                Student.registration_number == student_data['registration_number']
+            ).first()
+            
+            if existing:
+                stats['duplicates'] += 1
+                continue
+            
+            student = Student(**student_data)
+            db.add(student)
+            db.commit()
+            stats['inserted'] += 1
+            
+            if stats['inserted'] % 100 == 0:
+                logger.info(f"Inserted {stats['inserted']} students...")
+                task_status["students"]["progress"] = int((stats['inserted'] / len(students)) * 100)
+                task_status["students"]["message"] = f"Inserted {stats['inserted']}/{len(students)} students"
+                
+        except IntegrityError:
+            db.rollback()
+            stats['duplicates'] += 1
+        except Exception as e:
+            db.rollback()
+            stats['errors'] += 1
+            logger.error(f"Error inserting student {student_data.get('registration_number', 'unknown')}: {e}")
+    
+    return stats
+
+
+@router.post("/students/upload")
+async def upload_students_pdf(
+    background_tasks: BackgroundTasks,
+    file: UploadFile = File(...),
+    db: Session = Depends(get_db)
+):
+    """
+    Upload a students PDF file and ingest the data into the database
+    """
+    if task_status["students"]["status"] == "running":
+        raise HTTPException(
+            status_code=400,
+            detail="A student ingestion task is already running"
+        )
+    
+    if not file.filename.endswith('.pdf'):
+        raise HTTPException(
+            status_code=400,
+            detail="Only PDF files are supported"
+        )
+    
+    try:
+        # Update task status
+        task_status["students"]["status"] = "running"
+        task_status["students"]["progress"] = 0
+        task_status["students"]["message"] = "Reading PDF file..."
+        task_status["students"]["stats"] = {}
+        
+        # Save uploaded file to temporary location
+        with tempfile.NamedTemporaryFile(delete=False, suffix='.pdf') as tmp_file:
+            content = await file.read()
+            tmp_file.write(content)
+            tmp_file_path = tmp_file.name
+        
+        logger.info(f"Processing uploaded PDF: {file.filename} ({len(content)} bytes)")
+        
+        # Extract students from PDF
+        task_status["students"]["message"] = "Extracting student data from PDF..."
+        task_status["students"]["progress"] = 10
+        
+        students = extract_students_from_pdf_content(tmp_file_path)
+        
+        if not students:
+            task_status["students"]["status"] = "error"
+            task_status["students"]["message"] = "No students found in PDF"
+            os.unlink(tmp_file_path)
+            raise HTTPException(status_code=400, detail="No students found in PDF")
+        
+        # Ingest to database
+        task_status["students"]["message"] = f"Ingesting {len(students)} students to database..."
+        task_status["students"]["progress"] = 50
+        
+        stats = ingest_students_to_db_task(students, db)
+        
+        # Clean up temp file
+        os.unlink(tmp_file_path)
+        
+        # Update final status
+        task_status["students"]["status"] = "completed"
+        task_status["students"]["progress"] = 100
+        task_status["students"]["message"] = f"Successfully processed {len(students)} students"
+        task_status["students"]["stats"] = stats
+        
+        logger.info(f"Student ingestion completed: {stats}")
+        
+        return {
+            "status": "success",
+            "message": f"Successfully processed {file.filename}",
+            "total_extracted": len(students),
+            "stats": stats
+        }
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Error processing student PDF: {e}")
+        task_status["students"]["status"] = "error"
+        task_status["students"]["message"] = f"Error: {str(e)}"
+        
+        # Clean up temp file if it exists
+        if 'tmp_file_path' in locals():
+            try:
+                os.unlink(tmp_file_path)
+            except:
+                pass
+        
+        raise HTTPException(
+            status_code=500,
+            detail=f"Failed to process PDF: {str(e)}"
+        )
+
+
+@router.get("/students/upload/status")
+async def get_students_upload_status():
+    """
+    Get the current status of the students upload task
+    """
+    return task_status["students"]
+
 

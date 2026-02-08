@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { BookOpen, TrendingUp, Users, Search } from 'lucide-react';
+import { BookOpen, GraduationCap, Users, Search } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 export function HomePage() {
@@ -28,11 +28,11 @@ export function HomePage() {
       border: 'border-l-purple-500',
     },
     {
-      icon: TrendingUp,
-      title: 'Analytics Dashboard',
-      description: 'Visualize publication trends, citations, and research impact',
-      action: () => navigate('/analytics'),
-      buttonText: 'View Analytics',
+      icon: GraduationCap,
+      title: 'Students Directory',
+      description: 'Browse and manage student information',
+      action: () => navigate('/students'),
+      buttonText: 'View Students',
       gradient: 'from-green-500 to-emerald-600',
       bgGradient: 'from-green-50 to-emerald-50 dark:from-green-950/30 dark:to-emerald-950/30',
       border: 'border-l-green-500',

@@ -308,3 +308,44 @@ class AttributionVerificationResponse(BaseModel):
     is_verified: bool
     journal: Optional[str] = None
     booktitle: Optional[str] = None
+
+
+# Student schemas
+class StudentBase(BaseModel):
+    """Base student schema"""
+    registration_number: str
+    name: str
+    semester: Optional[int] = None
+    program: Optional[str] = None
+    school_name: Optional[str] = None
+    programme_type: Optional[str] = None
+    email: Optional[str] = None
+    phone: Optional[str] = None
+
+
+class StudentCreate(StudentBase):
+    """Schema for creating a student"""
+    pass
+
+
+class StudentUpdate(BaseModel):
+    """Schema for updating a student"""
+    name: Optional[str] = None
+    semester: Optional[int] = None
+    program: Optional[str] = None
+    school_name: Optional[str] = None
+    programme_type: Optional[str] = None
+    email: Optional[str] = None
+    phone: Optional[str] = None
+
+
+class StudentSchema(StudentBase, TimestampMixin):
+    """Student response schema"""
+    id: int
+    
+    model_config = ConfigDict(from_attributes=True)
+
+
+# Keep Student as alias
+Student = StudentSchema
+

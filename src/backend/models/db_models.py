@@ -230,6 +230,34 @@ class DataSource(Base):
         return f"<DataSource(name='{self.source_name}', last_sync={self.last_sync})>"
 
 
+class Student(Base):
+    """
+    Student model - represents university students
+    """
+    __tablename__ = 'students'
+    
+    id = Column(Integer, primary_key=True, index=True)
+    registration_number = Column(String(50), unique=True, nullable=False, index=True)
+    name = Column(String(255), nullable=False, index=True)
+    semester = Column(Integer)
+    program = Column(String(255))  # Degree program (e.g., Master of Arts, B.Tech, etc.)
+    school_name = Column(String(255), index=True)  # School/College name
+    programme_type = Column(String(100))  # e.g., Integrated-Humanities, Engineering, etc.
+    email = Column(String(255))
+    phone = Column(String(50))
+    
+    created_at = Column(DateTime, default=datetime.utcnow)
+    updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+    
+    __table_args__ = (
+        Index('idx_student_school', 'school_name'),
+        Index('idx_student_program', 'programme_type'),
+    )
+    
+    def __repr__(self):
+        return f"<Student(reg_no='{self.registration_number}', name='{self.name}', program='{self.program}')>"
+
+
 class PublicationStatistics(Base):
     """
     Pre-computed statistics for fast dashboard queries

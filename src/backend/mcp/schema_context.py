@@ -271,23 +271,24 @@ LIMIT 15;
         "y_axis": "publications"
     },
     "collaborations": {
-        "question": "Show top collaborations between faculty",
+        "question": "Show collaboration network of faculty members",
         "sql": """
 SELECT 
-    a1.name as faculty1,
-    a2.name as faculty2,
+    a1.name as faculty_member,
+    a2.name as collaborator,
     c.collaboration_count as joint_papers
 FROM collaborations c
 JOIN authors a1 ON c.author1_id = a1.id
 JOIN authors a2 ON c.author2_id = a2.id
-WHERE a1.is_faculty = true AND a2.is_faculty = true
+WHERE a1.is_faculty = true
 ORDER BY c.collaboration_count DESC
-LIMIT 20;
+LIMIT 30;
 """,
         "visualization": "network_graph",
-        "node1": "faculty1",
-        "node2": "faculty2",
-        "edge_weight": "joint_papers"
+        "node1": "faculty_member",
+        "node2": "collaborator",
+        "edge_weight": "joint_papers",
+        "note": "Shows faculty members and their top collaborators. Use WHERE a1.is_faculty = true (not requiring both to be faculty) since faculty typically collaborate with external researchers."
     },
     "recent_publications": {
         "question": "What are the most recent publications?",

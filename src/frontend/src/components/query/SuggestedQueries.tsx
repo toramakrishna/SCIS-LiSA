@@ -7,11 +7,11 @@ interface SuggestedQueriesProps {
 
 const exampleQueries = [
   'Show top 10 faculty by publication count',
-  'What are the publication trends over the last 5 years?',
+  'What are the publication trends by year?',
   'List the most cited publications',
-  'Show collaborations between faculty members',
-  'Which venues have the most publications?',
-  'Show faculty with h-index greater than 10',
+  'Show collaboration network between faculty members',
+  'What are the top conferences where faculty publish?',
+  'Show all faculty with h-index greater than 10',
 ];
 
 export function SuggestedQueries({ onSelectQuery }: SuggestedQueriesProps) {

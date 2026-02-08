@@ -3,6 +3,7 @@ import { LineChartViz } from './LineChartViz';
 import { BarChartViz } from './BarChartViz';
 import { PieChartViz } from './PieChartViz';
 import { TableViz } from './TableViz';
+import { NetworkGraphViz } from './NetworkGraphViz';
 
 interface ChartRendererProps {
   data: any[];
@@ -202,8 +203,7 @@ export function ChartRenderer({ data, config }: ChartRendererProps) {
       return <TableViz data={data} config={config} />;
     
     case 'network_graph':
-      // TODO: Implement network graph with D3.js
-      return <TableViz data={data} config={{ ...config, title: config.title + ' (Network Graph - Coming Soon)' }} />;
+      return <NetworkGraphViz data={data} config={config} />;
     
     case 'error':
       return (
