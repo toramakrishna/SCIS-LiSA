@@ -89,6 +89,15 @@ class DatabaseIngestionService:
                     author.areas_of_interest = faculty_data.get('areas_of_interest') or author.areas_of_interest
                     author.profile_page = faculty_data.get('profile_page') or author.profile_page
                     author.status = faculty_data.get('status') or author.status
+                    # IRINS fields
+                    author.irins_profile = faculty_data.get('irins_profile') or author.irins_profile
+                    author.irins_url = faculty_data.get('irins_url') or author.irins_url
+                    author.irins_photo_url = faculty_data.get('irins_photo_url') or author.irins_photo_url
+                    author.photo_path = faculty_data.get('photo_path') or author.photo_path
+                    # Scopus fields
+                    author.scopus_author_id = faculty_data.get('scopus_author_id') or author.scopus_author_id
+                    author.scopus_url = faculty_data.get('scopus_url') or author.scopus_url
+                    author.h_index = faculty_data.get('h_index') or author.h_index
                 self.stats['authors_updated'] += 1
         else:
             # Create new author
@@ -105,7 +114,16 @@ class DatabaseIngestionService:
                 areas_of_interest=faculty_data.get('areas_of_interest') if faculty_data else None,
                 profile_page=faculty_data.get('profile_page') if faculty_data else None,
                 status=faculty_data.get('status') if faculty_data else None,
-                department='SCIS' if is_faculty else None
+                department='SCIS' if is_faculty else None,
+                # IRINS fields
+                irins_profile=faculty_data.get('irins_profile') if faculty_data else None,
+                irins_url=faculty_data.get('irins_url') if faculty_data else None,
+                irins_photo_url=faculty_data.get('irins_photo_url') if faculty_data else None,
+                photo_path=faculty_data.get('photo_path') if faculty_data else None,
+                # Scopus fields
+                scopus_author_id=faculty_data.get('scopus_author_id') if faculty_data else None,
+                scopus_url=faculty_data.get('scopus_url') if faculty_data else None,
+                h_index=faculty_data.get('h_index') if faculty_data else None
             )
             self.db.add(author)
             self.db.flush()  # Get the ID
@@ -451,7 +469,16 @@ class DatabaseIngestionService:
                     'education': faculty.get('education'),
                     'areas_of_interest': faculty.get('areas_of_interest'),
                     'profile_page': faculty.get('profile_page'),
-                    'status': faculty.get('status')
+                    'status': faculty.get('status'),
+                    # IRINS fields
+                    'irins_profile': faculty.get('irins_profile'),
+                    'irins_url': faculty.get('irins_url'),
+                    'irins_photo_url': faculty.get('irins_photo_url'),
+                    'photo_path': faculty.get('photo_path'),
+                    # Scopus fields
+                    'scopus_author_id': faculty.get('scopus_author_id'),
+                    'scopus_url': faculty.get('scopus_url'),
+                    'h_index': faculty.get('h_index')
                 }
                 
                 name_mapping[faculty['name']] = faculty_info
@@ -530,7 +557,7 @@ class DatabaseIngestionService:
     def update_faculty_extended_info(self, faculty_json_path: str):
         """
         Update faculty with extended information from faculty_data.json
-        Adds education, areas_of_interest, profile_page, and status fields
+        Adds education, areas_of_interest, profile_page, status, IRINS, and Scopus fields
         """
         logger.info("Updating faculty extended information...")
         
@@ -576,6 +603,24 @@ class DatabaseIngestionService:
                     author.designation = faculty.get('designation')
                 if not author.email and faculty.get('email'):
                     author.email = faculty.get('email')
+                
+                # Update IRINS fields
+                if not author.irins_profile and faculty.get('irins_profile'):
+                    author.irins_profile = faculty.get('irins_profile')
+                if not author.irins_url and faculty.get('irins_url'):
+                    author.irins_url = faculty.get('irins_url')
+                if not author.irins_photo_url and faculty.get('irins_photo_url'):
+                    author.irins_photo_url = faculty.get('irins_photo_url')
+                if not author.photo_path and faculty.get('photo_path'):
+                    author.photo_path = faculty.get('photo_path')
+                
+                # Update Scopus fields
+                if not author.scopus_author_id and faculty.get('scopus_author_id'):
+                    author.scopus_author_id = faculty.get('scopus_author_id')
+                if not author.scopus_url and faculty.get('scopus_url'):
+                    author.scopus_url = faculty.get('scopus_url')
+                if not author.h_index and faculty.get('h_index'):
+                    author.h_index = faculty.get('h_index')
                 
                 author.updated_at = datetime.utcnow()
                 updated_count += 1
