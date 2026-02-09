@@ -588,7 +588,7 @@ C 1. Conference Proceedings: Chinmaya Kumar Dehury, Satish Narayana Srirama, Int
 
 3. **Required fields to SELECT:**
    - p.title
-   - STRING_AGG(DISTINCT a.name, ', ' ORDER BY pa.author_position) as authors
+   - STRING_AGG(a.name, ', ' ORDER BY pa.author_position) as authors
    - p.year
    - p.publication_type
    - p.journal (for articles)
