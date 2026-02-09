@@ -375,6 +375,51 @@ ORDER BY a.name, p.year;
         "x_axis": "year",
         "y_axis": "publications",
         "series": "name"
+    },
+    "publication_report": {
+        "question": "Generate publication report for Satish Srirama in SCIS format",
+        "sql": """
+SELECT 
+    p.publication_type,
+    p.title,
+    STRING_AGG(DISTINCT a.name, ', ') as authors,
+    p.year,
+    COALESCE(NULLIF(p.journal, ''), p.booktitle) as venue,
+    p.publisher,
+    p.volume,
+    p.number,
+    p.pages,
+    p.doi
+FROM publications p
+JOIN publication_authors pa ON p.id = pa.publication_id
+JOIN authors a ON pa.author_id = a.id
+WHERE EXISTS (
+    SELECT 1 FROM publication_authors pa2
+    JOIN authors a2 ON pa2.author_id = a2.id
+    WHERE pa2.publication_id = p.id 
+    AND a2.name ILIKE '%Satish%Srirama%'
+)
+GROUP BY p.id, p.publication_type, p.title, p.year, p.journal, p.booktitle, p.publisher, p.volume, p.number, p.pages, p.doi
+ORDER BY 
+    CASE p.publication_type
+        WHEN 'book' THEN 1
+        WHEN 'proceedings' THEN 2
+        WHEN 'incollection' THEN 3
+        WHEN 'article' THEN 4
+        WHEN 'inproceedings' THEN 5
+        ELSE 6
+    END,
+    p.year DESC;
+""",
+        "visualization": "report",
+        "report_format": "{category} {number}. {publication_type_label}: {authors}, {author_role}, {title}, {indexing}, {volume}, {venue}, {pages}, {formatted_date}.",
+        "explanation": "Complete publication report organized by categories: A (Books), B (Research Papers), C (Conference Proceedings)",
+        "note": "Formatted according to SCIS standard publication report format with categorization",
+        "categorization": {
+            "A": ["book", "proceedings", "incollection"],
+            "B": ["article"],
+            "C": ["inproceedings"]
+        }
     }
 }
 

@@ -22,6 +22,9 @@ from mcp.schema_context import get_schema_context, get_example_queries
 
 logger = logging.getLogger(__name__)
 
+# Load publication report prompt template
+REPORT_PROMPT_PATH = Path(__file__).parent.parent / 'references' / 'publication_report_prompt.md'
+
 
 class OllamaAgent:
     """Ollama-based agent for NL-to-SQL conversion"""
@@ -66,6 +69,23 @@ class OllamaAgent:
         
         self.schema_context = get_schema_context()
         self.examples = get_example_queries()
+        self.report_template = self._load_report_template()
+    
+    def _load_report_template(self) -> str:
+        """Load the publication report prompt template"""
+        try:
+            if REPORT_PROMPT_PATH.exists():
+                with open(REPORT_PROMPT_PATH, 'r', encoding='utf-8') as f:
+                    content = f.read()
+                    # Extract the main prompt section from the markdown
+                    prompt_match = re.search(r'## Prompt for Report Generation\s*```(.*?)```', content, re.DOTALL)
+                    if prompt_match:
+                        return prompt_match.group(1).strip()
+                logger.info(f"✓ Loaded publication report template from {REPORT_PROMPT_PATH}")
+                return content
+        except Exception as e:
+            logger.warning(f"Could not load report template: {e}")
+        return ""
     
     async def generate_sql(self, question: str, conversation_history: Optional[List] = None) -> Dict:
         """
@@ -123,6 +143,13 @@ class OllamaAgent:
     
     def _build_prompt(self, question: str, conversation_history: Optional[List] = None) -> str:
         """Build comprehensive prompt with schema, examples, and conversation history"""
+        
+        # Detect if user wants a formatted publication report
+        is_report_request = self._is_report_request(question)
+        
+        if is_report_request and self.report_template:
+            logger.info("🎯 Detected publication report request - using specialized template")
+            return self._build_report_prompt(question, conversation_history)
         
         # Find most relevant example
         relevant_example = self._find_similar_example(question)
@@ -473,6 +500,216 @@ Generate the JSON response now:"""
         
         return prompt
     
+    def _is_report_request(self, question: str) -> bool:
+        """Detect if user is requesting a formatted publication report"""
+        question_lower = question.lower()
+        
+        # Strong indicators for publication report
+        report_indicators = [
+            'generate report',
+            'create report', 
+            'publication report',
+            'faculty report',
+            'format as mentioned',
+            'in the format',
+            'in the below format',
+            'as per format',
+            'following format',
+            'generate publication',
+            'list all publications of',
+            'show all publications of',
+            'publications by',
+            'research output of',
+            'academic record',
+            'publication record'
+        ]
+        
+        # Check if question contains any report indicators
+        has_indicator = any(indicator in question_lower for indicator in report_indicators)
+        
+        # Check if question mentions categorization (A, B, C format)
+        has_categories = any(term in question_lower for term in ['category a', 'category b', 'category c', 'categorized', 'categories'])
+        
+        return has_indicator or has_categories
+    
+    def _build_report_prompt(self, question: str, conversation_history: Optional[List] = None) -> str:
+        """Build specialized prompt for publication report generation"""
+        
+        # Extract faculty name from question
+        faculty_name = self._extract_faculty_name(question)
+        
+        prompt = f"""You are an expert SQL query generator for generating standardized faculty publication reports.
+
+{self.schema_context}
+
+## TASK: Generate Publication Report in SCIS Standard Format
+
+User Question: "{question}"
+Detected Faculty: {faculty_name if faculty_name else "Not specified - will return all"}
+
+## CRITICAL: Report Format Requirements
+
+The output MUST follow the SCIS publication format structure:
+
+**Category A: Books (Authored/Edited/Chapters)**
+- Books Authored
+- Books Edited  
+- Books Chapter (Authorship)
+
+**Category B: Research Papers** (Journal Publications)
+
+**Category C: Conference Proceedings**
+
+## Report Format Template (from scis_publications.md)
+
+For each publication, format as:
+[Category] [Number]. [Publication Type]: [Authors], [Author Role], [Title], [Indexing], [Volume], [Journal/Venue], [Pages], [Date].
+
+### Examples from SCIS Format:
+
+**Category A - Books:**
+```
+A 1. Books Authored: R. Buyya, C. Vecchiola, S. T. Selvi, S. Poojara, S. N. Srirama, Corresponding Author, Mastering Cloud Computing: Powering AI, Big Data, and IoT Applications, 2nd Edition, Mc Graw Hill, India, ISBN-13: 978-93-5532-950-9. ISBN-10: 93-5532-950-4., 01/07/2024.
+
+A 2. Books Edited: Anirban Dasgupta, Rage Uday Kiran, Radwa El Shawi, Satish Srirama, Mainak Adhikari, Big Data and Artificial Intelligence: 12th International Conference, BDA 2024, Hyderabad, India,December 17–20, 2024, Proceedings, Springer, India, International, eBook ISBN: 978-3-031-81821-9, 01/03/2025.
+
+A 3. Books Chapter (Authorship): Maria R. Read, C. K. Dehury, S. N. Srirama, R. Buyya, Deep Reinforcement Learning (DRL) -Based Methods for Serverless Stream Processing Engines: A Vision, Architectural Elements, and Future Directions in Book title: Resource Management in Distributed Systems (ISBN: 978-981-97-2643-1), Editor(s): A. Mukherjee, D. De, R. Buyya, Springer, -, 01/11/2024, pp. 285-314.
+```
+
+**Category B - Research Papers:**
+```
+B 1. Research Papers: T. R. Chhetri, C. K. Dehury, B. Varghese, Anna Fensel, S. N. Srirama, Rance J. DeLong, Co Author, Enabling privacy-aware interoperable and quality IoT data sharing with context, Web of Science, 157, Future Generation Computer Systems - Journal, 164-179, 01/08/2024.
+
+B 2. Research Papers: Sucharitha Isukapalli, S. N. Srirama, Corresponding Author, A Systematic Survey on Fault-Tolerant Solutions for Distributed Data Analytics: Taxonomy, Comparison, and Future Directions, Web of Science, 53, Computer Science Review, 100660, 01/08/2024.
+```
+
+**Category C - Conference Proceedings:**
+```
+C 1. Conference Proceedings: Chinmaya Kumar Dehury, Satish Narayana Srirama, Integrating Serverless and DRL for Infrastructure Management in Streaming Data Processing across Edge-Cloud Continuum,Workshop on Engineering techniques for Distributed Computing Continuum Systems @ 44th IEEE International Conference on Distributed Computing Systems, 93-101, New Jersey, USA, 23/07/2024.
+```
+
+## SQL Query Requirements
+
+1. **Query ALL publications for the faculty member**
+2. **Group by publication_type to separate categories:**
+   - 'book' → Category A (Books Authored)
+   - 'proceedings', 'edited' → Category A (Books Edited)
+   - 'incollection' → Category A (Books Chapter)
+   - 'article' → Category B (Research Papers)
+   - 'inproceedings' → Category C (Conference Proceedings)
+
+3. **Required fields to SELECT:**
+   - p.title
+   - STRING_AGG(DISTINCT a.name, ', ' ORDER BY pa.author_position) as authors
+   - p.year
+   - p.publication_type
+   - p.journal (for articles)
+   - p.booktitle (for conferences)
+   - p.publisher
+   - p.volume
+   - p.number
+   - p.pages
+   - p.doi
+   - COALESCE(p.journal, p.booktitle) as venue
+
+4. **Order by:** publication_type (to group categories), then year DESC (most recent first)
+
+5. **Faculty Name Matching:** Use flexible ILIKE pattern: `a.name ILIKE '%{faculty_name}%'`
+
+## Example SQL Query Structure:
+
+```sql
+SELECT 
+    p.publication_type,
+    p.title,
+    STRING_AGG(DISTINCT a.name, ', ') as authors,
+    p.year,
+    COALESCE(NULLIF(p.journal, ''), p.booktitle) as venue,
+    p.publisher,
+    p.volume,
+    p.number,
+    p.pages,
+    p.doi,
+    TO_CHAR(p.year || '-01-01'::date, 'DD/MM/YYYY') as formatted_date
+FROM publications p
+JOIN publication_authors pa ON p.id = pa.publication_id
+JOIN authors a ON pa.author_id = a.id
+WHERE EXISTS (
+    SELECT 1 FROM publication_authors pa2
+    JOIN authors a2 ON pa2.author_id = a2.id
+    WHERE pa2.publication_id = p.id 
+    AND a2.name ILIKE '%{faculty_name if faculty_name else ""}%'
+)
+GROUP BY p.id, p.publication_type, p.title, p.year, p.journal, p.booktitle, p.publisher, p.volume, p.number, p.pages, p.doi
+ORDER BY 
+    CASE p.publication_type
+        WHEN 'book' THEN 1
+        WHEN 'proceedings' THEN 2
+        WHEN 'incollection' THEN 3
+        WHEN 'article' THEN 4
+        WHEN 'inproceedings' THEN 5
+        ELSE 6
+    END,
+    p.year DESC;
+```
+
+## Response JSON Format
+
+{{
+    "sql": "SELECT ... (complete executable SQL as shown above)",
+    "visualization": "report",
+    "explanation": "This report lists all publications by [Faculty Name] organized by category (A: Books, B: Research Papers, C: Conference Proceedings) as per SCIS standard format.",
+    "report_format": "{{category}} {{number}}. {{publication_type_label}}: {{authors}}, {{author_role}}, {{title}}, {{indexing}}, {{volume}}, {{venue}}, {{pages}}, {{formatted_date}}.",
+    "note": "Report generated in SCIS standard publication format with categories A (Books), B (Research Papers), and C (Conference Proceedings)",
+    "categorization": {{
+        "A": ["book", "proceedings", "incollection"],
+        "B": ["article"],
+        "C": ["inproceedings"]
+    }}
+}}
+
+## Important Instructions:
+
+1. **ALWAYS set visualization to "report"** for formatted publication reports
+2. **Include ALL publications** - do NOT add LIMIT clause
+3. **Use STRING_AGG(DISTINCT a.name, ', ')** to show all unique authors
+4. **Order by category first, then year DESC** within each category
+5. **Include report_format field** with template for frontend formatting
+6. **Include categorization mapping** to help frontend organize output
+7. **Extract faculty name** flexibly using ILIKE patterns
+8. **Date format:** DD/MM/YYYY (e.g., 01/07/2024)
+
+Generate the JSON response now:"""
+        
+        return prompt
+    
+    def _extract_faculty_name(self, question: str) -> Optional[str]:
+        """Extract faculty name from question"""
+        question_lower = question.lower()
+        
+        # Common patterns for faculty name extraction
+        patterns = [
+            r'publications? (?:by|of|from) ([A-Z][a-z]+(?: [A-Z][a-z]+)*)',
+            r'(?:professor|dr\.?|faculty) ([A-Z][a-z]+(?: [A-Z][a-z]+)*)',
+            r'for ([A-Z][a-z]+(?: [A-Z][a-z]+)*)',
+            r'report (?:on|for|of) ([A-Z][a-z]+(?: [A-Z][a-z]+)*)',
+            r'([A-Z][a-z]+(?: [A-Z][a-z]+)*?)\'s publications?',
+        ]
+        
+        # Try each pattern
+        for pattern in patterns:
+            match = re.search(pattern, question)
+            if match:
+                name = match.group(1).strip()
+                # Validate it looks like a name (2-4 words, each capitalized)
+                name_parts = name.split()
+                if 1 <= len(name_parts) <= 4 and all(part[0].isupper() for part in name_parts):
+                    logger.info(f"📝 Extracted faculty name: {name}")
+                    return name
+        
+        logger.info("📝 No specific faculty name detected - will query all publications")
+        return None
+    
     def _find_similar_example(self, question: str) -> Dict:
         """Find the most relevant example query based on question keywords"""
         question_lower = question.lower()
@@ -480,11 +717,12 @@ Generate the JSON response now:"""
         # Check for report format requests - highest priority
         report_patterns = [
             'in the format', 'in the below format', 'report', 'format as',
-            'in this format', 'generate report', 'publications report'
+            'in this format', 'generate report', 'publications report', 'publication report',
+            'scis format', 'standard format', 'academic report'
         ]
         if any(pattern in question_lower for pattern in report_patterns):
-            # User wants a formatted report - use publication example but will set visualization to 'report'
-            return self.examples.get('faculty_member_publications', {})
+            # User wants a formatted report - use publication_report example
+            return self.examples.get('publication_report', self.examples.get('faculty_member_publications', {}))
         
         # Check for simple count/number queries - should use "none" visualization
         simple_query_patterns = [
