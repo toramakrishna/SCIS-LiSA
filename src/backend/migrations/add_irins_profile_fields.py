@@ -53,8 +53,8 @@ def add_irins_columns():
             raise
 
 def update_faculty_irins_data():
-    """Update faculty with IRINS data from faculty_data.json"""
-    print("\nUpdating faculty with IRINS data from JSON...")
+    """Update faculty with IRINS and Scopus data from faculty_data.json"""
+    print("\nUpdating faculty with IRINS and Scopus data from JSON...")
     
     import json
     
@@ -86,11 +86,19 @@ def update_faculty_irins_data():
                 if 'photo_path' in fac:
                     author.photo_path = fac['photo_path']
                 
+                # Update Scopus fields if they exist in JSON
+                if 'scopus_author_id' in fac:
+                    author.scopus_author_id = fac['scopus_author_id']
+                if 'scopus_url' in fac:
+                    author.scopus_url = fac['scopus_url']
+                if 'h_index' in fac:
+                    author.h_index = fac['h_index']
+                
                 updated += 1
                 print(f"  ✓ Updated: {fac['name']}")
         
         db.commit()
-        print(f"\n✓ Updated {updated} faculty with IRINS data")
+        print(f"\n✓ Updated {updated} faculty with IRINS and Scopus data")
         
     except Exception as e:
         print(f"✗ Error updating IRINS data: {e}")
