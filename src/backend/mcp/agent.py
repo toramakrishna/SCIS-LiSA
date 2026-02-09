@@ -509,19 +509,7 @@ Generate the JSON response now:"""
             'generate report',
             'create report', 
             'publication report',
-            'faculty report',
-            'format as mentioned',
-            'in the format',
-            'in the below format',
-            'as per format',
-            'following format',
-            'generate publication',
-            'list all publications of',
-            'show all publications of',
-            'publications by',
-            'research output of',
-            'academic record',
-            'publication record'
+            'faculty report'
         ]
         
         # Check if question contains any report indicators
