@@ -398,8 +398,29 @@ Convert this natural language question into a SQL query:
    - Use parentheses for complex WHERE conditions with AND/OR
    - Example: WHERE (condition1 OR condition2) AND condition3
 
+13. **Year Filtering - CRITICAL**:
+   - **ALWAYS add year filter when a specific year is mentioned in the question**
+   - Extract the year from phrases like:
+     * "for the year 2025" → AND p.year = 2025
+     * "in 2024" → AND p.year = 2024
+     * "during 2023" → AND p.year = 2023
+     * "publications from 2022" → AND p.year = 2022
+   - **Add the year filter to the WHERE clause**:
+     ```sql
+     WHERE EXISTS (
+         SELECT 1 FROM publication_authors pa2
+         JOIN authors a2 ON pa2.author_id = a2.id
+         WHERE pa2.publication_id = p.id 
+         AND a2.name ILIKE '%Author Name%'
+     )
+     AND p.year = 2025  -- ADD THIS when year is specified
+     ```
+   - For year ranges, use: AND p.year BETWEEN 2020 AND 2024
+   - For comparisons, use: AND p.year >= 2020 OR AND p.year <= 2024
+   - Include in note: "Filtered to publications from year XXXX"
+
 ## Visualization Selection - CRITICAL
-13. **For Simple/Single-Value Answers - Use "none" visualization**:
+14. **For Simple/Single-Value Answers - Use "none" visualization**:
    - When the query returns a SINGLE number, count, or simple fact
    - Examples requiring NO visualization:
      * "How many publications does X have?" → single count
@@ -410,7 +431,7 @@ Convert this natural language question into a SQL query:
    - Provide a conversational explanation that includes the actual answer
    - Example: "explanation": "Satish Srirama has published 78 papers in total."
 
-14. **CRITICAL: Keywords Determine Format - Report vs List vs Visualize**:
+15. **CRITICAL: Keywords Determine Format - Report vs List vs Visualize**:
    
    A. **Use "report" Format (Text/Paragraph)** when question contains:
       - "in the format" → user specifies custom format
@@ -447,7 +468,7 @@ Convert this natural language question into a SQL query:
         * "display faculty comparison..." → bar_chart
         * "show distribution of..." → pie_chart
 
-15. **For Data that NEEDS Visualization (Charts/Graphs)**:
+16. **For Data that NEEDS Visualization (Charts/Graphs)**:
    Choose from these types:
    - line_chart: for time series trends (multiple data points over time)
    - bar_chart: for comparisons and rankings (multiple items to compare)
@@ -456,7 +477,7 @@ Convert this natural language question into a SQL query:
    - network_graph: for relationships/collaborations
    - multi_line_chart: for comparing multiple series over time
 
-16. **Decision Rule Priority**:
+17. **Decision Rule Priority**:
    1. If user says "list" or "enumerate" → ALWAYS use "table"
    2. If user says "show" or "display" → use appropriate chart (bar/line/pie)
    3. If query result is 1 row with 1-2 columns → visualization: "none"
@@ -535,6 +556,30 @@ Generate the JSON response now:"""
 User Question: "{question}"
 Detected Faculty: {faculty_name if faculty_name else "Not specified - will return all"}
 
+## CRITICAL: Extract User's Requested Format
+
+**If the user provides a format example in their question:**
+1. Identify the format structure from their example
+2. Extract field names that appear in the format
+3. Create a report_format template with DOUBLE curly braces {{{{field}}}} for placeholders
+   
+**Example:**
+User format: "Research Papers: Rahul Kumar Gautham, Anjeneya Swami Kare, S. Durga Bhavani, Co Author, Interest maximization in social networks, Scopus, 81, Journal of Supercomputing, 146, 01/05/2024."
+
+Breakdown:
+- "Research Papers: " = literal text (publication category)
+- "Rahul Kumar..." = authors → use {{{{authors}}}}
+- "Co Author" = author role → use {{{{author_role}}}} (or just "Co Author" if not in DB)
+- "Interest maximization..." = title → use {{{{title}}}}
+- "Scopus" = indexing → use {{{{indexing}}}}
+- "81" = volume → use {{{{volume}}}}
+- "Journal of Supercomputing" = venue/journal → use {{{{venue}}}}
+- "146" = pages → use {{{{pages}}}}
+- "01/05/2024" = date → use {{{{formatted_date}}}}
+
+Generated template:
+"report_format": "Research Papers: {{{{authors}}}}, Co Author, {{{{title}}}}, {{{{indexing}}}}, {{{{volume}}}}, {{{{venue}}}}, {{{{pages}}}}, {{{{formatted_date}}}}."
+
 ## CRITICAL: Report Format Requirements
 
 The output MUST follow the SCIS publication format structure:
@@ -579,16 +624,24 @@ C 1. Conference Proceedings: Chinmaya Kumar Dehury, Satish Narayana Srirama, Int
 ## SQL Query Requirements
 
 1. **Query ALL publications for the faculty member**
-2. **Group by publication_type to separate categories:**
+2. **CRITICAL: Year Filtering - Extract and apply year from question:**
+   - If question contains "for the year YYYY", "in YYYY", "during YYYY", "from YYYY":
+     * ADD: `AND p.year = YYYY` to the WHERE clause
+     * Example: "for the year 2025" → add `AND p.year = 2025`
+   - If no specific year mentioned: return publications for ALL years
+   - Year ranges: "between 2020 and 2024" → `AND p.year BETWEEN 2020 AND 2024`
+   - After year: "after 2023" → `AND p.year > 2023`
+   - Before year: "before 2024" → `AND p.year < 2024`
+3. **Group by publication_type to separate categories:**
    - 'book' → Category A (Books Authored)
    - 'proceedings', 'edited' → Category A (Books Edited)
    - 'incollection' → Category A (Books Chapter)
    - 'article' → Category B (Research Papers)
    - 'inproceedings' → Category C (Conference Proceedings)
 
-3. **Required fields to SELECT:**
+4. **Required fields to SELECT:**
    - p.title
-   - STRING_AGG(a.name, ', ' ORDER BY pa.author_position) as authors
+   - STRING_AGG(DISTINCT a.name, ', ') as authors  (NOTE: Cannot use ORDER BY with DISTINCT)
    - p.year
    - p.publication_type
    - p.journal (for articles)
@@ -600,9 +653,9 @@ C 1. Conference Proceedings: Chinmaya Kumar Dehury, Satish Narayana Srirama, Int
    - p.doi
    - COALESCE(p.journal, p.booktitle) as venue
 
-4. **Order by:** publication_type (to group categories), then year DESC (most recent first)
+5. **Order by:** publication_type (to group categories), then year DESC (most recent first)
 
-5. **Faculty Name Matching:** Use flexible ILIKE pattern: `a.name ILIKE '%{faculty_name}%'`
+6. **Faculty Name Matching:** Use flexible ILIKE pattern: `a.name ILIKE '%{faculty_name}%'`
 
 ## Example SQL Query Structure:
 
@@ -618,7 +671,7 @@ SELECT
     p.number,
     p.pages,
     p.doi,
-    TO_CHAR(p.year || '-01-01'::date, 'DD/MM/YYYY') as formatted_date
+    TO_CHAR(TO_DATE(p.year::text || '-01-01', 'YYYY-MM-DD'), 'DD/MM/YYYY') as formatted_date
 FROM publications p
 JOIN publication_authors pa ON p.id = pa.publication_id
 JOIN authors a ON pa.author_id = a.id
@@ -628,6 +681,9 @@ WHERE EXISTS (
     WHERE pa2.publication_id = p.id 
     AND a2.name ILIKE '%{faculty_name if faculty_name else ""}%'
 )
+-- IMPORTANT: Add year filter if specific year is mentioned in the question
+-- Example: If question says "for the year 2025", add: AND p.year = 2025
+-- Example: If question says "between 2020 and 2024", add: AND p.year BETWEEN 2020 AND 2024
 GROUP BY p.id, p.publication_type, p.title, p.year, p.journal, p.booktitle, p.publisher, p.volume, p.number, p.pages, p.doi
 ORDER BY 
     CASE p.publication_type
@@ -643,11 +699,16 @@ ORDER BY
 
 ## Response JSON Format
 
+**CRITICAL: For report_format field, use DOUBLE curly braces {{{{field_name}}}} as placeholders**
+
+Example format template (note the DOUBLE braces):
+"report_format": "Research Papers: {{{{authors}}}}, Co Author, {{{{title}}}}, {{{{indexing}}}}, {{{{volume}}}}, {{{{venue}}}}, {{{{pages}}}}, {{{{formatted_date}}}}."
+
 {{
     "sql": "SELECT ... (complete executable SQL as shown above)",
     "visualization": "report",
     "explanation": "This report lists all publications by [Faculty Name] organized by category (A: Books, B: Research Papers, C: Conference Proceedings) as per SCIS standard format.",
-    "report_format": "{{category}} {{number}}. {{publication_type_label}}: {{authors}}, {{author_role}}, {{title}}, {{indexing}}, {{volume}}, {{venue}}, {{pages}}, {{formatted_date}}.",
+    "report_format": "Research Papers: {{{{authors}}}}, {{{{author_role}}}}, {{{{title}}}}, {{{{indexing}}}}, {{{{volume}}}}, {{{{venue}}}}, {{{{pages}}}}, {{{{formatted_date}}}}.",
     "note": "Report generated in SCIS standard publication format with categories A (Books), B (Research Papers), and C (Conference Proceedings)",
     "categorization": {{
         "A": ["book", "proceedings", "incollection"],
@@ -659,13 +720,21 @@ ORDER BY
 ## Important Instructions:
 
 1. **ALWAYS set visualization to "report"** for formatted publication reports
-2. **Include ALL publications** - do NOT add LIMIT clause
-3. **Use STRING_AGG(DISTINCT a.name, ', ')** to show all unique authors
-4. **Order by category first, then year DESC** within each category
-5. **Include report_format field** with template for frontend formatting
-6. **Include categorization mapping** to help frontend organize output
-7. **Extract faculty name** flexibly using ILIKE patterns
-8. **Date format:** DD/MM/YYYY (e.g., 01/07/2024)
+2. **CRITICAL: Apply year filter if mentioned in question:**
+   - Extract year from phrases: "for the year YYYY", "in YYYY", "during YYYY"
+   - Add to WHERE clause: `AND p.year = YYYY`
+   - If NO year specified: return all publications (no year filter)
+3. **Include ALL matching publications** - do NOT add LIMIT clause
+4. **Use STRING_AGG(DISTINCT a.name, ', ')** to show all unique authors
+5. **Order by category first, then year DESC** within each category
+6. **CRITICAL: report_format field - MUST use DOUBLE curly braces:**
+   - Placeholders: {{{{field_name}}}} with DOUBLE braces
+   - Example: "Research Papers: {{{{authors}}}}, {{{{title}}}}, {{{{venue}}}}, {{{{year}}}}."
+   - If user provides specific format, extract the field names and create template with {{{{field}}}} placeholders
+   - The frontend will replace {{{{field}}}} with actual values from database
+7. **Include categorization mapping** to help frontend organize output
+8. **Extract faculty name** flexibly using ILIKE patterns
+9. **Date format:** DD/MM/YYYY (e.g., 01/07/2024)
 
 Generate the JSON response now:"""
         

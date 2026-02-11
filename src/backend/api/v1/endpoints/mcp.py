@@ -55,6 +55,7 @@ class QueryResponse(BaseModel):
     confidence: Optional[float] = None
     error: Optional[str] = None
     suggested_questions: List[str] = []
+    report_format: Optional[str] = None  # Format template for report generation
 
 
 # Initialize agent (will be created per request to allow model selection)
@@ -80,6 +81,19 @@ def generate_follow_up_questions(question: str, data: List[Dict[str, Any]], sql:
     # Analyze the question type and results
     question_lower = question.lower()
     has_data = len(data) > 0
+    
+    # Skip generating suggestions for very specific direct queries
+    # These are questions where the user is asking for a specific report or has a clear objective
+    specific_query_patterns = [
+        'generate report', 'create report', 'show report', 'generate the report',
+        'generate publication report', 'create publication report',
+        'in the format', 'in format', 'below format', 'given format',
+        'format mentioned', 'in scis format', 'scis standard format',
+        'list all publications', 'show all publications'
+    ]
+    
+    if any(pattern in question_lower for pattern in specific_query_patterns):
+        return []  # Return empty list for specific directed queries
     
     # Check what was asked about
     is_trend = any(word in question_lower for word in ['trend', 'over time', 'years', 'timeline'])
@@ -204,6 +218,82 @@ def generate_follow_up_questions(question: str, data: List[Dict[str, Any]], sql:
     return list(dict.fromkeys(suggestions))[:3]
 
 
+def enrich_report_data(data: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """
+    Enrich data with computed fields for report generation.
+    Adds: category, number, publication_type_label, author_role, formatted_date
+    """
+    # Category mapping based on publication type
+    category_map = {
+        'book': 'A',
+        'proceedings': 'A',
+        'incollection': 'A',
+        'article': 'B',
+        'inproceedings': 'C',
+        'conference': 'C'
+    }
+    
+    # Publication type labels
+    type_label_map = {
+        'book': 'Books Authored',
+        'proceedings': 'Books Edited',
+        'incollection': 'Books Chapter (Authorship)',
+        'article': 'Research Papers',
+        'inproceedings': 'Conference Proceedings',
+        'conference': 'Conference Proceedings'
+    }
+    
+    # Group by category and number them
+    category_counters = {'A': 0, 'B': 0, 'C': 0}
+    
+    enriched_data = []
+    for item in data:
+        enriched_item = dict(item)  # Copy the original item
+        
+        # Get publication type
+        pub_type = str(item.get('publication_type', 'article')).lower()
+        
+        # Add category
+        category = category_map.get(pub_type, 'B')
+        enriched_item['category'] = category
+        
+        # Increment counter and add number
+        category_counters[category] += 1
+        enriched_item['number'] = category_counters[category]
+        
+        # Add publication type label
+        enriched_item['publication_type_label'] = type_label_map.get(pub_type, 'Research Papers')
+        
+        # Add author_role (default to "Co Author" if not present)
+        if 'author_role' not in enriched_item:
+            enriched_item['author_role'] = 'Co Author'
+        
+        # Add formatted_date if not present
+        if 'formatted_date' not in enriched_item and 'year' in enriched_item:
+            year = enriched_item.get('year', 2024)
+            enriched_item['formatted_date'] = f'01/01/{year}'
+        
+        # Ensure venue is not empty
+        if not enriched_item.get('venue'):
+            enriched_item['venue'] = '-'
+        
+        # Ensure volume is not empty
+        if not enriched_item.get('volume'):
+            enriched_item['volume'] = '-'
+        
+        # Ensure pages is not empty
+        if not enriched_item.get('pages'):
+            enriched_item['pages'] = '-'
+        
+        # Ensure indexing is not empty
+        if not enriched_item.get('indexing'):
+            enriched_item['indexing'] = '-'
+        
+        enriched_data.append(enriched_item)
+    
+    return enriched_data
+
+
 # Pattern-based query handler - works without Ollama for common queries
 async def handle_predefined_query(question: str, db: Session) -> Optional[QueryResponse]:
     """
@@ -213,6 +303,18 @@ async def handle_predefined_query(question: str, db: Session) -> Optional[QueryR
     from sqlalchemy import text
     
     question_lower = question.lower()
+    
+    # Skip predefined queries if user is asking for a specific report/format
+    # These are directed queries that should go to the LLM
+    report_indicators = [
+        'generate report', 'create report', 'generate publication report', 'generate the report',
+        'in the format', 'in format', 'below format', 'given format',
+        'format mentioned', 'in scis format', 'following format',
+        'list all publications', 'show all publications'
+    ]
+    
+    if any(indicator in question_lower for indicator in report_indicators):
+        return None  # Skip predefined queries for report requests
     
     # Check for venue/conference queries first (higher priority)
     # This prevents "top conferences where faculty publish" from being caught by faculty pattern
@@ -450,6 +552,22 @@ async def natural_language_query(
         # Generate follow-up questions
         suggested_questions = generate_follow_up_questions(request.question, data, sql)
         
+        # Post-process report_format: convert single braces {field} to double braces {{field}}
+        # Frontend expects double braces for template placeholders
+        report_format = generation_result.get('report_format')
+        if report_format:
+            import re
+            # Replace {field} with {{field}} but avoid replacing already doubled braces
+            report_format = re.sub(r'(?<!\{)\{([a-zA-Z_]+)\}(?!\})', r'{{\1}}', report_format)
+        
+        # For report visualization, enrich data with computed fields
+        if viz_type == 'report' and data:
+            data = enrich_report_data(data)
+            
+            # Set default report format if not provided
+            if not report_format:
+                report_format = "{{category}} {{number}}. {{publication_type_label}}: {{authors}}, {{author_role}}, {{title}}, {{indexing}}, {{volume}}, {{venue}}, {{pages}}, {{formatted_date}}."
+        
         return QueryResponse(
             question=request.question,
             sql=sql,
@@ -459,7 +577,8 @@ async def natural_language_query(
             visualization=viz_config,
             row_count=len(data),
             confidence=generation_result.get('confidence'),
-            suggested_questions=suggested_questions
+            suggested_questions=suggested_questions,
+            report_format=report_format  # Include report format template with double braces
         )
         
     except Exception as e:
